@@ -1,0 +1,147 @@
+/****************************/
+/*****   GENERAL SETTING   **/
+/****************************/
+*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: var(--normal-font);}
+:root
+{
+	--normal-font: 'Fira Mono', monospace;
+	--title-font: 'Lobster', cursive;
+	--special-font: 'VT323', monospace;
+}
+body, html {width: 100%}
+.home_bg {background: url('../img/home_bg.png') no-repeat center center fixed;}
+.day_bg {background: url('../img/day_bg.png') no-repeat center center fixed;}
+.night_bg {background: url('../img/night_bg.png') no-repeat center center fixed;}
+.home_bg, .day_bg, .night_bg
+{ 
+	font-size: 100%;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+/****************************/
+/*****   CLASES GENERALES  **/
+/****************************/
+.flex {display: flex; align-content: center; justify-content: center;}
+
+
+/****************************/
+/*****   animaciones       **/
+/****************************/
+/* safari and chrome */
+@-webkit-keyframes wiggle {
+	0% {-webkit-transform:rotate(4deg);}
+	50% {-webkit-transform:rotate(-4deg);}
+	100% {-webkit-transform:rotate(4deg);}
+}
+/* firefox */
+@-moz-keyframes wiggle {
+	0% {-moz-transform:rotate(4deg);}
+	50% {-moz-transform:rotate(-4deg);}
+	100% {-moz-transform:rotate(4deg);}
+}
+@keyframes wiggle {
+	0% {transform:rotate(4deg);}
+	50% {transform:rotate(-4deg);}
+	100% {transform:rotate(4deg);}
+}
+/****************************/
+/*****   GRIDS             **/
+/****************************/
+.grid
+{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 100vw;
+	row-gap: 2rem;
+	grid-template-areas:
+	"header header header header"
+	"main main main main"
+	"aside aside aside aside"
+	"footer footer footer footer";
+}
+header {
+	grid-area: header;
+	background-color: gray;
+}
+main {
+	grid-area: main;
+	background-color: aliceblue;
+}
+aside {
+	grid-area: aside;
+	background-color: gainsboro;
+}
+footer {
+	grid-area: footer;
+	background-color: red;
+}
+
+/****************************/
+/*****   HEADER            **/
+/****************************/
+#header_logo{
+	width: 100%;
+	color: white;
+}
+h1 {
+	font-family: var(--title-font);
+	font-size: 4rem;
+	text-align: center;
+    padding-top: 2rem;
+    padding-right: 5%;
+}
+#firma {
+	font-family: var(--special-font);
+	font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    left: 14%;
+    bottom: 13px;
+}
+#poke_logo {
+	width: 43%;
+    position: absolute;
+    left: 64%;
+    bottom: 76%;
+}
+nav {flex-flow: row;}
+nav a {
+	width: 24%;
+	height: 8vh;
+	flex-flow: column;
+	text-decoration: none;
+	color: white;
+}
+nav a img {
+	width: 47%;
+	margin: auto;  
+}
+nav a h3 {
+	font-family: var(--special-font);
+	text-align: center;
+	color: inherit;
+}
+nav a:hover .wiggler
+{
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
+}
+nav a:hover h3
+{
+	text-shadow: 2px 1px 1px #7b4040;
+  	font-size: 1.50rem;
+  	position: relative;
+  	top: 2%;
+}
+nav a:active .wigler
+{
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
+}
+
+
+
