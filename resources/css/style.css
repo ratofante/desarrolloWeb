@@ -53,7 +53,7 @@ body, html {width: 100%}
 {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 100vw;
+	grid-template-rows: auto;
 	row-gap: 2rem;
 	grid-template-areas:
 	"header header header header"
@@ -63,28 +63,31 @@ body, html {width: 100%}
 }
 header {
 	grid-area: header;
-	background-color: gray;
+	/*background-color: gray;*/
 }
 main {
 	grid-area: main;
-	background-color: aliceblue;
+	/*background-color: aliceblue;*/
 }
 aside {
 	grid-area: aside;
-	background-color: gainsboro;
+	/*background-color: gainsboro;*/
 }
 footer {
 	grid-area: footer;
-	background-color: red;
+	/*background-color: red;*/
 }
 
 /****************************/
 /*****   HEADER            **/
 /****************************/
-#header_logo{
-	width: 100%;
-	color: white;
+header {position: sticky; top: -48px;}
+.day_header {
+	background-color: #72c2ef;
+    border-bottom: 1px solid #00000030;
+    box-shadow: 0px 5px 44px #3c8a9aba;
 }
+#header_logo{width: 100%;color: white;}
 h1 {
 	font-family: var(--title-font);
 	font-size: 4rem;
@@ -103,8 +106,8 @@ h1 {
 #poke_logo {
 	width: 43%;
     position: absolute;
-    left: 64%;
-    bottom: 76%;
+    left: 62%;
+    bottom: 18%;
 }
 nav {flex-flow: row;}
 nav a {
@@ -114,10 +117,7 @@ nav a {
 	text-decoration: none;
 	color: white;
 }
-nav a img {
-	width: 47%;
-	margin: auto;  
-}
+nav a img {width: 47%; margin: auto;}
 nav a h3 {
 	font-family: var(--special-font);
 	text-align: center;
@@ -143,5 +143,24 @@ nav a:active .wigler
 	animation: wiggle 0.5s infinite;
 }
 
-
+/****************************/
+/*****   MAIN & SECTIONS   **/
+/****************************/
+main{margin: 10% auto 0px auto;}
+section
+{
+	width: 95%;
+	max-width: 630px;
+    margin: auto;
+    margin-bottom: 3rem;
+    background-color: #ffffff91;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #00000063;
+    border-radius: 8px;
+    text-align: center;
+}
+#miniball {width: 20px; display: inline-block;}
+#miniball img {width: 100%;}
+h2, p {padding: 1rem;}
 
