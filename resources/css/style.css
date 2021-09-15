@@ -8,7 +8,7 @@
 	--title-font: 'Lobster', cursive;
 	--special-font: 'VT323', monospace;
 }
-body, html {width: 100%}
+html {width: 100%; overflow-x: hidden;}
 .home_bg {background: url('../img/home_bg.png') no-repeat center center fixed;}
 .day_bg {background: url('../img/day_bg.png') no-repeat center center fixed;}
 .night_bg {background: url('../img/night_bg.png') no-repeat center center fixed;}
@@ -53,7 +53,7 @@ body, html {width: 100%}
 {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: auto auto auto 15vh;
+	grid-template-rows: auto auto auto 100px;
 	row-gap: 2rem;
 	grid-template-areas:
 	"header header header header"
@@ -81,13 +81,13 @@ footer {
 /****************************/
 /*****   HEADER            **/
 /****************************/
-header {position: sticky; top: -48px;}
+header {position: sticky; top: -128px;}
 .day_header {
 	background-color: #72c2ef;
     border-bottom: 1px solid #00000030;
     box-shadow: 0px 5px 44px #3c8a9aba;
 }
-#header_logo{width: 100%;color: white;}
+#header_logo{width: 100%;color: white; overflow: hidden;}
 h1 {
 	font-family: var(--title-font);
 	font-size: 4rem;
@@ -101,13 +101,19 @@ h1 {
     text-align: center;
     position: relative;
     left: 14%;
+    left: 165px;
     bottom: 13px;
+    display: inline;
+}
+#header_logo div {
+	width: 79px;
+	position: absolute;
+	left: 66%;
+	bottom: 34%;
 }
 #poke_logo {
-	width: 43%;
-    position: absolute;
-    left: 62%;
-    bottom: 18%;
+	width: 100%;
+
 }
 nav {flex-flow: row;}
 nav a {
@@ -175,7 +181,7 @@ footer {
 #footer_logo {}
 .footer_section p {padding: 0.2rem; padding-top: 12%;}
 #footer_logo img {width: 100%;}
-#copyright {
+#copyrights {
 	text-align: right;
     font-size: 0.6rem;
     color: white;
