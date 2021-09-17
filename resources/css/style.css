@@ -167,6 +167,7 @@ nav a:active .wigler {
 {
 	.grid 
 	{
+		min-height: 100vh;
 		display: grid;
 		grid-template-columns: 20%;
 		grid-template-rows: auto auto auto 100px;
@@ -233,6 +234,11 @@ section
 h2, p {padding: 1rem;}
 .accent {font-weight: 600; font-size: 1.2rem;}
 li {list-style-position: inside; text-align: left;}
+
+@media (min-width: 1200px)
+{
+	section {max-width: 800px;}
+}
 
 /****************************/
 /*****   POKECARD          **/
@@ -305,7 +311,11 @@ li {list-style-position: inside; text-align: left;}
 /*****   Quiz Iframe       **/
 /****************************/
 #video_div {width: 100%;}
-iframe {width: 100%;}
+iframe {width: 86% !important; height: 100% !important;}
+@media (min-width: 1200px)
+{
+	#video_div {min-width: 600px; height: 475px;}
+}
 
 /****************************/
 /*****   FOOTER            **/
