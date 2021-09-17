@@ -144,21 +144,18 @@ nav a h3 {
 	text-align: center;
 	color: inherit;
 }
-nav a:hover .wiggler
-{
+nav a:hover .wiggler{
 	-webkit-animation: wiggle 0.5s infinite;
 	-moz-animation: wiggle 0.5s infinite;
 	animation: wiggle 0.5s infinite;
 }
-nav a:hover h3
-{
+nav a:hover h3 {
 	text-shadow: 2px 1px 1px #7b4040;
   	font-size: 1.50rem;
   	position: relative;
   	top: 2%;
 }
-nav a:active .wigler
-{
+nav a:active .wigler {
 	-webkit-animation: wiggle 0.5s infinite;
 	-moz-animation: wiggle 0.5s infinite;
 	animation: wiggle 0.5s infinite;
@@ -185,13 +182,7 @@ section
 #miniball img {width: 100%;}
 h2, p {padding: 1rem;}
 .accent {font-weight: 600; font-size: 1.2rem;}
-
-
-
-li {
-	list-style-position: inside;
-	text-align: left;
-}
+li {list-style-position: inside; text-align: left;}
 
 /****************************/
 /*****   POKECARD          **/
@@ -211,24 +202,21 @@ li {
 .img_container {width: 279px; margin: auto;}
 .img_container img {width: 100%;}
 .evo_box {flex-flow: column;}
-.info_box h4
-{
-	padding: 1rem;
-	position: relative;
-	left: 0;
-}
+.info_box h4 {padding: 1rem; position: relative; left: 0;}
 .flex_box p {position: relative; left: 0;}
 .evo_box div {width: 190px; margin: auto;}
 .evo_box div img {width: 100%;}
-.flex_moves{
-	display: flex;
-	flex-flow: wrap;
-}
+.flex_moves{display: flex; flex-flow: wrap;}
 .move {
 	background-color: aliceblue;
 	margin: 2px; 
 	flex: 1 0 15%;
 }
+/****************************/
+/*****   Quiz Iframe       **/
+/****************************/
+#video_div {width: 100%;}
+iframe {width: 100%;}
 
 /****************************/
 /*****   FOOTER            **/
