@@ -62,6 +62,27 @@ html {width: 100%; overflow-x: hidden;}
 	50% {transform:rotate(-4deg);}
 	100% {transform:rotate(4deg);}
 }
+/* safari and chrome */
+@-webkit-keyframes pulse {
+	0% {-webkit-transform: scaleX(1);}
+	50% {-webkit-transform: scale3d(1.02, 1.02, 1.02);}
+	100% {-webkit-transform: scaleX(1);}
+}
+
+/* firefox */
+@-moz-keyframes pulse {
+	0% {-webkit-transform: scaleX(1);}
+    50% {-webkit-transform: scale3d(1.02,1.02,1.02);}
+    100% {-webkit-transform: scaleX(1);}	
+}
+@keyframes pulse {
+	0% {transform: scaleX(1);}
+    50% {transform: scale3d(1.02,1.02,1.02);}
+    100% {transform: scaleX(1);}
+}
+.pulse {
+	animation: pulse 2s infinite;
+}
 /****************************/
 /*****   GRIDS             **/
 /****************************/
@@ -106,9 +127,9 @@ footer {grid-area: footer;}
 /****************************/
 header {position: sticky; top: -15%; z-index: 3;}
 .day_header {
-	background: linear-gradient(0deg, rgb(75 72 228 / 99%) 0%, rgb(50 136 191 / 94%) 35%, rgb(0 212 255 / 90%) 100%);
-    border-bottom: 2px solid #242729b0;
-    box-shadow: 0px 25px 43px #24295f87;
+	background: linear-gradient(0deg, rgb(129 188 239 / 92%) 0%, rgb(89 164 212 / 95%) 35%, rgb(0 43 255 / 95%) 100%);
+    border-bottom: 2px solid #4981a2d6;
+    box-shadow: 0px 6px 24px #585c86e0;
     border-bottom-right-radius: 11px;
     border-bottom-left-radius: 11px;
 }
