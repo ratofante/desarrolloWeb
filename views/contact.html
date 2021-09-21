@@ -41,17 +41,21 @@
 		</nav>
 	</header>
 	<main>
-		<section>
-			<form action="" method="POST">
+		<section id="form_container">
+			<form id="contact_form"class="flex" action="" method="POST">
 				<fieldset>
-					<legend><h2>Contact me</h2></legend>
+					<legend><h2>Contact Me</h2></legend>
 					<div class="form_section">
 						<label for="name">Name :</label>
-						<input id="name" type="text" name="name">
+						<input id="name" type="text" name="name" maxlength="30" autofocus="on" required>
 					</div>
 					<div class="form_section">
 						<label for="apellido">Lastname :</label>
-						<input id="apellido" type="text" name="apellido">
+						<input id="apellido" type="text" name="apellido" maxlength="30">
+					</div>
+					<div class="form_section">
+						<label for="email">Email :</label>
+						<input id="email" type="email" name="email" maxlength="50" required>
 					</div>
 					<div class="form_section">
 						<label for="tres_pokemons">Choose your pokemon</label>
@@ -66,7 +70,7 @@
 						<input id="contribute" type="checkbox" value="contribute">
 					</div>
 				</fieldset>
-				<div class="form_end">
+				<div id="form_end_contact">
 					<input type="reset" name="reset" value="Reset">
 					<button type="submit">Send</button>
 				</div>

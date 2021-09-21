@@ -292,6 +292,11 @@ section
 #miniball img {width: 100%;}
 h2, p {padding: 1rem;}
 li {list-style-position: inside; text-align: left;}
+.text_p {
+	padding: 2rem;
+	text-align: left;
+    line-height: 24px;
+}
 
 /***********************************/
 /*****   MAIN & SECTIONS QUERIES  **/
@@ -366,14 +371,84 @@ li {list-style-position: inside; text-align: left;}
 }
 
 /****************************/
-/*****   Quiz Iframe       **/
+/*****   Quiz              **/
+/****************************/
+.quiz_answer p {display: none;}
+.quiz_answer button:hover .quiz_answer p {
+	display: block;
+}
+
+
+/****************************/
+/*****   About Iframe       **/
 /****************************/
 
 #video_div {width: 100%;}
-iframe {width: 86% !important; height: 100% !important;}
+iframe {width: 86% !important;/* height: 100% !important;*/}
+
 @media (min-width: 1200px)
 {
-	#video_div {min-width: 600px; height: 475px;}
+	#video_div {min-width: 600px;}
+}
+
+/****************************/
+/*****   FORM - CONTACT    **/
+/****************************/
+#form_container {padding: 1rem;}
+#contact_form {flex-flow: column; margin: auto;}
+fieldset {margin: auto;}
+.form_section {display: flex;}
+.form_section input, select {
+	padding: 0.4rem;
+	margin: auto 10px;
+}
+#contribute {height: 30px; width: 30px;}
+#form_end_contact {margin-top: 1rem;}
+#form_end_contact input {padding: 0.5rem;}
+#form_end_contact button {padding: 0.5rem;}
+#form_end_contact button:hover {font-weight: 600; padding: 0.6rem;}
+#form_end_contact input:hover {font-weight: 600; padding: 0.6rem;}
+
+@media (max-width: 720px)
+{
+	#contact_form {min-width: 280px; max-width: 290px;}
+	fieldset {min-width: 275px;}
+	.form_section {flex-flow: column;}
+	.form_section:last-child {flex-flow: row;}
+	.form_section label {
+		text-align: left;
+		padding: 1rem;
+	}
+}
+@media (min-width: 720px)
+{
+	#form_container {width: 700px;}
+	#contact_form {min-width: 700px;}
+	fieldset {
+		width: 630px;
+		margin: 0px;
+	    display: flex;
+	    flex-flow: wrap;
+	    justify-content: space-evenly;
+	}
+	.form_section {
+		flex-flow: row;
+	    width: 310px;
+	    margin-bottom: 20px;
+	    align-items: center;
+	    justify-content: flex-end;
+	}
+	.form_section:nth-child(5){
+		background-color: white;
+	    border-radius: 6px;
+	    padding: 0.2rem;
+	    margin-right: 5px;
+	    width: 286px;
+	}
+}
+@media (min-width: 1200px)
+{
+	#form_container {margin-left: 1rem;}
 }
 
 /****************************/
