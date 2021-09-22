@@ -127,8 +127,7 @@ footer {grid-area: footer;}
 /****************************/
 header {position: sticky; top: -152px; z-index: 3;}
 .day_header {
-	background: linear-gradient(0deg, rgb(129 188 239 / 92%) 0%, rgb(89 164 212 / 95%) 35%, rgb(0 43 255 / 95%) 100%);
-    border-bottom: 2px solid #4981a2d6;
+	background: linear-gradient(0deg, rgb(64 156 236) 0%, rgb(95 172 222 / 97%) 35%, rgb(11 7 43 / 72%) 100%);
     box-shadow: 0px 6px 24px #585c86e0;
     border-bottom-right-radius: 11px;
     border-bottom-left-radius: 11px;
@@ -230,11 +229,7 @@ nav a:active .wigler {
 	nav a h3 {font-size: 1.2rem;}
 }
 @media (max-width: 1200px){
-	.day_header {
-		background: linear-gradient(0deg, rgb(56 76 177) 0%, rgb(124 188 230 / 97%) 35%, rgb(0 212 255 / 27%) 100%);
-		border-bottom: 1px solid #272c4ce6;
-   		box-shadow: -2px 16px 16px #24295f87;
-   	}
+
 }
 
 /****************************/
@@ -280,7 +275,7 @@ nav a:active .wigler {
 /*****   MAIN & SECTIONS   **/
 /****************************/
 
-main{margin: 10% auto 0px auto;}
+main{margin: 10% auto 0px auto; overflow: hidden;}
 section
 {
 	width: 95%;
@@ -294,7 +289,18 @@ section
     border-radius: 8px;
     text-align: center;
 }
-#miniball {width: 20px; display: inline-block;}
+/* welcome section en index.html */
+#welcome_section {padding: 0px;}
+#welcome_img {width: 100%; margin: auto;}
+#welcome_img img {width: 100%;}
+#welcome_section h2, p, span {padding: 2rem;}
+
+/*general*/
+#miniball {
+	width: 60px;
+    display: inline-block;
+    padding: 1rem;
+}
 #miniball img {width: 100%;}
 h2, p {padding: 1rem;}
 li {list-style-position: inside; text-align: left;}
@@ -307,6 +313,8 @@ li {list-style-position: inside; text-align: left;}
 /***********************************/
 /*****   MAIN & SECTIONS QUERIES  **/
 /***********************************/
+
+
 
 @media (min-width: 1200px)
 {

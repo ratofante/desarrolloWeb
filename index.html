@@ -8,10 +8,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Lobster&family=VT323&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <div class="grid">
-	<header class="day_header">
+	<header class="day_header" data-aos="top-top">
 		<div id="header_logo">
 			<h1>Pokedex</h1>
 			<h4 id="firma">by RGW</h4>
@@ -43,12 +44,56 @@
 		</nav>
 	</header>
 	<main>
-		<section>
+		<section id="welcome_section">
 			<div class="text_section">
 				<h2 class="pulse">Welcome !</h2>
 				<p>This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
-				<p>Many thanks to <a href="http://pokeapi.co">PokéApi</a> for their amazing work!</p>
-				<p>Try catching a pokemon by Id! <a href="views/pokedex.html">Let's Go!</a></p><span id="miniball"><img src="resources/img/miniball.png" alt="pokeball"><span>
+				<div id="welcome_img">
+					<img src="resources/img/pokemons1.png">
+				</div>
+				<p> Scroll down to see more!</p>
+				<span id="miniball"><img src="resources/img/miniball.png" alt="pokeball"></span>
+			</div>
+		</section>
+		<section data-aos="slide-up" data-aos-duration="1000">
+			<div class="text_section">
+				<h2 class="pulse">What is this site?</h2>
+				<p>This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
+				<p>First of all, many thanks to <a href="http://pokeapi.co">PokéApi</a>! Because of their amazing work this app is possible !</p>
+				<p> Scroll down to see more!</p>
+				<span id="miniball"><img src="resources/img/miniball.png" alt="pokeball"></span>
+			</div>
+		</section>
+		<section data-aos="slide-right" data-aos-duration="1000">
+			<div class="text_section">
+				<h2 class="pulse">The Pokedex</h2>
+				<p>In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
+				
+				<p>Try catching a pokemon by Id! <a href="views/pokedex.html">Let's Go!</a></p><span id="miniball"><img src="resources/img/miniball.png" alt="pokeball"></span>
+			</div>
+		</section>
+		<section data-aos="slide-left" data-aos-duration="1000">
+			<div class="text_section">
+				<h2 class="pulse">Quiz Section</h2>
+				<p>Put your Pokemon knowledge to test with the Quiz!</p>
+				<p>In this section you can find questions related to all 151 pokemons</p>
+				<p>Let's give it a try! <a href="views/quiz.html">Let's Go!</a></p><span id="miniball"><img src="resources/img/miniball.png" alt="pokeball"><span>
+			</div>
+		</section>
+		<section data-aos="slide-right" data-aos-duration="1000">
+			<div class="text_section">
+				<h2 class="pulse">About</h2>
+				<p>In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
+				
+				<p>Try catching a pokemon by Id! <a href="views/pokedex.html">Let's Go!</a></p><span id="miniball"><img src="resources/img/miniball.png" alt="pokeball"></span>
+			</div>
+		</section>
+		<section data-aos="slide-left" data-aos-duration="1000">
+			<div class="text_section">
+				<h2 class="pulse">Contact Me</h2>
+				<p>In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
+				
+				<p>Try catching a pokemon by Id! <a href="views/pokedex.html">Let's Go!</a></p><span id="miniball"><img src="resources/img/miniball.png" alt="pokeball"></span>
 			</div>
 		</section>
 	</main>
@@ -69,5 +114,9 @@
 		</div>
 	</footer>
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </body>
 </html>
