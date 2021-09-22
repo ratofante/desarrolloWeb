@@ -125,7 +125,7 @@ footer {grid-area: footer;}
 /****************************/
 /*****   HEADER            **/
 /****************************/
-header {position: sticky; top: -15%; z-index: 3;}
+header {position: sticky; top: -152px; z-index: 3;}
 .day_header {
 	background: linear-gradient(0deg, rgb(129 188 239 / 92%) 0%, rgb(89 164 212 / 95%) 35%, rgb(0 43 255 / 95%) 100%);
     border-bottom: 2px solid #4981a2d6;
@@ -173,9 +173,14 @@ h1 {
 	width: 100%;
 
 }
-nav {flex-flow: row; padding-bottom: 10px;}
+nav.flex {
+	flex-flow: row;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	justify-content: space-between;
+}
 nav a {
-	width: 24%;
+	width: 20%;
 	height: 8vh;
 	flex-flow: column;
 	text-decoration: none;
@@ -189,6 +194,7 @@ nav a h3 {
 	color: inherit;
 	text-shadow: 0px 3px 3px black;
 }
+nav a:hover {position: relative;}
 nav a:hover .wiggler{
 	-webkit-animation: wiggle 0.5s infinite;
 	-moz-animation: wiggle 0.5s infinite;
@@ -196,7 +202,7 @@ nav a:hover .wiggler{
 }
 nav a:hover h3 {
 	text-shadow: 2px 1px 1px #7b4040;
-  	font-size: 1.50rem;
+  	font-size: 1.2rem;
   	position: relative;
   	top: 2%;
 }
@@ -373,10 +379,8 @@ li {list-style-position: inside; text-align: left;}
 /****************************/
 /*****   Quiz              **/
 /****************************/
-.quiz_answer p {display: none;}
-.quiz_answer button:hover .quiz_answer p {
-	display: block;
-}
+#answer_1 {visibility: hidden;}
+.quiz_answer:hover #answer_1 {visibility: visible;}
 
 
 /****************************/
