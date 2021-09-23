@@ -310,6 +310,9 @@ li {list-style-position: inside; text-align: left;}
     line-height: 24px;
 }
 
+#odish_img {width: 400px; margin: auto;}
+#odish_img img {width: 100%;}
+
 /***********************************/
 /*****   MAIN & SECTIONS QUERIES  **/
 /***********************************/
@@ -438,10 +441,10 @@ fieldset {margin: auto;}
 }
 @media (min-width: 720px)
 {
-	#form_container {width: 700px;}
-	#contact_form {min-width: 700px;}
+	#form_container {width: 648px;}
+	#contact_form {min-width: 624px;}
 	fieldset {
-		width: 630px;
+		width: 624pxpx;
 		margin: 0px;
 	    display: flex;
 	    flex-flow: wrap;
