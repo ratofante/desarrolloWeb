@@ -319,6 +319,10 @@ li {list-style-position: inside; text-align: left;}
 @media (min-width: 1200px)
 {
 	section {max-width: 800px;}
+	#welcome_aside {
+		position: sticky;
+		top: 300px;
+	}
 }
 
 /****************************/
