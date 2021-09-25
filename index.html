@@ -19,7 +19,7 @@
 				<h1 class="text-center">Pokedex</h1>
 				<h4 class="text-center" id="firma">by RGW</h4>
 				<div>
-					<img id="poke_logo" src="resources/img/pokeball2.png" alt="Logo">
+					<img class="mw-100" src="resources/img/pokeball2.png" alt="Logo">
 				</div>	
 			</div>
 		</div>
@@ -47,7 +47,42 @@
 		</nav>
 	</header>
 	<main>
-f
+		<section id="welcome_section">
+			<div class="row justify-content-center">
+				<h2>Welcome !</h2>
+			</div>
+			<div class="row">
+				<p class="px-4">This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
+			</div>
+			<div class="row">
+				<div id="welcome_img">
+					<img class="mw-100" src="resources/img/pokemons1.png" alt="poke_group">
+				</div>			
+			</div>
+			<div class="row flex-column align-items-center">
+				<p class="text-center"> Scroll down to see more!</p>
+				<span id="miniball">
+					<img src="resources/img/miniball.png" class="mw-100" alt="pokeball">
+				</span>
+			</div>
+		</section>
+		<section data-aos="slide-up" data-aos-duration="1000">
+			<div class="row justify-content-center">
+				<h2>What is this site?</h2>
+			</div>
+			<div class="row">
+				<h3 class="pulse">The Pokedex</h3>
+			</div>
+			<div class="row">
+				<p>In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
+			</div>
+			<div class="row flex-column align-items-center">
+				<p>Try catching a pokemon by Id! <a href="views/pokedex.html">Let's Go!</a></p>
+				<span id="miniball">
+					<img src="resources/img/miniball.png" class="mw-100" alt="pokeball">
+				</span>
+			</div>
+		</section>
 	</main>
 
 	<footer>
@@ -60,4 +95,8 @@ f
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </body>

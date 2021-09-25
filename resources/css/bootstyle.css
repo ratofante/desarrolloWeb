@@ -21,7 +21,7 @@ h1 {font-family: var(--title-font);}
 /****************************/
 /*****   HEADER            **/
 /****************************/
-#header_logo{
+#header_logo {
 	width: 100%;
 	color: black;
 	overflow: hidden;
@@ -31,7 +31,7 @@ h1 {font-family: var(--title-font);}
     max-height: 151px;
     margin: auto;
 }
-h1 {font-size: 5rem;}
+h1 {font-size: 6rem;}
 #firma {
 	font-family: var(--special-font);
 	font-size: 1.8rem;
@@ -47,10 +47,14 @@ h1 {font-size: 5rem;}
     left: 186px;
     bottom: 62px;
 }
-#poke_logo {width: 100%;}
 
 /* NAVBAR */
 #header_navbar {padding-left: 0px; padding-right: 0px;}
 #header_navbar a {max-width: 18%}
 .wiggler {width: 47%;max-width: 60px;margin: auto;}
 
+/****************************/
+/*****   MAIN              **/
+/****************************/
+
+#miniball {width: 30px;}
