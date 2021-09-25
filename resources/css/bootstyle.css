@@ -1,0 +1,56 @@
+:root
+{
+	/*FONTS*/
+	--normal-font: 'Fira Mono', monospace;
+	--title-font: 'Lobster', cursive;
+	--special-font: 'VT323', monospace;
+	--contrast-font: monospace;
+}
+
+h1 {font-family: var(--title-font);}
+
+
+
+
+/****************************/
+/*****   BACKGROUNDS       **/
+/****************************/
+
+
+
+/****************************/
+/*****   HEADER            **/
+/****************************/
+#header_logo{
+	width: 100%;
+	color: black;
+	overflow: hidden;
+	max-width: 508px;
+    min-height: 140px;
+    height: auto;
+    max-height: 151px;
+    margin: auto;
+}
+h1 {font-size: 5rem;}
+#firma {
+	font-family: var(--special-font);
+	font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+	left: 135px;
+    bottom: 23px;
+    display: inline;
+}
+#header_logo div {
+	width: 70px;
+    position: relative;
+    left: 186px;
+    bottom: 62px;
+}
+#poke_logo {width: 100%;}
+
+/* NAVBAR */
+#header_navbar {padding-left: 0px; padding-right: 0px;}
+#header_navbar a {max-width: 18%}
+.wiggler {width: 47%;max-width: 60px;margin: auto;}
+
