@@ -6,17 +6,15 @@
 	--special-font: 'VT323', monospace;
 	--contrast-font: monospace;
 }
+/** {background: none; background-color: none;}*/
 
 h1 {font-family: var(--title-font);}
-
-
-
 
 /****************************/
 /*****   BACKGROUNDS       **/
 /****************************/
-
-
+html {overflow-x: hidden;}
+/*.home_bg {background: url('../img/home_bg.png') no-repeat center center fixed;}*/
 
 /****************************/
 /*****   HEADER            **/
@@ -31,7 +29,7 @@ h1 {font-family: var(--title-font);}
     max-height: 151px;
     margin: auto;
 }
-h1 {font-size: 6rem;}
+h1 {font-size: 5rem;}
 #firma {
 	font-family: var(--special-font);
 	font-size: 1.8rem;
@@ -57,4 +55,19 @@ h1 {font-size: 6rem;}
 /*****   MAIN              **/
 /****************************/
 
-#miniball {width: 30px;}
+section
+{
+	/*width: 95%;
+	max-width: 680px;
+    margin: auto;
+    margin-bottom: 3rem;*/
+    background-color: #d1e8fdd4;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #00000063;
+    border-radius: 8px;
+    /*text-align: center;*/
+}
+
+
+.miniball {width: 30px;}
