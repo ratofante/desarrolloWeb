@@ -19,55 +19,23 @@ html {overflow-x: hidden;}
 /****************************/
 /*****   HEADER            **/
 /****************************/
-#header_logo {
-	width: 100%;
-	color: black;
-	overflow: hidden;
-	max-width: 508px;
-    min-height: 140px;
-    height: auto;
-    max-height: 151px;
-    margin: auto;
+@media (min-width: 980px){
+	#main-header {font-size: 8rem;}
 }
-h1 {font-size: 5rem;}
-#firma {
-	font-family: var(--special-font);
-	font-size: 1.8rem;
-    text-align: center;
-    position: relative;
-	left: 135px;
-    bottom: 23px;
-    display: inline;
-}
-#header_logo div {
-	width: 70px;
-    position: relative;
-    left: 186px;
-    bottom: 62px;
-}
-
+.pokeball-logo img {width: 15%; max-width: 150px;}
+#poke_logo {position: relative; left: -56px;}
+#odish_img {width: 100%; max-width: 200px;}
 /* NAVBAR */
-#header_navbar {padding-left: 0px; padding-right: 0px;}
-#header_navbar a {max-width: 18%}
-.wiggler {width: 47%;max-width: 60px;margin: auto;}
 
 /****************************/
 /*****   MAIN              **/
 /****************************/
-
 section
 {
-	/*width: 95%;
-	max-width: 680px;
-    margin: auto;
-    margin-bottom: 3rem;*/
     background-color: #d1e8fdd4;
     padding: 1rem;
     border: 1px solid black;
     box-shadow: 3px 3px 3px #00000063;
     border-radius: 8px;
-    /*text-align: center;*/
 }
-
-
 .miniball {width: 30px;}
