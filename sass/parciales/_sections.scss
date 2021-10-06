@@ -1,0 +1,133 @@
+.section {
+	box-shadow: 2px -2px 8px #00000087;
+	padding: 10px 0px;
+	margin: 16px auto;
+	&__title {
+		font-size: 2rem;
+		text-align: center;
+		@include tablet {
+			font-size: 2.7rem;
+		}
+	}
+	&__text {
+		padding: 0px 1rem;
+		@include tablet {
+			font-size: 1.3rem;
+		}
+	}
+	&__last {
+		font-size: 1rem;
+		font-weight: $bold;
+		@include tablet {
+			font-size: 1.3rem;
+		}
+	}
+	&__balldiv {
+		width: 25px;
+		margin: auto;
+		@include tablet {
+			width: 30px;
+		}
+		&__ball {
+			width: 100%;
+		}
+	}
+}
+
+.sectionp {
+	@extend .section;
+	margin: 0px 1rem;
+	padding: 1.5rem 1rem;
+	height: 95%;
+	margin-bottom: 10px;
+	&__title {
+		text-align: left;
+	}
+	&__text {
+		font-family: $normal-font;
+	}
+	&__frase {
+		text-align: center;
+	}
+	&__link {
+		display: block;
+		margin: auto;		
+		color: green;
+		font-weight: $bold;
+		text-align: center;
+	}
+}
+
+.sectionq {
+	@extend .section;
+	@extend .sectionp;
+	background-color: #80808033;
+	&__title {
+		color: green;
+		text-align: right;
+	}
+	&__text {
+		@extend .sectionp__text;
+	}
+}
+
+.about {
+	@extend .section;
+	background-color: green;
+	border-radius: 45px;
+	&__title {
+		text-align: center;
+		color: white;
+	}
+	&__text {
+		@extend .sectionp__text;
+		text-align: center;
+		line-height: 40px;
+		padding: 2rem;
+		background-color: black;
+		border: 1px solid gray;
+		border-radius: 45px;
+		color: white;
+	}
+	&__div {
+		border: 1px solid gray;
+		&__text {
+			text-align: center;
+		}
+		&__link {
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+	}
+}
+.contact {
+	$fontsize: 3rem;
+	font-size: $fontsize / 1.5;
+	margin: 4rem -2rem;
+	padding: 3rem;
+	color: white;
+	background-color: gray;
+	font-family: $special-font;
+	@include tablet {
+		margin: 4rem 8rem;
+	}
+	&__title {
+		text-align: center;
+		font-size: $fontsize;
+	}
+	&__ask {
+		font-family: $normal-font;
+		font-size: $fontsize / 2;
+	}
+}
+
+#primer-boton, .accordion-button {
+	font-size: 1.3rem;
+	padding: 1rem;
+}
+.accordion-body {
+	font-size: 1.2rem;
+}
+
+

@@ -1,0 +1,25 @@
+{
+  "name": "desarrolloweb",
+  "version": "1.0.0",
+  "description": "- 👋 Hi, I’m @ratofante, also known as Rodrigo :) A graduated philosopher and former investigator. \r - 👀 I’m interested in programming and web development. \r - 🌱 I’m currently learning PHP and Javascript. \r - 💞️ I’m looking for work and opportunities for learning and get more involved in this wonderful world.\r - 📫 How to reach me: gwilkens.r@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss resources/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratofante/desarrolloWeb.git"
+  },
+  "keywords": [],
+  "author": "Rodrigo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratofante/desarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/ratofante/desarrolloWeb#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {}
+}

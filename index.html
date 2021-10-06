@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="resources/css/aftercss.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
 </head>
 <body>
 <div class="container-fluid" style="padding:0px;overflow-x: hidden;">
@@ -16,37 +16,37 @@
 	<div class="collapse" id="navbarToggleExternalContent">
 	  <div class="bg-dark p-4">
 	    <h5 class="text-white h4">Sections</h5>
-	    <nav class="navbar navbar-dark bg-dark container-fluid">
+	    <nav class="navbar-dark bg-dark container-fluid">
 			<ul class="navbar-nav">
 				<li class="nav-item d-flex justify-content-between pt-0">
-					<div class="w-25">
-						<img class="w-100" src="resources/img/minilogo1.png">
+					<div class="nav-item__menudiv">
+						<img class="nav-item__menudiv__img" src="resources/img/minilogo1.png">
 					</div>
-					<a class="nav-link ml-3" href="">Home</a>
+					<a class="nav-item__link nav-link ml-3" href="">Home</a>
 				</li>
 				<li class="nav-item d-flex justify-content-between pt-3">			
-					<div class="w-25">
-						<img class="w-100" src="resources/img/minilogo2.png">
+					<div class="nav-item__menudiv">
+						<img class="nav-item__menudiv__img" src="resources/img/minilogo2.png">
 					</div>
-					<a class="nav-link float-end" href="">Pokedex</a>
+					<a class="nav-item__link nav-link float-end" href="">Pokedex</a>
 				</li>
 				<li class="nav-item d-flex justify-content-between pt-3">					
-					<div class="w-25">
-						<img class="w-100" src="resources/img/minilogo3.png">
+					<div class="nav-item__menudiv">
+						<img class="nav-item__menudiv__img" src="resources/img/minilogo3.png">
 					</div>
-					<a class="nav-link float-end" href="">Quiz</a>
+					<a class="nav-item__link nav-link float-end" href="">Quiz</a>
 				</li>
 				<li class="nav-item d-flex justify-content-between pt-3">				
-					<div class="w-25">
-						<img class="w-100" src="resources/img/minilogo4.png">
+					<div class="nav-item__menudiv">
+						<img class="nav-item__menudiv__img" src="resources/img/minilogo4.png">
 					</div>
-					<a class="nav-link float-end" href="">About</a>
+					<a class="nav-item__link nav-link float-end" href="">About</a>
 				</li>
 				<li class="nav-item d-flex justify-content-between pt-3">					
-					<div class="w-25">
-						<img class="w-100" src="resources/img/minilogo5.png">
+					<div class="nav-item__menudiv">
+						<img class="nav-item__menudiv__img" src="resources/img/minilogo5.png">
 					</div>
-					<a class="nav-link float-end" href="">Contact</a>
+					<a class="nav-item__link nav-link float-end" href="">Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -63,20 +63,22 @@
 
 
 	<!-- HEADER -->	
-	<header>
+	<header class="header">
 		<div class="jumbotron container-fluid bg-light">
 			<div class="row">
 				<!-- Logo & firma -->
 			<div class="col-8 col-md-5 col-lg-3">
-				<h1 id="main-header" class="display-2 display-lg-1 d-lg-block pl-lg-5">Pokedex</h1>
-				<small id="firma">By RGW</small>
+				<h1 class="header__title display-2 display-lg-1 d-lg-block pl-lg-5">Pokedex</h1>
+				<small class="header__firma">By RGW</small>
 			</div>
 				<!-- img pokeball -->
 			<div class="col-4 col-md-7 col-lg-9 d-flex align-items-center justify-content-md-between">
-				<img class="img-rounded w-100" id="poke-logo" src="resources/img/pokeball2-dark.png" alt="Logo">
+				<div class="header__img1div">
+					<img class="header__img1div__img" src="resources/img/pokeball2-dark.png" alt="Logo">
+				</div>
 					<!-- img odish -->
-				<div id="odish-container" class="d-none d-md-inline d-lg-inline float-right">
-					<img id="odish_img" class="img-rounded w-100" src="resources/img/odish.png">
+				<div class="header__img2div">
+					<img class="header__img2div__img2" src="resources/img/odish.png">
 				</div>
 			</div>
 				
@@ -109,27 +111,24 @@
 	<main>
 		<div class="container-fluid">
 
-			<!-- ROW -->
+			<!-- ROW 0 -->
 			<div class="row">
-
 				<!-- COL -->
-				<div class="">
-
-					<section class="m-md-5 p-md-5">
-						<h2 class="text-center mt-5 mb-md-4">Welcome !</h2>
-						<p class="text-left text-md-center">This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
-						<!--div id="welcome_img">
-								<img class="mw-100 rounded" style="background-color:#fff" src="resources/img/pokemons1.png" alt="poke_group">
-						</div-->
-						<p class="py-0 my-0 mt-md-3 text-center d-lg-none"> Scroll down to see more!</p>
-						<div class="miniball my-3 mx-auto pt-lg-3" style="width:25px">
-							<img src="resources/img/miniball.png" class="img-fluid my-3 mt-md-3 w-100" alt="pokeball">
-						</div>
-					</section>
-				</div>
+				<section class="section">
+					<h2 class="section__title">Welcome !</h2>
+					<p class="section__text text-left text-md-center">This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
+					<!--div id="welcome_img">
+							<img class="mw-100 rounded" style="background-color:#fff" src="resources/img/pokemons1.png" alt="poke_group">
+					</div-->
+					<p class="section__last py-0 my-0 mt-md-3 text-center d-lg-none"> Scroll down to see more!</p>
+					<div class="section__balldiv">
+						<img class="section__balldiv__ball" src="resources/img/miniball.png" alt="pokeball">
+					</div>
+				</section>
 			</div>
+			<!-- Cierre Row 0 -->
 
-			<!-- ROW -->
+			<!-- ROW A-->
 			<div class="row mb-lg-5">
 
 				<!-- COL -->
@@ -184,17 +183,18 @@
 					</aside>
 				</div>
 			</div>
+			<!-- Cierre ROW A -->
 
-			<!-- ROW BETA-->
+			<!-- ROW B-->
 			<div class="container sections-container">
 			<div class="row">	
 				<div class="col-lg-6">
-					<section class="my-3 p-3">
-						<h2>The Pokedex</h2>
-						<p>In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
+					<section class="sectionp">
+						<h2 class="sectionp__title">The Pokedex</h2>
+						<p class="sectionp__text">In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
 						<div class="container">
-							<p class="text-center">Try catching a pokemon by Id!</p>
-							<a class="d-block mx-auto text-center" href="views/pokedex.html">Let's Go!</a>
+							<p class="sectionp__frase">Try catching a pokemon by Id!</p>
+							<a class="sectionp__link" href="views/pokedex.html">Let's Go!</a>
 						</div>
 						<div class="miniball mx-auto pt-lg-3" style="width:25px">
 							<img src="resources/img/miniball.png" class="img-fluid my-3 w-100" alt="pokeball">
@@ -202,10 +202,10 @@
 					</section>
 				</div>
 				<div class="col-lg-6">
-					<section class="my-3 p-3">
-						<h2>Quiz Section</h2>
-						<p>Put your Pokemon knowledge to test with the Quiz!</p>
-						<p>In this section you can find questions related to all 151 pokemons</p>
+					<section class="sectionq">
+						<h2 class="sectionq__title">Quiz Section</h2>
+						<p class="sectionq__text">Put your Pokemon knowledge to test with the Quiz!</p>
+						<p class="sectionq__text">In this section you can find questions related to all 151 pokemons</p>
 						<div class="container">
 							<p class="text-center">Let's give it a try! </p>
 							<a class="d-block mx-auto text-center" href="views/about.html">Let's Go!</a>
@@ -216,12 +216,12 @@
 					</section>
 				</div>
 				<div class="col-lg-6">
-					<section class="my-3 p-3">
-						<h2>About</h2>
-						<p>Everything you need to know about this site</p>	
-						<div class="container">
-							<p class="text-center">Go to section</p>
-							<a class="d-block mx-auto text-center" href="views/about.html">Let's Go!</a>
+					<section class="about">
+						<h2 class="about__title">About</h2>
+						<p class="about__text">Everything you need to know about this site</p>	
+						<div class="about__div container">
+							<p class="about__div__text text-center">Go to section</p>
+							<a class="about__div__link d-block mx-auto text-center" href="views/about.html">Let's Go!</a>
 						</div>
 						<div class="miniball mx-auto pt-lg-3" style="width:25px">
 							<img src="resources/img/miniball.png" class="img-fluid my-3 w-100" alt="pokeball">
@@ -230,11 +230,11 @@
 				</div>
 				<div class="col-lg-6">
 					<aside>
-							<section class="my-3 p-3 bg-light text-black">
-								<h2 class="text-center text-dark">Contact Me!</h2>
-								<p class="text-center">Wanna learn more about the project?</p>
-								<p class="text-center">Do you want to collaborate?</p>
-								<div class="container">					
+							<section class="contact">
+								<h2 class="contact__title">Contact Me!</h2>
+								<p class="contact__ask">Wanna learn more about the project?</p>
+								<p class="contact__ask">Do you want to collaborate?</p>
+								<div class="container">				
 									<p class="text-center">Send us an email !</p>
 									<a class="d-block mx-auto text-center" href="views/contact.html">Let's Go!</a>
 								</div>
@@ -245,22 +245,22 @@
 					</aside>
 				</div>
 
-			<!-- CIERRE ROW BETA -->
+			<!-- CIERRE ROW B -->
 			</div>
 			</div>	
 	</main>
-	<footer id="my-footer" class="container w-100 mt-3 py-0 bg-dark text-white">
-		<div class="row">
+	<footer class="footer container">
+		<!--div class="row"-->
 			<div class="col-3">
-				<div class="mx-auto" style="width:80px">
-					<img class="w-100" src="resources/img/footer_logo.png" alt="logo_footer">
+				<div class="footer__logo">
+					<img class="footer__logo__img" src="resources/img/footer_logo.png" alt="logo_footer">
 				</div>
 			</div>
-			<div class="col-9">
-				<p class="mb-0">Author: Rodrigo González Wilkens</p>
-				<small>no copyright infringement intended</small>
+			<div class="footer__textdiv col-9">
+				<p class="footer__textdiv__text">Author: Rodrigo González Wilkens</p>
+				<small class="footer__textdiv__copyrights">no copyright infringement intended</small>
 			</div>
-		</div>
+		<!--/div-->
 	</footer>	
 
 </div>
