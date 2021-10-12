@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html class="home_bg">
+<html class="home-bg">
 <head>
 	<title>Pokedex</title>
 	<meta charset="utf-8">
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
 </head>
 <body>
-<div class="container-fluid" style="padding:0px;overflow-x: hidden;">
+<div class="wrapper container-fluid">
 	
 	<!-- NAVBAR -->	
 	<div class="fixed-top" style="max-width: 100vw; overflow-x: hidden;">
 	<div class="collapse" id="navbarToggleExternalContent">
 	  <div class="bg-dark p-4">
-	    <h5 class="text-white h4">Sections</h5>
+	    <h5 id="navbar-title">Sections</h5>
 	    <nav class="navbar-dark bg-dark container-fluid">
 			<ul class="navbar-nav">
 				<li class="nav-item d-flex justify-content-between pt-0">
@@ -28,25 +28,25 @@
 					<div class="nav-item__menudiv">
 						<img class="nav-item__menudiv__img" src="resources/img/minilogo2.png">
 					</div>
-					<a class="nav-item__link nav-link float-end" href="">Pokedex</a>
+					<a class="nav-item__link nav-link float-end" href="views/pokedex.html">Pokedex</a>
 				</li>
 				<li class="nav-item d-flex justify-content-between pt-3">					
 					<div class="nav-item__menudiv">
 						<img class="nav-item__menudiv__img" src="resources/img/minilogo3.png">
 					</div>
-					<a class="nav-item__link nav-link float-end" href="">Quiz</a>
+					<a class="nav-item__link nav-link float-end" href="views/quiz.html">Quiz</a>
 				</li>
 				<li class="nav-item d-flex justify-content-between pt-3">				
 					<div class="nav-item__menudiv">
 						<img class="nav-item__menudiv__img" src="resources/img/minilogo4.png">
 					</div>
-					<a class="nav-item__link nav-link float-end" href="">About</a>
+					<a class="nav-item__link nav-link float-end" href="views/about.html">About</a>
 				</li>
 				<li class="nav-item d-flex justify-content-between pt-3">					
 					<div class="nav-item__menudiv">
 						<img class="nav-item__menudiv__img" src="resources/img/minilogo5.png">
 					</div>
-					<a class="nav-item__link nav-link float-end" href="">Contact</a>
+					<a class="nav-item__link nav-link float-end" href="views/contact.html">Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -64,25 +64,25 @@
 
 	<!-- HEADER -->	
 	<header class="header">
-		<div class="jumbotron container-fluid bg-light">
-			<div class="row">
-				<!-- Logo & firma -->
-			<div class="col-8 col-md-5 col-lg-3">
+		<div class="header__panel jumbotron container-fluid bg-light">
+		<div id="header_row" class="row">
+			<!-- Logo & firma -->
+			<div class="col col-md-10 col-lg-10">
 				<h1 class="header__title display-2 display-lg-1 d-lg-block pl-lg-5">Pokedex</h1>
 				<small class="header__firma">By RGW</small>
-			</div>
-				<!-- img pokeball -->
-			<div class="col-4 col-md-7 col-lg-9 d-flex align-items-center justify-content-md-between">
 				<div class="header__img1div">
 					<img class="header__img1div__img" src="resources/img/pokeball2-dark.png" alt="Logo">
 				</div>
+			</div>
+				<!-- img pokeball -->
+			<div class="d-none d-md-flex col-md-2 col-lg-2">
+
 					<!-- img odish -->
 				<div class="header__img2div">
 					<img class="header__img2div__img2" src="resources/img/odish.png">
 				</div>
 			</div>
-				
-			</div>
+		</div>
 		</div>
 	</header>
 
@@ -114,15 +114,15 @@
 			<!-- ROW 0 -->
 			<div class="row">
 				<!-- COL -->
-				<section class="section">
-					<h2 class="section__title">Welcome !</h2>
-					<p class="section__text text-left text-md-center">This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
+				<section class="sectionc">
+					<h2 class="sectionc__title">Welcome !</h2>
+					<p class="sectionc__text text-left text-md-center">This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
 					<!--div id="welcome_img">
 							<img class="mw-100 rounded" style="background-color:#fff" src="resources/img/pokemons1.png" alt="poke_group">
 					</div-->
-					<p class="section__last py-0 my-0 mt-md-3 text-center d-lg-none"> Scroll down to see more!</p>
-					<div class="section__balldiv">
-						<img class="section__balldiv__ball" src="resources/img/miniball.png" alt="pokeball">
+					<p class="sectionc__last py-0 my-0 mt-md-3 text-center d-lg-none"> Scroll down to see more!</p>
+					<div class="sectionc__balldiv">
+						<img class="sectionc__balldiv__ball" src="resources/img/miniball.png" alt="pokeball">
 					</div>
 				</section>
 			</div>
@@ -189,48 +189,47 @@
 			<div class="container sections-container">
 			<div class="row">	
 				<div class="col-lg-6">
-					<section class="sectionp">
-						<h2 class="sectionp__title">The Pokedex</h2>
-						<p class="sectionp__text">In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
+					<section id="pokedex_card" class="sectionl">
+						<h2 class="sectionl__title">The Pokedex</h2>
+						<p class="sectionl__text">In this section you can search and learn all about the different pokemons. Find out what type a pokemon is and all the moves he/she can learn</p>
 						<div class="container">
-							<p class="sectionp__frase">Try catching a pokemon by Id!</p>
-							<a class="sectionp__link" href="views/pokedex.html">Let's Go!</a>
+							<p class="sectionl__frase">Try catching a pokemon by Id!</p>
+							<a class="sectionl__link" href="views/pokedex.html">Let's Go!</a>
 						</div>
-						<div class="miniball mx-auto pt-lg-3" style="width:25px">
-							<img src="resources/img/miniball.png" class="img-fluid my-3 w-100" alt="pokeball">
+						<div class="sectionl__balldiv">
+							<img class="sectionl__balldiv__ball" src="resources/img/miniball.png" alt="pokeball">
 						</div>
 					</section>
 				</div>
 				<div class="col-lg-6">
-					<section class="sectionq">
-						<h2 class="sectionq__title">Quiz Section</h2>
-						<p class="sectionq__text">Put your Pokemon knowledge to test with the Quiz!</p>
-						<p class="sectionq__text">In this section you can find questions related to all 151 pokemons</p>
+					<section id="quiz_card" class="sectionr">
+						<h2 class="sectionr__title">Quiz Section</h2>
+						<p class="sectionr__text">Put your Pokemon knowledge to test with the Quiz! <br> In this section you can find questions related to all 151 pokemons</p>
 						<div class="container">
 							<p class="text-center">Let's give it a try! </p>
-							<a class="d-block mx-auto text-center" href="views/about.html">Let's Go!</a>
+							<a class="d-block mx-auto text-center" href="views/quiz.html">Let's Go!</a>
 						</div>
-						<div class="miniball mx-auto pt-lg-3" style="width:25px">
-							<img src="resources/img/miniball.png" class="img-fluid my-3 w-100" alt="pokeball">
+						<div class="sectionr__balldiv">
+							<img class="sectionr__balldiv__ball" src="resources/img/miniball.png" alt="pokeball">
 						</div>
 					</section>
 				</div>
 				<div class="col-lg-6">
-					<section class="about">
+					<section id="about_card" class="about">
 						<h2 class="about__title">About</h2>
 						<p class="about__text">Everything you need to know about this site</p>	
 						<div class="about__div container">
 							<p class="about__div__text text-center">Go to section</p>
 							<a class="about__div__link d-block mx-auto text-center" href="views/about.html">Let's Go!</a>
 						</div>
-						<div class="miniball mx-auto pt-lg-3" style="width:25px">
-							<img src="resources/img/miniball.png" class="img-fluid my-3 w-100" alt="pokeball">
+						<div class="about__balldiv">
+							<img class="about__balldiv__ball" src="resources/img/miniball.png" alt="pokeball">
 						</div>
 					</section>
 				</div>
 				<div class="col-lg-6">
 					<aside>
-							<section class="contact">
+							<section id="contact_card" class="contact">
 								<h2 class="contact__title">Contact Me!</h2>
 								<p class="contact__ask">Wanna learn more about the project?</p>
 								<p class="contact__ask">Do you want to collaborate?</p>
@@ -251,12 +250,12 @@
 	</main>
 	<footer class="footer container">
 		<!--div class="row"-->
-			<div class="col-3">
+			<div class="col-1">
 				<div class="footer__logo">
 					<img class="footer__logo__img" src="resources/img/footer_logo.png" alt="logo_footer">
 				</div>
 			</div>
-			<div class="footer__textdiv col-9">
+			<div class="footer__textdiv col-11">
 				<p class="footer__textdiv__text">Author: Rodrigo González Wilkens</p>
 				<small class="footer__textdiv__copyrights">no copyright infringement intended</small>
 			</div>
@@ -268,3 +267,4 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>	
 </body>
+</html>

@@ -2,48 +2,75 @@
 /* Media queries */
 /* Font Families */
 /* Weights */
-.nav-item__menudiv {
-  width: 40px; }
-  .nav-item__menudiv__img {
-    width: 100%; }
+#navbar-title {
+  font-size: 3.5rem;
+  color: white;
+  font-family: "VT323", monospace; }
 
-.nav-item__link {
-  font-size: 1.2rem; }
-  @media screen and (min-width: 766px) {
-    .nav-item__link {
-      font-size: 1.3rem; } }
+.nav-item {
+  max-width: 130px;
+  font-family: "Fira Mono", monospace; }
+  @media screen and (min-width: 992px) {
+    .nav-item {
+      max-width: 165px; } }
+  .nav-item__menudiv {
+    width: 40px; }
+    .nav-item__menudiv__img {
+      width: 100%; }
+  .nav-item__link {
+    font-size: 1.2rem; }
+    @media screen and (min-width: 766px) {
+      .nav-item__link {
+        font-size: 1.3rem; } }
+
+#header_row {
+  background: #889797a6; }
 
 .header {
-  box-shadow: 0px 13px 35px #00000033;
-  margin-top: 75px;
-  margin-bottom: 20px; }
+  box-shadow: 0px -23px 49px #00000057;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid black; }
   .header__title {
     font-family: "Lobster Two", cursive;
     color: green;
-    font-size: 5rem; }
+    font-size: 5.3rem; }
     @media screen and (min-width: 766px) {
       .header__title {
         font-size: 7rem; } }
+  .header__panel {
+    height: 130px;
+    background: #889797a6; }
+    @media screen and (min-width: 766px) {
+      .header__panel {
+        height: 23vh;
+        max-height: 162px; } }
   .header__firma {
     font-family: "VT323", monospace;
     font-size: 1.6rem;
-    position: relative;
-    bottom: 30px;
-    left: 175px; }
+    display: inline-block;
+    position: absolute;
+    top: 138px;
+    left: 194px; }
     @media screen and (min-width: 766px) {
       .header__firma {
         font-size: 2.2rem;
-        bottom: 38px;
-        left: 260px; } }
+        position: absolute;
+        top: 157px;
+        left: 284px; } }
   .header__img1div {
-    width: 80px;
-    position: relative;
-    left: 5px; }
-    .header__img1div__img {
-      width: 100%; }
+    width: 124px;
+    display: inline-block;
+    position: absolute;
+    left: 246px;
+    top: 87px; }
     @media screen and (min-width: 766px) {
       .header__img1div {
-        width: 120px; } }
+        position: absolute;
+        top: 107px;
+        left: 317px; } }
+    .header__img1div__img {
+      width: 100%; }
   .header__img2div {
     display: none; }
     .header__img2div__img2 {
@@ -52,6 +79,10 @@
       .header__img2div {
         display: inline-block;
         width: 110px; } }
+
+.wrapper {
+  padding: 0px;
+  overflow-x: hidden; }
 
 #carouselExampleInterval {
   height: 180px;
@@ -63,99 +94,126 @@
     #carouselExampleInterval {
       height: 630px; } }
 
-.section, .sectionp, .sectionq, .about {
+.sectionc, .sectionl, .sectionr, .about, .contact {
   box-shadow: 2px -2px 8px #00000087;
-  padding: 10px 0px;
-  margin: 16px auto; }
-  .section__title {
+  padding: 1.5rem 1rem;
+  margin: 16px auto;
+  height: 95%; }
+  @media screen and (min-width: 992px) {
+    .sectionc, .sectionl, .sectionr, .about, .contact {
+      margin: auto; } }
+  .sectionc__title, .sectionl__title, .sectionr__title, .contact__title, .about__title {
     font-size: 2rem;
-    text-align: center; }
+    text-align: center;
+    background: #f0f8ff73;
+    color: black; }
     @media screen and (min-width: 766px) {
-      .section__title {
+      .sectionc__title, .sectionl__title, .sectionr__title, .contact__title, .about__title {
         font-size: 2.7rem; } }
-  .section__text {
-    padding: 0px 1rem; }
+  .sectionc__text {
+    padding: 10px 1rem;
+    font-family: "Fira Mono", monospace; }
     @media screen and (min-width: 766px) {
-      .section__text {
+      .sectionc__text {
         font-size: 1.3rem; } }
-  .section__last {
+  .sectionc__last {
     font-size: 1rem;
     font-weight: 700; }
     @media screen and (min-width: 766px) {
-      .section__last {
+      .sectionc__last {
         font-size: 1.3rem; } }
-  .section__balldiv {
+  .sectionc__balldiv {
     width: 25px;
     margin: auto; }
     @media screen and (min-width: 766px) {
-      .section__balldiv {
+      .sectionc__balldiv {
         width: 30px; } }
-    .section__balldiv__ball {
+    .sectionc__balldiv__ball {
       width: 100%; }
 
-.sectionp, .sectionq {
-  margin: 0px 1rem;
-  padding: 1.5rem 1rem;
-  height: 95%;
-  margin-bottom: 10px; }
-  .sectionp__title {
-    text-align: left; }
-  .sectionp__text, .sectionq__text, .about__text {
-    font-family: "Fira Mono", monospace; }
-  .sectionp__frase {
-    text-align: center; }
-  .sectionp__link {
-    display: block;
-    margin: auto;
-    color: green;
-    font-weight: 700;
-    text-align: center; }
+@media screen and (min-width: 992px) {
+  .sectionl, .sectionr, .about, .contact {
+    margin: auto; } }
 
-.sectionq {
-  background-color: #80808033; }
-  .sectionq__title {
-    color: green;
-    text-align: right; }
-
-.about {
-  background-color: green;
-  border-radius: 45px; }
-  .about__title {
-    text-align: center;
-    color: white; }
-  .about__text {
-    text-align: center;
-    line-height: 40px;
-    padding: 2rem;
-    background-color: black;
-    border: 1px solid gray;
-    border-radius: 45px;
-    color: white; }
-  .about__div {
-    border: 1px solid gray; }
-    .about__div__text {
-      text-align: center; }
-    .about__div__link {
-      display: block;
-      margin: auto;
-      text-align: center; }
-
-.contact {
-  font-size: 2rem;
-  margin: 4rem -2rem;
-  padding: 3rem;
-  color: white;
-  background-color: gray;
-  font-family: "VT323", monospace; }
+.sectionl__title, .sectionr__title, .contact__title, .about__title {
+  text-align: left; }
   @media screen and (min-width: 766px) {
-    .contact {
-      margin: 4rem 8rem; } }
-  .contact__title {
-    text-align: center;
-    font-size: 3rem; }
-  .contact__ask {
-    font-family: "Fira Mono", monospace;
-    font-size: 1.5rem; }
+    .sectionl__title, .sectionr__title, .contact__title, .about__title {
+      font-size: 2.7rem; } }
+
+.sectionl__text, .sectionr__text, .about__text {
+  padding: 10px 1rem;
+  font-family: "Fira Mono", monospace;
+  background: #f0f8ff73; }
+  @media screen and (min-width: 766px) {
+    .sectionl__text, .sectionr__text, .about__text {
+      font-size: 1.3rem; } }
+
+.sectionl__last {
+  font-size: 1rem;
+  font-weight: 700; }
+  @media screen and (min-width: 766px) {
+    .sectionl__last {
+      font-size: 1.3rem; } }
+
+.sectionl__balldiv, .sectionr__balldiv, .about__balldiv {
+  width: 25px;
+  margin: auto; }
+  @media screen and (min-width: 766px) {
+    .sectionl__balldiv, .sectionr__balldiv, .about__balldiv {
+      width: 30px; } }
+  .sectionl__balldiv__ball, .sectionr__balldiv__ball, .about__balldiv__ball {
+    width: 100%; }
+
+.sectionr__title, .contact__title {
+  color: white;
+  text-align: right; }
+
+.sectionr__text, .about__text {
+  color: antiquewhite; }
+
+.sectionr__frase {
+  text-align: center; }
+
+.sectionr__link {
+  display: block;
+  margin: auto;
+  color: green;
+  font-weight: 700;
+  text-align: center; }
+
+.about__text {
+  color: black; }
+
+.about__div__text {
+  text-align: center; }
+
+@media screen and (min-width: 992px) {
+  .contact {
+    margin: auto; } }
+
+.contact__ask {
+  font-family: "Fira Mono", monospace;
+  padding: 10px 1rem;
+  color: white; }
+  @media screen and (min-width: 766px) {
+    .contact__ask {
+      text-align: center;
+      font-size: 1.3rem; } }
+
+#pokedex_card {
+  background: url(../img/day_bg.png) no-repeat center center fixed; }
+
+#quiz_card {
+  background: url(../img/night_bg.png);
+  background-size: cover; }
+
+#about_card {
+  background: url(../img/home_bg.png);
+  background-size: cover; }
+
+#contact_card {
+  background: url(../img/day_bg.png) no-repeat center center fixed; }
 
 #primer-boton, .accordion-button {
   font-size: 1.3rem;
@@ -172,9 +230,14 @@
   width: 100vw;
   max-width: 100vw;
   background-color: #101862;
-  color: white; }
+  color: white;
+  border-top-left-radius: 46px;
+  border-start-end-radius: 56px;
+  border-end-end-radius: 42px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 11px;
+  justify-content: space-between; }
   .footer__logo {
-    margin: auto;
     width: 80px; }
     .footer__logo__img {
       width: 100%; }
@@ -185,4 +248,8 @@
       margin-bottom: 0px; }
     .footer__textdiv__copyrights {
       font-family: "VT323", monospace;
-      font-size: 1rem; }
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+      letter-spacing: 2px;
+      padding-left: 1rem; }

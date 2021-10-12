@@ -1,4 +1,14 @@
+#navbar-title {
+	font-size: 3.5rem;
+	color: white;
+	font-family: $special-font;
+}
 .nav-item {
+	max-width: 130px;
+	font-family: $normal-font;
+	@include square_pc {
+	max-width: 165px;
+	}
 	&__menudiv {
 		width: 40px;
 		&__img {
