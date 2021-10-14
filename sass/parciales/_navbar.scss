@@ -2,6 +2,12 @@
 	max-width: 100vw;
 	overflow-x: hidden;
 }
+.navbar {height: 55px;}
+button .navbar-toggler {
+	height: 35px;
+    display: flex;
+    align-items: center;
+}
 #navbar-title {
 	font-size: 3.5rem;
     color: white;

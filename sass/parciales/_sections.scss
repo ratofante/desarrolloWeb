@@ -22,7 +22,7 @@ button .accordion-button {
 }
 .welcome {
 	@extend section;
-	background: url("../img/home_bg.png") no-repeat center center fixed;;
+	background: url("../img/home_bg.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -53,7 +53,7 @@ button .accordion-button {
 }
 .pokedex {
 	@extend section;
-	background: url("../img/home_bg.png") no-repeat center center fixed;;
+	background: url("../img/home_bg.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -86,7 +86,7 @@ button .accordion-button {
 }
 .quiz {
 	@extend section;
-	background: url("../img/night_bg.png") no-repeat center center fixed;;
+	background: url("../img/day_bg.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -95,20 +95,20 @@ button .accordion-button {
 
 		&__title {
 			@extend .section_title;
-			color: white;
+			color: $black-color;
 		}
 	}
 	&__down {
 		&__text {
 			text-decoration: none;
     		color: $white-color;
-    		background-color: #f0ffff4a;
+    		background-color: #27302ee0;
     		padding: 0.2rem;
 		}
 		&__box {
 			&__text {
 				text-decoration: none;
-				color: #cef9f9;
+				color: $white-color;
 			}
 			&__imgdiv {
 				@extend .miniball;
@@ -137,7 +137,8 @@ button .accordion-button {
 		&__box {
 			&__text {
 				text-decoration: none;
-				color: $white-color;
+				color: $black-color;
+				font-weight: $bold;
 			}
 			&__imgdiv {
 				@extend .miniball;
@@ -151,7 +152,7 @@ button .accordion-button {
 }
 .contact {
 	@extend section;
-	background: url("../img/night_bg.png") no-repeat center center fixed;;
+	background: url("../img/night_bg.png");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -186,4 +187,22 @@ button .accordion-button {
 
 	}
 }
+
+.wrapdiv {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	background: url("../img/poster3wide.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.p404 {
+	max-width: 1280px;
+	max-height: 720px;
+}
+
 
