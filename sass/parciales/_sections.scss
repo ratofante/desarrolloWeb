@@ -1,182 +1,189 @@
-.sectionc {
-	box-shadow: 2px -2px 8px #00000087;
-	padding: 1.5rem 1rem;
-	margin: 16px auto;
-	height: 95%;
-	@include square-pc {
-		margin: auto;
-	}
-	&__title {
-		font-size: 2rem;
-		text-align: center;
-		background: #f0f8ff73;
-		color: black;
-		@include tablet {
-			font-size: 2.7rem;
-		}
-	}
-	&__text {
-		padding: 10px 1rem;
-		font-family: $normal-font;
-		@include tablet {
-			font-size: 1.3rem;
-		}
-	}
-	&__last {
-		font-size: 1rem;
-		font-weight: $bold;
-		@include tablet {
-			font-size: 1.3rem;
-		}
-	}
-	&__balldiv {
-		width: 25px;
-		margin: auto;
-		@include tablet {
-			width: 30px;
-		}
-		&__ball {
-			width: 100%;
-		}
-	}
+section {
+	padding: 1rem;
+	background-color: $section;
+	text-align: center;
+	margin: 1rem;
 }
-.sectionl {
-	@extend .sectionc;
-	@include square-pc {
-		margin: auto;
-	}
-	&__title {
-		@extend .sectionc__title;
-		text-align: left;
-		@include tablet {
-			font-size: 2.7rem;
-		}
-	}
-	&__text {
-		padding: 10px 1rem;
-		font-family: $normal-font;
-		background: #f0f8ff73;
-		@include tablet {
-			font-size: 1.3rem;
-		}
-	}
-	&__last {
-		font-size: 1rem;
-		font-weight: $bold;
-		@include tablet {
-			font-size: 1.3rem;
-		}
-	}
-	&__balldiv {
-		width: 25px;
-		margin: auto;
-		@include tablet {
-			width: 30px;
-		}
-		&__ball {
-			width: 100%;
-		}
-	}
+.section_title {
+	font-family: $title2;
+	font-size: 2.5rem;
+}
+.miniball {
+	width: 26px;
+	margin: auto;
 }
 
-.sectionr {
-	@extend .sectionl;
-	&__title {
-		@extend .sectionl__title;
-		color: white;
-		text-align: right;
-	}
-	&__text {
-		@extend .sectionl__text;
-		color: antiquewhite;
-	}
-	&__frase {
-		text-align: center;
-	}
-	&__link {
-		display: block;
-		margin: auto;		
-		color: green;
-		font-weight: $bold;
-		text-align: center;
-	}
-	&__balldiv {
-		@extend .sectionl__balldiv;
-		&__ball {
-			@extend .sectionl__balldiv__ball;
+.acordeon {}
+.accordion-item {
+
+}
+button .accordion-button {
+	background-color: gray;
+}
+.welcome {
+	@extend section;
+	background: url("../img/home_bg.png") no-repeat center center fixed;;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	&__up {
+
+		&__title{
+			@extend .section_title;
 		}
 	}
-}
-
-.about {
-	@extend .sectionl;
-	@extend .sectionr;
-	&__title {
-		@extend .sectionl__title;
-	}
-	&__text {
-		@extend .sectionr__text;
-		color: black;
-	}
-	&__div {
+	&__down {
 		&__text {
-			text-align: center;
+			text-align: left;
 		}
-		&__link {
+		&__box {
+			&__text {
+				font-weight: bold;
+				margin-bottom:  5px;
+			}
+			&__imgdiv {
+				@extend .miniball;
+				&__img {
+					width: 100%;
+				}
+			}
 		}
 	}
-	&__balldiv {
-		@extend .sectionl__balldiv;
-		&__ball {
-			@extend .sectionl__balldiv__ball;
+}
+.pokedex {
+	@extend section;
+	background: url("../img/home_bg.png") no-repeat center center fixed;;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	&__up {
+
+		&__title {
+			@extend .section_title;
 		}
+	}
+	&__down {
+		&__text {
+			@text-align: left;
+		}
+		&__box {
+			&__text {
+				text-decoration: none;
+				color: $black-color;
+				font-weight: $bold;
+			}
+			&__imgdiv {
+				@extend .miniball;
+				&__img {
+					width: 100%;
+				}
+			}
+		}
+
+	}
+}
+.quiz {
+	@extend section;
+	background: url("../img/night_bg.png") no-repeat center center fixed;;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	&__up {
+
+		&__title {
+			@extend .section_title;
+			color: white;
+		}
+	}
+	&__down {
+		&__text {
+			text-decoration: none;
+    		color: $white-color;
+    		background-color: #f0ffff4a;
+    		padding: 0.2rem;
+		}
+		&__box {
+			&__text {
+				text-decoration: none;
+				color: #cef9f9;
+			}
+			&__imgdiv {
+				@extend .miniball;
+				&__img {
+					width: 100%;
+				}
+			}
+		}
+
+	}
+}
+.about {
+	@extend section;
+	&__up {
+
+		&__title {
+			@extend .section_title;
+			
+		}
+	}
+	&__down {
+		&__text {
+			@text-align: left;
+
+		}
+		&__box {
+			&__text {
+				text-decoration: none;
+				color: $white-color;
+			}
+			&__imgdiv {
+				@extend .miniball;
+				&__img {
+					width: 100%;
+				}
+			}
+		}
+
 	}
 }
 .contact {
-	@extend .sectionl;
-	@extend .sectionr;
-	@include tablet {
-		;
-	}
-	@include square-pc {
-		margin: auto;
-	}
-	&__title {
-		@extend .sectionr__title;
-	}
-	&__ask {
-		font-family: $normal-font;
-		padding: 10px 1rem;
-		color: white;
-		@include tablet {
-			text-align: center;
-			font-size: 1.3rem;
-		}
-		@include square-pc {
+	@extend section;
+	background: url("../img/night_bg.png") no-repeat center center fixed;;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	&__up {
 
+		&__title {
+			@extend .section_title;
+			color: $white-color;
 		}
 	}
-}
-#pokedex_card {
-	background: url(../img/day_bg.png) no-repeat center center fixed;
-}
-#quiz_card {
-	background: url(../img/night_bg.png);
-	background-size: cover;
-}
-#about_card {
-	background: url(../img/home_bg.png);
-	background-size: cover;
-}
-#contact_card {
-	background: url(../img/day_bg.png) no-repeat center center fixed;
-}
-#primer-boton, .accordion-button {
-	font-size: 1.3rem;
-	padding: 1rem;
-}
-.accordion-body {
-	font-size: 1.2rem;
-}
+	&__down {
+		&__text {
+			@text-align: left;
+			text-decoration: none;
+    		color: $white-color;
+    		background-color: #f0ffff4a;
+    		padding: 0.2rem;
+		}
+		&__box {
+			&__text {
+				text-decoration: none;
+				color: $white-color;
+			}
+			&__imgdiv {
+				@extend .miniball;
+				&__img {
+					width: 100%;
+				}
+			}
+		}
 
+	}
+}
 

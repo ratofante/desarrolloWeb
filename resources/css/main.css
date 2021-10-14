@@ -1,15 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Lobster+Two&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lobster&family=Lobster+Two:wght@400;700&family=VT323&display=swap");
 /* Media queries */
-/* Font Families */
+/* Font Families 
+
+    font-family: 'Fira Mono', monospace;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Lobster Two', cursive;
+
+    font-family: 'VT323', monospace; */
 /* Weights */
+/* Colors */
+/* BG colors */
+.navbar_wrapper {
+  max-width: 100vw;
+  overflow-x: hidden; }
+
 #navbar-title {
   font-size: 3.5rem;
   color: white;
-  font-family: "VT323", monospace; }
+  font-family: "Lobster Two", cursive;
+  letter-spacing: 6px;
+  padding-left: 1rem;
+  margin-bottom: 20px;
+  max-width: 210px;
+  box-shadow: -2px 3px 1px white; }
 
 .nav-item {
-  max-width: 130px;
-  font-family: "Fira Mono", monospace; }
+  max-width: 144px; }
+  .nav-item__link {
+    font-family: "Fira Mono", monospace;
+    letter-spacing: 2px; }
   @media screen and (min-width: 992px) {
     .nav-item {
       max-width: 165px; } }
@@ -23,70 +44,71 @@
       .nav-item__link {
         font-size: 1.3rem; } }
 
-#header_row {
-  background: #889797a6; }
-
-.header {
-  box-shadow: 0px -23px 49px #00000057;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  border-bottom: 4px solid black; }
-  .header__title {
-    font-family: "Lobster Two", cursive;
-    color: green;
-    font-size: 5.3rem; }
-    @media screen and (min-width: 766px) {
-      .header__title {
-        font-size: 7rem; } }
-  .header__panel {
-    height: 130px;
-    background: #889797a6; }
-    @media screen and (min-width: 766px) {
-      .header__panel {
-        height: 23vh;
-        max-height: 162px; } }
-  .header__firma {
-    font-family: "VT323", monospace;
-    font-size: 1.6rem;
-    display: inline-block;
-    position: absolute;
-    top: 138px;
-    left: 194px; }
-    @media screen and (min-width: 766px) {
-      .header__firma {
-        font-size: 2.2rem;
-        position: absolute;
-        top: 157px;
-        left: 284px; } }
-  .header__img1div {
-    width: 124px;
-    display: inline-block;
-    position: absolute;
-    left: 246px;
-    top: 87px; }
-    @media screen and (min-width: 766px) {
-      .header__img1div {
-        position: absolute;
-        top: 107px;
-        left: 317px; } }
-    .header__img1div__img {
-      width: 100%; }
-  .header__img2div {
-    display: none; }
-    .header__img2div__img2 {
-      width: 100%; }
-    @media screen and (min-width: 766px) {
-      .header__img2div {
-        display: inline-block;
-        width: 110px; } }
+.sunshine_bg {
+  background: url(../img/home_bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .wrapper {
   padding: 0px;
   overflow-x: hidden; }
 
+#div_header {
+  width: 100%;
+  padding: 0px;
+  margin: auto;
+  background: url("../img/home_bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.header {
+  box-shadow: 0px -23px 49px #00000057;
+  margin-top: 48px;
+  border-bottom: 4px solid #030364;
+  padding: 1rem 1rem 0px 1rem;
+  background-color: #80808042;
+  display: grid;
+  grid-template-areas: "left left left left rigth right" "left left left left rigth right"; }
+  .header__divl {
+    grid-area: left;
+    padding-left: 0.8rem; }
+    .header__divl__title__h1 {
+      font-family: "Lobster", cursive;
+      font-size: 4.4rem; }
+    .header__divl__subt {
+      display: flex;
+      justify-content: right;
+      padding-right: 30px;
+      position: relative;
+      bottom: 10px; }
+      .header__divl__subt__firma {
+        display: inline-block;
+        position: relative;
+        left: 12px; }
+      .header__divl__subt__imgdiv {
+        display: inline-block;
+        position: relative;
+        width: 52px;
+        bottom: 8px; }
+        .header__divl__subt__imgdiv__img {
+          width: 100%; }
+  .header__divr {
+    grid-area: right;
+    display: flex;
+    align-items: center; }
+    .header__divr__imgdiv {
+      width: 80px; }
+      .header__divr__imgdiv__img {
+        width: 100%; }
+
 #carouselExampleInterval {
-  height: 180px;
-  overflow-y: hidden; }
+  height: 182px;
+  overflow-y: hidden;
+  border-bottom: 2px solid #030364; }
   @media screen and (min-width: 766px) {
     #carouselExampleInterval {
       height: 380px; } }
@@ -94,133 +116,100 @@
     #carouselExampleInterval {
       height: 630px; } }
 
-.sectionc, .sectionl, .sectionr, .about, .contact {
-  box-shadow: 2px -2px 8px #00000087;
-  padding: 1.5rem 1rem;
-  margin: 16px auto;
-  height: 95%; }
-  @media screen and (min-width: 992px) {
-    .sectionc, .sectionl, .sectionr, .about, .contact {
-      margin: auto; } }
-  .sectionc__title, .sectionl__title, .sectionr__title, .contact__title, .about__title {
-    font-size: 2rem;
-    text-align: center;
-    background: #f0f8ff73;
-    color: black; }
-    @media screen and (min-width: 766px) {
-      .sectionc__title, .sectionl__title, .sectionr__title, .contact__title, .about__title {
-        font-size: 2.7rem; } }
-  .sectionc__text {
-    padding: 10px 1rem;
-    font-family: "Fira Mono", monospace; }
-    @media screen and (min-width: 766px) {
-      .sectionc__text {
-        font-size: 1.3rem; } }
-  .sectionc__last {
-    font-size: 1rem;
-    font-weight: 700; }
-    @media screen and (min-width: 766px) {
-      .sectionc__last {
-        font-size: 1.3rem; } }
-  .sectionc__balldiv {
-    width: 25px;
-    margin: auto; }
-    @media screen and (min-width: 766px) {
-      .sectionc__balldiv {
-        width: 30px; } }
-    .sectionc__balldiv__ball {
-      width: 100%; }
+section, .welcome, .pokedex, .quiz, .about, .contact {
+  padding: 1rem;
+  background-color: #80808042;
+  text-align: center;
+  margin: 1rem; }
 
-@media screen and (min-width: 992px) {
-  .sectionl, .sectionr, .about, .contact {
-    margin: auto; } }
+.section_title, .welcome__up__title, .pokedex__up__title, .quiz__up__title, .about__up__title, .contact__up__title {
+  font-family: "Lobster Two", cursive;
+  font-size: 2.5rem; }
 
-.sectionl__title, .sectionr__title, .contact__title, .about__title {
-  text-align: left; }
-  @media screen and (min-width: 766px) {
-    .sectionl__title, .sectionr__title, .contact__title, .about__title {
-      font-size: 2.7rem; } }
-
-.sectionl__text, .sectionr__text, .about__text {
-  padding: 10px 1rem;
-  font-family: "Fira Mono", monospace;
-  background: #f0f8ff73; }
-  @media screen and (min-width: 766px) {
-    .sectionl__text, .sectionr__text, .about__text {
-      font-size: 1.3rem; } }
-
-.sectionl__last {
-  font-size: 1rem;
-  font-weight: 700; }
-  @media screen and (min-width: 766px) {
-    .sectionl__last {
-      font-size: 1.3rem; } }
-
-.sectionl__balldiv, .sectionr__balldiv, .about__balldiv {
-  width: 25px;
+.miniball, .welcome__down__box__imgdiv, .pokedex__down__box__imgdiv, .quiz__down__box__imgdiv, .about__down__box__imgdiv, .contact__down__box__imgdiv {
+  width: 26px;
   margin: auto; }
-  @media screen and (min-width: 766px) {
-    .sectionl__balldiv, .sectionr__balldiv, .about__balldiv {
-      width: 30px; } }
-  .sectionl__balldiv__ball, .sectionr__balldiv__ball, .about__balldiv__ball {
+
+button .accordion-button {
+  background-color: gray; }
+
+.welcome {
+  background: url("../img/home_bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .welcome__down__text {
+    text-align: left; }
+  .welcome__down__box__text {
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .welcome__down__box__imgdiv__img {
     width: 100%; }
 
-.sectionr__title, .contact__title {
-  color: white;
-  text-align: right; }
-
-.sectionr__text, .about__text {
-  color: antiquewhite; }
-
-.sectionr__frase {
-  text-align: center; }
-
-.sectionr__link {
-  display: block;
-  margin: auto;
-  color: green;
-  font-weight: 700;
-  text-align: center; }
-
-.about__text {
-  color: black; }
-
-.about__div__text {
-  text-align: center; }
-
-@media screen and (min-width: 992px) {
-  .contact {
-    margin: auto; } }
-
-.contact__ask {
-  font-family: "Fira Mono", monospace;
-  padding: 10px 1rem;
-  color: white; }
-  @media screen and (min-width: 766px) {
-    .contact__ask {
-      text-align: center;
-      font-size: 1.3rem; } }
-
-#pokedex_card {
-  background: url(../img/day_bg.png) no-repeat center center fixed; }
-
-#quiz_card {
-  background: url(../img/night_bg.png);
+.pokedex {
+  background: url("../img/home_bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
+  .pokedex__down__text {
+    @text-align : left; }
+  .pokedex__down__box__text {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-weight: 700; }
+  .pokedex__down__box__imgdiv__img {
+    width: 100%; }
 
-#about_card {
-  background: url(../img/home_bg.png);
+.quiz {
+  background: url("../img/night_bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
+  .quiz__up__title {
+    color: white; }
+  .quiz__down__text {
+    text-decoration: none;
+    color: #d4d2d2;
+    background-color: #f0ffff4a;
+    padding: 0.2rem; }
+  .quiz__down__box__text {
+    text-decoration: none;
+    color: #cef9f9; }
+  .quiz__down__box__imgdiv__img {
+    width: 100%; }
 
-#contact_card {
-  background: url(../img/day_bg.png) no-repeat center center fixed; }
+.about__down__text {
+  @text-align : left; }
 
-#primer-boton, .accordion-button {
-  font-size: 1.3rem;
-  padding: 1rem; }
+.about__down__box__text {
+  text-decoration: none;
+  color: #d4d2d2; }
 
-.accordion-body {
-  font-size: 1.2rem; }
+.about__down__box__imgdiv__img {
+  width: 100%; }
+
+.contact {
+  background: url("../img/night_bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .contact__up__title {
+    color: #d4d2d2; }
+  .contact__down__text {
+    @text-align : left;
+    text-decoration: none;
+    color: #d4d2d2;
+    background-color: #f0ffff4a;
+    padding: 0.2rem; }
+  .contact__down__box__text {
+    text-decoration: none;
+    color: #d4d2d2; }
+  .contact__down__box__imgdiv__img {
+    width: 100%; }
 
 .footer {
   display: flex;

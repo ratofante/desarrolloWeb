@@ -1,74 +1,83 @@
-#header_row {
-	background: #889797a6;
-}
-.header {
-	box-shadow: 0px -23px 49px #00000057;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	border-bottom: 4px solid black;
-	&__title {
-		font-family: $title-font;
-		color: green;
-		font-size: 5.3rem;
-		@include tablet {
-			font-size: 7rem;
-		}
-	}
-	&__panel {
-		height: 130px;
-		background: #889797a6;
-		@include tablet {
-			height: 23vh;
-			max-height: 162px;
-		}
-	}
-	&__firma {
-		font-family: $special-font;
-		font-size: 1.6rem;
-		display: inline-block;
-	    position: absolute;
-	    top: 138px;
-    	left: 194px;
-	    @include tablet {
-	    	font-size: 2.2rem;
-			position: absolute;
-    		top: 157px;
-    		left: 284px;
-	    }
-	}
-	&__img1div {
-		width: 124px;
-		display: inline-block;
-    	position: absolute;
-    	left: 246px;
-    	top: 87px;
-    	@include tablet {
-    		position: absolute;
-    		top: 107px;
-    		left: 317px;
-    	}
-    	&__img {
-    	width:100%;
-    	}
-	}
-	&__img2div {
-		display: none;
-		&__img2 {
-			width: 100%;
-		}
-		@include tablet {
-			display: inline-block;
-			width: 110px;
-		}
-	}
+.sunshine_bg {
+	background: url(../img/home_bg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
 }
 
 .wrapper {padding: 0px; overflow-x: hidden;}
 
+#div_header {
+	width: 100%;
+	padding: 0px;
+	margin: auto;
+	background: url("../img/home_bg.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
 
+.header {
+	box-shadow: 0px -23px 49px #00000057;
+	margin-top: 48px;
+	border-bottom: 4px solid #030364;
+	padding: 1rem 1rem 0px 1rem;
+	background-color: $light;
+	display:  grid;
+	grid-template-areas:
+	"left left left left rigth right"
+	"left left left left rigth right";
+	&__divl {
+		grid-area: left;
+		padding-left: 0.8rem;
+		&__title{
+			&__h1 {
+				font-family: $title1;
+				font-size: 4.4rem;
+			}
+		}
+		&__subt {
+			display: flex;
+    		justify-content: right;
+    		padding-right: 30px;
+    		position: relative;
+    		bottom: 10px;
+			&__firma {
+				display: inline-block;
+				position: relative;
+   	 			left: 12px;
+			}
+			&__imgdiv {
+				display: inline-block;
+    			position: relative;
+    			width: 52px;
+    			bottom: 8px;
+				&__img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	&__divr {
+		grid-area: right;
+		display: flex;
+		align-items: center;
+		&__imgdiv {
+			width: 80px;
+			&__img {
+				width: 100%;
+			}
+		}
+	}
+}
 #carouselExampleInterval {
-	height: 180px;
+
+	height: 182px;
 	overflow-y: hidden;
+	border-bottom: 2px solid #030364;
 	@include tablet {
 		height: 380px;
 	}
@@ -76,7 +85,4 @@
 		height: 630px;
 	}
 }
-
-
-
 

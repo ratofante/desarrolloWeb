@@ -4,14 +4,33 @@
   $lg: 992px;
   $xl: 1198px;
 
-  /* Font Families */
+  /* Font Families 
 
-  $normal-font: 'Fira Mono', monospace;
-  $title-font: 'Lobster Two', cursive;
-  $special-font: 'VT323', monospace;
-  $contrast-font: monospace;
+    font-family: 'Fira Mono', monospace;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Lobster Two', cursive;
+
+    font-family: 'VT323', monospace; */
+
+  $normal: 'Fira Mono', monospace;
+  $title1: 'Lobster', cursive;
+  $title2: 'Lobster Two', cursive;
+  $special: 'VT323', monospace;
+  $contrast: monospace;
 
   /* Weights */
   
   $reg: 400;
   $bold: 700;
+
+  /* Colors */
+
+  $black-color: #0c0c0c;
+  $white-color: #d4d2d2;
+
+  /* BG colors */
+
+  $light: #80808042;
+  $section: #80808042;

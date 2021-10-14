@@ -1,11 +1,23 @@
+.navbar_wrapper {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
 #navbar-title {
 	font-size: 3.5rem;
-	color: white;
-	font-family: $special-font;
+    color: white;
+    font-family: $title2;
+    letter-spacing: 6px;
+    padding-left: 1rem;
+    margin-bottom: 20px;
+    max-width: 210px;
+    box-shadow: -2px 3px 1px white;
 }
 .nav-item {
-	max-width: 130px;
-	font-family: $normal-font;
+	max-width: 144px;
+	&__link {
+		font-family: $normal;
+		letter-spacing: 2px;
+	}
 	@include square_pc {
 	max-width: 165px;
 	}
