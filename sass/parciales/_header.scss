@@ -6,7 +6,7 @@
 	background-size: cover;
 	
 }
-body {background-color: $light;}
+body {background-color: $blight;}
 .wrapper {padding: 0px; overflow-x: hidden;}
 
 #div_header {
@@ -84,8 +84,47 @@ body {background-color: $light;}
 		height: 630px;
 	}
 }
-.carousel-item {height: 100%;}
-.carousel-item img {
+.carousel-inner {
 	height: 100%;
+	max-height: 182px;
 }
+.carousel-item {
+	height: 100%;
+	max-height: 182px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@mixin cards {
+
+}
+.carousel-card-r {
+	@include cards;
+	text-align: left;
+	padding: 3.5rem 2rem;
+	max-width: 230px;
+	margin-left: 28vw;
+	&__title {
+		color: black;
+		font-size: 2rem;
+		text-align: right;
+	}
+	&__text {
+		color: black;
+		font-size: 1rem;
+		text-align: right;
+	}
+}
+.carousel-card-l {
+	@include cards;
+	text-align: left;
+	padding: 3.5rem 2rem;
+	max-width: 230px;
+	&__title {
+	}
+	&__text {
+
+	}
+}
+
 

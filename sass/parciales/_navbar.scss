@@ -2,7 +2,13 @@
 	max-width: 100vw;
 	overflow-x: hidden;
 }
-.navbar {height: 55px;}
+.navbg {
+	background-color: $secbg;
+}
+.navbar {
+	height: 55px;
+	background-color: $mainbg;
+}
 button .navbar-toggler {
 	height: 35px;
     display: flex;

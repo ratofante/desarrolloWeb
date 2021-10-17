@@ -1,36 +1,31 @@
 /* Media queries */
-  $sm: 317px;
-  $md: 766px;
-  $lg: 992px;
-  $xl: 1198px;
-
-  /* Font Families 
-
-    font-family: 'Fira Mono', monospace;
-
-    font-family: 'Lobster', cursive;
-
-    font-family: 'Lobster Two', cursive;
-
-    font-family: 'VT323', monospace; */
-
-  $normal: 'Fira Mono', monospace;
-  $title1: 'Lobster', cursive;
-  $title2: 'Lobster Two', cursive;
-  $special: 'VT323', monospace;
-  $contrast: monospace;
-
-  /* Weights */
   
-  $reg: 400;
-  $bold: 700;
+$sm: 317px;
+$md: 766px;
+$lg: 992px;
+$xl: 1198px;
 
-  /* Colors */
+/* Font Families */
 
-  $black-color: #0c0c0c;
-  $white-color: #ffffff;
+$normal: 'Fira Mono', monospace;
+$title1: 'Lobster', cursive;
+$title2: 'Lobster Two', cursive;
+$special: 'VT323', monospace;
+$contrast: monospace;
 
-  /* BG colors */
+/* Weights */
+  
+$reg: 400;
+$bold: 700;
 
-  $light: #9cdaff42;
-  $section: #80808042;
+/* Colors */
+
+$black-color: #0c0c0c;
+$white-color: #ffffff;
+
+/* BG colors */
+
+$mainbg: #091353;
+$secbg: #9D84B7;
+$light: #BFC1CD;
+$blight: #B2F9FC;
