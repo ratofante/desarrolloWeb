@@ -12,8 +12,6 @@
 	<title>Pokedex Project - Home</title>
 </head>
 <body class="">
-
-
 <div class="wrapper container-fluid">
 	
 	<!-- NAVBAR -->	
@@ -58,16 +56,22 @@
 	  </div>
 	</div>
 	<nav class="navbar navbar-dark">
-	  <div class="container-fluid">
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	  </div>
+	 	<div class="container-fluid">
+	    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      	<span class="navbar-toggler-icon"></span>
+	    	</button>
+	    	<div class="navhead">
+	    		<h1 class="navhead__title">Pokedex</h1>
+	    		<div class="navhead__logo">
+	    			<img class="navhead__logo__img" src="resources/img/pokeball2-dark.png" alt="logo">
+	    		</div>
+	    	</div>
+	  	</div>
 	</nav>
 	</div>
 
 
-	<!-- HEADER -->
+	<!-- HEADER 
 	<div id="div_header" class="container-fluid">
 	<header class="header">
 		<div class="header__divl">
@@ -88,6 +92,7 @@
 		</div>
 	</header>
 	</div>
+	-->
 
 
 	<!-- CAROUSEL -->
@@ -99,7 +104,7 @@
 	      			<p class="carousel-card-l__text">Algun texto descriptivo del titulo</p>
 	      		</div>
 	    	</div>
-	    	<div class="carousel-item" data-bs-interval="10000" style="background: url(resources/img/bg-cards/l_machamp.jpeg)no-repeat center; background-size: cover;">	    
+	    	<div class="carousel-item" data-bs-interval="10000" style="background: url(resources/img/bg-cards/l_machamp.jpg)no-repeat center; background-size: cover;">	    
 	      		<div class="carousel-card-r">
 	      			<h3 class="carousel-card-r__title">Hola es un Titulo</h3>
 	      			<p class="carousel-card-r__text">Algun texto descriptivo del titulo</p>
@@ -258,8 +263,18 @@
 	</main>
 
 	<!-- FOOTER -->
-	<footer>
-		
+	<footer class="footer">
+		<div class="footer__logo">
+			<img class="footer__logo__img" src="resources/img/footer_logo.png" alt="footer logo">
+		</div>
+		<div class="footer__text">
+			<p class="footer__text__p">Many thanks to PokeApi for their amazing work</p>
+			<p class="footer__text__firma">by RGW</p>		
+		</div>
+
+		<div class="footer__pokedex">
+			<img class="footer__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
+		</div>
 	</footer>
 
 </div>

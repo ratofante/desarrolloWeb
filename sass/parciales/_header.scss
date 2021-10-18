@@ -6,8 +6,30 @@
 	background-size: cover;
 	
 }
-body {background-color: $blight;}
+body {
+	background-color: $transbg;
+}
+
 .wrapper {padding: 0px; overflow-x: hidden;}
+
+.navhead {
+	display: flex;
+	flex-flow: row;
+	&__title {
+		color: $white-color;
+		font-family: $title1;
+		font-size: 2rem;
+	}
+	&__logo {
+		width: 50px;
+		position: relative;
+    	top: 8px;
+    	right: 11px;
+		&__img {
+			width: 100%;
+		}
+	}
+}
 
 #div_header {
 	width: 100%;
@@ -23,7 +45,7 @@ body {background-color: $blight;}
 .header {
 	box-shadow: 0px -23px 49px #00000057;
 	margin-top: 48px;
-	border-bottom: 4px solid #030364;
+	border-bottom: 4px solid $mainbg;
 	padding: 1rem 1rem 0px 1rem;
 	display:  grid;
 	grid-template-areas:
@@ -36,6 +58,7 @@ body {background-color: $blight;}
 			&__h1 {
 				font-family: $title1;
 				font-size: 4.4rem;
+				color: $mainbg;
 			}
 		}
 		&__subt {
@@ -73,10 +96,11 @@ body {background-color: $blight;}
 	}
 }
 #carouselExampleInterval {
-
-	height: 182px;
+	margin-top: 45px;
+	height: 380px;
 	overflow-y: hidden;
-	border-bottom: 2px solid #030364;
+	border-bottom: 0px solid #091353b8;
+    box-shadow: 0px -3px 17px #091353;
 	@include tablet {
 		height: 380px;
 	}
@@ -86,11 +110,11 @@ body {background-color: $blight;}
 }
 .carousel-inner {
 	height: 100%;
-	max-height: 182px;
+	max-height: 380px;
 }
 .carousel-item {
 	height: 100%;
-	max-height: 182px;
+	max-height: 380px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

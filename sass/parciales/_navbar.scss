@@ -1,13 +1,15 @@
 .navbar_wrapper {
 	max-width: 100vw;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 .navbg {
-	background-color: $secbg;
+	background: $mainbg;
 }
 .navbar {
 	height: 55px;
 	background-color: $mainbg;
+	padding-top: .3rem;
 }
 button .navbar-toggler {
 	height: 35px;
@@ -15,7 +17,7 @@ button .navbar-toggler {
     align-items: center;
 }
 #navbar-title {
-	font-size: 3.5rem;
+	font-size: 2rem;
     color: white;
     font-family: $title2;
     letter-spacing: 6px;
