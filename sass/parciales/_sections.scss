@@ -1,3 +1,13 @@
+.maindiv {
+	display: flex;
+	flex-flow: column;
+	@include tablet {
+		flex-flow: row;
+		align-items: center;
+		height: 500px;
+	}
+}
+
 .section {
 	font-family: $normal;
 	padding: 1rem;
@@ -10,10 +20,24 @@
 	&__title {
 		color:  $mainbg;
 		font-family: $title2;
+		@include tablet {
+			font-size: 3rem;
+			margin-top: 1rem;
+		}
+	}
+	&__text {
+		@include tablet {
+			margin-top: 2rem;
+		}
 	}
 	&__link {
 		$color: $secbg;
 
+	}
+	&__box {
+		@include tablet {
+			margin-top: 3rem;
+		}
 	}
 }
 .miniball {
@@ -23,6 +47,10 @@
 .welcome {
 	@extend .section;
 	margin: 2rem 1rem;
+	@include tablet {
+		width: 60%;
+		height: 350px;
+	}
 	&__up {
 		&__title{
 			@extend .section__title;
@@ -30,9 +58,11 @@
 	}
 	&__down {
 		&__text {
+			@extend .section__text;
 			text-align: left;
 		}
 		&__box {
+			@extend .section__box;
 			&__text {
 				font-weight: bold;
 				margin-bottom:  5px;

@@ -29,6 +29,9 @@
 			font-size: .7rem;
 			font-weight: $light-bold;
 			margin: 0;
+			@include medium_mobile {
+			font-size: .85rem;
+			}
 		}
 		&__firma {
 			font-family: $special;

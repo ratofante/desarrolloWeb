@@ -1,0 +1,43 @@
+.footer {
+	width:  100%;
+	&__banner {
+		width: 100%;
+		&__img {
+			width: 100%;
+		}
+	}
+	&__pie {
+		width: 100%;
+    	padding: .5rem;
+		background-color: #a7a6a6;
+   		border-top-left-radius: 7px;
+    	border-top-right-radius: 7px;
+    	border-top: 1px solid #091353;
+    	box-shadow: 0px 1px 18px #f5f5ff;
+		&__list {
+			display: flex;
+			flex-flow: row;
+    		justify-content: space-around;
+    		margin-bottom: 0;
+    		padding: 0;
+			&__item {
+				width: 40px;
+				list-style: none;
+				margin-right: .6rem;
+				&__img {
+					width: 100%;
+				}
+			}
+			&__itemball {
+				@extend .footer__pie__list__item;
+				width: 18px;
+    			display: flex;
+    			align-items: center;
+				&__img {
+					width: 100%;
+				}
+			}
+		}
+		
+	}
+}

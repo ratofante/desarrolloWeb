@@ -5,7 +5,7 @@
 /* Colors */
 /* BG colors */
 body {
-  background-color: #4e006a3d; }
+  background: linear-gradient(180deg, #c8a3d5 0%, #091353c2 94%, #091353 100%); }
 
 .wrapper {
   padding: 0px;
@@ -87,7 +87,7 @@ button .navbar-toggler {
   box-shadow: 0px -3px 17px #091353; }
   @media screen and (min-width: 766px) {
     #carouselExampleInterval {
-      height: 380px; } }
+      height: 540px; } }
   @media screen and (min-width: 1198px) {
     #carouselExampleInterval {
       height: 630px; } }
@@ -95,6 +95,9 @@ button .navbar-toggler {
 .carousel-inner {
   height: 100%;
   max-height: 380px; }
+  @media screen and (min-width: 766px) {
+    .carousel-inner {
+      max-height: 540px; } }
 
 .carousel-item {
   height: 100%;
@@ -102,21 +105,32 @@ button .navbar-toggler {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (min-width: 766px) {
+    .carousel-item {
+      max-height: 540px; } }
 
 .carousel-card-r {
   width: 100%;
   display: flex;
   flex-flow: column;
+  margin-top: 7rem;
   background-color: #ffffff47;
   align-items: end;
-  margin-top: 7rem;
   padding-left: 3rem;
   padding-right: 1rem; }
+  @media screen and (min-width: 766px) {
+    .carousel-card-r {
+      width: 80%;
+      margin: auto;
+      margin-top: 8rem; } }
   .carousel-card-r__title {
     font-family: "VT323", monospace;
     font-size: 1.7rem;
     margin-top: 1rem;
     text-align: right; }
+    @media screen and (min-width: 766px) {
+      .carousel-card-r__title {
+        font-size: 4.7rem; } }
   .carousel-card-r__text {
     color: black;
     font-size: 1rem;
@@ -125,19 +139,34 @@ button .navbar-toggler {
     max-width: 220px;
     margin-bottom: 1rem;
     text-align: right; }
+    @media screen and (min-width: 766px) {
+      .carousel-card-r__text {
+        max-width: 300px;
+        margin-bottom: 3rem; } }
 
 .carousel-card-l {
   width: 100%;
   display: flex;
   flex-flow: column;
-  background-color: #ffffff47;
   margin-top: 7rem;
+  background-color: #ffffff47;
   padding: 0rem 3rem 0rem 1rem; }
+  @media screen and (min-width: 766px) {
+    .carousel-card-l {
+      width: 80%;
+      margin: auto;
+      margin-top: 8rem; } }
+  @media screen and (min-width: 766px) {
+    .carousel-card-l {
+      padding: 1rem 0rem 1rem 3rem; } }
   .carousel-card-l__title {
     font-family: "VT323", monospace;
     font-size: 1.7rem;
     margin-top: 1rem;
     text-align: left; }
+    @media screen and (min-width: 766px) {
+      .carousel-card-l__title {
+        font-size: 4.7rem; } }
   .carousel-card-l__text {
     color: black;
     font-size: 1rem;
@@ -146,13 +175,19 @@ button .navbar-toggler {
     max-width: 220px;
     margin-bottom: 1rem;
     text-align: left; }
+    @media screen and (min-width: 766px) {
+      .carousel-card-l__text {
+        max-width: 300px;
+        margin-bottom: 3rem; } }
 
-/*.accordion-button {
-	background-color: black;
-}*/
+@media screen and (min-width: 766px) {
+  #accordionFlushExample {
+    margin-right: 1rem;
+    max-width: 335px; } }
+
 #accordion_1 {
   font-family: "Fira Mono", monospace;
-  background-color: #233290;
+  background-color: #091353;
   color: #ffffff; }
 
 #accordion_2 {
@@ -161,8 +196,9 @@ button .navbar-toggler {
   color: #0c0c0c; }
 
 #accordion_3 {
+  color: #ffffff;
   font-family: "Fira Mono", monospace;
-  background-color: #9D84B7; }
+  background-color: #501c87; }
 
 .accordion-button:not(.collapsed) {
   color: black;
@@ -177,7 +213,16 @@ button .navbar-toggler {
 
 .accordion-body {
   color: #0c0c0c;
-  background-color: #a0c1fee3; }
+  background-color: #f5f5ff; }
+
+.maindiv {
+  display: flex;
+  flex-flow: column; }
+  @media screen and (min-width: 766px) {
+    .maindiv {
+      flex-flow: row;
+      align-items: center;
+      height: 500px; } }
 
 .section, .welcome, .pokedex, .quiz, .about, .contact {
   font-family: "Fira Mono", monospace;
@@ -191,6 +236,16 @@ button .navbar-toggler {
   .section__title, .welcome__up__title, .pokedex__up__title, .quiz__up__title, .about__up__title, .contact__up__title {
     color: #091353;
     font-family: "Lobster Two", cursive; }
+    @media screen and (min-width: 766px) {
+      .section__title, .welcome__up__title, .pokedex__up__title, .quiz__up__title, .about__up__title, .contact__up__title {
+        font-size: 3rem;
+        margin-top: 1rem; } }
+  @media screen and (min-width: 766px) {
+    .section__text, .welcome__down__text {
+      margin-top: 2rem; } }
+  @media screen and (min-width: 766px) {
+    .section__box, .welcome__down__box {
+      margin-top: 3rem; } }
 
 .miniball, .welcome__down__box__imgdiv, .pokedex__down__box__imgdiv, .quiz__down__box__imgdiv, .about__down__box__imgdiv, .contact__down__box__imgdiv {
   width: 26px;
@@ -198,6 +253,10 @@ button .navbar-toggler {
 
 .welcome {
   margin: 2rem 1rem; }
+  @media screen and (min-width: 766px) {
+    .welcome {
+      width: 60%;
+      height: 350px; } }
   .welcome__down__text {
     text-align: left; }
   .welcome__down__box__text {
@@ -273,6 +332,9 @@ button .navbar-toggler {
       font-size: .7rem;
       font-weight: 500;
       margin: 0; }
+      @media screen and (min-width: 370px) {
+        .asidel__text__p, .asider__text__p {
+          font-size: .85rem; } }
     .asidel__text__firma, .asider__text__firma {
       font-family: "VT323", monospace;
       text-align: right;
@@ -296,3 +358,36 @@ button .navbar-toggler {
 .asider__text__p a, .asidel__text__p a, .asider__text__p a {
   color: #f5f5ff;
   text-decoration: none; }
+
+.footer {
+  width: 100%; }
+  .footer__banner {
+    width: 100%; }
+    .footer__banner__img {
+      width: 100%; }
+  .footer__pie {
+    width: 100%;
+    padding: .5rem;
+    background-color: #a7a6a6;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top: 1px solid #091353;
+    box-shadow: 0px 1px 18px #f5f5ff; }
+    .footer__pie__list {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      margin-bottom: 0;
+      padding: 0; }
+      .footer__pie__list__item, .footer__pie__list__itemball {
+        width: 40px;
+        list-style: none;
+        margin-right: .6rem; }
+        .footer__pie__list__item__img {
+          width: 100%; }
+      .footer__pie__list__itemball {
+        width: 18px;
+        display: flex;
+        align-items: center; }
+        .footer__pie__list__itemball__img {
+          width: 100%; }

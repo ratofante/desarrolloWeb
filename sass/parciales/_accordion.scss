@@ -1,12 +1,15 @@
 
-/*.accordion-button {
-	background-color: black;
-}*/
 
+#accordionFlushExample {
+	@include tablet {
+		margin-right:1rem;
+		max-width: 335px;
+	}
+}
 
 #accordion_1 {
 	font-family: $normal;
-	background-color: #233290;
+	background-color: $mainbg;
     color: #ffffff;
 }
 
@@ -19,8 +22,9 @@
 
 
 #accordion_3 {
+	color: #ffffff;
 	font-family: $normal;
-	background-color: $secbg;
+	background-color: #501c87;
 }
 
 
@@ -43,5 +47,5 @@
 
 .accordion-body {
 	color: $black-color;
-	background-color: #a0c1fee3;
+	background-color: $light;
 }
