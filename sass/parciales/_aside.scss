@@ -1,0 +1,70 @@
+@mixin aside {
+	font-family: $normal;
+	background-color: $mainbg;
+	width:100vw;
+	height: 100px;
+	display: flex;
+	flex-flow: row;
+	box-shadow: 0px 0px 19px #9d84b7;
+}
+
+.asidel {
+	@include aside;
+	border-start-start-radius: 78px;
+	border-end-start-radius: 83px;
+	&__logo {
+		width: 52%;
+    	max-width: 100px;
+		&__img {
+			width: 100%;
+		}
+	}
+	&__text {
+		background-color: $secbg;
+		margin: 1rem;
+		padding: .5rem;
+		border-radius: 7px;
+		&__p {
+			color: $mainbg;
+			font-size: .7rem;
+			font-weight: $light-bold;
+			margin: 0;
+		}
+		&__firma {
+			font-family: $special;
+			text-align: right;
+			margin: 0;
+		}
+	}
+	&__pokedex {
+		display: none;
+	}
+}
+
+.asider {
+	@include aside;
+	border-end-end-radius: 86px;
+    border-start-end-radius: 72px;
+	&__logo {
+		@extend .asidel__logo;
+		&__img {
+			width: 100%;
+		}
+	}
+	&__text {
+		@extend .asidel__text;
+		&__p {
+			@extend .asidel__text__p;
+		}
+		&__firma {
+			@extend .asidel__text__firma;
+		}
+	}
+	&__pokedex {
+		@extend .asidel__pokedex;
+	}
+}
+.asider__text__p a, .asidel__text__p a {
+	color: $light;
+	text-decoration: none;
+}

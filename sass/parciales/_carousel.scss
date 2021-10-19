@@ -1,0 +1,72 @@
+#carouselExampleInterval {
+	margin-top: 45px;
+	height: 380px;
+	overflow-y: hidden;
+	border-bottom: 0px solid #091353b8;
+    box-shadow: 0px -3px 17px #091353;
+	@include tablet {
+		height: 380px;
+	}
+	@include wide_pc {
+		height: 630px;
+	}
+}
+.carousel-inner {
+	height: 100%;
+	max-height: 380px;
+}
+.carousel-item {
+	height: 100%;
+	max-height: 380px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin cards {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	background-color: #ffffff47;
+}
+@mixin card_title {
+	font-family: $special;
+	font-size: 1.7rem;
+	margin-top: 1rem;
+}
+@mixin card_text {
+	color: black;
+	font-size: 1rem;
+	font-family: $normal;
+	font-weight: 500;
+	max-width:220px;
+	margin-bottom: 1rem;
+}
+.carousel-card-r {
+	@include cards;
+    align-items: end;
+    margin-top: 7rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+	&__title {
+		@include card_title;
+		text-align: right;
+	}
+	&__text {
+		@include card_text;
+		text-align: right;
+	}
+}
+.carousel-card-l {
+	@include cards;
+	margin-top: 7rem;
+	padding: 0rem 3rem 0rem 1rem;
+	&__title {
+		@include card_title;
+		text-align: left;
+	}
+	&__text {
+		@include card_text;
+		text-align:left;
+	}
+}
