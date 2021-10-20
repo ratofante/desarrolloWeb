@@ -2,6 +2,18 @@
 	width:  100%;
 	&__banner {
 		width: 100%;
+		max-width: 768px;
+		margin: auto; 
+		@include tablet {
+			border:  2px solid #09135352;
+			border-bottom: none;
+			border-start-start-radius: 160px;
+			border-start-end-radius:  160px;
+			background: url('../img/home_bg.png');
+			background-size: contain;
+			box-shadow: 0px -9px 42px #76b9ff;
+
+		}
 		&__img {
 			width: 100%;
 		}

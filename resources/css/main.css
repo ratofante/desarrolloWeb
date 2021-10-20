@@ -6,7 +6,8 @@
 /* Colors */
 /* BG colors */
 body {
-  background: linear-gradient(180deg, #c8a3d5 0%, #091353c2 94%, #091353 100%); }
+  background-color: #d7e9f9;
+  /*background: linear-gradient(180deg, #c8a3d5 0%, #091353c2 94%, #091353 100%);*/ }
 
 .wrapper {
   padding: 0px;
@@ -209,15 +210,16 @@ button .navbar-toggler {
         font-size: 1.8rem;
         max-width: 580px; } }
 
-@media screen and (min-width: 766px) {
-  #accordionFlushExample {
-    margin-right: 1rem;
-    max-width: 335px; } }
-
-@media screen and (min-width: 1198px) {
-  #accordionFlushExample {
-    margin-right: 0px;
-    max-width: 400px; } }
+#accordionFlushExample {
+  box-shadow: 0px 0px 8px #091353; }
+  @media screen and (min-width: 766px) {
+    #accordionFlushExample {
+      margin-right: 1rem;
+      max-width: 335px; } }
+  @media screen and (min-width: 1198px) {
+    #accordionFlushExample {
+      margin-right: 0px;
+      max-width: 400px; } }
 
 @media screen and (min-width: 1198px) {
   #accordion_1, #accordion_2, #accordion_3 {
@@ -302,7 +304,7 @@ button .navbar-toggler {
     .section__box, .welcome__down__box {
       font-size: 1.3rem; } }
   .section__down, .welcome__down, .pokedex__down, .quiz__down, .about__down, .contact__down {
-    margin: auto; }
+    margin: 0px auto; }
 
 section .section-left {
   width: auto;
@@ -428,6 +430,11 @@ section .section-right {
     margin: 1rem;
     padding: .5rem;
     border-radius: 7px; }
+    @media screen and (min-width: 766px) {
+      .asidel__text, .asider__text {
+        display: flex;
+        flex-flow: column;
+        justify-content: center; } }
     .asidel__text__p, .asider__text__p {
       color: #091353;
       font-size: .7rem;
@@ -436,10 +443,16 @@ section .section-right {
       @media screen and (min-width: 370px) {
         .asidel__text__p, .asider__text__p {
           font-size: .85rem; } }
+      @media screen and (min-width: 1198px) {
+        .asidel__text__p, .asider__text__p {
+          font-size: 1.3rem; } }
     .asidel__text__firma, .asider__text__firma {
       font-family: "VT323", monospace;
       text-align: right;
       margin: 0; }
+      @media screen and (min-width: 1198px) {
+        .asidel__text__firma, .asider__text__firma {
+          font-size: 1.3rem; } }
   .asidel__pokedex, .asider__pokedex {
     display: none; }
 
@@ -466,7 +479,18 @@ section .section-right {
 .footer {
   width: 100%; }
   .footer__banner {
-    width: 100%; }
+    width: 100%;
+    max-width: 768px;
+    margin: auto; }
+    @media screen and (min-width: 766px) {
+      .footer__banner {
+        border: 2px solid #09135352;
+        border-bottom: none;
+        border-start-start-radius: 160px;
+        border-start-end-radius: 160px;
+        background: url("../img/home_bg.png");
+        background-size: contain;
+        box-shadow: 0px -9px 42px #76b9ff; } }
     .footer__banner__img {
       width: 100%; }
   .footer__pie {

@@ -24,6 +24,11 @@
 		margin: 1rem;
 		padding: .5rem;
 		border-radius: 7px;
+		@include tablet {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+		}
 		&__p {
 			color: $mainbg;
 			font-size: .7rem;
@@ -32,11 +37,17 @@
 			@include medium_mobile {
 			font-size: .85rem;
 			}
+			@include wide_pc {
+			font-size: 1.3rem;
+			}
 		}
 		&__firma {
 			font-family: $special;
 			text-align: right;
 			margin: 0;
+			@include wide_pc {
+				font-size: 1.3rem;
+			}
 		}
 	}
 	&__pokedex {

@@ -1,6 +1,7 @@
 
 
 #accordionFlushExample {
+	box-shadow: 0px 0px 8px #091353;
 	@include tablet {
 		margin-right:1rem;
 		max-width: 335px;
