@@ -48,6 +48,9 @@
 	@include aside;
 	border-end-end-radius: 86px;
     border-start-end-radius: 72px;
+    @include tablet {
+    	justify-content: end;
+    }
 	&__logo {
 		@extend .asidel__logo;
 		&__img {

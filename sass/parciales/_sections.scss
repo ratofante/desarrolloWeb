@@ -1,11 +1,15 @@
 .maindiv {
 	display: flex;
 	flex-flow: column;
+	justify-content: space-evenly;
 	@include tablet {
 		flex-flow: row;
 		align-items: center;
 		height: 500px;
 	}
+	@include wide_pc {
+
+	} 
 }
 
 .section {
@@ -17,6 +21,13 @@
     box-shadow: 0px 0px 8px #091353;
     border-radius: 7px;
     margin: 5rem 1rem;
+    @include tablet {
+    	display: flex;
+    	flex-flow: row;
+    	align-items: center;
+    	justify-content: space-between;
+    	min-height: 400px;
+    }
 	&__title {
 		color:  $mainbg;
 		font-family: $title2;
@@ -24,10 +35,16 @@
 			font-size: 3rem;
 			margin-top: 1rem;
 		}
+		@include wide_pc {
+			font-size: 4.5rem;
+		}
 	}
 	&__text {
 		@include tablet {
-			margin-top: 2rem;
+			margin-top: 1rem;
+		}
+		@include wide_pc {
+			font-size: 1.3rem;
 		}
 	}
 	&__link {
@@ -36,8 +53,59 @@
 	}
 	&__box {
 		@include tablet {
-			margin-top: 3rem;
+			margin-top: 1rem;
 		}
+		@include wide_pc {
+			font-size: 1.3rem;
+		}
+	}
+	&__down {
+		margin: auto;
+	}
+}
+section .section-left {
+	width: auto;
+	min-width: 45%;
+	max-width: 50%;
+	&__img {
+		display: none;
+		@include tablet {
+			display: block;
+			width: 100%;
+			border: 7px solid #8073a4;
+    		border-radius: 7px;
+    		z-index: 1;
+		}
+	}
+	&__link {
+		display: none;
+		@include tablet {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+section .section-right {
+	width: auto;
+	min-width: 45%;
+	max-width: 50%;
+	&__img {
+		display: none;
+		@include tablet {
+			display: block;
+			width: 100%;
+			border: 7px solid $mainbg;
+    		border-radius: 7px;
+    		z-index: 1;
+		}
+	}
+}
+.text__max__width {
+	max-width: 430px;
+	@include wide_pc {
+		max-width: 500px;
 	}
 }
 .miniball {
@@ -48,6 +116,8 @@
 	@extend .section;
 	margin: 2rem 1rem;
 	@include tablet {
+		flex-flow: column;
+		justify-content: center;
 		width: 60%;
 		height: 350px;
 	}
@@ -57,9 +127,11 @@
 		}
 	}
 	&__down {
+		@extend .section__down;
+		@extend .text__max__width;
 		&__text {
 			@extend .section__text;
-			text-align: left;
+			text-align: center;
 		}
 		&__box {
 			@extend .section__box;
@@ -85,7 +157,10 @@
 		}
 	}
 	&__down {
+		@extend .section__down;
+		@extend .text__max__width;
 		&__text {
+			@extend .welcome__down__text;
 			@text-align: left;
 		}
 		&__box {
@@ -111,7 +186,10 @@
 		}
 	}
 	&__down {
+		@extend .section__down;
+		@extend .text__max__width;
 		&__text {
+			@extend .welcome__down__text;
 		}
 		&__box {
 			&__text {
@@ -138,7 +216,10 @@
 		}
 	}
 	&__down {
+		@extend .section__down;
+		@extend .text__max__width;
 		&__text {
+			@extend .welcome__down__text;
 			@text-align: left;
 
 		}
@@ -165,7 +246,10 @@
 		}
 	}
 	&__down {
+		@extend .section__down;
+		@extend .text__max__width;
 		&__text {
+			@extend .welcome__down__text;
 			@text-align: left;
 		}
 		&__box {

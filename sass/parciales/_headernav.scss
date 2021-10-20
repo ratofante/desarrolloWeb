@@ -11,6 +11,9 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
+.fixed-top {
+	top: -1px;
+}
 .navbar_wrapper {
 	max-width: 100vw;
 	overflow-x: hidden;

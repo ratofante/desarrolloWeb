@@ -1,5 +1,10 @@
+/* Variables para los diferentes dispositivos */
+
 $c-small: 380px;
 $c-tablet: 540px;
+$c-wide: 600px;
+
+/* Altura del carrousel */
 
 #carouselExampleInterval {
 	margin-top: 45px;
@@ -11,7 +16,7 @@ $c-tablet: 540px;
 		height: $c-tablet;
 	}
 	@include wide_pc {
-		height: 630px;
+		height: $c-wide;
 	}
 }
 .carousel-inner {
@@ -19,6 +24,10 @@ $c-tablet: 540px;
 	max-height: $c-small;
 	@include tablet {
 		max-height: $c-tablet;
+	}
+	@include wide_pc {
+		max-height: $c-wide;
+		height: $c-wide;
 	}
 }
 .carousel-item {
@@ -30,7 +39,13 @@ $c-tablet: 540px;
 	@include tablet {
 		max-height: $c-tablet;
 	}
+	@include wide_pc {
+		max-height: $c-wide;
+		height: $c-wide;
+	}
 }
+
+/* Cards con título-texto del Carrousel */
 
 @mixin cards {
 	width: 100%;
@@ -52,6 +67,9 @@ $c-tablet: 540px;
 	@include tablet {
 		font-size:  4.7rem;
 	}
+	@include wide_pc {
+		font-size:  6.7rem;
+	}
 }
 @mixin card_text {
 	color: black;
@@ -63,6 +81,10 @@ $c-tablet: 540px;
 	@include tablet {
 		max-width: 300px;
 		margin-bottom: 3rem;
+	}
+	@include wide_pc {
+		font-size: 1.8rem;
+		max-width:  580px;
 	}
 }
 .carousel-card-r {
