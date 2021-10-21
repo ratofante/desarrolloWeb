@@ -67,6 +67,7 @@ section .section-left {
 	width: auto;
 	min-width: 45%;
 	max-width: 50%;
+	margin: auto;
 	&__img {
 		display: none;
 		@include tablet {
@@ -88,9 +89,7 @@ section .section-left {
 	}
 }
 section .section-right {
-	width: auto;
-	min-width: 45%;
-	max-width: 50%;
+	@extend .section-left;
 	&__img {
 		display: none;
 		@include tablet {

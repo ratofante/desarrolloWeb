@@ -5,6 +5,29 @@
 /* Weights */
 /* Colors */
 /* BG colors */
+/* Animations */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; } }
+
 body {
   background-color: #d7e9f9;
   /*background: linear-gradient(180deg, #c8a3d5 0%, #091353c2 94%, #091353 100%);*/ }
@@ -306,10 +329,11 @@ button .navbar-toggler {
   .section__down, .welcome__down, .pokedex__down, .quiz__down, .about__down, .contact__down {
     margin: 0px auto; }
 
-section .section-left {
+section .section-left, section .section-right {
   width: auto;
   min-width: 45%;
-  max-width: 50%; }
+  max-width: 50%;
+  margin: auto; }
   section .section-left__img {
     display: none; }
     @media screen and (min-width: 766px) {
@@ -328,19 +352,15 @@ section .section-left {
         top: 0;
         left: 0; } }
 
-section .section-right {
-  width: auto;
-  min-width: 45%;
-  max-width: 50%; }
-  section .section-right__img {
-    display: none; }
-    @media screen and (min-width: 766px) {
-      section .section-right__img {
-        display: block;
-        width: 100%;
-        border: 7px solid #091353;
-        border-radius: 7px;
-        z-index: 1; } }
+section .section-right__img {
+  display: none; }
+  @media screen and (min-width: 766px) {
+    section .section-right__img {
+      display: block;
+      width: 100%;
+      border: 7px solid #091353;
+      border-radius: 7px;
+      z-index: 1; } }
 
 .text__max__width, .welcome__down, .pokedex__down, .quiz__down, .about__down, .contact__down {
   max-width: 430px; }
@@ -488,9 +508,10 @@ section .section-right {
         border-bottom: none;
         border-start-start-radius: 160px;
         border-start-end-radius: 160px;
-        background: url("../img/home_bg.png");
+        /*background: url('../img/home_bg.png');*/
         background-size: contain;
-        box-shadow: 0px -9px 42px #76b9ff; } }
+        box-shadow: 0px -9px 42px #ffffff;
+        background-color: #d7e9f9; } }
     .footer__banner__img {
       width: 100%; }
   .footer__pie {

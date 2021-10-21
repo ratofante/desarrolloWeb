@@ -9,6 +9,7 @@
     <!--link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css"-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Pokedex Project - Home</title>
 </head>
 <body class="">
@@ -177,7 +178,7 @@
 		</div>
 
 		<!-- SECTIONS -->
-		<section class="pokedex">
+		<section class="pokedex" data-aos="fade-up" data-aos-duration="1000">
 			<div class="section-left">
 				<div class="pokedex__up">
 					<h2 class="pokedex__up__title">The Pokedex</h2>
@@ -213,7 +214,7 @@
 		</asidel>
 		<!-- fin aside -->
 
-		<section class="quiz">
+		<section class="quiz" data-aos="slide-left" data-aos-duration="1000">
 			<div class="section-left">
 				<img class="section-left__img" src="resources/img/night_bg.png">
 			</div>
@@ -234,7 +235,7 @@
 			</div>
 		</section>
 
-		<section class="about">
+		<section class="about" data-aos="slide-right" data-aos-duration="1000">
 			<div class="section-left">	
 				<div class="about__up">
 					<h2 class="about__up__title">About</h2>
@@ -269,13 +270,13 @@
 		</asidel>
 		<!-- fin aside -->		
 
-		<section class="contact">
-			<div class="section-left">
+		<section class="contact" data-aos="fade-up" data-aos-duration="1000">
+			<div class="section-left" data-aos="fade-up" data-aos-duration="1000">
 				<img class="section-left__img" src="resources/img/night_bg.png">
 			</div>
-			<div class="section-right">
+			<div class="section-right" data-aos="fade-up" data-aos-duration="1000">
 				<div class="contact__up">
-					<h2 class="contact__up__title">Contact</h2>
+					<h2 class="contact__up__title" data-aos="fade-up" data-aos-duration="1000">Contact</h2>
 				</div>
 				<div class="contact__down">
 					<p class="contact__down__text">Wanna learn more about the project? <br> Do you want to collaborate?</p>
@@ -323,5 +324,9 @@
 </div>
 <!-- FIN WRAPPER -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({disable: 'mobile'});
+</script>
 </body>
 </html>
