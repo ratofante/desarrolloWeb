@@ -6,8 +6,10 @@
 	display: flex;
 	flex-flow: row;
 	box-shadow: 0px 0px 19px #9d84b7;
-	border-end-end-radius: 86px;
-    border-start-end-radius: 72px;
+	margin-bottom: 2rem;
+    @include wide_pc {
+    	height: 120px;
+    }
 }
 /* Colores para otras páginas */
 @mixin about_colors_section {
@@ -19,9 +21,14 @@
 .asidel {
 	@include aside;
 	@include about_colors_section;
+	border-start-start-radius: 86px;
+    border-end-start-radius: 72px;
 	&__logo {
 		width: 52%;
     	max-width: 100px;
+    	@include wide_pc {
+    		max-width: 120px;
+    	}
 		&__img {
 			width: 100%;
 		}
@@ -38,16 +45,19 @@
 			flex-flow: column;
 			justify-content: center;
 		}
+		@include wide_pc {
+			margin: .6rem;
+			width: 300px;
+		}
 		&__p {
 			color: $mainbg;
 			font-size: .7rem;
 			font-weight: $light-bold;
 			margin: 0;
 			@include medium_mobile {
-			font-size: .85rem;
 			}
 			@include wide_pc {
-			font-size: 1.3rem;
+				font-size: 1rem;
 			}
 		}
 		&__firma {
@@ -67,8 +77,10 @@
 .asider {
 	@include aside;
 	@include about_colors_section;
+	border-end-end-radius: 86px;
+    border-start-end-radius: 72px;
+    justify-content: end;
     @include tablet {
-    	justify-content: end;
     }
 	&__logo {
 		@extend .asidel__logo;

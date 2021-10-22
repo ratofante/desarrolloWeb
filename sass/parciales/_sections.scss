@@ -278,28 +278,36 @@ section .section-right {
     border-radius: 8px;
     text-align: center;	
     &__title {
+    	position: relative;
+    	z-index: 2;
     	font-family: $title2;
     	font-size: 1.4rem;
+    	padding-bottom: 1rem;
     }
     &__text {
     	position: relative;
-    	padding: 2rem 1rem;
+    	padding: 1rem;
 		text-align: center;
     	line-height: 24px;
     	z-index: 2;
     }
     &__card {
+    	position: relative;
     	display: flex;
     	flex-flow: column;
     	align-items: center;
+    	justify-content: center;
+    	z-index: 2;
     	@include tablet {
     		flex-flow: row;
     	}
-    	&__left {
-
+    	&__text {
+    		@extend .sect__text;
+    		&__p {
+    			padding: 1rem 0rem;
+    		}
     	}
-    	&__right {
-
+    	&__img {
     	}
     	&__pokedex {
     		width: 90px;
@@ -308,10 +316,10 @@ section .section-right {
     		}
     	}
     }
-    &__jigglyR {
+    &__jigglyL {
     	position: relative;
 		bottom: 196px;
-		left: 100px;
+		left: -50px;
 		z-index: 1;
 		opacity: .3;
 		width: 228px;
@@ -321,11 +329,12 @@ section .section-right {
     		z-indez: 1;
     	}
     }
-    &__jigglyL {
-    	@extend .sect__jigglyR;
-    	left: -50px;
+    &__jigglyR {
+    	@extend .sect__jigglyL;
+    	float: right;
+    	left: 50px;
     	&__img {
-    		@extend .sect__jigglyR__img;
+    		@extend .sect__jigglyL__img;
     	}
     }
 }

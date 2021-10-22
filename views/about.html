@@ -15,7 +15,7 @@
 	<title>About - Pokedex</title>
 </head>
 <body>
-<div class="grid">
+<div class="wrapper">
 	<header class="header day_header" data-aos="top-top">
 		<div class="header__logo">
 			<h1 class="header__logo__title">About</h1>
@@ -53,11 +53,11 @@
 			<p class="sect__text">El <strong>principal</strong> objetivo es crear un Pokedex</p>
 			<h5 class="sect__title">¿Un pokedex?</h5>
 			<div class="sect__card">
-				<div clas="sect__card__left">
-					<p class="sect__card__text">Un pokedex puedes pensarlo como un buscador que contiene la información de los diferentes pokemons</p>
-					<p class="sect__card__text">Ideal para quien no sabe de pokemons!</p>
+				<div clas="sect__card__text">
+					<p class="sect__card__text__p">Un pokedex puedes pensarlo como un buscador que contiene la información de los diferentes pokemons</p>
+					<p class="sect__card__text__p">Ideal para quien no sabe de pokemons!</p>
 				</div>
-				<div class="sect__card__right">
+				<div class="sect__card__img">
 					<div class="sect__card__pokedex">
 						<img class="sect__card__pokedex__img" src="../resources/img/pokedex.png" alt="Pokedex">
 					</div>
@@ -72,11 +72,11 @@
 			<p class="sect__text"> Una respuesta rápida: <strong>no</strong></p>
 			<h5 class="sect__title">¿Qué más se puede hacer?</h5>
 			<div class="sect__card" >
-				<div clas="sect__card__left">
-					<p class="sect__card__text">Puedes poner a prueba tus conocimientos</p>
-					<p class="sect__card__text">Para ello, está <strong>la sección Quiz</strong></p>
+				<div clas="sect__card__text">
+					<p class="sect__card__text__p">Puedes poner a prueba tus conocimientos</p>
+					<p class="sect__card__text__p">Para ello, está <strong>la sección Quiz</strong></p>
 				</div>
-				<div class="sect__card__right">
+				<div class="sect__card__img">
 					<!-- Contenido right -->
 				</div>	
 			</div>
@@ -100,6 +100,25 @@
 		</asidel>
 		<!-- fin aside -->
 
+		<!-- Segundo Bloque -->
+		<section class="sect" data-aos="fade-up" data-aos-duration="1000">
+			<h4 class="sect__title">Pero ¿por qué un Pokedex?</h4>
+			<p class="sect__text"> Hay varias razones! <br> Pero una respuesta rápida sería: porque los Pokemons son <strong>divertidos</strong></p>
+			<h5 class="sect__title">Esa no puede ser una razón!</h5>
+			<div class="sect__card" >
+				<div clas="sect__card__text">
+					<p class="sect__card__text__p">Es cierto, no es suficiente.</p>
+					<p class="sect__card__text__p">La realidad es que gracias a <a href="">PokeApi</a> contamos con toda la información organizada de los pokemons. Ideal para comenzar nuestro Pokedex</p>
+				</div>
+				<div class="sect__card__img">
+					<img src="../resources/img/pokeapi.png" alt="pokeApi">
+				</div>	
+			</div>
+			<div class="sect__jigglyR">
+				<img class="sect__jigglyR__img" src="../resources/img/teacher_right.png" alt="jigglypuff">
+			</div>
+		</section>
+		<!-- Segundo Bloque -->
 
 		<!-- asidel -->
 		<asidel class="asidel about_aside">
@@ -116,11 +135,28 @@
 			</div>
 		</asidel>
 		<!-- fin aside -->
+
+		<section class="sect" data-aos="fade-up" data-aos-duration="1000">
+			<h4 class="sect__title">Posibilidad de Crecer</h4>
+			<p class="sect__text"> Teniendo la estructura del pokedex, esta puede aplicarse a cualquier contenido permitiendo crear apps educativas.</p>
+			<h5 class="sect__title">¿Quieres saber más?</h5>
+			<div class="sect__card" >
+				<div clas="sect__card__text">
+					<p class="sect__card__text__p">Puedes contactarme completando tus datos. Ir a <a href="contact.html">Sección Contact</a></p>
+				</div>
+				<div class="sect__card__img">
+					<!-- Content -->
+				</div>	
+			</div>
+			<div class="sect__jigglyL">
+				<img class="sect__jigglyL__img" src="../resources/img/teacher_left.png" alt="jigglypuff">
+			</div>
+		</section>
 	</main>
 
 <!-- FOOTER -->
 <footer class="footer">
-	<div class="footer__banner">
+	<div class="footer__banner about_footer">
 		<img class="footer__banner__img" src="../resources/img/footer_banner.png" alt="Pokemon Banner">
 	</div>
 	<div class="footer__pie">

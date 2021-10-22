@@ -56,3 +56,8 @@
 		
 	}
 }
+.about_footer {
+	@extend .footer__banner;
+	position: relative;
+	top: 4px;	
+}
