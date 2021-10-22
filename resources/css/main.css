@@ -151,7 +151,7 @@ button .navbar-toggler {
 /* Solo Header */
 .header {
   position: sticky;
-  top: -152px;
+  top: -118px;
   z-index: 3;
   align-items: center; }
   @media screen and (min-width: 766px) {
@@ -165,23 +165,23 @@ button .navbar-toggler {
     width: 100%;
     color: white;
     overflow: hidden;
-    max-width: 508px;
-    min-height: 140px;
+    max-width: 290px;
     height: auto;
-    max-height: 151px;
+    max-height: 115px;
     margin: auto; }
     @media screen and (min-width: 766px) {
       .header__logo {
         width: 50%;
-        margin: 0px;
-        padding-top: .5rem; } }
+        margin: 0px; } }
     .header__logo__title {
+      position: relative;
       font-family: "Lobster Two", cursive;
       font-size: 5rem;
       text-align: center;
       margin-right: 2rem;
       z-index: 2; }
     .header__logo__firma {
+      position: relative;
       font-family: "VT323", monospace;
       font-size: 1.8rem;
       text-align: center;
@@ -199,12 +199,9 @@ button .navbar-toggler {
     .header__logo__ball {
       width: 96px;
       position: relative;
-      right: -61vw;
+      left: 174px;
       bottom: 75px;
       z-index: 1; }
-      @media screen and (min-width: 766px) {
-        .header__logo__ball {
-          right: -30vw; } }
       .header__logo__ball__img {
         width: 100%; }
 
@@ -227,15 +224,6 @@ button .navbar-toggler {
       width: 47%;
       max-width: 60px;
       margin: auto; }
-      .navflex__link__wiggler:hover {
-        position: relative;
-        -webkit-animation: wiggle 0.5s infinite;
-        -moz-animation: wiggle 0.5s infinite;
-        animation: wiggle 0.5s infinite; }
-      .navflex__link__wiggler:active {
-        -webkit-animation: wiggle 0.5s infinite;
-        -moz-animation: wiggle 0.5s infinite;
-        animation: wiggle 0.5s infinite; }
     .navflex__link__text {
       font-family: monospace;
       font-size: 1rem;
@@ -247,6 +235,17 @@ button .navbar-toggler {
         font-size: 1.2rem;
         position: relative;
         top: 2%; }
+
+.navflex__link:hover .navflex__link__wiggler {
+  position: relative;
+  -webkit-animation: wiggle 0.5s infinite;
+  -moz-animation: wiggle 0.5s infinite;
+  animation: wiggle 0.5s infinite; }
+
+.navflex__link:active .navflex__link__wiggler {
+  -webkit-animation: wiggle 0.5s infinite;
+  -moz-animation: wiggle 0.5s infinite;
+  animation: wiggle 0.5s infinite; }
 
 /* Variables para los diferentes dispositivos */
 /* Altura del carrousel */
@@ -555,6 +554,52 @@ section .section-right__img {
   .contact__down__box__imgdiv__img {
     width: 100%; }
 
+.sect {
+  overflow: hidden;
+  width: 95%;
+  max-width: 680px;
+  margin: auto;
+  margin-bottom: 3rem;
+  background-color: #d1e8fdf5;
+  padding: 1rem;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px #00000063;
+  border-radius: 8px;
+  text-align: center; }
+  .sect__title {
+    font-family: "Lobster Two", cursive;
+    font-size: 1.4rem; }
+  .sect__text {
+    position: relative;
+    padding: 2rem 1rem;
+    text-align: center;
+    line-height: 24px;
+    z-index: 2; }
+  .sect__card {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    @media screen and (min-width: 766px) {
+      .sect__card {
+        flex-flow: row; } }
+    .sect__card__pokedex {
+      width: 90px; }
+      .sect__card__pokedex__img {
+        width: 100%; }
+  .sect__jigglyR, .sect__jigglyL {
+    position: relative;
+    bottom: 196px;
+    left: 100px;
+    z-index: 1;
+    opacity: .3;
+    width: 228px;
+    height: 0px; }
+    .sect__jigglyR__img, .sect__jigglyL__img {
+      width: 100%;
+      z-indez: 1; }
+  .sect__jigglyL {
+    left: -50px; }
+
 .wrapdiv404 {
   width: 100vw;
   height: 100vh;
@@ -571,6 +616,7 @@ section .section-right__img {
   max-width: 1280px;
   max-height: 720px; }
 
+/* Colores para otras páginas */
 .asidel {
   font-family: "Fira Mono", monospace;
   background-color: #091353;
@@ -579,15 +625,18 @@ section .section-right__img {
   display: flex;
   flex-flow: row;
   box-shadow: 0px 0px 19px #9d84b7;
-  border-start-start-radius: 78px;
-  border-end-start-radius: 83px; }
+  border-end-end-radius: 86px;
+  border-start-end-radius: 72px;
+  background-color: #102436; }
   .asidel__logo, .asider__logo {
     width: 52%;
     max-width: 100px; }
     .asidel__logo__img {
       width: 100%; }
   .asidel__text, .asider__text {
+    width: 191px;
     background-color: #9D84B7;
+    background-color: #adadad;
     margin: 1rem;
     padding: .5rem;
     border-radius: 7px; }
@@ -626,7 +675,8 @@ section .section-right__img {
   flex-flow: row;
   box-shadow: 0px 0px 19px #9d84b7;
   border-end-end-radius: 86px;
-  border-start-end-radius: 72px; }
+  border-start-end-radius: 72px;
+  background-color: #102436; }
   @media screen and (min-width: 766px) {
     .asider {
       justify-content: end; } }

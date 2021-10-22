@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Lobster&family=VT323&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 	<link rel="stylesheet" type="text/css" href="../resources/css/main.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>About - Pokedex</title>
 </head>
 <body>
@@ -47,30 +48,75 @@
 		</nav>
 	</header>
 	<main>
-		<section>
-			<h4>¿De qué va esta página?</h4>
-			<p class="text_p">El objetivo es hacer una página atractiva donde se pueda visualizar la información de los 151 pokemons originales</p>
-			<p class="text_p">Junto con esto, ofrecer la opción de realizar un test o Quiz para poner a prueba los conocimientos</p>
-		</section>
-		<section>
-			<h4>¿De qué va esta página?</h4>
-			<p class="text_p">El objetivo es hacer una página atractiva donde se pueda visualizar la información de los 151 pokemons originales</p>
-			<p class="text_p">Junto con esto, ofrecer la opción de realizar un test o Quiz para poner a prueba los conocimientos</p>
-		</section>
-		<section>
-			<h4>¿De qué va esta página?</h4>
-			<p class="text_p">El objetivo es hacer una página atractiva donde se pueda visualizar la información de los 151 pokemons originales</p>
-			<p class="text_p">Junto con esto, ofrecer la opción de realizar un test o Quiz para poner a prueba los conocimientos</p>
-		</section>
-	</main>
-	<aside>
-		<section>
-			<div id="video_div">
-				<iframe src="https://www.youtube.com/embed/Rsv2VkoIpk0?rel=0&amp;autoplay=1&mute=1" width="400" height="300" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<section class="sect">
+			<h4 class="sect__title">¿De qué va esta página?</h4>
+			<p class="sect__text">El <strong>principal</strong> objetivo es crear un Pokedex</p>
+			<h5 class="sect__title">¿Un pokedex?</h5>
+			<div class="sect__card">
+				<div clas="sect__card__left">
+					<p class="sect__card__text">Un pokedex puedes pensarlo como un buscador que contiene la información de los diferentes pokemons</p>
+					<p class="sect__card__text">Ideal para quien no sabe de pokemons!</p>
+				</div>
+				<div class="sect__card__right">
+					<div class="sect__card__pokedex">
+						<img class="sect__card__pokedex__img" src="../resources/img/pokedex.png" alt="Pokedex">
+					</div>
+				</div>	
+			</div>
+			<div class="sect__jigglyR">
+				<img class="sect__jigglyR__img" src="../resources/img/teacher_right.png" alt="jigglypuff">
 			</div>
 		</section>
-	</aside>
+		<section class="sect" data-aos="fade-up" data-aos-duration="1000">
+			<h4 class="sect__title">¿Solamente eso?</h4>
+			<p class="sect__text"> Una respuesta rápida: <strong>no</strong></p>
+			<h5 class="sect__title">¿Qué más se puede hacer?</h5>
+			<div class="sect__card" >
+				<div clas="sect__card__left">
+					<p class="sect__card__text">Puedes poner a prueba tus conocimientos</p>
+					<p class="sect__card__text">Para ello, está <strong>la sección Quiz</strong></p>
+				</div>
+				<div class="sect__card__right">
+					<!-- Contenido right -->
+				</div>	
+			</div>
+			<div class="sect__jigglyL">
+				<img class="sect__jigglyL__img" src="../resources/img/teacher_left.png" alt="jigglypuff">
+			</div>
+		</section>
 
+		<!-- asider -->
+		<asidel class="asider">
+			<div class="asider__pokedex">
+				<img class="asider__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
+			</div>
+			<div class="asider__text">
+				<p class="asider__text__p">A project for <a href="https://www.coderhouse.com/">CoderHouse's</a> web development course</p>
+				<p class="asider__text__firma">by RGW</p>		
+			</div>
+			<div class="asider__logo">
+				<img class="asider__logo__img" src="../resources/img/footer_logo.png" alt="asidel logo">
+			</div>
+		</asidel>
+		<!-- fin aside -->
+
+
+		<!-- asidel -->
+		<asidel class="asidel about_aside">
+			<div class="asidel__logo">
+				<img class="asidel__logo__img" src="../resources/img/footer_logo.png" alt="asidel logo">
+			</div>
+			<div class="asidel__text">
+				<p class="asidel__text__p">Many thanks to <a href="https://pokeapi.co/">PokeApi</a> for their amazing work</p>
+				<p class="asidel__text__firma">by RGW</p>		
+			</div>
+
+			<div class="asidel__pokedex">
+				<img class="asidel__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
+			</div>
+		</asidel>
+		<!-- fin aside -->
+	</main>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -102,5 +148,10 @@
 </footer>
 <!-- -->
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({disable: 'mobile'});
+</script>
 </body>
 </html>

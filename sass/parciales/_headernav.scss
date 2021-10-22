@@ -108,7 +108,7 @@ button .navbar-toggler {
 
 .header {
 	position: sticky; 
-	top: -152px; 
+	top: -118px; 
 	z-index: 3;
 	align-items: center;
 	@include tablet {
@@ -122,17 +122,16 @@ button .navbar-toggler {
 		width: 100%;
 		color: white;
 		overflow: hidden;
-		max-width: 508px;
-	    min-height: 140px;
+		max-width: 290px;
 	    height: auto;
-	    max-height: 151px;
+	    max-height: 115px;
 	    margin: auto;
 	    @include tablet {
 	    	width: 50%;
 	    	margin: 0px;
-	    	padding-top: .5rem;
 	    }
 	    &__title {
+	    	position: relative;
 	    	font-family: $title2;
 	    	font-size: 5rem;
 	    	text-align: center;
@@ -140,6 +139,7 @@ button .navbar-toggler {
 	    	z-index: 2;
 	    }
 	    &__firma {
+	    	position: relative;
 	    	font-family: $special;
 	    	font-size: 1.8rem;
 		    text-align: center;
@@ -158,11 +158,10 @@ button .navbar-toggler {
 	    &__ball {
 	    	width: 96px;
 	    	position: relative;
-	    	right: -61vw;
+	    	left: 174px;
 	    	bottom: 75px;
 	    	z-index: 1;
 	    	@include tablet {
-	    		right: -30vw;
 	    	}
 	    	&__img {
 	    		width: 100%;
@@ -195,17 +194,6 @@ button .navbar-toggler {
 			width: 47%;
 			max-width: 60px;
 			margin: auto;
-			&:hover {
-				position: relative;
-				-webkit-animation: wiggle 0.5s infinite;
-				-moz-animation: wiggle 0.5s infinite;
-				animation: wiggle 0.5s infinite;
-			}
-			&:active {
-				-webkit-animation: wiggle 0.5s infinite;
-				-moz-animation: wiggle 0.5s infinite;
-				animation: wiggle 0.5s infinite;
-			}
 		}
 		&__text {
 			font-family: monospace;
@@ -222,4 +210,17 @@ button .navbar-toggler {
 		}
 	}
 }
+
+.navflex__link:hover .navflex__link__wiggler {
+	position: relative;
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
+}
+.navflex__link:active .navflex__link__wiggler {
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
+}
+
 

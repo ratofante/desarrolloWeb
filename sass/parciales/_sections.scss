@@ -265,6 +265,73 @@ section .section-right {
 	}
 }
 
+.sect {
+	overflow: hidden;
+	width: 95%;
+	max-width: 680px;
+    margin: auto;
+    margin-bottom: 3rem;
+    background-color: #d1e8fdf5;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #00000063;
+    border-radius: 8px;
+    text-align: center;	
+    &__title {
+    	font-family: $title2;
+    	font-size: 1.4rem;
+    }
+    &__text {
+    	position: relative;
+    	padding: 2rem 1rem;
+		text-align: center;
+    	line-height: 24px;
+    	z-index: 2;
+    }
+    &__card {
+    	display: flex;
+    	flex-flow: column;
+    	align-items: center;
+    	@include tablet {
+    		flex-flow: row;
+    	}
+    	&__left {
+
+    	}
+    	&__right {
+
+    	}
+    	&__pokedex {
+    		width: 90px;
+    		&__img {
+    			width: 100%;
+    		}
+    	}
+    }
+    &__jigglyR {
+    	position: relative;
+		bottom: 196px;
+		left: 100px;
+		z-index: 1;
+		opacity: .3;
+		width: 228px;
+		height: 0px;
+    	&__img {
+    		width: 100%;
+    		z-indez: 1;
+    	}
+    }
+    &__jigglyL {
+    	@extend .sect__jigglyR;
+    	left: -50px;
+    	&__img {
+    		@extend .sect__jigglyR__img;
+    	}
+    }
+}
+
+
+
 .wrapdiv404 {
 	width: 100vw;
 	height: 100vh;

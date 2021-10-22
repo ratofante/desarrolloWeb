@@ -6,12 +6,19 @@
 	display: flex;
 	flex-flow: row;
 	box-shadow: 0px 0px 19px #9d84b7;
+	border-end-end-radius: 86px;
+    border-start-end-radius: 72px;
 }
-
+/* Colores para otras páginas */
+@mixin about_colors_section {
+	background-color: #102436;
+}
+@mixin about_colors_text {
+	background-color: #adadad;
+}
 .asidel {
 	@include aside;
-	border-start-start-radius: 78px;
-	border-end-start-radius: 83px;
+	@include about_colors_section;
 	&__logo {
 		width: 52%;
     	max-width: 100px;
@@ -20,7 +27,9 @@
 		}
 	}
 	&__text {
+		width: 191px;
 		background-color: $secbg;
+		@include about_colors_text;
 		margin: 1rem;
 		padding: .5rem;
 		border-radius: 7px;
@@ -57,8 +66,7 @@
 
 .asider {
 	@include aside;
-	border-end-end-radius: 86px;
-    border-start-end-radius: 72px;
+	@include about_colors_section;
     @include tablet {
     	justify-content: end;
     }
