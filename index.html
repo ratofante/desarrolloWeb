@@ -6,12 +6,13 @@
 	<meta name="description" content="Learn all about the 151 original pokemons, test your knowledge and join to the pokedex projec!">
 	<meta name="keywords" content="Pokemon, Pokedex, Games, Project">
 	<meta name="author" content="Rodrigo González Wilkens">
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css">
+    <!--link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css"-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Pokedex Project - Home</title>
 </head>
-<body class="">
+<body class="home_background">
 <div class="wrapper container-fluid">
 	
 	<!-- NAVBAR -->	
@@ -69,57 +70,33 @@
 	  	</div>
 	</nav>
 	</div>
-
-
-	<!-- HEADER 
-	<div id="div_header" class="container-fluid">
-	<header class="header">
-		<div class="header__divl">
-			<div class="header__divl__title">
-				<h1 class="header__divl__title__h1">Pokedex</h1>
-			</div>
-			<div class="header__divl__subt">
-				<small class="header__divl__subt__firma">By RGW</small>
-				<div class="header__divl__subt__imgdiv">
-					<img class="header__divl__subt__imgdiv__img" src="resources/img/pokeball2-dark.png">
-				</div>
-			</div>
-		</div>
-		<div class="header__divr">
-			<div class="header__divr__imgdiv">
-				<img class="header__divr__imgdiv__img" src="resources/img/pokedex.png">
-			</div>
-		</div>
-	</header>
-	</div>
-	-->
-
+	<!-- FIN NAVBAR -->
 
 	<!-- CAROUSEL -->
 	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
-	    	<div class="carousel-left carousel-item active" data-bs-interval="10000" style="background: url(resources/img/bg-cards/r_nidoreen.jpg)no-repeat center; background-size: cover;">
+	    	<div class="carousel-item active" data-bs-interval="10000" style="background: url(resources/img/bg-cards/r_nidoreen.jpg)no-repeat center; background-size: cover;">
 	      		<div class="carousel-card-l">
-	      			<h3 class="carousel-card-l__title">Hola es un Titulo</h3>
-	      			<p class="carousel-card-l__text">Algun texto descriptivo del titulo</p>
+	      			<h3 class="carousel-card-l__title">New Pokedex</h3>
+	      			<p class="carousel-card-l__text">Check the new pokedex and have fun learning about pokemons!</p>
 	      		</div>
 	    	</div>
 	    	<div class="carousel-item" data-bs-interval="10000" style="background: url(resources/img/bg-cards/l_machamp.jpg)no-repeat center; background-size: cover;">	    
 	      		<div class="carousel-card-r">
-	      			<h3 class="carousel-card-r__title">Hola es un Titulo</h3>
-	      			<p class="carousel-card-r__text">Algun texto descriptivo del titulo</p>
+	      			<h3 class="carousel-card-r__title">Collaborate with me</h3>
+	      			<p class="carousel-card-r__text">Join me in this project, we can do this together.</p>
 	      		</div>
 	    	</div>
-			<div class="carousel-left carousel-item" data-bs-interval="10000" style="background: url(resources/img/bg-cards/r_gengar.jpg)no-repeat center; background-size: cover;">
+			<div class="carousel-item" data-bs-interval="10000" style="background: url(resources/img/bg-cards/r_gengar.jpg)no-repeat center; background-size: cover;">
 	      		<div class="carousel-card-l">
-	      			<h3 class="carousel-card-l__title">Hola es un Titulo</h3>
-	      			<p class="carousel-card-l__text">Algun texto descriptivo del titulo</p>
+	      			<h3 class="carousel-card-l__title">Test your knowlegde</h3>
+	      			<p class="carousel-card-l__text">Take the quiz and put your name on the table!</p>
 	      		</div>
 	    	</div>
 	    	<div class="carousel-item" data-bs-interval="10000" style="background: url(resources/img/bg-cards/l_magnamite.jpg)no-repeat center; background-size: cover;">
 	      		<div class="carousel-card-r">
-	      			<h3 class="carousel-card-r__title">Hola es un Titulo</h3>
-	      			<p class="carousel-card-r__text">Algun texto descriptivo del titulo</p>
+	      			<h3 class="carousel-card-r__title">Learn more about the project!</h3>
+	      			<p class="carousel-card-r__text">Check how this site works</p>
 	      		</div>
 	    	</div>
 	  	</div>
@@ -134,8 +111,9 @@
 	</div>
 
 	<!-- MAIN BODY -->
-	<!-- welcome, acordeon -->
 	<main>
+	<!-- welcome, acordeon -->
+	<div class="maindiv">
 		<section class="welcome">
 			<div class="welcome__up">
 				<h2 class="welcome__up__title">Welcome!</h2>
@@ -149,136 +127,206 @@
 					</div>
 				</div>
 			</div>
-			<div class="welcome__aside">
+			<div class="welcome__asidel">
 				
 			</div>
 		</section>
 
 		<!-- ACCORDION -->
-		<div>
-			<div class="accordion-flush" id="accordionFlushExample">
-	  			<div id="accordion_1" class="accordion-item">
-	   				<h2 class="accordion-header text-center" id="flush-headingOne">
-	      				<button id="accordion_1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">About this site
-	      				</button>
-	      			</h2>
-	    			<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-	      				<div class="accordion-body">This site is a personal project. The main objective is to create a Pokedex where you can search pokemons by its Id or name (soon I hope so). Also, you can test your knowlegde about Pokemons by taking the Quiz in the Quiz section.
-	      				</div>
-	    			</div>
-	  			</div>
-		  		<div class="accordion-item">
-		    		<h2 class="accordion-header" id="flush-headingTwo">
-	    	  			<button id="accordion_2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">What can I do with pokedex?
-	    	  			</button>
-	    			</h2>
-	    			<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body">With the Pokedex you can search for Pokemons and learn about them. There are many things to discover about pokemons. Find out the evolution path, look at the moves it can lear and much more! <br>
-							<a class="d-block text-end mt-3" href="views/pokedex.html">Go find a Pokemon!</a>
-								</div>
+		<div class="accordion-flush" id="accordionFlushExample">
+	  		<div id="accordion_1" class="accordion-item">
+	   			<h2 class="accordion-header text-center" id="flush-headingOne">
+	      			<button id="accordion_1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">About this site
+	      			</button>
+	     		</h2>
+	    		<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+	    			<div class="accordion-body">This site is a personal project. The main objective is to create a Pokedex where you can search pokemons by its Id or name (soon I hope so). Also, you can test your knowlegde about Pokemons by taking the Quiz in the Quiz section.
+	      			</div>
+	    		</div>
+	  		</div>
+		  	<div class="accordion-item">
+		    	<h2 class="accordion-header" id="flush-headingTwo">
+	    	  		<button id="accordion_2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">What can I do with pokedex?
+	    	  		</button>
+	    		</h2>
+	    		<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">With the Pokedex you can search for Pokemons and learn about them. There are many things to discover about pokemons. Find out the evolution path, look at the moves it can lear and much more! <br>
+						<a class="d-block text-end mt-3" href="views/pokedex.html">Go find a Pokemon!</a>
 					</div>
-	  			</div>
-	  			<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingThree">
-						<button id="accordion_3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+				</div>
+	  		</div>
+	  		<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingThree">
+					<button id="accordion_3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 					        	How can I test my pokemon knowlegde?
-					 		</button>
-					</h2>
-	    			<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-	      				<div class="accordion-body">To take the test go to the Quiz section. There you can challenge yourself getting the right answer for the different questions. An excellent little game for the nostalgia. You can invite your friends and find out who is the real pokemon master! <br>
-	      					<a class="d-block text-end mt-3" href="views/quiz.html">Take the Quiz!</a>
-	      				</div>
-	    			</div>
-	  			</div>
-			</div>
+					 </button>
+				</h2>
+	    		<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+	      			<div class="accordion-body">To take the test go to the Quiz section. There you can challenge yourself getting the right answer for the different questions. An excellent little game for the nostalgia. You can invite your friends and find out who is the real pokemon master! <br>
+	      				<a class="d-block text-end mt-3" href="views/quiz.html">Take the Quiz!</a>
+	      			</div>
+	    		</div>
+	  		</div>
 		</div>
+	</div>
+	<!--fin div welcome + accordion -->
 		<!-- fin ACCORDION -->
 
-		<!-- ASIDE -->
-		<div class="welcome__aside">
+		<!-- ASIDEl -->
+		<div class="welcome__asidel">
 				
 		</div>
 
 		<!-- SECTIONS -->
-		<section class="pokedex">
-			<div class="pokedex__up">
-				<h2 class="pokedex__up__title">The Pokedex</h2>
+		<section class="pokedex" data-aos="fade-up" data-aos-duration="1000">
+			<div class="section-left">
+				<div class="pokedex__up">
+					<h2 class="pokedex__up__title">The Pokedex</h2>
+				</div>
+				<div class="pokedex__down">
+					<p class="pokedex__down__text">Use the pokedex to find a pokemon and learn all about them.</p>
+					<div class="pokedex__down__box">
+						<a class="pokedex__down__box__text" href="views/pokedex.html">Go to Pokedex</a>
+						<div class="pokedex__down__box__imgdiv">
+							<img class="pokedex__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="pokedex__down">
-				<p class="pokedex__down__text">This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
-				<div class="pokedex__down__box">
-					<a class="pokedex__down__box__text" href="views/pokedex.html">Go to Pokedex</a>
-					<div class="pokedex__down__box__imgdiv">
-						<img class="pokedex__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
+			<div class="section-right">
+				<img class="section-right__img" src="resources/img/day_bg.png" alt="Fondo ilustrativo">
+			</div>
+		</section>
+
+		<!-- asidel -->
+		<asidel class="asidel">
+			<div class="asidel__logo">
+				<img class="asidel__logo__img" src="resources/img/footer_logo.png" alt="asidel logo">
+			</div>
+			<div class="asidel__text">
+				<p class="asidel__text__p">Many thanks to <a href="https://pokeapi.co/">PokeApi</a> for their amazing work</p>
+				<p class="asidel__text__firma">by RGW</p>		
+			</div>
+
+			<div class="asidel__pokedex">
+				<img class="asidel__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
+			</div>
+		</asidel>
+		<!-- fin aside -->
+
+		<section class="quiz" data-aos="slide-left" data-aos-duration="1000">
+			<div class="section-left">
+				<img class="section-left__img" src="resources/img/night_bg.png">
+			</div>
+			<div class="section-right">
+				<div class="quiz__up">
+					<h2 class="quiz__up__title">Quiz Section</h2>
+				</div>
+				<div class="quiz__down">
+					<p class="quiz__down__text">Put your Pokemon knowledge to test with the Quiz!</p>
+					<p class="quiz__down__text">In this section you can find questions related to all 151 pokemons</p>
+					<div class="quiz__down__box">
+						<a class="quiz__down__box__text" href="views/quiz.html">Let's give it a try! </a>
+						<div class="quiz__down__box__imgdiv">
+							<img class="quiz__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="quiz">
-			<div class="quiz__up">
-				<h2 class="quiz__up__title">Quiz Section</h2>
-			</div>
-			<div class="quiz__down">
-				<p class="quiz__down__text">Put your Pokemon knowledge to test with the Quiz!</p>
-				<p class="quiz__down__text">In this section you can find questions related to all 151 pokemons</p>
-				<div class="quiz__down__box">
-					<a class="quiz__down__box__text" href="views/quiz.html">Let's give it a try! </a>
-					<div class="quiz__down__box__imgdiv">
-						<img class="quiz__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
+		<section class="about" data-aos="slide-right" data-aos-duration="1000">
+			<div class="section-left">	
+				<div class="about__up">
+					<h2 class="about__up__title">About</h2>
+				</div>
+				<div class="about__down">
+					<p class="about__down__text">Everything you need to know about this site</p>
+					<div class="about__down__box">
+						<a class="about__down__box__text" href="views/about.html">Learn more!</a>
+						<div class="about__down__box__imgdiv">
+							<img class="about__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="section-right">
+				<img class="section-right__img" src="resources/img/home_bg.png" alt="Fondo ilustrativo">
+			</div>
 		</section>
 
-		<section class="about">
-			<div class="about__up">
-				<h2 class="about__up__title">About</h2>
+		<!-- asider -->
+		<asidel class="asider">
+			<div class="asider__pokedex">
+				<img class="asider__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
 			</div>
-			<div class="about__down">
-				<p class="about__down__text">Everything you need to know about this site</p>
-				<div class="about__down__box">
-					<a class="about__down__box__text" href="views/about.html">Learn more!</a>
-					<div class="about__down__box__imgdiv">
-						<img class="about__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
-					</div>
+			<div class="asider__text">
+				<p class="asider__text__p">A project for <a href="https://www.coderhouse.com/">CoderHouse's</a> web development course</p>
+				<p class="asider__text__firma">by RGW</p>		
+			</div>
+			<div class="asider__logo">
+				<img class="asider__logo__img" src="resources/img/footer_logo.png" alt="asidel logo">
+			</div>
+		</asidel>
+		<!-- fin aside -->		
+
+		<section class="contact" data-aos="fade-up" data-aos-duration="1000">
+			<div class="section-left" data-aos="fade-up" data-aos-duration="1000">
+				<img class="section-left__img" src="resources/img/night_bg.png">
+			</div>
+			<div class="section-right" data-aos="fade-up" data-aos-duration="1000">
+				<div class="contact__up">
+					<h2 class="contact__up__title" data-aos="fade-up" data-aos-duration="1000">Contact</h2>
 				</div>
-			</div>
-		</section>
-
-		<section class="contact">
-			<div class="contact__up">
-				<h2 class="contact__up__title">Contact</h2>
-			</div>
-			<div class="contact__down">
-				<p class="contact__down__text">Wanna learn more about the project? <br> Do you want to collaborate?</p>
-				<div class="contact__down__box">
-					<a class="contact__down__box__text" href="views/contact.html">Contact me!</a>
-					<div class="contact__down__box__imgdiv">
-						<img class="contact__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
+				<div class="contact__down">
+					<p class="contact__down__text">Wanna learn more about the project? <br> Do you want to collaborate?</p>
+					<div class="contact__down__box">
+						<a class="contact__down__box__text" href="views/contact.html">Contact me!</a>
+						<div class="contact__down__box__imgdiv">
+							<img class="contact__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+	<!-- Fin MAIN -->
 
 	<!-- FOOTER -->
 	<footer class="footer">
-		<div class="footer__logo">
-			<img class="footer__logo__img" src="resources/img/footer_logo.png" alt="footer logo">
+		<div class="footer__banner">
+			<img class="footer__banner__img" src="resources/img/footer_banner.png" alt="Pokemon Banner">
 		</div>
-		<div class="footer__text">
-			<p class="footer__text__p">Many thanks to PokeApi for their amazing work</p>
-			<p class="footer__text__firma">by RGW</p>		
-		</div>
-
-		<div class="footer__pokedex">
-			<img class="footer__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
+		<div class="footer__pie">
+			<ul class="footer__pie__list">
+				<li class="footer__pie__list__itemball"> 
+					<img class="footer__pie__list__itemball__img" src="resources/img/miniball.png">
+				</li>
+				<li class="footer__pie__list__item">
+					<img class="footer__pie__list__item__img" src="resources/img/face.svg">
+				</li>
+				<li class="footer__pie__list__item">
+					<img class="footer__pie__list__item__img" src="resources/img/insta.svg">
+				</li>
+				<li class="footer__pie__list__item">
+					<img class="footer__pie__list__item__img" src="resources/img/github.svg">
+				</li>
+				<li class="footer__pie__list__item">
+					<img class="footer__pie__list__item__img" src="resources/img/linke.svg">
+				</li>
+				<li class="footer__pie__list__itemball"> 
+					<img class="footer__pie__list__itemball__img" src="resources/img/miniball.png">
+				</li>				
+			</ul>
 		</div>
 	</footer>
 
 </div>
 <!-- FIN WRAPPER -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({disable: 'mobile'});
+</script>
 </body>
 </html>

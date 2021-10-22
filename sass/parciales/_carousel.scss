@@ -1,0 +1,118 @@
+/* Variables para los diferentes dispositivos */
+
+$c-small: 380px;
+$c-tablet: 540px;
+$c-wide: 600px;
+
+/* Altura del carrousel */
+
+#carouselExampleInterval {
+	margin-top: 45px;
+	height: $c-small;
+	overflow-y: hidden;
+	border-bottom: 0px solid #091353b8;
+    box-shadow: 0px -3px 17px #091353;
+	@include tablet {
+		height: $c-tablet;
+	}
+	@include wide_pc {
+		height: $c-wide;
+	}
+}
+.carousel-inner {
+	height: 100%;
+	max-height: $c-small;
+	@include tablet {
+		max-height: $c-tablet;
+	}
+	@include wide_pc {
+		max-height: $c-wide;
+		height: $c-wide;
+	}
+}
+.carousel-item {
+	height: 100%;
+	max-height: $c-small;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include tablet {
+		max-height: $c-tablet;
+	}
+	@include wide_pc {
+		max-height: $c-wide;
+		height: $c-wide;
+	}
+}
+
+/* Cards con título-texto del Carrousel */
+
+@mixin cards {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	margin-top: 7rem;
+	background-color: #ffffff47;
+	@include tablet {
+		width:  80%;
+		margin: auto;
+		margin-top:  8rem;
+
+	}
+}
+@mixin card_title {
+	font-family: $special;
+	font-size: 1.7rem;
+	margin-top: 1rem;
+	@include tablet {
+		font-size:  4.7rem;
+	}
+	@include wide_pc {
+		font-size:  6.7rem;
+	}
+}
+@mixin card_text {
+	color: black;
+	font-size: 1rem;
+	font-family: $normal;
+	font-weight: 500;
+	max-width:220px;
+	margin-bottom: 1rem;
+	@include tablet {
+		max-width: 300px;
+		margin-bottom: 3rem;
+	}
+	@include wide_pc {
+		font-size: 1.8rem;
+		max-width:  580px;
+	}
+}
+.carousel-card-r {
+	@include cards;
+    align-items: end;
+    padding-left: 3rem;
+    padding-right: 1rem;
+	&__title {
+		@include card_title;
+		text-align: right;
+	}
+	&__text {
+		@include card_text;
+		text-align: right;
+	}
+}
+.carousel-card-l {
+	@include cards;
+	padding: 0rem 3rem 0rem 1rem;
+	@include tablet {
+		padding: 1rem 0rem 1rem 3rem;
+	}
+	&__title {
+		@include card_title;
+		text-align: left;
+	}
+	&__text {
+		@include card_text;
+		text-align:left;
+	}
+}

@@ -62,27 +62,6 @@ html {width: 100%; overflow-x: hidden;}
 	50% {transform:rotate(-4deg);}
 	100% {transform:rotate(4deg);}
 }
-/* safari and chrome */
-@-webkit-keyframes pulse {
-	0% {-webkit-transform: scaleX(1);}
-	50% {-webkit-transform: scale3d(1.02, 1.02, 1.02);}
-	100% {-webkit-transform: scaleX(1);}
-}
-
-/* firefox */
-@-moz-keyframes pulse {
-	0% {-webkit-transform: scaleX(1);}
-    50% {-webkit-transform: scale3d(1.02,1.02,1.02);}
-    100% {-webkit-transform: scaleX(1);}	
-}
-@keyframes pulse {
-	0% {transform: scaleX(1);}
-    50% {transform: scale3d(1.02,1.02,1.02);}
-    100% {transform: scaleX(1);}
-}
-.pulse {
-	animation: pulse 2s infinite;
-}
 /****************************/
 /*****   GRIDS             **/
 /****************************/
@@ -289,29 +268,7 @@ section
     border-radius: 8px;
     text-align: center;
 }
-/* welcome section en index.html */
-#welcome_section {padding: 0px;}
-#welcome_img {width: 100%; margin: auto;}
-#welcome_img img {width: 100%;}
-#welcome_section h2, p, span {padding: 2rem;}
 
-/*general*/
-#miniball {
-	width: 60px;
-    display: inline-block;
-    padding: 1rem;
-}
-#miniball img {width: 100%;}
-h2, p {padding: 1rem;}
-li {list-style-position: inside; text-align: left;}
-.text_p {
-	padding: 2rem;
-	text-align: left;
-    line-height: 24px;
-}
-
-#odish_img {width: 270px; margin: auto;}
-#odish_img img {width: 100%;}
 
 /***********************************/
 /*****   MAIN & SECTIONS QUERIES  **/

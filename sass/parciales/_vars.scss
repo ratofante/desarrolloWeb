@@ -1,6 +1,7 @@
 /* Media queries */
   
 $sm: 317px;
+$medium_mobile: 370px;
 $md: 766px;
 $lg: 992px;
 $xl: 1198px;
@@ -15,7 +16,7 @@ $contrast: monospace;
 
 /* Weights */
   
-$reg: 400;
+$light-bold: 500;
 $bold: 700;
 
 /* Colors */
@@ -25,8 +26,51 @@ $white-color: #ffffff;
 
 /* BG colors */
 
-$transbg: #ffffff73;
+$transbg: #4e006a3d;
 $mainbg: #091353;
 $secbg: #9D84B7;
 $light: #f5f5ff;
 $blight: #B2F9FC;
+
+/* Animations */
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform:rotate(4deg);}
+    50% {-webkit-transform:rotate(-4deg);}
+    100% {-webkit-transform:rotate(4deg);}
+}
+/* firefox */
+@-moz-keyframes wiggle {
+    0% {-moz-transform:rotate(4deg);}
+    50% {-moz-transform:rotate(-4deg);}
+    100% {-moz-transform:rotate(4deg);}
+}
+@keyframes wiggle {
+    0% {transform:rotate(4deg);}
+    50% {transform:rotate(-4deg);}
+    100% {transform:rotate(4deg);}
+}
