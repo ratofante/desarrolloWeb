@@ -13,7 +13,7 @@
 
 /* wrapper envuelve todo el contenido del body */
 .wrapper {
-	padding: 0px; overflow-x: hidden;
+	padding: 0px; overflow-x: hidden; height: 100vh;
 }
 
 /* NAV-HEADER de la HOME PAGE */
@@ -124,7 +124,7 @@
 
 .header {
 	position: sticky; 
-	top: -118px; 
+	top: -148px; 
 	z-index: 3;
 	align-items: center;
 	@include tablet {
@@ -132,15 +132,14 @@
 	    flex-flow: row;
 	    height: 130px;
 	    top: 0;
-	    justify-content: center;
+	    justify-content: space-between;
 	}
 	&__logo {
 		width: 100%;
 		color: white;
-		overflow: hidden;
 		max-width: 290px;
 	    height: auto;
-	    max-height: 115px;
+	    max-height: 140px;
 	    margin: auto;
 	    @include tablet {
 	    	width: 50%;
@@ -193,23 +192,28 @@
 .navflex {
 	display: flex;
 	flex-flow: row;
-	padding: 10px 0px;
+	padding: 5px 0px 0px 0px;
 	justify-content: space-between;
 	align-items: center;
 	@include tablet {
+		width: 400px;
+		margin-right: 1rem;
 	}
 	&__link {
 		display: flex;
 	    align-items: center;
 	    justify-content: center;
-		width: 20%;
+		max-width: 64px;
 		height: 8vh;
 		text-decoration: none;
 		color: white;
 		&__wiggler {
 			width: 47%;
 			max-width: 60px;
-			margin: auto;
+			margin: 2px auto;
+			@include tablet {
+				width: 52%; 
+			}
 		}
 		&__text {
 			font-family: monospace;

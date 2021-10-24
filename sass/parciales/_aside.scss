@@ -34,12 +34,17 @@
 		}
 	}
 	&__text {
+		display: flex;
+	    flex-flow: column;
+	    align-items: initial;
+	    justify-content: space-around;
 		width: auto;
-		max-width: 200px;
+		min-width: 190px;
+		max-width: 50%;
 		background-color: $secbg;
 		@include about_colors_text;
-		margin: 1rem;
-		padding: .5rem;
+		margin: .7rem;
+		padding: .4rem;
 		border-radius: 7px;
 		@include tablet {
 			display: flex;
@@ -48,13 +53,13 @@
 		}
 		@include wide_pc {
 			margin: .6rem;
-			width: 300px;
 		}
 		&__p {
 			color: $mainbg;
 			font-size: .7rem;
 			font-weight: $light-bold;
 			margin: 0;
+			line-height: 20px;
 			@include medium_mobile {
 			}
 			@include wide_pc {

@@ -296,7 +296,7 @@ section .section-right {
     	display: flex;
     	flex-flow: column;
     	align-items: center;
-    	justify-content: center;
+    	justify-content: space-around;
     	z-index: 2;
     	@include tablet {
     		flex-flow: row;
@@ -305,12 +305,13 @@ section .section-right {
     		@extend .sect__text;
     		&__p {
     			padding: 1rem 0rem;
+    			max-width: 330px;
     		}
     	}
     	&__img {
     	}
     	&__pokedex {
-    		width: 90px;
+    		width: 150px;
     		&__img {
     			width: 100%;
     		}
