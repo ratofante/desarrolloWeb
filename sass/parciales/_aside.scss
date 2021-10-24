@@ -34,7 +34,8 @@
 		}
 	}
 	&__text {
-		width: 191px;
+		width: auto;
+		max-width: 200px;
 		background-color: $secbg;
 		@include about_colors_text;
 		margin: 1rem;

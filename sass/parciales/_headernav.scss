@@ -24,16 +24,29 @@
 	max-width: 100vw;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	box-shadow: 0px -1px 7px blue;
 }
 .navbar {
-	height: 55px;
+	height: 60px;
 	background-color: $mainbg;
-	padding-top: .3rem;
+	padding-top: .3rem 0px;
 }
-button .navbar-toggler {
+.navbar-toggler {
+	width: 40px;
 	height: 35px;
+	padding: 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.navbar-toggler:hover {
+	box-shadow: 0 0 0 0.15rem;	
+}
+.navbar-toggler:focus {
+	box-shadow: 0 0 0 0.2rem;
+}
+.navbar-toggler-icon {
+	
 }
 #navbar-title {
 	font-size: 2rem;
@@ -46,7 +59,7 @@ button .navbar-toggler {
     box-shadow: -2px 3px 1px white;
 }
 .nav-item {
-	max-width: 144px;
+	max-width: 170px;
 	&__link {
 		font-family: $normal;
 		letter-spacing: 2px;
