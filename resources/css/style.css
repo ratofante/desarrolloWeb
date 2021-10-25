@@ -22,19 +22,7 @@
 /*****   BACKGROUNDS       **/
 /****************************/
 
-html {width: 100%; overflow-x: hidden;}
-.home_bg {background: url('../img/home_bg.png') no-repeat center center fixed;}
-.day_bg {background: url('../img/day_bg.png') no-repeat center center fixed;}
-.night_bg {background: url('../img/night_bg.png') no-repeat center center fixed;}
 
-.home_bg, .day_bg, .night_bg
-{ 
-	font-size: 100%;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
 
 /****************************/
 /*****   CLASES GENERALES  **/
@@ -354,30 +342,9 @@ section
 #answer_1 {visibility: hidden;}
 .quiz_answer:hover #answer_1 {visibility: visible;}
 
-
-/****************************/
-/*****   About Iframe       **/
-/****************************/
-
-#video_div {width: 100%;}
-iframe {width: 86% !important;/* height: 100% !important;*/}
-
-@media (min-width: 1200px)
-{
-	#video_div {min-width: 600px;}
-}
-
 /****************************/
 /*****   FORM - CONTACT    **/
 /****************************/
-#form_container {padding: 1rem;}
-#contact_form {flex-flow: column; margin: auto;}
-fieldset {margin: auto;}
-.form_section {display: flex;}
-.form_section input, select {
-	padding: 0.4rem;
-	margin: auto 10px;
-}
 #contribute {height: 30px; width: 30px;}
 #form_end_contact {margin-top: 1rem;}
 #form_end_contact input {padding: 0.5rem;}
@@ -387,8 +354,6 @@ fieldset {margin: auto;}
 
 @media (max-width: 720px)
 {
-	#contact_form {min-width: 280px; max-width: 290px;}
-	fieldset {min-width: 275px;}
 	.form_section {flex-flow: column;}
 	.form_section:last-child {flex-flow: row;}
 	.form_section label {

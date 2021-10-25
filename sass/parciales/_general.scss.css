@@ -1,0 +1,34 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+/* Fondos para el Body completo */
+
+html {width: 100%; overflow-x: hidden;}
+.home_bg {background: url('../img/home_bg.png') no-repeat center center fixed;}
+.day_bg {background: url('../img/day_bg.png') no-repeat center center fixed;}
+.night_bg {background: url('../img/night_bg.png') no-repeat center center fixed;}
+
+.home_bg, .day_bg, .night_bg
+{ 
+	font-size: 100%;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+/*Color para body */
+.home_background {
+	background-color:#d7e9f9;
+	/*background: linear-gradient(180deg, #c8a3d5 0%, #091353c2 94%, #091353 100%);*/
+}
+.sunshine_bg {
+	background: url(../img/home_bg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* wrapper envuelve todo el contenido del body */
+.wrapper {
+	padding: 0px; overflow-x: hidden; height: 100vh;
+}

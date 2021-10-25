@@ -1,3 +1,5 @@
+main{margin: 10% auto 0px auto; overflow: hidden;}
+
 .maindiv {
 	display: flex;
 	flex-flow: column;
@@ -26,7 +28,7 @@
     	flex-flow: row;
     	align-items: center;
     	justify-content: space-between;
-    	min-height: 400px;
+    	min-height: 330px;
     }
 	&__title {
 		color:  $mainbg;
@@ -66,8 +68,12 @@
 section .section-left {
 	width: auto;
 	min-width: 45%;
-	max-width: 50%;
+	max-width: 85%;
 	margin: auto;
+	@include tablet {
+		min-width: 45%;
+		max-width: 50%;
+	}
 	&__img {
 		display: none;
 		@include tablet {
@@ -285,6 +291,7 @@ section .section-right {
     	padding-bottom: 1rem;
     }
     &__text {
+    	font-family: $normal;
     	position: relative;
     	padding: 1rem;
 		text-align: center;
@@ -304,6 +311,7 @@ section .section-right {
     	&__text {
     		@extend .sect__text;
     		&__p {
+    			font-family: $normal;
     			padding: 1rem 0rem;
     			max-width: 330px;
     		}

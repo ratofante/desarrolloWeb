@@ -1,0 +1,27 @@
+/* FORM */
+
+.form_container {padding: 1rem;}
+.contact_form {
+	display: flex;
+	flex-flow: column;
+	margin:  auto;
+	min-width:  280px;
+	max-width: 290px;
+	&__field {
+		margin: auto;
+		min-width: 275px;
+	}
+	&__title {
+		font-family: $title2;
+	}
+	&__form_section {
+		display: flex;
+		flex-flow: column;
+		&__input {
+			padding: .4rem;
+			margin:  auto 10px;
+		}
+	}
+}
+.contact_form__form_section label, input {font-family: $normal;}
+#contribute {height: 30px; width: 30px;}

@@ -63,6 +63,9 @@
 			line-height: 20px;
 			@include medium_mobile {
 			}
+			@include tablet {
+				font-size: .9rem;
+			}
 			@include wide_pc {
 				font-size: 1rem;
 			}
