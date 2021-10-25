@@ -90,6 +90,8 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 75px;
+	width: 92vw;
+	margin: auto;
 	@include tablet {
 		width: 400px;
 		margin-right: 1rem;
@@ -99,7 +101,7 @@
 		flex-flow: column;
 	    align-items: center;
 	    justify-content: center;
-		max-width: 64px;
+		max-width: 54px;
 		height: 8vh;
 		text-decoration: none;
 		color: white;

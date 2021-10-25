@@ -62,39 +62,3 @@
 		padding: .3rem;
 	}
 }
-
-.about_footer {
-	display:flex;
-	flex-flow: row;
-	border-top-left-radius: 46px;
-    border-start-end-radius: 56px;
-    border-end-end-radius: 42px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 11px;
-    justify-content: space-between;	
-    background: #181829f7;
-    color: white;
-    height: 100px;
-	&__logo {
-		&__img {
-			height: 90%;
-		}
-	}
-	&__section {
-		padding-right: 2rem;
-		&__p {
-			padding: 0.7rem 0.2rem 0.2rem 0.7rem;
-			font-weight: 600;
-			font-family: $normal;
-		}
-		&__copyrights {
-			text-align: right;
-		    font-size: 0.7rem;
-		    letter-spacing: 1px;
-		    color: white;
-		    font-weight: 600;
-		    padding-top: 1em;
-		    font-family: $special;			
-		}
-	}
-}
