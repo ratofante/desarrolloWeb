@@ -17,7 +17,7 @@
 
 .header {
 	position: sticky; 
-	top: -114px; 
+	top: -148px; 
 	z-index: 3;
 	align-items: center;
 	@include tablet {
@@ -34,6 +34,7 @@
 	    height: auto;
 	    max-height: 116px;
 	    margin: auto;
+	    margin-bottom: 2rem;
 	    @include tablet {
 	    	width: 50%;
 	    	margin: 0px;

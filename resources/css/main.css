@@ -527,7 +527,7 @@ html {
 /* Solo Header */
 .header {
   position: sticky;
-  top: -114px;
+  top: -148px;
   z-index: 3;
   align-items: center; }
   @media screen and (min-width: 766px) {
@@ -543,7 +543,8 @@ html {
     max-width: 290px;
     height: auto;
     max-height: 116px;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 2rem; }
     @media screen and (min-width: 766px) {
       .header__logo {
         width: 50%;
@@ -1000,28 +1001,88 @@ section .section-right__img {
 /* FORM */
 .form_container {
   padding: 1rem; }
+  @media screen and (min-width: 766px) {
+    .form_container {
+      padding: 2rem; } }
 
 .contact_form {
   display: flex;
   flex-flow: column;
   margin: auto;
   min-width: 280px;
-  max-width: 290px; }
+  width: 100%;
+  max-width: 340px; }
+  @media screen and (min-width: 766px) {
+    .contact_form {
+      max-width: 460px; } }
   .contact_form__field {
     margin: auto;
-    min-width: 275px; }
+    min-width: 278px;
+    padding: 0.3rem; }
+    @media screen and (min-width: 766px) {
+      .contact_form__field {
+        width: 100%; } }
   .contact_form__title {
     font-family: "Lobster Two", cursive; }
   .contact_form__form_section {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    margin-bottom: 1.3rem; }
+    @media screen and (min-width: 766px) {
+      .contact_form__form_section {
+        margin: 2.5rem; } }
     .contact_form__form_section__input {
       padding: .4rem;
       margin: auto 10px; }
 
 .contact_form__form_section label, input {
-  font-family: "Fira Mono", monospace; }
+  font-family: "Fira Mono", monospace;
+  text-align: left;
+  margin-bottom: .3rem; }
+
+.contact_form__form_section label {
+  padding-left: 1rem; }
+
+.contact_form__form_section:last-child label {
+  text-align: center; }
 
 #contribute {
   height: 30px;
-  width: 30px; }
+  width: 30px;
+  margin: auto; }
+
+.form_end_contact {
+  margin-top: 1rem; }
+  .form_end_contact__input {
+    padding: .3rem; }
+  .form_end_contact__button {
+    padding: .3rem; }
+
+.about_footer {
+  display: flex;
+  flex-flow: row;
+  border-top-left-radius: 46px;
+  border-start-end-radius: 56px;
+  border-end-end-radius: 42px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 11px;
+  justify-content: space-between;
+  background: #181829f7;
+  color: white;
+  height: 100px; }
+  .about_footer__logo__img {
+    height: 90%; }
+  .about_footer__section {
+    padding-right: 2rem; }
+    .about_footer__section__p {
+      padding: 0.7rem 0.2rem 0.2rem 0.7rem;
+      font-weight: 600;
+      font-family: "Fira Mono", monospace; }
+    .about_footer__section__copyrights {
+      text-align: right;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      color: white;
+      font-weight: 600;
+      padding-top: 1em;
+      font-family: "VT323", monospace; }
