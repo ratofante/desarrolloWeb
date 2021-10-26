@@ -9,44 +9,65 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Lobster&family=VT323&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/main.css">
 	<title>Quiz - Pokedex Project</title>
 </head>
 <body>
-<div class="grid">
-	<header class="night_header">
-		<div id="header_logo">
-			<h1>Quiz</h1>
-			<h4 id="firma">by RGW</h4>
-			<div>
-				<img id="poke_logo" src="../resources/img/pokeball2.png" alt="Logo">
+<div class="wrapper">
+
+	<header class="header night_header" data-aos="top-top">
+		<div class="header__logo">
+			<h1 class="header__logo__title">About</h1>
+			<h4 class="header__logo__firma">by RGW</h4>
+			<div class="header__logo__ball">
+				<img class="header__logo__ball__img" id="poke_logo" src="../resources/img/pokeball2-dark.png" alt="Logo">
 			</div>	
 		</div>
-		<nav class="flex">
-			<a class="flex" href="../index.html">
-				<img class="wiggler" src="../resources/img/minilogo1.png" alt="Icon">
-				<h3>Home</h3>
+		<nav class="navflex">
+			<a class="navflex__link" href="../index.html">
+				<img class="navflex__link__wiggler" src="../resources/img/minilogo1.png" alt="Icon">
+				<h3 class="navflex__link__text">Home</h3>
 			</a>
-			<a class="flex" href="pokedex.html">
-				<img class="wiggler" src="../resources/img/minilogo2.png" alt="Icon">
-				<h3>Pokedex</h3>
+			<a class="navflex__link" href="pokedex.html">
+				<img class="navflex__link__wiggler" src="../resources/img/minilogo2.png" alt="Icon">
+				<h3 class="navflex__link__text">Pokedex</h3>
 			</a>
-			<a class="flex" href="quiz.html">
-				<img class="wiggler" src="../resources/img/minilogo3.png" alt="Icon">
-				<h3>Quiz</h3>
+			<a class="navflex__link" href="quiz.html">
+				<img class="navflex__link__wiggler" src="../resources/img/minilogo3.png" alt="Icon">
+				<h3 class="navflex__link__text">Quiz</h3>
 			</a>
-			<a class="flex" href="about.html">
-				<img class="wiggler" src="../resources/img/minilogo4.png" alt="Icon">
-				<h3>About</h3>
+			<a class="navflex__link" href="about.html">
+				<img class="navflex__link__wiggler" src="../resources/img/minilogo4.png" alt="Icon">
+				<h3 class="navflex__link__text">About</h3>
 			</a>
-			<a class="flex" href="contact.html">
-				<img class="wiggler" src="../resources/img/minilogo5.png" alt="Icon">
-				<h3>Contact</h3>
+			<a class="navflex__link" href="contact.html">
+				<img class="navflex__link__wiggler" src="../resources/img/minilogo5.png" alt="Icon">
+				<h3 class="navflex__link__text">Contact</h3>
 			</a>	
 		</nav>
 	</header>
+
+
+	<!-- M A I N -->
 	<main>
-		<section>
+
+		<!-- asider -->
+		<asidel class="asider">
+			<div class="asider__pokedex">
+				<img class="asider__pokedex__img" src="../resources/img/pokedex.png" alt="pokedex">
+			</div>
+			<div class="asider__text">
+				<p class="asider__text__p">A project for <a href="https://www.coderhouse.com/">CoderHouse's</a> web development course</p>
+				<p class="asider__text__firma">by RGW</p>		
+			</div>
+			<div class="asider__logo">
+				<img class="asider__logo__img" src="../resources/img/footer_logo.png" alt="asidel logo">
+			</div>
+		</asidel>
+		<!-- fin aside -->	
+
+
+		<section class="section">
 			<div class="quiz_div">
 				<div class="quiz_question">
 					<p>¿Preguntas cuyas respuestas pueden verse?</p>
@@ -97,22 +118,59 @@
 			</div>
 		</section>
 	</main>
-	<aside>
-		<section>
-			<h4>Aside Section</h4>
-			<p>Projecto final para CoderHouse, desarrollo Web</p>
-			<p>Rodrigo González Wilkens</p>
-		</section>
-	</aside>
-	<footer class="night_footer flex">
-		<div id="footer_logo">
-			<img src="../resources/img/footer_logo.png" alt="logo_footer">
-		</div>
-		<div class="footer_section">
-			<p>Author: Rodrigo González Wilkens</p>
-			<p id="copyrights">no copyright infringement intended</p>
-		</div>
-	</footer>
+
+
+		<!-- asidel -->
+		<asidel class="asidel">
+			<div class="asidel__logo">
+				<img class="asidel__logo__img" src="../resources/img/footer_logo.png" alt="asidel logo">
+			</div>
+			<div class="asidel__text">
+				<p class="asidel__text__p">Many thanks to <a href="https://pokeapi.co/">PokeApi</a> for their amazing work</p>
+				<p class="asidel__text__firma">by RGW</p>		
+			</div>
+
+			<div class="asidel__pokedex">
+				<img class="asidel__pokedex__img" src="../resources/img/pokedex.png" alt="pokedex">
+			</div>
+		</asidel>
+		<!-- fin aside -->
+
+
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="footer__banner footerfix">
+		<img class="footer__banner__img" src="../resources/img/footer_banner.png" alt="Pokemon Banner">
+	</div>
+	<div class="footer__pie">
+		<ul class="footer__pie__list">
+			<li class="footer__pie__list__itemball"> 
+				<img class="footer__pie__list__itemball__img" src="../resources/img/miniball.png">
+			</li>
+			<li class="footer__pie__list__item">
+				<img class="footer__pie__list__item__img" src="../resources/img/face.svg">
+			</li>
+			<li class="footer__pie__list__item">			
+				<img class="footer__pie__list__item__img" src="../resources/img/insta.svg">
+			</li>
+			<li class="footer__pie__list__item">
+				<img class="footer__pie__list__item__img" src="../resources/img/github.svg">
+			</li>
+			<li class="footer__pie__list__item">
+				<img class="footer__pie__list__item__img" src="../resources/img/linke.svg">
+			</li>
+			<li class="footer__pie__list__itemball"> 
+				<img class="footer__pie__list__itemball__img" src="../resources/img/miniball.png">
+			</li>				
+		</ul>
+	</div>
+</footer>
+<!-- -->
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({disable: 'mobile'});
+</script>
 </body>
 </html>

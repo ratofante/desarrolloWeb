@@ -229,8 +229,7 @@ html {
 .night_header {
   background: linear-gradient(0deg, #21315259 0%, #125179 35%, #010838 100%);
   border-bottom: 1px solid black;
-  box-shadow: 3px 3px 3px #00000063;
-  border-radius: 8px; }
+  box-shadow: 3px 3px 3px #00000063; }
 
 /* Solo Header */
 .header {
@@ -522,7 +521,8 @@ html {
   background: linear-gradient(0deg, #21315259 0%, #125179 35%, #010838 100%);
   border-bottom: 1px solid black;
   box-shadow: 3px 3px 3px #00000063;
-  border-radius: 8px; }
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
 
 /* Solo Header */
 .header {
@@ -586,6 +586,9 @@ html {
   .pokefix {
     left: 248px;
     bottom: 100px; } }
+
+.headerfix {
+  margin-bottom: 3rem; }
 
 /* Nav Flex Bar */
 .navflex {
@@ -1169,4 +1172,5 @@ section .section-right__img {
 .move {
   background-color: #9bc3e7;
   margin: 2px;
-  flex: 1 0 15%; }
+  flex: 1 0 15%;
+  font-size: .8rem; }

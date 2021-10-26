@@ -10,7 +10,8 @@
 	background: linear-gradient(0deg, #21315259 0%, #125179 35%, #010838 100%);
     border-bottom: 1px solid black;
     box-shadow: 3px 3px 3px #00000063;
-    border-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Solo Header */
@@ -87,6 +88,9 @@
 		left: 248px;
 		bottom: 100px;
 	}
+}
+.headerfix {
+	margin-bottom: 3rem;
 }
 
 
