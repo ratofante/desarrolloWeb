@@ -17,7 +17,7 @@
 
 	<header class="header night_header" data-aos="top-top">
 		<div class="header__logo">
-			<h1 class="header__logo__title">About</h1>
+			<h1 class="header__logo__title">Quiz</h1>
 			<h4 class="header__logo__firma">by RGW</h4>
 			<div class="header__logo__ball">
 				<img class="header__logo__ball__img" id="poke_logo" src="../resources/img/pokeball2-dark.png" alt="Logo">
@@ -51,6 +51,18 @@
 	<!-- M A I N -->
 	<main>
 
+		<div class="selector">
+			<h2 class="selector__title">Elige una modalidad:</h2>
+			<div class="selector__container">
+				<button class="selector__easy_quiz">
+					<h3 class="selector__easy_quiz__title">Easy Quiz</h3>
+				</button>
+				<button class="selector__challenge">
+					<h3 class="selector__challenge__title" id="challenge_quiz">Challenge</h3>
+				</button>
+			</div>
+		</div>
+
 		<!-- asider -->
 		<asidel class="asider">
 			<div class="asider__pokedex">
@@ -66,58 +78,55 @@
 		</asidel>
 		<!-- fin aside -->	
 
-
-		<section class="section">
-			<div class="quiz_div">
-				<div class="quiz_question">
-					<p>¿Preguntas cuyas respuestas pueden verse?</p>
-					<div class="quiz_answer">
-						<button>Ver respuesta</button
-					>
-						<div id="answer_1">
-							<p>Esta es la respuesta!</p>
-						</div>
-					</div>
-				</div>	
+		<!-- EASY QUIZ -->
+		<h2 class="quiz_headers">Easy Quiz</h2>
+		<section class="section quiz">
+			<div class="quiz__div">
+				<div class="quiz__div__question">
+					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
+				</div>
+				<div class="quiz__div__answer">
+					<button id="see1" class="quiz__div__answer__button">Ver</button>
+						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
+				</div>			
 			</div>
-			<div class="quiz_div">
-				<div class="quiz_question">
-					<p>¿Preguntas cuyas respuestas pueden verse?</p>
-					<div class="quiz_answer">
-						<button>Ver respuesta</button
-					>
-						<div id="answer_1">
-							<p>Esta es la respuesta!</p>
-						</div>
-					</div>
-				</div>	
+			<div class="quiz__div">
+				<div class="quiz__div__question">
+					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
+				</div>
+				<div class="quiz__div__answer">
+					<button id="see1" class="quiz__div__answer__button">Ver</button>
+						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
+				</div>			
 			</div>
-			<div class="quiz_div">
-				<div class="quiz_question">
-					<p>¿Preguntas cuyas respuestas pueden verse?</p>
-					<div class="quiz_answer">
-						<button>Ver respuesta</button
-					>
-						<div id="answer_1">
-							<p>Esta es la respuesta!</p>
-						</div>
-					</div>
-				</div>	
+			<div class="quiz__div">
+				<div class="quiz__div__question">
+					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
+				</div>
+				<div class="quiz__div__answer">
+					<button id="see1" class="quiz__div__answer__button">Ver</button>
+						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
+				</div>			
 			</div>
-			<div class="quiz_div">
-				<div class="quiz_question">
-					<p>¿Preguntas cuyas respuestas pueden verse?</p>
-					<div class="quiz_answer">
-						<button>Ver respuesta</button
-					>
-						<div id="answer_1">
-							<p>Esta es la respuesta!</p>
-						</div>
-					</div>
-				</div>	
+			<div class="quiz__div">
+				<div class="quiz__div__question">
+					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
+				</div>
+				<div class="quiz__div__answer">
+					<button id="see1" class="quiz__div__answer__button">Ver</button>
+						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
+				</div>			
+			</div>
+			<div class="quiz__div">
+				<div class="quiz__div__question">
+					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
+				</div>
+				<div class="quiz__div__answer">
+					<button id="see1" class="quiz__div__answer__button">Ver</button>
+						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
+				</div>			
 			</div>
 		</section>
-	</main>
 
 
 		<!-- asidel -->
@@ -135,6 +144,42 @@
 			</div>
 		</asidel>
 		<!-- fin aside -->
+
+		<!-- CHALLENGE -->
+		<h2 class="quiz_headers">Challenge</h2>
+		<section class="sect form_container challenge_form">
+			<form class="contact_form" action="" method="POST">
+				<fieldset class="contact_form__field">
+					<legend class="contact_form__title"><h2>Quiz</h2></legend>
+					<div class="contact_form__form_section">
+						<label for="name">¿Pregunta n°1?</label>
+						<input class="contact_form__form_section__input" id="name" type="text" name="name" maxlength="30" autofocus="on" required>
+					</div>
+					<div class="contact_form__form_section">
+						<label for="apellido">¿La segunda pregunta se vería así?</label>
+						<input class="contact_form__form_section__input" id="apellido" type="text" name="apellido" maxlength="30">
+					</div>
+					<div class="contact_form__form_section">
+						<label for="email">¿Otra pregunta para completar?</label>
+						<input class="contact_form__form_section__input" id="email" type="email" name="email" maxlength="50" required>
+					</div>
+					<div class="contact_form__form_section">
+						<label for="tres_pokemons">Donde haya que elegir un multiple choice</label>
+						<select class="contact_form__form_section__input id="tres_pokemons" name="pokemon">
+							<option value="bulbasaur">Bulbasaur</option>
+							<option value="charmander">Charmander</option>
+							<option value="Squirtle">Squirtle</option>
+						</select>
+					</div>
+				</fieldset>
+				<div class="form_end_contact">
+					<input class="form_end_contact__input" type="reset" name="reset" value="Reset">
+					<button class="form_end_contact__button" type="submit">Finish</button>
+				</div>
+			</form>
+		</section>
+
+		</main>
 
 
 <!-- FOOTER -->
@@ -172,5 +217,6 @@
 <script>
    AOS.init({disable: 'mobile'});
 </script>
+<script type="text/javascript" src="../js/quiz.js"></script>
 </body>
 </html>

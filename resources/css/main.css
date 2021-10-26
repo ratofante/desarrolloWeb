@@ -582,13 +582,16 @@ html {
         width: 100%; }
 
 /* Clase para el header de Pokedex (es otra imagen y es necesario recalibrar la posición cuando pasa a tablet) */
-@media screen and (min-width: 766px) {
-  .pokefix {
-    left: 248px;
-    bottom: 100px; } }
+.pokefix {
+  left: 193px;
+  bottom: 103px; }
+  @media screen and (min-width: 766px) {
+    .pokefix {
+      left: 248px;
+      bottom: 100px; } }
 
 .headerfix {
-  margin-bottom: 3rem; }
+  margin-bottom: 2.2rem; }
 
 /* Nav Flex Bar */
 .navflex {
@@ -660,7 +663,7 @@ main {
       align-items: center;
       height: 500px; } }
 
-.section, .welcome, .pokedex, .quiz, .about, .contact {
+.section, .welcome, .pokedex, .homequiz, .about, .contact {
   font-family: "Fira Mono", monospace;
   padding: 1rem;
   text-align: center;
@@ -670,27 +673,27 @@ main {
   border-radius: 7px;
   margin: 5rem 1rem; }
   @media screen and (min-width: 766px) {
-    .section, .welcome, .pokedex, .quiz, .about, .contact {
+    .section, .welcome, .pokedex, .homequiz, .about, .contact {
       display: flex;
       flex-flow: row;
       align-items: center;
       justify-content: space-between;
       min-height: 330px; } }
-  .section__title, .welcome__up__title, .pokedex__up__title, .quiz__up__title, .about__up__title, .contact__up__title {
+  .section__title, .welcome__up__title, .pokedex__up__title, .homequiz__up__title, .about__up__title, .contact__up__title {
     color: #091353;
     font-family: "Lobster Two", cursive; }
     @media screen and (min-width: 766px) {
-      .section__title, .welcome__up__title, .pokedex__up__title, .quiz__up__title, .about__up__title, .contact__up__title {
+      .section__title, .welcome__up__title, .pokedex__up__title, .homequiz__up__title, .about__up__title, .contact__up__title {
         font-size: 3rem;
         margin-top: 1rem; } }
     @media screen and (min-width: 1198px) {
-      .section__title, .welcome__up__title, .pokedex__up__title, .quiz__up__title, .about__up__title, .contact__up__title {
+      .section__title, .welcome__up__title, .pokedex__up__title, .homequiz__up__title, .about__up__title, .contact__up__title {
         font-size: 4.5rem; } }
   @media screen and (min-width: 766px) {
-    .section__text, .welcome__down__text, .pokedex__down__text, .quiz__down__text, .about__down__text, .contact__down__text {
+    .section__text, .welcome__down__text, .pokedex__down__text, .homequiz__down__text, .about__down__text, .contact__down__text {
       margin-top: 1rem; } }
   @media screen and (min-width: 1198px) {
-    .section__text, .welcome__down__text, .pokedex__down__text, .quiz__down__text, .about__down__text, .contact__down__text {
+    .section__text, .welcome__down__text, .pokedex__down__text, .homequiz__down__text, .about__down__text, .contact__down__text {
       font-size: 1.3rem; } }
   @media screen and (min-width: 766px) {
     .section__box, .welcome__down__box {
@@ -698,7 +701,7 @@ main {
   @media screen and (min-width: 1198px) {
     .section__box, .welcome__down__box {
       font-size: 1.3rem; } }
-  .section__down, .welcome__down, .pokedex__down, .quiz__down, .about__down, .contact__down {
+  .section__down, .welcome__down, .pokedex__down, .homequiz__down, .about__down, .contact__down {
     margin: 0px auto; }
 
 section .section-left, section .section-right {
@@ -738,13 +741,13 @@ section .section-right__img {
       border-radius: 7px;
       z-index: 1; } }
 
-.text__max__width, .welcome__down, .pokedex__down, .quiz__down, .about__down, .contact__down {
+.text__max__width, .welcome__down, .pokedex__down, .homequiz__down, .about__down, .contact__down {
   max-width: 430px; }
   @media screen and (min-width: 1198px) {
-    .text__max__width, .welcome__down, .pokedex__down, .quiz__down, .about__down, .contact__down {
+    .text__max__width, .welcome__down, .pokedex__down, .homequiz__down, .about__down, .contact__down {
       max-width: 500px; } }
 
-.miniball, .welcome__down__box__imgdiv, .pokedex__down__box__imgdiv, .quiz__down__box__imgdiv, .about__down__box__imgdiv, .contact__down__box__imgdiv {
+.miniball, .welcome__down__box__imgdiv, .pokedex__down__box__imgdiv, .homequiz__down__box__imgdiv, .about__down__box__imgdiv, .contact__down__box__imgdiv {
   width: 26px;
   margin: auto; }
 
@@ -756,7 +759,7 @@ section .section-right__img {
       justify-content: center;
       width: 60%;
       height: 350px; } }
-  .welcome__down__text, .pokedex__down__text, .quiz__down__text, .about__down__text, .contact__down__text {
+  .welcome__down__text, .pokedex__down__text, .homequiz__down__text, .about__down__text, .contact__down__text {
     text-align: center; }
   .welcome__down__box__text {
     font-weight: bold;
@@ -770,10 +773,10 @@ section .section-right__img {
 .pokedex__down__box__imgdiv__img {
   width: 100%; }
 
-.quiz__up__title {
+.homequiz__up__title {
   color: #0c0c0c; }
 
-.quiz__down__box__imgdiv__img {
+.homequiz__down__box__imgdiv__img {
   width: 100%; }
 
 .about {
@@ -829,6 +832,10 @@ section .section-right__img {
       font-family: "Fira Mono", monospace;
       padding: 1rem 0rem;
       max-width: 330px; }
+    .sect__card__img {
+      width: 210px; }
+      .sect__card__img img {
+        width: 100%; }
     .sect__card__pokedex {
       width: 150px; }
       .sect__card__pokedex__img {
@@ -954,6 +961,14 @@ section .section-right__img {
 .asider__text__p a, .asidel__text__p a, .asider__text__p a {
   color: #f5f5ff;
   text-decoration: none; }
+
+.about_asider {
+  background: #102436;
+  background: linear-gradient(270deg, #102436 0%, rgba(16, 36, 54, 0.725928) 48%, rgba(7, 103, 2, 0.202118) 100%); }
+
+.about_asidel {
+  background: #102436;
+  background: linear-gradient(90deg, #102436 0%, rgba(16, 36, 54, 0.725928) 48%, rgba(7, 103, 2, 0.202118) 100%); }
 
 .footer {
   width: 100%; }
@@ -1082,6 +1097,9 @@ section .section-right__img {
     .rules {
       flex-flow: row;
       justify-content: center; } }
+  @media screen and (min-width: 1198px) {
+    .rules {
+      margin: auto; } }
   @media screen and (min-width: 766px) {
     .rules__div {
       width: 300px;
@@ -1100,18 +1118,29 @@ section .section-right__img {
     .rules__list__item {
       list-style-position: inside; }
 
+@media screen and (min-width: 766px) {
+  .pokecard {
+    flex-flow: column; } }
+
 .pokecard__div {
   display: flex;
   flex-flow: column; }
   .pokecard__div__card {
     display: flex;
     flex-flow: column; }
+    @media screen and (min-width: 766px) {
+      .pokecard__div__card {
+        width: 100%; } }
     .pokecard__div__card__img {
       width: 100%; }
       .pokecard__div__card__img__img {
         width: 100%; }
   .pokecard__div__info {
     margin: 2rem auto; }
+    @media screen and (min-width: 766px) {
+      .pokecard__div__info {
+        width: 80%;
+        margin: 0px auto; } }
     .pokecard__div__info__title, .pokecard__div__general__title, .evopath__title {
       margin-bottom: 2rem; }
     .pokecard__div__info__text {
@@ -1122,6 +1151,13 @@ section .section-right__img {
       padding: 1rem;
       line-height: 36px;
       font-size: 1.3rem; }
+      @media screen and (min-width: 766px) {
+        .pokecard__div__info__text {
+          background-color: white;
+          width: 240px;
+          margin: auto;
+          text-shadow: 0px 0px 1px blue;
+          box-shadow: 3px 3px 5px black; } }
   .pokecard__div__general {
     display: flex;
     flex-flow: column; }
@@ -1140,7 +1176,9 @@ section .section-right__img {
       background-color: #79c8f8; }
       @media screen and (min-width: 766px) {
         .pokecard__div__general__sections {
-          flex-flow: row; } }
+          flex-flow: row;
+          padding: 1rem;
+          max-width: 656px; } }
       .pokecard__div__general__sections__div {
         display: flex;
         flex-flow: row;
@@ -1148,6 +1186,18 @@ section .section-right__img {
         border-bottom: 1px solid black; }
         .pokecard__div__general__sections__div:last-child {
           border: none; }
+        @media screen and (min-width: 766px) {
+          .pokecard__div__general__sections__div {
+            border: none;
+            border-right: 2px solid #091353;
+            width: 190px;
+            padding: 1rem;
+            flex-flow: column; }
+            .pokecard__div__general__sections__div:last-child {
+              border: none; } }
+
+.pokecard__card {
+  flex-flow: row-reverse; }
 
 .evopath__title {
   margin-top: 2rem; }
@@ -1155,6 +1205,9 @@ section .section-right__img {
 .evopath__container {
   display: flex;
   flex-flow: column; }
+  @media screen and (min-width: 766px) {
+    .evopath__container {
+      flex-flow: row; } }
   .evopath__container__evo {
     display: flex;
     flex-flow: column; }
@@ -1165,6 +1218,11 @@ section .section-right__img {
 .evopath__img {
   width: 100%; }
 
+@media screen and (min-width: 766px) {
+  .moves_list {
+    display: flex;
+    flex-flow: column; } }
+
 .flex_moves {
   display: flex;
   flex-flow: wrap; }
@@ -1174,3 +1232,105 @@ section .section-right__img {
   margin: 2px;
   flex: 1 0 15%;
   font-size: .8rem; }
+
+.quiz_headers {
+  font-family: "VT323", monospace;
+  color: white;
+  text-shadow: 0 0 13px #ffffff99;
+  text-align: center; }
+  @media screen and (min-width: 766px) {
+    .quiz_headers {
+      font-size: 4rem;
+      margin-bottom: 2rem; } }
+
+.challenge_form {
+  background-color: #f5f5ff;
+  margin-top: 1rem; }
+
+.selector {
+  max-width: 300px;
+  margin: 2rem auto;
+  padding: 1rem 0.2rem;
+  box-shadow: 0 0 26px white;
+  background-color: #ffffff00;
+  border-radius: 8px; }
+  @media screen and (min-width: 766px) {
+    .selector {
+      width: 530px;
+      height: 222px;
+      padding: 3rem;
+      max-width: 100%;
+      margin-bottom: 6rem; } }
+  .selector__title {
+    font-family: "Lobster Two", cursive;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 13px #ffffff99;
+    letter-spacing: 2px; }
+  .selector__container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 50px;
+    margin: auto; }
+  .selector__easy_quiz, .selector__challenge {
+    width: 110px;
+    height: 45px;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background-color: #f5f5ff; }
+    .selector__easy_quiz:hover, .selector__challenge:hover {
+      background-color: #091353;
+      width: 118px;
+      height: 50px; }
+    .selector__easy_quiz__title, .selector__challenge__title {
+      font-family: "Fira Mono", monospace;
+      font-weight: 600; }
+      .selector__easy_quiz__title:hover, .selector__challenge__title:hover {
+        position: relative;
+        color: #ffffff;
+        letter-spacing: 0.2px; }
+  .selector__challenge {
+    background-color: black; }
+    .selector__challenge:hover {
+      background-color: #091353; }
+    .selector__challenge__title {
+      color: white; }
+      .selector__challenge__title:hover {
+        position: relative;
+        color: #21cea1;
+        letter-spacing: 0.2px; }
+
+.quiz {
+  margin-top: 1rem; }
+  @media screen and (min-width: 766px) {
+    .quiz {
+      flex-flow: column;
+      width: 95%;
+      max-width: 680px;
+      margin: auto;
+      margin-bottom: 4rem; } }
+  .quiz__div {
+    margin: 1rem 0px 2rem 0px; }
+    .quiz__div__question {
+      text-align: left;
+      font-weight: 600;
+      padding: .3rem;
+      border-radius: 8px;
+      background-color: #091353; }
+      .quiz__div__question__text {
+        color: white; }
+    .quiz__div__answer {
+      display: flex;
+      flex-flow: row-reverse;
+      margin: 1rem 0px; }
+      .quiz__div__answer__button {
+        width: 60px;
+        height: 40px;
+        font-weight: 600;
+        border-radius: 20px; }
+        .quiz__div__answer__button:hover {
+          background-color: #091353;
+          color: white; }

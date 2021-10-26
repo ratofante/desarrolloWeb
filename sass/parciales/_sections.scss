@@ -181,7 +181,7 @@ section .section-right {
 
 	}
 }
-.quiz {
+.homequiz {
 	@extend .section;
 	&__up {
 
@@ -317,6 +317,10 @@ section .section-right {
     		}
     	}
     	&__img {
+    		width: 210px;
+    		& img {
+    			width: 100%;
+    		}
     	}
     	&__pokedex {
     		width: 150px;

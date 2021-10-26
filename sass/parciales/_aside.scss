@@ -115,3 +115,12 @@
 	color: $light;
 	text-decoration: none;
 }
+
+.about_asider {
+	background: rgb(16,36,54);
+	background: linear-gradient(270deg, rgba(16,36,54,1) 0%, rgba(16,36,54,0.7259278711484594) 48%, rgba(7,103,2,0.20211834733893552) 100%);
+}
+.about_asidel {
+	background: rgb(16,36,54);
+	background: linear-gradient(90deg, rgba(16,36,54,1) 0%, rgba(16,36,54,0.7259278711484594) 48%, rgba(7,103,2,0.20211834733893552) 100%);
+}

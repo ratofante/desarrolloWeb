@@ -84,13 +84,15 @@
 /* Clase para el header de Pokedex (es otra imagen y es necesario recalibrar la posición cuando pasa a tablet) */
 
 .pokefix {
+	left: 193px;
+    bottom: 103px;
 	@include tablet {
 		left: 248px;
 		bottom: 100px;
 	}
 }
 .headerfix {
-	margin-bottom: 3rem;
+	margin-bottom: 2.2rem;
 }
 
 

@@ -1,0 +1,121 @@
+.quiz_headers {
+	font-family: $special;
+	color: white;
+	text-shadow: 0 0 13px #ffffff99;
+	text-align: center;
+	@include tablet {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+	}
+}
+.challenge_form {background-color: #f5f5ff; margin-top: 1rem;}
+.selector {
+	max-width: 300px;
+    margin: 2rem auto;
+    padding: 1rem 0.2rem;
+    box-shadow: 0 0 26px white;
+    background-color: #ffffff00;
+    border-radius: 8px;
+    @include tablet {
+    	width: 530px;
+	    height: 222px;
+	    padding: 3rem;
+	    max-width: 100%;
+	    margin-bottom: 6rem;
+    }
+	&__title {
+		font-family: $title2;
+		color: white;
+	    text-align: center;
+	    margin-bottom: 2rem;
+	    text-shadow: 0 0 13px #ffffff99;
+	    letter-spacing: 2px;
+	}
+	&__container {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		width: 80%;
+		height: 50px;
+   		margin: auto;
+	}
+	&__easy_quiz {
+		width: 110px;
+		height: 45px;
+		padding: 0.6rem;
+	    border-radius: 8px;
+	    background-color: #f5f5ff;
+	    &:hover {
+	    	background-color: $mainbg;
+	    	width: 118px;
+	    	height: 50px;
+	    }
+		&__title {
+			font-family: $normal;
+			font-weight: 600;
+			&:hover {
+				position: relative;
+				color: #ffffff;
+				letter-spacing: 0.2px;
+			}
+		}
+	}
+	&__challenge {
+		@extend .selector__easy_quiz;
+		background-color: black;
+		&:hover {
+			background-color: $mainbg;
+		}
+		&__title {
+			@extend .selector__easy_quiz__title;
+			color: white;
+			&:hover {
+				position: relative;
+				color: #21cea1;
+				letter-spacing: 0.2px;
+			}
+		}
+	}
+}
+
+.quiz {
+	margin-top: 1rem;
+	@include tablet {
+		flex-flow: column;
+		width: 95%;
+    	max-width: 680px;
+    	margin: auto;
+    	margin-bottom: 4rem;
+	}
+	&__div {
+		margin: 1rem 0px 2rem 0px;
+		&__question{
+			text-align: left;
+			font-weight: 600;
+			padding: .3rem;
+			border-radius: 8px;
+			background-color: $mainbg;
+			&__text {
+				color: white;
+			}
+		}
+		&__answer {
+			display:flex;
+			flex-flow: row-reverse;
+			margin: 1rem 0px;
+			&__button {
+				width: 60px;
+				height: 40px;
+				font-weight: 600;
+				border-radius: 20px;
+				&:hover {
+					background-color: $mainbg;
+					color:  white;
+				}
+				&__text {
+					
+				}				
+			}
+		}
+	}
+}
