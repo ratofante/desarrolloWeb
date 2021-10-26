@@ -93,6 +93,12 @@
 }
 .headerfix {
 	margin-bottom: 2.2rem;
+	@include tablet {
+		margin: 0px 0px 1rem .5rem;
+	}
+	@include wide_pc {
+		margin: 0px 0px 0px 4rem;
+	}
 }
 
 
@@ -126,6 +132,9 @@
 			margin: 2px auto;
 			@include tablet {
 				width: 52%; 
+			}
+			@include wide_pc {
+				width: 80%;
 			}
 		}
 		&__text {

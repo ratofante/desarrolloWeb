@@ -126,6 +126,9 @@ section .section-right {
 		width: 60%;
 		height: 350px;
 	}
+	@include wide_pc {
+		height: 468px;
+	}
 	&__up {
 		&__title{
 			@extend .section__title;

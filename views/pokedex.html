@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Lobster&family=VT323&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../resources/css/main.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!--link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /-->
 	<title>Pokedex Project - Search</title>
 </head>
 <body>
@@ -70,6 +70,7 @@
 		</section>
 		<section class="section pokecard">
 
+		<div class="card_section_main">
 			<div class="pokecard__div pokecard__card">
 				<div id="pokecard__div__card">
 					<h2 class="pokecard__div__card__title">#76 Golem</h2>
@@ -102,26 +103,30 @@
 					</div>
 				</div>
 			</div>
+		</div>
 
+		<div class="card_section_evo">
 			<div class="pokecard__div">
 				<div class="evopath">
 					<h3 class="evopath__title">Evo Path:</h3>
 					<div class="evopath__container">
 						<div class="evopath__container__evo">
-							<h4>#74 Geodude</h4>
+							<h4 class="evopath__container__evo__title">#74 Geodude</h4>
 							<div class="evopath__container__evo__img"><img class="evopath__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png" alt="evo_img"></div>
 						</div>
 						<div class="evopath__container__evo">
-							<h4>#75 Graveler</h4>
+							<h4 class="evopath__container__evo__title">#75 Graveler</h4>
 							<div class="evopath__container__evo__img"><img class="evopath__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png" alt="evo_img"></div>
 						</div>
 						<div class="evopath__container__evo">
-							<h4>#76 Golem</h4>
+							<h4 class="evopath__container__evo__title">#76 Golem</h4>
 							<div class="evopath__container__evo__img"><img class="evopath__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png" alt="evo_img"></div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+
 		</section>
 	</main>
 	<aside>
@@ -249,8 +254,8 @@
 </div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+<!--script>
    AOS.init({disable: 'mobile'});
-</script>
+</script-->
 </body>
 </html>
