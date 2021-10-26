@@ -80,6 +80,15 @@
 	}
 }
 
+/* Clase para el header de Pokedex (es otra imagen y es necesario recalibrar la posición cuando pasa a tablet) */
+
+.pokefix {
+	@include tablet {
+		left: 248px;
+		bottom: 100px;
+	}
+}
+
 
 /* Nav Flex Bar */
 

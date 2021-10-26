@@ -19,7 +19,7 @@
 		<div class="header__logo">
 			<h1 class="header__logo__title">Pokedex</h1>
 			<h4 class="header__logo__firma">by RGW</h4>
-			<div class="header__logo__ball">
+			<div class="header__logo__ball pokefix">
 				<img class="header__logo__ball__img" id="poke_logo" src="../resources/img/pokedex.png" alt="Logo">
 			</div>	
 		</div>
@@ -47,68 +47,82 @@
 		</nav>
 	</header>
 	<main>
-		<section>
-			<h2>Instrucciones :</h2>
-			<p class="accent">¿Qué puedes hacer?</p>
-			<ol>
-				<li>Busca con una Id, puede ser de 1 a 151</li>
-				<li>Click en buscar</li>
-				<li>Navega por la información</li>
-			</ol>
-			<p class="accent">¿Qué más puedo hacer?</p>
-			<ul>
-				<li>Puedes ver las evoluciones haciendo click en cada ícono</li>
-				<li>Estudiar para tomar el Quiz</li>
-				<li>Contactarme para hacerme saber si algo está mal o contribuir</li>
-			</ul>
+		<section class="section rules_section">
+			<h3 class="rules__title">Instrucciones :</h3>
+			<div class="rules">
+				<div class="rules__div">
+					<h4 class="rules__question">¿Qué hacer?</h4>
+					<ol class="rules__list">
+						<li class="rules__list__item">Busca con una Id, puede ser de 1 a 151</li>
+						<li class="rules__list__item">Click en buscar</li>
+						<li class="rules__list__item">Navega por la información</li>
+					</ol>
+				</div>
+				<div class="rules__div">
+					<h4 class="rules__question">¿Qué más puedo hacer?</h4>
+					<ul class="rules__list">
+						<li class="rules__list__item">Puedes ver las evoluciones haciendo click en cada ícono</li>
+						<li class="rules__list__item">Estudiar para tomar el Quiz</li>
+						<li class="rules__list__item">Contactarme para hacerme saber si algo está mal o contribuir</li>
+					</ul>
+				</div>
+			</div>
 		</section>
-		<section class="pokecard_section">
-			<div class="pokecard_flex_div">
-				<div id="img_card">
-					<h2>#76 Golem</h2>
-					<div class="img_container flex">
-						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png" alt="poke_card_img">
+		<section class="section pokecard">
+			<div class="pokecard__div">
+				<div id="pokecard__div__card">
+					<h2 class="pokecard__div__card__title">#76 Golem</h2>
+					<div class="pokecard__div__card__img">
+						<img class="pokecard__div__card__img__img"src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png" alt="poke_card_img">
 					</div>
 				</div>
-				<div id="general_info">
-					<h3>Info:</h3>
-					<p>Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.</p>
+				<div class="pokecard__div__info">
+					<h3 class="pokecard__div__info__title">Description:</h3>
+					<p class="pokecard__div__info__text">Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.</p>
 				</div>
 			</div>
-			<h3 class="general_info_title">General Info:</h3>
-			<div class="flex_responsive">
-				<div class="flex info_box">
-					<h4>Habitat:</h4>
-					<p>Mountain</p>
-				</div>
-				<div class="flex info_box">
-					<h4>Shape:</h4>
-					<p>Humanoid</p>
-				</div>
-				<div class="flex info_box">
-					<h4>Type:</h4>
-					<p>Rock - Ground</p>
+			<div class="pokecard__div">
+				<div class="pokecard__div__general">
+					<h3 class="pokecard__div__general__title">General Info:</h3>
+					<div class="pokecard__div__general__sections">
+						<div class="pokecard__div__general__sections__div">
+							<h4 class="pokecard__div__general__minititle">Habitat:</h4>
+							<p class="pokecard__div__general__p">Mountain</p>
+						</div>
+						<div class="pokecard__div__general__sections__div">
+							<h4 class="pokecard__div__general__minititle">Shape:</h4>
+							<p class="pokecard__div__general__p">Humanoid</p>
+						</div>
+						<div class="pokecard__div__general__sections__div">
+							<h4 class="pokecard__div__general__minititle">Type:</h4>
+							<p class="pokecard__div__general__p">Rock - Ground</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<h3 class="general_info_title">Evo Path:</h3>
-			<div id="evo_path_div" class="flex">
-				<div class="flex evo_box">
-					<h4>#74 Geodude</h4>
-					<div><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png" alt="evo_img"></div>
-				</div>
-				<div class="flex evo_box">
-					<h4>#75 Graveler</h4>
-					<div><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png" alt="evo_img"></div>
-				</div>
-				<div class="flex evo_box">
-					<h4>#76 Golem</h4>
-					<div><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png" alt="evo_img"></div>
+			<div class="pokecard__div">
+				<div class="evopath">
+					<h3 class="evopath__title">Evo Path:</h3>
+					<div class="evopath__container">
+						<div class="evopath__container__evo">
+							<h4>#74 Geodude</h4>
+							<div class="evopath__container__evo__img"><img class="evopath__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png" alt="evo_img"></div>
+						</div>
+						<div class="evopath__container__evo">
+							<h4>#75 Graveler</h4>
+							<div class="evopath__container__evo__img"><img class="evopath__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png" alt="evo_img"></div>
+						</div>
+						<div class="evopath__container__evo">
+							<h4>#76 Golem</h4>
+							<div class="evopath__container__evo__img"><img class="evopath__img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png" alt="evo_img"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 	<aside>
-		<section>
+		<section class="section">
 			<h3 class="general_info_title">List of moves:</h3>
 			<div class="flex_moves">
 				<p class='move'>mega-punch</p>
@@ -199,15 +213,41 @@
 			</div>
 		</section>
 	</aside>
-	<footer class="day_footer flex">
-		<div id="footer_logo">
-			<img src="../resources/img/footer_logo.png" alt="logo_footer">
-		</div>
-		<div class="footer_section">
-			<p>Author: Rodrigo González Wilkens</p>
-			<p id="copyrights">no copyright infringement intended</p>
-		</div>
-	</footer>
+	
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="footer__banner footerfix">
+		<img class="footer__banner__img" src="../resources/img/footer_banner.png" alt="Pokemon Banner">
+	</div>
+	<div class="footer__pie">
+		<ul class="footer__pie__list">
+			<li class="footer__pie__list__itemball"> 
+				<img class="footer__pie__list__itemball__img" src="../resources/img/miniball.png">
+			</li>
+			<li class="footer__pie__list__item">
+				<img class="footer__pie__list__item__img" src="../resources/img/face.svg">
+			</li>
+			<li class="footer__pie__list__item">			
+				<img class="footer__pie__list__item__img" src="../resources/img/insta.svg">
+			</li>
+			<li class="footer__pie__list__item">
+				<img class="footer__pie__list__item__img" src="../resources/img/github.svg">
+			</li>
+			<li class="footer__pie__list__item">
+				<img class="footer__pie__list__item__img" src="../resources/img/linke.svg">
+			</li>
+			<li class="footer__pie__list__itemball"> 
+				<img class="footer__pie__list__itemball__img" src="../resources/img/miniball.png">
+			</li>				
+		</ul>
+	</div>
+</footer>
+<!-- -->
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init({disable: 'mobile'});
+</script>
 </body>
 </html>

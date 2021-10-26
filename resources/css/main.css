@@ -581,6 +581,12 @@ html {
       .header__logo__ball__img {
         width: 100%; }
 
+/* Clase para el header de Pokedex (es otra imagen y es necesario recalibrar la posición cuando pasa a tablet) */
+@media screen and (min-width: 766px) {
+  .pokefix {
+    left: 248px;
+    bottom: 100px; } }
+
 /* Nav Flex Bar */
 .navflex {
   display: flex;
@@ -948,12 +954,12 @@ section .section-right__img {
 
 .footer {
   width: 100%; }
-  .footer__banner, .about_footer {
+  .footer__banner, .footerfix {
     width: 100%;
     max-width: 610px;
     margin: auto; }
     @media screen and (min-width: 766px) {
-      .footer__banner, .about_footer {
+      .footer__banner, .footerfix {
         border: 2px solid #09135352;
         border-bottom: none;
         border-start-start-radius: 160px;
@@ -995,7 +1001,7 @@ section .section-right__img {
         .footer__pie__list__itemball__img {
           width: 100%; }
 
-.about_footer {
+.footerfix {
   position: relative;
   top: 4px;
   z-index: 1; }
@@ -1059,3 +1065,108 @@ section .section-right__img {
     padding: .3rem; }
   .form_end_contact__button {
     padding: .3rem; }
+
+@media screen and (min-width: 766px) {
+  .rules_section {
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline; } }
+
+.rules {
+  display: flex;
+  flex-flow: column; }
+  @media screen and (min-width: 766px) {
+    .rules {
+      flex-flow: row;
+      justify-content: center; } }
+  @media screen and (min-width: 766px) {
+    .rules__div {
+      width: 300px;
+      margin: 1.5rem; } }
+  .rules__title {
+    text-align: left; }
+    @media screen and (min-width: 766px) {
+      .rules__title {
+        margin-left: 2rem; } }
+  .rules__question {
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.2rem; }
+  .rules__list {
+    text-align: left; }
+    .rules__list__item {
+      list-style-position: inside; }
+
+.pokecard__div {
+  display: flex;
+  flex-flow: column; }
+  .pokecard__div__card {
+    display: flex;
+    flex-flow: column; }
+    .pokecard__div__card__img {
+      width: 100%; }
+      .pokecard__div__card__img__img {
+        width: 100%; }
+  .pokecard__div__info {
+    margin: 2rem auto; }
+    .pokecard__div__info__title, .pokecard__div__general__title, .evopath__title {
+      margin-bottom: 2rem; }
+    .pokecard__div__info__text {
+      font-family: "VT323", monospace;
+      border: 2px solid #091353;
+      background-color: #b1b1b1;
+      border-radius: 14px;
+      padding: 1rem;
+      line-height: 36px;
+      font-size: 1.3rem; }
+  .pokecard__div__general {
+    display: flex;
+    flex-flow: column; }
+    .pokecard__div__general__minititle {
+      width: 80px;
+      margin: 1rem 1rem 1rem 0px;
+      text-align: right; }
+    .pokecard__div__general__p {
+      width: 125px;
+      margin: 1rem 0px 1rem 1rem; }
+    .pokecard__div__general__sections {
+      display: flex;
+      flex-flow: column;
+      border: 2px solid #091353;
+      border-radius: 14px;
+      background-color: #79c8f8; }
+      @media screen and (min-width: 766px) {
+        .pokecard__div__general__sections {
+          flex-flow: row; } }
+      .pokecard__div__general__sections__div {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        border-bottom: 1px solid black; }
+        .pokecard__div__general__sections__div:last-child {
+          border: none; }
+
+.evopath__title {
+  margin-top: 2rem; }
+
+.evopath__container {
+  display: flex;
+  flex-flow: column; }
+  .evopath__container__evo {
+    display: flex;
+    flex-flow: column; }
+    .evopath__container__evo__img {
+      width: 60%;
+      margin: auto; }
+
+.evopath__img {
+  width: 100%; }
+
+.flex_moves {
+  display: flex;
+  flex-flow: wrap; }
+
+.move {
+  background-color: #9bc3e7;
+  margin: 2px;
+  flex: 1 0 15%; }
