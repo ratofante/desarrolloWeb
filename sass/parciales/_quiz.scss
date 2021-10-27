@@ -24,9 +24,15 @@
 		margin: 100px 0px 50px 0px
 	}
 }
-.challenge_form {background-color: #f5f5ff; margin-top: 1rem;}
+.challenge_form {
+	margin-top: 1rem;
+	box-shadow: 0 0 26px white;
+    background-color: #ffffff00;
+}
+.challenge_label {color:white;}
 .selector {
 	overflow-x: hidden;
+	overflow-y:hidden;
 	max-width: 300px;
     margin: 2rem auto;
     padding: 1rem 0.2rem;
@@ -98,8 +104,8 @@
 	}
 	&__easy_quiz {
 		display: block;
-		width: 110px;
-		height: 45px;
+		width: 135px;
+		height: 60px;
 		padding: 0.6rem;
 	    border-radius: 8px;
 	    background-color: #f5f5ff;
@@ -148,7 +154,8 @@
 
 .quiz {
 	margin-top: 1rem;
-	background-color: #ed143d00;
+	box-shadow: 0 0 26px white;
+    background-color: #ffffff00;
 	@include tablet {
 		flex-flow: column;
 		width: 95%;
@@ -160,11 +167,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: black;
+		background-color: #000855c7;
 		border-radius: 8px;
 		padding: 1rem;
 		height: 100px;
 		transition-duration: .3s;
+		margin-bottom: 1rem;
 		&:hover {
 			background-color: #ed143d00;
 		}
@@ -177,16 +185,48 @@
 		&__question{
 
 			&__text {
+				font-family: $normal;
 				color: white;
 				transition-duration: .3s;
 			}
 		}
 		&__answer {
+			font-family: $special;
 			display: none;
 			&__text {
 				color: white;
 				transition-duration: .3s;
+				font-size: 1.2rem;
+				letter-spacing: 2px;
 			}				
 		}
+	}
+}
+
+.dont_worry {
+	display:flex;
+	flex-flow:column;
+	position: relative;
+	top: 20px;
+	@include tablet {
+		flex-flow: row;
+	}
+	&__text {
+		& p {
+			
+			font-family: $normal;
+			color: white;
+			text-align: center;
+			transform: rotate(352deg);
+			position: relative;
+			right: 75px;
+			top: -270px;
+			text-shadow: 0px 0px 28px white;
+		}
+	}
+	&__psyduck {
+		width: 250px;
+		align-self: end;
+		& img {width: 100%;}
 	}
 }
