@@ -53,13 +53,26 @@
 
 		<div class="selector">
 			<h2 class="selector__title">Elige una modalidad:</h2>
-			<div class="selector__container">
-				<button class="selector__easy_quiz">
-					<h3 class="selector__easy_quiz__title">Easy Quiz</h3>
-				</button>
-				<button class="selector__challenge">
-					<h3 class="selector__challenge__title" id="challenge_quiz">Challenge</h3>
-				</button>
+			<div class="selector__choices">
+				<div class="selector__container">
+					<button class="selector__easy_quiz">
+						<h3 class="selector__easy_quiz__title">Easy Quiz</h3>
+					</button>
+					<p class="selector__easy_quiz__text">
+						Puedes ver las respuestas en el momento (no disponible para mobile)	
+					</p>
+				</div>
+				<div class="selector__container">
+					<button class="selector__challenge">
+						<h3 class="selector__challenge__title" id="challenge_quiz">Challenge</h3>
+					</button>
+					<p class="selector__easy_quiz__text">
+						Responde las preguntas, enviá tu Quiz y compara tus resultados	
+					</p>
+				</div>
+			</div>
+			<div class="selector__img">
+				<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png' alt='poke_img'>
 			</div>
 		</div>
 
@@ -86,44 +99,7 @@
 					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
 				</div>
 				<div class="quiz__div__answer">
-					<button id="see1" class="quiz__div__answer__button">Ver</button>
-						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
-				</div>			
-			</div>
-			<div class="quiz__div">
-				<div class="quiz__div__question">
-					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
-				</div>
-				<div class="quiz__div__answer">
-					<button id="see1" class="quiz__div__answer__button">Ver</button>
-						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
-				</div>			
-			</div>
-			<div class="quiz__div">
-				<div class="quiz__div__question">
-					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
-				</div>
-				<div class="quiz__div__answer">
-					<button id="see1" class="quiz__div__answer__button">Ver</button>
-						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
-				</div>			
-			</div>
-			<div class="quiz__div">
-				<div class="quiz__div__question">
-					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
-				</div>
-				<div class="quiz__div__answer">
-					<button id="see1" class="quiz__div__answer__button">Ver</button>
-						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
-				</div>			
-			</div>
-			<div class="quiz__div">
-				<div class="quiz__div__question">
-					<p class="quiz__div__question__text">¿Preguntas cuyas respuestas pueden verse?</p>
-				</div>
-				<div class="quiz__div__answer">
-					<button id="see1" class="quiz__div__answer__button">Ver</button>
-						<p id="see1answer" class="quiz__div__answer__button__text">Esta es la respuesta!</p>				
+					<p class="quiz__div__answer__text">Respuesta!</p>				
 				</div>			
 			</div>
 		</section>
@@ -152,19 +128,19 @@
 				<fieldset class="contact_form__field">
 					<legend class="contact_form__title"><h2>Quiz</h2></legend>
 					<div class="contact_form__form_section">
-						<label for="name">¿Pregunta n°1?</label>
-						<input class="contact_form__form_section__input" id="name" type="text" name="name" maxlength="30" autofocus="on" required>
+						<label for="name">¿Cómo se llama la evolución de Mankey?</label>
+						<input class="contact_form__form_section__input" id="name" type="text" name="name" maxlength="30" required>
 					</div>
 					<div class="contact_form__form_section">
-						<label for="apellido">¿La segunda pregunta se vería así?</label>
+						<label for="apellido">¿Cuántas evoluciones tiene Machamp?</label>
 						<input class="contact_form__form_section__input" id="apellido" type="text" name="apellido" maxlength="30">
 					</div>
 					<div class="contact_form__form_section">
-						<label for="email">¿Otra pregunta para completar?</label>
+						<label for="email">¿Quiénes atienden en los centros de cuidado pokemon?</label>
 						<input class="contact_form__form_section__input" id="email" type="email" name="email" maxlength="50" required>
 					</div>
 					<div class="contact_form__form_section">
-						<label for="tres_pokemons">Donde haya que elegir un multiple choice</label>
+						<label for="tres_pokemons">Cuál de estos pokemon es de tipo agua</label>
 						<select class="contact_form__form_section__input id="tres_pokemons" name="pokemon">
 							<option value="bulbasaur">Bulbasaur</option>
 							<option value="charmander">Charmander</option>

@@ -316,7 +316,15 @@ section .section-right {
     		&__p {
     			font-family: $normal;
     			padding: 1rem 0rem;
-    			max-width: 330px;
+			    max-width: 330px;
+			    background-color: #51ab8033;
+			    border: 3px solid #2038548f;
+			    margin: 1rem auto;
+			    padding: 1rem;
+			    box-shadow: 2px -3px 7px black;
+			    border-bottom: none;
+			    border-left: none;
+			    border-radius: 8px;
     		}
     	}
     	&__img {
@@ -326,7 +334,15 @@ section .section-right {
     		}
     	}
     	&__pokedex {
-    		width: 150px;
+    		width: 180px;
+		   	margin: auto;
+		    padding: 0.3rem;
+		    border: 3px solid #22517a;
+		    border-left: none;
+		    border-bottom: none;
+		    background-color: #3693f0;
+		    border-radius: 8px;
+		    box-shadow: 2px -3px 7px black;
     		&__img {
     			width: 100%;
     		}
