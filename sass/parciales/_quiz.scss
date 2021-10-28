@@ -207,11 +207,16 @@
 	display:flex;
 	flex-flow:column;
 	position: relative;
-	top: 20px;
+	top: 35px;
+	width: 100vw;
 	@include tablet {
 		flex-flow: row;
 	}
 	&__text {
+		position: relative;
+		left: 650px;
+		height: 0px;
+		transition-duration: .3s;
 		& p {
 			
 			font-family: $normal;
@@ -227,6 +232,16 @@
 	&__psyduck {
 		width: 250px;
 		align-self: end;
-		& img {width: 100%;}
+		& img {
+			width: 100%;
+		}
+		&:hover .dont_worry__text {
+			left: 0px;
+		}
+		&:hover img {
+			-webkit-animation: wiggle 0.5s infinite;
+			-moz-animation: wiggle 0.5s infinite;
+			animation: wiggle 0.5s infinite;
+		}
 	}
 }
