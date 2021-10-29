@@ -887,6 +887,12 @@ section .section-right__img {
     float: right;
     left: 50px; }
 
+/* correcciones sect */
+@media screen and (min-width: 766px) {
+  .form_container {
+    height: auto;
+    width: 500px; } }
+
 .wrapdiv404 {
   width: 100vw;
   height: 100vh;
@@ -906,7 +912,67 @@ section .section-right__img {
 /* Hoover MAIN SECTION */
 .about_hoover {
   display: flex;
-  flex-flow: row; }
+  flex-flow: column; }
+  @media screen and (min-width: 766px) {
+    .about_hoover {
+      flex-flow: row; } }
+
+@media screen and (min-width: 1198px) {
+  .wide_pc_flex {
+    display: flex;
+    flex-flow: row; } }
+
+.contact_extra {
+  display: none; }
+  @media screen and (min-width: 1198px) {
+    .contact_extra {
+      display: block;
+      width: 500px;
+      margin-right: 50px;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      height: fit-content;
+      background-color: 19193c75;
+      padding: 2rem; }
+      .contact_extra__top {
+        display: flex;
+        flex-flow: row-reverse;
+        border-bottom: 1px solid white; }
+        .contact_extra__top__img {
+          width: 240px; }
+          .contact_extra__top__img img {
+            width: 100%; }
+        .contact_extra__top__info {
+          width: 260px;
+          padding-top: 1rem; }
+          .contact_extra__top__info h3 {
+            color: white;
+            font-family: "Lobster Two", cursive;
+            font-size: 2rem;
+            padding-bottom: 1rem; }
+          .contact_extra__top__info p {
+            color: white;
+            font-family: "Fira Mono", monospace;
+            padding: 2rem; }
+      .contact_extra__bottom h3 {
+        color: white;
+        font-family: "Lobster Two", cursive;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        border-top: 1px solid white;
+        padding-top: 1rem; }
+      .contact_extra__bottom p {
+        color: white;
+        font-family: "Fira Mono", monospace;
+        padding: 2rem;
+        padding: 1rem 2rem 2rem 2rem; }
+      .contact_extra__bottom__icon_list {
+        max-width: 500px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly; }
+        .contact_extra__bottom__icon_list img {
+          width: 50px; } }
 
 /* Colores para otras páginas */
 .asidel {
@@ -1060,6 +1126,9 @@ section .section-right__img {
   position: relative;
   top: 4px;
   z-index: 1; }
+
+.footer_dark {
+  background-color: #0b1b2a5c; }
 
 /* FORM */
 .form_container {
@@ -1368,12 +1437,6 @@ para controlar el flex y display de cada sección
     .move {
       font-size: 1.3rem; } }
 
-@keyframes neonlights {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0px 0px 6px #fff, 0px 0px 10px #fff, 0px 0px 12px #fff, 0 0 23px #071877, 0 0 82px #071877, 0 0 92px #071877, 0 0 172px #071877, 0 0 188px #071877; }
-  20%, 24%, 55% {
-    text-shadow: none; } }
-
 .quiz_headers {
   font-size: 3rem;
   font-family: "VT323", monospace;
@@ -1471,13 +1534,13 @@ para controlar el flex y display de cada sección
     margin: auto; }
     .selector__easy_quiz:hover, .selector__challenge:hover {
       background-color: #091353; }
+    .selector__easy_quiz:hover .selector__easy_quiz__title, .selector__challenge:hover .selector__easy_quiz__title, .selector__easy_quiz:hover .selector__challenge__title, .selector__challenge:hover .selector__challenge__title {
+      position: relative;
+      color: #ffffff;
+      letter-spacing: 0.2px; }
     .selector__easy_quiz__title, .selector__challenge__title {
       font-family: "Fira Mono", monospace;
       font-weight: 600; }
-      .selector__easy_quiz__title:hover, .selector__challenge__title:hover {
-        position: relative;
-        color: #ffffff;
-        letter-spacing: 0.2px; }
     .selector__easy_quiz__text {
       /*display:none;*/
       position: relative;
@@ -1487,12 +1550,12 @@ para controlar el flex y display de cada sección
     background-color: black; }
     .selector__challenge:hover {
       background-color: #091353; }
+    .selector__challenge:hover .selector__challenge__title {
+      position: relative;
+      color: #21cea1;
+      letter-spacing: 0.2px; }
     .selector__challenge__title {
       color: white; }
-      .selector__challenge__title:hover {
-        position: relative;
-        color: #21cea1;
-        letter-spacing: 0.2px; }
     .selector__challenge__text {
       display: none;
       transition-duration: .3s; }
@@ -1512,7 +1575,7 @@ para controlar el flex y display de cada sección
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000855c7;
+    background-color: #434872c7;
     border-radius: 8px;
     padding: 1rem;
     height: 100px;
@@ -1561,12 +1624,13 @@ para controlar el flex y display de cada sección
       top: -270px;
       text-shadow: 0px 0px 28px white; }
   .dont_worry__psyduck {
-    width: 250px;
+    width: 110px;
     align-self: end; }
     .dont_worry__psyduck img {
       width: 100%; }
     .dont_worry__psyduck:hover .dont_worry__text {
-      left: 0px; }
+      left: -20px;
+      top: 129px; }
     .dont_worry__psyduck:hover img {
       -webkit-animation: wiggle 0.5s infinite;
       -moz-animation: wiggle 0.5s infinite;

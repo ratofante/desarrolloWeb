@@ -374,6 +374,14 @@ section .section-right {
     	}
     }
 }
+/* correcciones sect */
+
+.form_container {
+	@include tablet {
+		height: auto;
+		width: 500px;
+	}
+}
 
 .wrapdiv404 {
 	width: 100vw;
@@ -396,6 +404,72 @@ section .section-right {
 
 .about_hoover {
 	display: flex;
-	flex-flow: row;
+	flex-flow:column;
+	@include tablet {
+		flex-flow: row;
+	}
+}
+.wide_pc_flex {
+	@include wide_pc {
+		display:flex;
+		flex-flow:row;
+
+	}
+}
+
+@mixin contact_text {
+	color: white;
+	font-family: $normal;
+	padding: 2rem;
+}
+@mixin contact_header {
+	color: white; 
+	font-family: $title2;
+	font-size: 2rem;
+	padding-bottom:1rem;
+}
+.contact_extra {
+	$contact_width: 500px;
+	display: none;
+	@include wide_pc {
+		display: block;
+		width: $contact_width;
+		margin-right: 50px;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		height: fit-content;
+		background-color:19193c75;
+		padding: 2rem;
+		&__top {
+			display:flex;
+			flex-flow:row-reverse;
+			border-bottom: 1px solid white;
+			&__img {
+				width: 240px;
+				& img {width:100%;}
+			}
+			&__info {
+				width:260px;
+				padding-top:1rem;
+				& h3 {@include contact_header;}
+				& p {@include contact_text;}
+			}
+		}
+		&__bottom {
+			& h3 {
+				@include contact_header;
+				border-top:1px solid white;
+				padding-top:1rem;
+			}
+			& p {@include contact_text; padding: 1rem 2rem 2rem 2rem;}
+			&__icon_list {
+				max-width: $contact_width;
+				display: flex;
+				flex-flow: row;
+				justify-content: space-evenly;
+				& img {width:50px;}
+			}
+		}
+	}
 }
 
