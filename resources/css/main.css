@@ -5,6 +5,7 @@
 /* Weights */
 /* Colors */
 /* BG colors */
+/* */
 /* Animations */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -57,6 +58,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
 
 /* Fondos para el Body completo */
 html {
@@ -182,9 +186,6 @@ html {
 
 .nav-item {
   max-width: 170px; }
-  .nav-item__link {
-    font-family: "Fira Mono", monospace;
-    letter-spacing: 2px; }
   @media screen and (min-width: 992px) {
     .nav-item {
       max-width: 165px; } }
@@ -193,10 +194,12 @@ html {
     .nav-item__menudiv__img {
       width: 100%; }
   .nav-item__link {
-    font-size: 1.2rem; }
+    font-size: 1.8rem;
+    font-family: "Fira Mono", monospace;
+    letter-spacing: 2px; }
     @media screen and (min-width: 766px) {
       .nav-item__link {
-        font-size: 1.3rem; } }
+        font-size: 1.9rem; } }
 
 .navhead {
   display: flex;
@@ -206,12 +209,13 @@ html {
     z-index: 2;
     color: #ffffff;
     font-family: "Lobster", cursive;
-    font-size: 2.3rem; }
+    font-size: 3rem;
+    width: 83px; }
   .navhead__logo {
     width: 50px;
     position: relative;
-    top: 15px;
-    right: 19px;
+    top: 7px;
+    right: 3px;
     z-index: 1; }
     .navhead__logo__img {
       width: 100%; }
@@ -393,18 +397,19 @@ html {
       margin-top: 8rem; } }
   .carousel-card-r__title {
     font-family: "VT323", monospace;
-    font-size: 1.7rem;
+    font-size: 6rem;
     margin-top: 1rem;
     text-align: right; }
     @media screen and (min-width: 766px) {
       .carousel-card-r__title {
-        font-size: 4.7rem; } }
+        font-size: 8.7rem;
+        max-width: 500px; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-r__title {
         font-size: 6.7rem; } }
   .carousel-card-r__text {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: "Fira Mono", monospace;
     font-weight: 500;
     max-width: 220px;
@@ -413,7 +418,8 @@ html {
     @media screen and (min-width: 766px) {
       .carousel-card-r__text {
         max-width: 300px;
-        margin-bottom: 3rem; } }
+        margin-bottom: 3rem;
+        font-size: 2rem; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-r__text {
         font-size: 1.8rem;
@@ -436,18 +442,19 @@ html {
       padding: 1rem 0rem 1rem 3rem; } }
   .carousel-card-l__title {
     font-family: "VT323", monospace;
-    font-size: 1.7rem;
+    font-size: 6rem;
     margin-top: 1rem;
     text-align: left; }
     @media screen and (min-width: 766px) {
       .carousel-card-l__title {
-        font-size: 4.7rem; } }
+        font-size: 8.7rem;
+        max-width: 500px; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-l__title {
         font-size: 6.7rem; } }
   .carousel-card-l__text {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: "Fira Mono", monospace;
     font-weight: 500;
     max-width: 220px;
@@ -456,27 +463,27 @@ html {
     @media screen and (min-width: 766px) {
       .carousel-card-l__text {
         max-width: 300px;
-        margin-bottom: 3rem; } }
+        margin-bottom: 3rem;
+        font-size: 2rem; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-l__text {
         font-size: 1.8rem;
         max-width: 580px; } }
 
 #accordionFlushExample {
-  box-shadow: 0px 0px 8px #091353; }
-  @media screen and (min-width: 766px) {
-    #accordionFlushExample {
-      margin-right: 1rem;
-      max-width: 335px; } }
+  box-shadow: 0px 0px 8px #091353;
+  width: 100%; }
   @media screen and (min-width: 1198px) {
     #accordionFlushExample {
       margin-right: 0px;
       max-width: 400px; } }
 
-@media screen and (min-width: 1198px) {
-  #accordion_1, #accordion_2, #accordion_3 {
-    font-size: 1.2rem; } }
-
+/*#accordion_1, #accordion_2, #accordion_3 {
+	font-size: 1.3rem;
+	@include wide_pc {
+		font-size: 1.2rem;
+	}
+}*/
 #accordion_1 {
   background-color: #091353;
   color: white; }
@@ -486,6 +493,14 @@ html {
 
 #accordion_3 {
   font-family: "Fira Mono", monospace; }
+
+.accordion-button p {
+  font-size: 1.3rem; }
+  @media screen and (min-width: 766px) {
+    .accordion-button p {
+      text-align: center;
+      width: 100%;
+      font-size: 1.8rem; } }
 
 .accordion-button:not(.collapsed) {
   color: black;
@@ -503,12 +518,17 @@ html {
   background: url("../img/arrow_down.svg"); }
 
 .accordion-item {
+  font-size: 1.3rem;
   border: none;
   font-family: "Fira Mono", monospace; }
 
 .accordion-body {
   color: #0c0c0c;
-  background-color: #f5f5ff; }
+  background-color: #fee3bf; }
+  @media screen and (min-width: 766px) {
+    .accordion-body {
+      padding: 30px 160px;
+      font-size: 1.5rem; } }
 
 /* HEADER de QUIZ, ABOUT, POKE y CONTACT */
 .day_header {
@@ -658,321 +678,174 @@ html {
   -moz-animation: wiggle 0.5s infinite;
   animation: wiggle 0.5s infinite; }
 
-main {
-  margin: 10% auto 0px auto;
-  overflow: hidden; }
-
-.maindiv {
+/* CLASE SECTION */
+.section {
+  overflow: hidden;
   display: flex;
-  flex-flow: column;
-  justify-content: space-evenly; }
-  @media screen and (min-width: 766px) {
-    .maindiv {
-      flex-flow: row;
-      align-items: center;
-      height: 500px; } }
-
-.section, .welcome, .pokedex, .homequiz, .about, .contact {
-  font-family: "Fira Mono", monospace;
-  padding: 1rem;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
   margin: 1rem;
+  font-family: "Fira Mono", monospace;
+  text-align: center;
   background-color: #f5f5ff;
   box-shadow: 0px 0px 8px #091353;
   border-radius: 7px;
-  margin: 5rem 1rem; }
-  @media screen and (min-width: 766px) {
-    .section, .welcome, .pokedex, .homequiz, .about, .contact {
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 330px; } }
-  .section__title, .welcome__up__title, .pokedex__up__title, .homequiz__up__title, .about__up__title, .contact__up__title {
-    color: #091353;
-    font-family: "Lobster Two", cursive; }
-    @media screen and (min-width: 766px) {
-      .section__title, .welcome__up__title, .pokedex__up__title, .homequiz__up__title, .about__up__title, .contact__up__title {
-        font-size: 3rem;
-        margin-top: 1rem; } }
-    @media screen and (min-width: 1198px) {
-      .section__title, .welcome__up__title, .pokedex__up__title, .homequiz__up__title, .about__up__title, .contact__up__title {
-        font-size: 4.5rem; } }
-  @media screen and (min-width: 766px) {
-    .section__text, .welcome__down__text, .pokedex__down__text, .homequiz__down__text, .about__down__text, .contact__down__text {
-      margin-top: 1rem; } }
-  @media screen and (min-width: 1198px) {
-    .section__text, .welcome__down__text, .pokedex__down__text, .homequiz__down__text, .about__down__text, .contact__down__text {
-      font-size: 1.3rem; } }
-  @media screen and (min-width: 766px) {
-    .section__box, .welcome__down__box {
-      margin-top: 1rem; } }
-  @media screen and (min-width: 1198px) {
-    .section__box, .welcome__down__box {
-      font-size: 1.3rem; } }
-  .section__down, .welcome__down, .pokedex__down, .homequiz__down, .about__down, .contact__down {
-    margin: 0px auto; }
-
-section .section-left, section .section-right {
-  width: auto;
-  min-width: 45%;
-  max-width: 85%;
-  margin: auto; }
-  @media screen and (min-width: 766px) {
-    section .section-left, section .section-right {
-      min-width: 45%;
-      max-width: 50%; } }
-  section .section-left__img {
-    display: none; }
-    @media screen and (min-width: 766px) {
-      section .section-left__img {
-        display: block;
-        width: 100%;
-        border: 7px solid #8073a4;
-        border-radius: 7px;
-        z-index: 1; } }
-  section .section-left__link {
-    display: none; }
-    @media screen and (min-width: 766px) {
-      section .section-left__link {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0; } }
-
-section .section-right__img {
-  display: none; }
-  @media screen and (min-width: 766px) {
-    section .section-right__img {
-      display: block;
-      width: 100%;
-      border: 7px solid #091353;
-      border-radius: 7px;
-      z-index: 1; } }
-
-.text__max__width, .welcome__down, .pokedex__down, .homequiz__down, .about__down, .contact__down {
-  max-width: 430px; }
-  @media screen and (min-width: 1198px) {
-    .text__max__width, .welcome__down, .pokedex__down, .homequiz__down, .about__down, .contact__down {
-      max-width: 500px; } }
-
-.miniball, .welcome__down__box__imgdiv, .pokedex__down__box__imgdiv, .homequiz__down__box__imgdiv, .about__down__box__imgdiv, .contact__down__box__imgdiv {
-  width: 26px;
-  margin: auto; }
-
-.welcome {
   margin: 2rem 1rem; }
-  @media screen and (min-width: 766px) {
-    .welcome {
-      flex-flow: column;
-      justify-content: center;
-      width: 60%;
-      height: 350px; } }
-  @media screen and (min-width: 1198px) {
-    .welcome {
-      height: 468px; } }
-  .welcome__down__text, .pokedex__down__text, .homequiz__down__text, .about__down__text, .contact__down__text {
-    text-align: center; }
-  .welcome__down__box__text {
-    font-weight: bold;
-    margin-bottom: 5px; }
-  .welcome__down__box__imgdiv__img {
-    width: 100%; }
-
-.pokedex__down__text {
-  @text-align : left; }
-
-.pokedex__down__box__imgdiv__img {
-  width: 100%; }
-
-.homequiz__up__title {
-  color: #0c0c0c; }
-
-.homequiz__down__box__imgdiv__img {
-  width: 100%; }
-
-.about {
-  background-color: #f5f5ff; }
-  .about__down__text {
-    @text-align : left; }
-  .about__down__box__imgdiv__img {
-    width: 100%; }
-
-.contact {
-  background-color: #f5f5ff; }
-  .contact__down__text {
-    @text-align : left; }
-  .contact__down__box__imgdiv__img {
-    width: 100%; }
-
-.sect {
-  overflow: hidden;
-  width: 95%;
-  max-width: 680px;
-  margin: auto;
-  margin-bottom: 3rem;
-  background-color: #d1e8fdf5;
-  padding: 1rem;
-  border: 1px solid black;
-  box-shadow: 3px 3px 3px #00000063;
-  border-radius: 8px;
-  text-align: center; }
-  @media screen and (min-width: 1198px) {
-    .sect {
-      height: 460px;
-      width: 680px; } }
-  .sect__title {
+  .section__firstCard {
+    width: 100%;
+    height: 340px;
+    margin: auto;
     position: relative;
-    z-index: 2;
-    font-family: "Lobster Two", cursive;
-    font-size: 1.4rem;
-    padding-bottom: 1rem; }
-  .sect__text, .sect__card__text {
-    font-family: "Fira Mono", monospace;
+    top: 0px;
+    left: 0px;
+    background-color: #a05f5f82;
+    overflow: hidden;
+    border-radius: 7px;
+    transition: 0.5s; }
+    .section__firstCard h2 {
+      position: relative;
+      top: 85px;
+      font-family: "Lobster Two", cursive;
+      margin: 1rem;
+      border-radius: 7px;
+      padding: 5rem;
+      font-size: 5rem;
+      text-align: center;
+      background-color: #ffffff52;
+      transition: 0.2s;
+      z-index: 2; }
+      @media screen and (min-width: 766px) {
+        .section__firstCard h2 {
+          font-size: 7rem;
+          top: 78px;
+          width: 340px;
+          margin: auto; } }
+    .section__firstCard__imgRight, .section__firstCard__imgLeft {
+      width: 400px;
+      position: relative;
+      opacity: .4;
+      bottom: 155px;
+      left: 35px;
+      z-index: 1;
+      transition: 0.2s; }
+      @media screen and (min-width: 766px) {
+        .section__firstCard__imgRight, .section__firstCard__imgLeft {
+          width: 475px;
+          bottom: 210px;
+          left: 328px; } }
+      .section__firstCard__imgRight img, .section__firstCard__imgLeft img {
+        width: 100%; }
+    .section__firstCard__imgLeft {
+      bottom: 199px;
+      left: 14px; }
+      .section__firstCard__imgLeft img {
+        width: 100%; }
+  .section__secondCard {
+    overflow: hidden;
     position: relative;
-    padding: 1rem;
-    text-align: center;
-    line-height: 24px;
-    z-index: 2; }
-  .sect__card {
-    position: relative;
-    display: flex;
+    top: 0px;
+    right: 120vw;
+    display: none;
     flex-flow: column;
     align-items: center;
-    justify-content: space-around;
-    z-index: 2; }
-    @media screen and (min-width: 766px) {
-      .sect__card {
-        flex-flow: row; } }
-    .sect__card__text__p {
-      font-family: "Fira Mono", monospace;
-      padding: 1rem 0rem;
-      max-width: 330px;
-      background-color: #51ab8033;
-      border: 3px solid #2038548f;
-      margin: 1rem auto;
-      padding: 1rem;
-      box-shadow: 2px -3px 7px black;
-      border-bottom: none;
-      border-left: none;
-      border-radius: 8px; }
-    .sect__card__img {
-      width: 210px; }
-      .sect__card__img img {
-        width: 100%; }
-    .sect__card__pokedex {
-      width: 180px;
-      margin: auto;
-      padding: 0.3rem;
-      border: 3px solid #22517a;
-      border-left: none;
-      border-bottom: none;
-      background-color: #3693f0;
-      border-radius: 8px;
-      box-shadow: 2px -3px 7px black; }
-      .sect__card__pokedex__img {
-        width: 100%; }
-  .sect__jigglyL, .sect__jigglyR {
-    position: relative;
-    bottom: 196px;
-    left: -50px;
-    z-index: 1;
-    opacity: .3;
-    width: 228px;
-    height: 0px; }
-    .sect__jigglyL__img, .sect__jigglyR__img {
-      width: 100%;
-      z-indez: 1; }
-  .sect__jigglyR {
-    float: right;
-    left: 50px; }
-
-/* correcciones sect */
-@media screen and (min-width: 766px) {
-  .form_container {
-    height: auto;
-    width: 500px; } }
-
-.wrapdiv404 {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  background: url("../img/poster3wide.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.p404 {
-  max-width: 1280px;
-  max-height: 720px; }
-
-/* Hoover MAIN SECTION */
-.about_hoover {
-  display: flex;
-  flex-flow: column; }
-  @media screen and (min-width: 766px) {
-    .about_hoover {
-      flex-flow: row; } }
-
-@media screen and (min-width: 1198px) {
-  .wide_pc_flex {
-    display: flex;
-    flex-flow: row; } }
-
-.contact_extra {
-  display: none; }
-  @media screen and (min-width: 1198px) {
-    .contact_extra {
-      display: block;
-      width: 500px;
-      margin-right: 50px;
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-      height: fit-content;
-      background-color: 19193c75;
+    justify-content: center;
+    height: 0%;
+    transition: 0.2s;
+    background-color: #aae1f1;
+    border-radius: 7px;
+    opacity: 0.1; }
+    .section__secondCard h2 {
+      display: none;
+      font-size: 3rem;
+      font-family: "Lobster Two", cursive; }
+      @media screen and (min-width: 766px) {
+        .section__secondCard h2 {
+          font-size: 3.5rem; } }
+    .section__secondCard p {
+      display: none;
+      font-size: 1.5rem; }
+      @media screen and (min-width: 766px) {
+        .section__secondCard p {
+          font-size: 2rem; } }
+    .section__secondCard__text {
+      background-color: #f5f5ff;
+      margin: 1rem;
+      border-radius: 7px;
       padding: 2rem; }
-      .contact_extra__top {
-        display: flex;
-        flex-flow: row-reverse;
-        border-bottom: 1px solid white; }
-        .contact_extra__top__img {
-          width: 240px; }
-          .contact_extra__top__img img {
-            width: 100%; }
-        .contact_extra__top__info {
-          width: 260px;
-          padding-top: 1rem; }
-          .contact_extra__top__info h3 {
-            color: white;
-            font-family: "Lobster Two", cursive;
-            font-size: 2rem;
-            padding-bottom: 1rem; }
-          .contact_extra__top__info p {
-            color: white;
-            font-family: "Fira Mono", monospace;
-            padding: 2rem; }
-      .contact_extra__bottom h3 {
-        color: white;
-        font-family: "Lobster Two", cursive;
-        font-size: 2rem;
-        padding-bottom: 1rem;
-        border-top: 1px solid white;
-        padding-top: 1rem; }
-      .contact_extra__bottom p {
-        color: white;
-        font-family: "Fira Mono", monospace;
-        padding: 2rem;
-        padding: 1rem 2rem 2rem 2rem; }
-      .contact_extra__bottom__icon_list {
-        max-width: 500px;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly; }
-        .contact_extra__bottom__icon_list img {
-          width: 50px; } }
+      @media screen and (min-width: 766px) {
+        .section__secondCard__text {
+          width: 400px; } }
+    .section__secondCard p strong {
+      font-weight: 700; }
+    .section__secondCard p a {
+      text-decoration: none;
+      color: black; }
+    .section__secondCard__img {
+      display: none;
+      width: 26px;
+      margin: 0px auto; }
+      .section__secondCard__img img {
+        width: 100%; }
+    .section__secondCard__bg {
+      position: relative;
+      bottom: 278px;
+      right: 66px;
+      width: 400px;
+      height: 0%;
+      opacity: .2;
+      z-index: 1; }
+  .section:hover {
+    display: block; }
+  .section:hover .section__firstCard {
+    left: 120vw;
+    height: 0%; }
+    .section:hover .section__firstCard h2 {
+      right: 120vw; }
+    .section:hover .section__firstCard__imgRight, .section:hover .section__firstCard__imgLeft {
+      left: 120vw; }
+    .section:hover .section__firstCard_imgLeft {
+      right: 120vw; }
+  .section:hover .section__secondCard {
+    display: flex;
+    height: 340px;
+    width: 100%;
+    right: 0px;
+    opacity: 1; }
+    .section:hover .section__secondCard h2 {
+      display: block;
+      z-index: 2; }
+    .section:hover .section__secondCard p {
+      display: block;
+      z-index: 2; }
+    .section:hover .section__secondCard__img {
+      display: block; }
+
+/* BG alternativos para cada sección Variables */
+/* Vars $ al comienzo de página */
+.pokedexFrontCard {
+  background-color: gray; }
+
+.pokedexSideCard {
+  background-color: #e7d4d4; }
+
+.quizFrontCard {
+  background-color: #aae1f1; }
+
+.quizSideCard {
+  background-color: #9281618f; }
+
+.aboutFrontCard {
+  background-color: #080041a3; }
+
+.aboutSideCard {
+  background-color: #580dc582; }
+
+.contactFrontCard {
+  background-color: #e0c849; }
+
+.contactSideCard {
+  background-color: #e377d261; }
 
 /* Colores para otras páginas */
 .asidel {
@@ -983,7 +856,7 @@ section .section-right__img {
   display: flex;
   flex-flow: row;
   box-shadow: 0px 0px 19px #9d84b7;
-  margin-bottom: 2rem;
+  margin: 2rem 0px;
   background-color: #102436;
   border-start-start-radius: 86px;
   border-end-start-radius: 72px; }
@@ -1022,20 +895,29 @@ section .section-right__img {
         margin: .6rem; } }
     .asidel__text__p, .asider__text__p {
       color: #091353;
-      font-size: .7rem;
+      width: 200px;
+      height: 63px;
+      font-size: 1.3rem;
+      padding: 1rem;
+      padding-bottom: 0px;
       font-weight: 500;
       margin: 0;
       line-height: 20px; }
       @media screen and (min-width: 766px) {
         .asidel__text__p, .asider__text__p {
-          font-size: .9rem; } }
+          font-size: 1.5rem; } }
       @media screen and (min-width: 1198px) {
         .asidel__text__p, .asider__text__p {
           font-size: 1rem; } }
     .asidel__text__firma, .asider__text__firma {
       font-family: "VT323", monospace;
       text-align: right;
-      margin: 0; }
+      margin: 0;
+      font-size: 1.7rem;
+      padding: 0px 1rem; }
+      @media screen and (min-width: 766px) {
+        .asidel__text__firma, .asider__text__firma {
+          font-size: 1.9rem; } }
       @media screen and (min-width: 1198px) {
         .asidel__text__firma, .asider__text__firma {
           font-size: 1.3rem; } }
@@ -1050,7 +932,7 @@ section .section-right__img {
   display: flex;
   flex-flow: row;
   box-shadow: 0px 0px 19px #9d84b7;
-  margin-bottom: 2rem;
+  margin: 2rem 0px;
   background-color: #102436;
   border-end-end-radius: 86px;
   border-start-end-radius: 72px;
@@ -1088,7 +970,7 @@ section .section-right__img {
         /*background: url('../img/home_bg.png');*/
         background-size: contain;
         box-shadow: 0px -9px 42px #ffffff;
-        background-color: #d7e9f9; } }
+        background-color: #45a7ff4a; } }
     .footer__banner__img {
       width: 100%; }
   .footer__pie {

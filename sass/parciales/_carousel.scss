@@ -62,10 +62,11 @@ $c-wide: 600px;
 }
 @mixin card_title {
 	font-family: $special;
-	font-size: 1.7rem;
+	font-size: 6rem;
 	margin-top: 1rem;
 	@include tablet {
-		font-size:  4.7rem;
+		font-size:  8.7rem;
+		max-width: 500px;
 	}
 	@include wide_pc {
 		font-size:  6.7rem;
@@ -73,7 +74,7 @@ $c-wide: 600px;
 }
 @mixin card_text {
 	color: black;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-family: $normal;
 	font-weight: 500;
 	max-width:220px;
@@ -81,6 +82,7 @@ $c-wide: 600px;
 	@include tablet {
 		max-width: 300px;
 		margin-bottom: 3rem;
+		font-size: 2rem;
 	}
 	@include wide_pc {
 		font-size: 1.8rem;

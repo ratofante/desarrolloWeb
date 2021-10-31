@@ -2,9 +2,8 @@
 
 #accordionFlushExample {
 	box-shadow: 0px 0px 8px #091353;
+	width: 100%;
 	@include tablet {
-		margin-right:1rem;
-		max-width: 335px;
 	}
 	@include wide_pc {
 		margin-right: 0px;
@@ -12,15 +11,24 @@
 	}
 }
 
-#accordion_1, #accordion_2, #accordion_3 {
+/*#accordion_1, #accordion_2, #accordion_3 {
+	font-size: 1.3rem;
 	@include wide_pc {
 		font-size: 1.2rem;
 	}
-}
+}*/
 #accordion_1 {background-color: $mainbg; color: white;}
 #accordion_2 {background-color: #c3c3c3;}
 #accordion_3 {font-family: $normal;}
 
+.accordion-button p {
+	font-size: 1.3rem;
+	@include tablet {
+		text-align: center;
+		width: 100%;
+		font-size: 1.8rem;
+	}
+}
 .accordion-button:not(.collapsed){color: black;background-color: $white-color;}
 
 
@@ -39,12 +47,18 @@
 
 
 .accordion-item {
+	font-size: 1.3rem;
 	border: none;
 	font-family: $normal;
+	
 }
 
 
 .accordion-body {
 	color: $black-color;
-	background-color: $light;
+	background-color: #fee3bf;
+	@include tablet {
+		padding: 30px 160px;
+		font-size: 1.5rem;
+	}
 }

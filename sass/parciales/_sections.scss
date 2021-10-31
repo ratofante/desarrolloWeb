@@ -1,475 +1,202 @@
-main{margin: 10% auto 0px auto; overflow: hidden;}
+/* CLASE SECTION */
+$cardFront: #a05f5f82;
+$cardSide: #aae1f1;
 
-.maindiv {
-	display: flex;
-	flex-flow: column;
-	justify-content: space-evenly;
-	@include tablet {
-		flex-flow: row;
-		align-items: center;
-		height: 500px;
-	}
-	@include wide_pc {
+$cardFrontPokedex: gray;
+$cardSidePokedex: #e7d4d4;
 
-	} 
-}
+$cardFrontQuiz:#aae1f1;
+$cardSideQuiz: #9281618f;
+
+$cardFrontAbout: #080041a3;
+$cardSideAbout: #580dc582;
+
+$cardFrontContact: #e0c849;
+$cardSideContact: #e377d261;
+
+
+$cardHeightSmall: 340px;
+$fastTransition: .2s;
+$mediumTransition: .5s;
+$slowTransition: 8s;
+
+$goOut: 120vw;
 
 .section {
-	font-family: $normal;
-	padding: 1rem;
-	text-align: center;
-	margin: 1rem;
-	background-color: $light;
-    box-shadow: 0px 0px 8px #091353;
-    border-radius: 7px;
-    margin: 5rem 1rem;
-    @include tablet {
-    	display: flex;
-    	flex-flow: row;
-    	align-items: center;
-    	justify-content: space-between;
-    	min-height: 330px;
-    }
-	&__title {
-		color:  $mainbg;
-		font-family: $title2;
-		@include tablet {
-			font-size: 3rem;
-			margin-top: 1rem;
-		}
-		@include wide_pc {
-			font-size: 4.5rem;
-		}
-	}
-	&__text {
-		@include tablet {
-			margin-top: 1rem;
-		}
-		@include wide_pc {
-			font-size: 1.3rem;
-		}
-	}
-	&__link {
-		$color: $secbg;
-
-	}
-	&__box {
-		@include tablet {
-			margin-top: 1rem;
-		}
-		@include wide_pc {
-			font-size: 1.3rem;
-		}
-	}
-	&__down {
-		margin: 0px auto;
-	}
-}
-section .section-left {
-	width: auto;
-	min-width: 45%;
-	max-width: 85%;
-	margin: auto;
-	@include tablet {
-		min-width: 45%;
-		max-width: 50%;
-	}
-	&__img {
-		display: none;
-		@include tablet {
-			display: block;
-			width: 100%;
-			border: 7px solid #8073a4;
-    		border-radius: 7px;
-    		z-index: 1;
-		}
-	}
-	&__link {
-		display: none;
-		@include tablet {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-	}
-}
-section .section-right {
-	@extend .section-left;
-	&__img {
-		display: none;
-		@include tablet {
-			display: block;
-			width: 100%;
-			border: 7px solid $mainbg;
-    		border-radius: 7px;
-    		z-index: 1;
-		}
-	}
-}
-.text__max__width {
-	max-width: 430px;
-	@include wide_pc {
-		max-width: 500px;
-	}
-}
-.miniball {
-	width: 26px;
-	margin: auto;
-}
-.welcome {
-	@extend .section;
-	margin: 2rem 1rem;
-	@include tablet {
-		flex-flow: column;
-		justify-content: center;
-		width: 60%;
-		height: 350px;
-	}
-	@include wide_pc {
-		height: 468px;
-	}
-	&__up {
-		&__title{
-			@extend .section__title;
-		}
-	}
-	&__down {
-		@extend .section__down;
-		@extend .text__max__width;
-		&__text {
-			@extend .section__text;
-			text-align: center;
-		}
-		&__box {
-			@extend .section__box;
-			&__text {
-				font-weight: bold;
-				margin-bottom:  5px;
-			}
-			&__imgdiv {
-				@extend .miniball;
-				&__img {
-					width: 100%;
-				}
-			}
-		}
-	}
-}
-.pokedex {
-	@extend .section;
-	&__up {
-
-		&__title {
-			@extend .section__title;
-		}
-	}
-	&__down {
-		@extend .section__down;
-		@extend .text__max__width;
-		&__text {
-			@extend .welcome__down__text;
-			@text-align: left;
-		}
-		&__box {
-			&__text {
-			}
-			&__imgdiv {
-				@extend .miniball;
-				&__img {
-					width: 100%;
-				}
-			}
-		}
-
-	}
-}
-.homequiz {
-	@extend .section;
-	&__up {
-
-		&__title {
-			@extend .section__title;
-			color: $black-color;
-		}
-	}
-	&__down {
-		@extend .section__down;
-		@extend .text__max__width;
-		&__text {
-			@extend .welcome__down__text;
-		}
-		&__box {
-			&__text {
-
-			}
-			&__imgdiv {
-				@extend .miniball;
-				&__img {
-					width: 100%;
-				}
-			}
-		}
-
-	}
-}
-.about {
-	@extend .section;
-	background-color: $light;
-	&__up {
-
-		&__title {
-			@extend .section__title;
-			
-		}
-	}
-	&__down {
-		@extend .section__down;
-		@extend .text__max__width;
-		&__text {
-			@extend .welcome__down__text;
-			@text-align: left;
-
-		}
-		&__box {
-			&__text {
-			}
-			&__imgdiv {
-				@extend .miniball;
-				&__img {
-					width: 100%;
-				}
-			}
-		}
-
-	}
-}
-.contact {
-	@extend .section;
-	background-color: $light;
-	&__up {
-
-		&__title {
-			@extend .section__title;
-		}
-	}
-	&__down {
-		@extend .section__down;
-		@extend .text__max__width;
-		&__text {
-			@extend .welcome__down__text;
-			@text-align: left;
-		}
-		&__box {
-			&__text {
-			}
-			&__imgdiv {
-				@extend .miniball;
-				&__img {
-					width: 100%;
-				}
-			}
-		}
-
-	}
-}
-
-.sect {
 	overflow: hidden;
-	width: 95%;
-	max-width: 680px;
-    margin: auto;
-    margin-bottom: 3rem;
-    background-color: #d1e8fdf5;
-    padding: 1rem;
-    border: 1px solid black;
-    box-shadow: 3px 3px 3px #00000063;
-    border-radius: 8px;
-    text-align: center;	
-    @include wide_pc {
-    	height: 460px;
-    	width: 680px;
-    }
-    &__title {
-    	position: relative;
-    	z-index: 2;
-    	font-family: $title2;
-    	font-size: 1.4rem;
-    	padding-bottom: 1rem;
-    }
-    &__text {
-    	font-family: $normal;
-    	position: relative;
-    	padding: 1rem;
-		text-align: center;
-    	line-height: 24px;
-    	z-index: 2;
-    }
-    &__card {
-    	position: relative;
-    	display: flex;
-    	flex-flow: column;
-    	align-items: center;
-    	justify-content: space-around;
-    	z-index: 2;
-    	@include tablet {
-    		flex-flow: row;
-    	}
-    	&__text {
-    		@extend .sect__text;
-    		&__p {
-    			font-family: $normal;
-    			padding: 1rem 0rem;
-			    max-width: 330px;
-			    background-color: #51ab8033;
-			    border: 3px solid #2038548f;
-			    margin: 1rem auto;
-			    padding: 1rem;
-			    box-shadow: 2px -3px 7px black;
-			    border-bottom: none;
-			    border-left: none;
-			    border-radius: 8px;
-    		}
-    	}
-    	&__img {
-    		width: 210px;
-    		& img {
-    			width: 100%;
-    		}
-    	}
-    	&__pokedex {
-    		width: 180px;
-		   	margin: auto;
-		    padding: 0.3rem;
-		    border: 3px solid #22517a;
-		    border-left: none;
-		    border-bottom: none;
-		    background-color: #3693f0;
-		    border-radius: 8px;
-		    box-shadow: 2px -3px 7px black;
-    		&__img {
-    			width: 100%;
-    		}
-    	}
-    }
-    &__jigglyL {
-    	position: relative;
-		bottom: 196px;
-		left: -50px;
-		z-index: 1;
-		opacity: .3;
-		width: 228px;
-		height: 0px;
-    	&__img {
-    		width: 100%;
-    		z-indez: 1;
-    	}
-    }
-    &__jigglyR {
-    	@extend .sect__jigglyL;
-    	float: right;
-    	left: 50px;
-    	&__img {
-    		@extend .sect__jigglyL__img;
-    	}
-    }
-}
-/* correcciones sect */
-
-.form_container {
-	@include tablet {
-		height: auto;
-		width: 500px;
-	}
-}
-
-.wrapdiv404 {
-	width: 100vw;
-	height: 100vh;
 	display: flex;
 	align-items: center;
-	justify-content: left;
-	background: url("../img/poster3wide.jpg");
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-.p404 {
-	max-width: 1280px;
-	max-height: 720px;
-}
-
-/* Hoover MAIN SECTION */
-
-.about_hoover {
-	display: flex;
-	flex-flow:column;
-	@include tablet {
-		flex-flow: row;
-	}
-}
-.wide_pc_flex {
-	@include wide_pc {
-		display:flex;
-		flex-flow:row;
-
-	}
-}
-
-@mixin contact_text {
-	color: white;
+	justify-content: center;
+	height: $cardHeightSmall;
+	margin: 1rem;
 	font-family: $normal;
-	padding: 2rem;
-}
-@mixin contact_header {
-	color: white; 
-	font-family: $title2;
-	font-size: 2rem;
-	padding-bottom:1rem;
-}
-.contact_extra {
-	$contact_width: 500px;
-	display: none;
-	@include wide_pc {
-		display: block;
-		width: $contact_width;
-		margin-right: 50px;
-		border-top: 1px solid white;
-		border-bottom: 1px solid white;
-		height: fit-content;
-		background-color:19193c75;
-		padding: 2rem;
-		&__top {
-			display:flex;
-			flex-flow:row-reverse;
-			border-bottom: 1px solid white;
-			&__img {
-				width: 240px;
-				& img {width:100%;}
-			}
-			&__info {
-				width:260px;
-				padding-top:1rem;
-				& h3 {@include contact_header;}
-				& p {@include contact_text;}
+	text-align: center;
+	background-color: $lightbg;
+	box-shadow: 0px 0px 8px #091353;
+	border-radius: $borderRadius;
+	margin:2rem 1rem;
+	&__firstCard {
+		width: 100%;
+		height: $cardHeightSmall;
+		margin: auto;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		background-color: $cardFront;
+		overflow: hidden;
+		border-radius: $borderRadius;
+		transition: $mediumTransition;
+		& h2 {
+			position: relative;
+			top: 85px;
+			font-family:$title2;
+			margin: 1rem;
+			border-radius: $borderRadius;
+			padding: 5rem;
+			font-size: 5rem;
+			text-align: center;
+			background-color:#ffffff52;
+			transition: $fastTransition;
+			z-index:2;
+			@include tablet {
+				font-size: 7rem;
+				top:78px;
+				width: 340px;
+				margin: auto;
 			}
 		}
-		&__bottom {
-			& h3 {
-				@include contact_header;
-				border-top:1px solid white;
-				padding-top:1rem;
+		&__imgRight {
+			width: 400px;
+			position:relative;
+			opacity: .4;
+			bottom:155px;
+			left: 35px;
+			z-index:1;
+			transition: $fastTransition;
+			@include tablet {
+				width: 475px;
+				bottom: 210px;
+				left: 328px;
 			}
-			& p {@include contact_text; padding: 1rem 2rem 2rem 2rem;}
-			&__icon_list {
-				max-width: $contact_width;
-				display: flex;
-				flex-flow: row;
-				justify-content: space-evenly;
-				& img {width:50px;}
+			& img {width:100%;}
+
+		}
+		&__imgLeft {
+			@extend .section__firstCard__imgRight;
+			bottom: 199px;
+			left: 14px;
+			& img {width:100%;}
+		}
+	}
+	&__secondCard {
+		overflow: hidden;
+		position: relative;
+		top: 0px;
+		right:$goOut;
+		display: none;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		height: 0%;
+		transition: $fastTransition;
+		background-color: $cardSide;
+		border-radius: $borderRadius;
+		opacity: 0.1;
+		& h2 {
+			display:none;
+			font-size: 3rem;
+			font-family: $title2;
+			@include tablet {
+				font-size: 3.5rem;
 			}
+		}
+		& p{	
+			display:none;
+			font-size: 1.5rem;
+			@include tablet {
+				font-size: 2rem;
+			}
+		}
+		&__text {
+			background-color: $lightbg;
+			margin: 1rem;
+			border-radius: $borderRadius;
+			padding: 2rem;
+			@include tablet {
+				width: 400px;
+			}
+		}
+		& p strong {
+			font-weight: $bold;
+		}
+		& p a {
+			text-decoration: none;
+			color: black;
+		}
+		&__img {
+			display:none;
+			width: 26px;
+			margin: 0px auto;
+			& img {width: 100%;}
+		}
+		&__bg {
+			position: relative;
+			bottom: 278px;
+			right: 66px;
+			width: 400px;
+			height: 0%;
+			opacity: .2;
+			z-index: 1;
+		}
+	}
+	&:hover {
+		display: block;
+	}
+	&:hover .section__firstCard {
+			left: $goOut;
+			height: 0%;
+			& h2 {
+				right: $goOut;
+			}
+			&__imgRight {
+				left: $goOut;
+			}
+			&_imgLeft {
+				right: $goOut;
+			}
+		}
+	&:hover .section__secondCard {
+		display:flex;
+		height: $cardHeightSmall;
+		width: 100%;
+		right: 0px;
+		opacity: 1;
+		& h2 {
+			display: block;
+			z-index: 2;
+		}
+		& p {
+			display: block;
+			z-index: 2;
+		}
+		&__img {
+			display: block;
 		}
 	}
 }
+
+/* BG alternativos para cada sección Variables */
+/* Vars $ al comienzo de página */
+
+.pokedexFrontCard {background-color:$cardFrontPokedex;}
+.pokedexSideCard {background-color: $cardSidePokedex;}
+
+.quizFrontCard {background-color:$cardFrontQuiz;}
+.quizSideCard {background-color: $cardSideQuiz;}
+
+.aboutFrontCard {background-color:$cardFrontAbout;}
+.aboutSideCard {background-color: $cardSideAbout;}
+
+.contactFrontCard {background-color:$cardFrontContact;}
+.contactSideCard {background-color: $cardSideContact;}
 

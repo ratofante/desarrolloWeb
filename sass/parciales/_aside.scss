@@ -6,7 +6,7 @@
 	display: flex;
 	flex-flow: row;
 	box-shadow: 0px 0px 19px #9d84b7;
-	margin-bottom: 2rem;
+	margin: 2rem 0px;
     @include wide_pc {
     	height: 120px;
     }
@@ -57,14 +57,18 @@
 		}
 		&__p {
 			color: $mainbg;
-			font-size: .7rem;
+			width: 200px;
+			height: 63px;
+			font-size: 1.3rem;
+			padding: 1rem;
+			padding-bottom: 0px;
 			font-weight: $light-bold;
 			margin: 0;
 			line-height: 20px;
 			@include medium_mobile {
 			}
 			@include tablet {
-				font-size: .9rem;
+				font-size: 1.5rem;
 			}
 			@include wide_pc {
 				font-size: 1rem;
@@ -74,6 +78,11 @@
 			font-family: $special;
 			text-align: right;
 			margin: 0;
+			font-size: 1.7rem;
+			padding: 0px 1rem;
+			@include tablet {
+				font-size: 1.9rem;
+			}
 			@include wide_pc {
 				font-size: 1.3rem;
 			}
@@ -112,7 +121,7 @@
 	}
 }
 .asider__text__p a, .asidel__text__p a {
-	color: $light;
+	color: $lightbg;
 	text-decoration: none;
 }
 

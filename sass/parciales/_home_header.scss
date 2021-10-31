@@ -77,10 +77,6 @@ html {width: 100%; overflow-x: hidden;}
 }
 .nav-item {
 	max-width: 170px;
-	&__link {
-		font-family: $normal;
-		letter-spacing: 2px;
-	}
 	@include square_pc {
 	max-width: 165px;
 	}
@@ -91,9 +87,11 @@ html {width: 100%; overflow-x: hidden;}
 		}
 	}
 	&__link {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
+		font-family: $normal;
+		letter-spacing: 2px;
 		@include tablet {
-			font-size: 1.3rem;
+			font-size: 1.9rem;
 		}
 	}
 }
@@ -105,13 +103,14 @@ html {width: 100%; overflow-x: hidden;}
 		z-index: 2;
 		color: $white-color;
 		font-family: $title1;
-		font-size: 2.3rem;
+		font-size: 3rem;
+		width: 83px;
 	}
 	&__logo {
 		width: 50px;
 		position: relative;
-    	top: 15px;
-    	right: 19px;
+    	top: 7px;
+    	right: 3px;
     	z-index: 1;
 		&__img {
 			width: 100%;

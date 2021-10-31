@@ -110,96 +110,71 @@
 	  </button>
 	</div>
 
-	<!-- MAIN BODY -->
-	<main>
-	<!-- welcome, acordeon -->
-	<div class="maindiv">
-		<section class="welcome">
-			<div class="welcome__up">
-				<h2 class="welcome__up__title">Welcome!</h2>
-			</div>
-			<div class="welcome__down">
-				<p class="welcome__down__text">This app is set so you can find all of the 150 original pokemons, and maybe more!</p>
-				<div class="welcome__down__box">
-					<p class="welcome__down__box__text">Scroll down to see more!</p>
-					<div class="welcome__down__box__imgdiv">
-						<img class="welcome__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
-					</div>
-				</div>
-			</div>
-			<div class="welcome__asidel">
-				
-			</div>
-		</section>
+    <!--MAIN BODY-->
+<main>
+    <div class="homeMain">
+        <section class="section">
+            <div class="section__firstCard">
+                <h2>Welcome!</h2>
+                <div class="section__firstCard__imgRight">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png' alt='poke_img'> 
+                </div>
+            </div>
+            <div class="section__secondCard">
+                <h2>Hi there!</h2>
+                <p class="section__secondCard__text">This app is set for you to find all of the 151 pokemons, and more!</p>
+                <p><strong>Scroll down to see more!</strong></p>
+                <div class="section__secondCard__img">
+                    <img src="resources/img/miniball.png" alt="pokeball">
+                </div>
+                <div class="section__secondCard__bg">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png' alt='poke_img'>
+                </div>
+            </div>
+        </section>
 
-		<!-- ACCORDION -->
+        		<!-- ACCORDION -->
 		<div class="accordion-flush" id="accordionFlushExample">
-	  		<div id="accordion_1" class="accordion-item">
-	   			<h2 class="accordion-header text-center" id="flush-headingOne">
-	      			<button id="accordion_1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">About this site
-	      			</button>
-	     		</h2>
-	    		<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-	    			<div class="accordion-body">This site is a personal project. The main objective is to create a Pokedex where you can search pokemons by its Id or name (soon I hope so). Also, you can test your knowlegde about Pokemons by taking the Quiz in the Quiz section.
-	      			</div>
-	    		</div>
-	  		</div>
-		  	<div class="accordion-item">
-		    	<h2 class="accordion-header" id="flush-headingTwo">
-	    	  		<button id="accordion_2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">What can I do with pokedex?
-	    	  		</button>
-	    		</h2>
-	    		<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-					<div class="accordion-body">With the Pokedex you can search for Pokemons and learn about them. There are many things to discover about pokemons. Find out the evolution path, look at the moves it can lear and much more! <br>
-						<a class="d-block text-end mt-3" href="views/pokedex.html">Go find a Pokemon!</a>
-					</div>
-				</div>
-	  		</div>
-	  		<div class="accordion-item">
-				<h2 class="accordion-header" id="flush-headingThree">
-					<button id="accordion_3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-					        	How can I test my pokemon knowlegde?
-					 </button>
-				</h2>
-	    		<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-	      			<div class="accordion-body">To take the test go to the Quiz section. There you can challenge yourself getting the right answer for the different questions. An excellent little game for the nostalgia. You can invite your friends and find out who is the real pokemon master! <br>
-	      				<a class="d-block text-end mt-3" href="views/quiz.html">Take the Quiz!</a>
-	      			</div>
-	    		</div>
-	  		</div>
-		</div>
-	</div>
-	<!--fin div welcome + accordion -->
-		<!-- fin ACCORDION -->
-
-		<!-- ASIDEl -->
-		<div class="welcome__asidel">
-				
-		</div>
-
-		<!-- SECTIONS -->
-		<section class="pokedex" data-aos="fade-up" data-aos-duration="1000">
-			<div class="section-left">
-				<div class="pokedex__up">
-					<h2 class="pokedex__up__title">The Pokedex</h2>
-				</div>
-				<div class="pokedex__down">
-					<p class="pokedex__down__text">Use the pokedex to find a pokemon and learn all about them.</p>
-					<div class="pokedex__down__box">
-						<a class="pokedex__down__box__text" href="views/pokedex.html">Go to Pokedex</a>
-						<div class="pokedex__down__box__imgdiv">
-							<img class="pokedex__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section-right">
-				<img class="section-right__img" src="resources/img/day_bg.png" alt="Fondo ilustrativo">
-			</div>
-		</section>
-
-		<!-- asidel -->
-		<asidel class="asidel">
+            <div id="accordion_1" class="accordion-item">
+                 <h2 class="accordion-header text-center" id="flush-headingOne">
+                    <button id="accordion_1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><p>About this Site</p>
+                    </button>
+               </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">This site is a personal project. The main objective is to create a Pokedex where you can search pokemons by its Id or name (soon I hope so). Also, you can test your knowlegde about Pokemons by taking the Quiz in the Quiz section.
+                    </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                    <button id="accordion_2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><p>What can I do with the Pokedex</p>
+                    </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">With the Pokedex you can search for Pokemons and learn about them. There are many things to discover about pokemons. Find out the evolution path, look at the moves it can lear and much more! <br>
+                      <a class="d-block text-end mt-3" href="views/pokedex.html">Go find a Pokemon!</a>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                  <button id="accordion_3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              <p>How can I test my pokemon knowlegde?</p>
+                   </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">To take the test go to the Quiz section. There you can challenge yourself getting the right answer for the different questions. An excellent little game for the nostalgia. You can invite your friends and find out who is the real pokemon master! <br>
+                        <a class="d-block text-end mt-3" href="views/quiz.html">Take the Quiz!</a>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!-- fin ACCORDION -->
+    </div>
+    <!--fin div welcome + accordion -->
+    
+        <!-- asidel -->
+		<aside class="asidel">
 			<div class="asidel__logo">
 				<img class="asidel__logo__img" src="resources/img/footer_logo.png" alt="asidel logo">
 			</div>
@@ -211,85 +186,109 @@
 			<div class="asidel__pokedex">
 				<img class="asidel__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
 			</div>
-		</asidel>
+		</aside>
 		<!-- fin aside -->
 
-		<section class="homequiz" data-aos="slide-left" data-aos-duration="1000">
-			<div class="section-left">
-				<img class="section-left__img" src="resources/img/night_bg.png">
-			</div>
-			<div class="section-right">
-				<div class="homequiz__up">
-					<h2 class="homequiz__up__title">Quiz Section</h2>
-				</div>
-				<div class="homequiz__down">
-					<p class="homequiz__down__text">Put your Pokemon knowledge to test with the Quiz!</p>
-					<p class="homequiz__down__text">In this section you can find questions related to all 151 pokemons</p>
-					<div class="homequiz__down__box">
-						<a class="homequiz__down__box__text" href="views/quiz.html">Let's give it a try! </a>
-						<div class="homequiz__down__box__imgdiv">
-							<img class="homequiz__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <!-- POKEDEX -->
+        <section class="section">
+            <div class="section__firstCard pokedexFrontCard">
+                <h2>Pokedex</h2>
+                <div class="section__firstCard__imgRight">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png' alt='poke_img'>
+                </div>
+            </div>
+            <div class="section__secondCard pokedexSideCard">
+                <h2>Gotta Catch Them All!</h2>
+                <p class="section__secondCard__text">Use the Pokedex to find and learn all about the diferent Pokemons</p>
+                <p><a href="views/pokedex.html">Go to the Pokedex</a></p>
+                <div class="section__secondCard__img">
+                    <img src="resources/img/miniball.png" alt="pokeball">
+                </div>
+                <div class="section__secondCard__bg">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png' alt='poke_img'>
+                </div>
+            </div>
+        </section>
 
-		<section class="about" data-aos="slide-right" data-aos-duration="1000">
-			<div class="section-left">	
-				<div class="about__up">
-					<h2 class="about__up__title">About</h2>
-				</div>
-				<div class="about__down">
-					<p class="about__down__text">Everything you need to know about this site</p>
-					<div class="about__down__box">
-						<a class="about__down__box__text" href="views/about.html">Learn more!</a>
-						<div class="about__down__box__imgdiv">
-							<img class="about__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section-right">
-				<img class="section-right__img" src="resources/img/home_bg.png" alt="Fondo ilustrativo">
-			</div>
-		</section>
+        <!-- QUIZ -->
+        <section class="section">
+            <div class="section__firstCard quizFrontCard">
+                <h2>Quiz</h2>
+                <div class="section__firstCard__imgLeft">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png' alt='poke_img'>
+                </div>
+            </div>
+            <div class="section__secondCard quizSideCard">
+                <h2>Test Your Knowlegde</h2>
+                <p class="section__secondCard__text">How much do you know about Pokemons?<br>Put your knowlegde to test</p>
+                <p><a href="views/quiz.html">Take te Test!</a></p>
+                <div class="section__secondCard__img">
+                    <img src="resources/img/miniball.png" alt="pokeball">
+                </div>
+                <div class="section__secondCard__bg">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png' alt='poke_img'>
+                </div>
+            </div>
+        </section>
 
-		<!-- asider -->
+        <!-- asider -->
 		<asidel class="asider">
 			<div class="asider__pokedex">
 				<img class="asider__pokedex__img" src="resources/img/pokedex.png" alt="pokedex">
 			</div>
 			<div class="asider__text">
-				<p class="asider__text__p">A project for <a href="https://www.coderhouse.com/">CoderHouse's</a> web development course</p>
+				<p class="asider__text__p">A personal project for <a href="https://www.coderhouse.com/">CoderHouse's</a> web development course</p>
 				<p class="asider__text__firma">by RGW</p>		
 			</div>
 			<div class="asider__logo">
 				<img class="asider__logo__img" src="resources/img/footer_logo.png" alt="asidel logo">
 			</div>
 		</asidel>
-		<!-- fin aside -->		
+		<!-- fin aside -->
 
-		<section class="contact" data-aos="fade-up" data-aos-duration="1000">
-			<div class="section-left" data-aos="fade-up" data-aos-duration="1000">
-				<img class="section-left__img" src="resources/img/night_bg.png">
-			</div>
-			<div class="section-right" data-aos="fade-up" data-aos-duration="1000">
-				<div class="contact__up">
-					<h2 class="contact__up__title" data-aos="fade-up" data-aos-duration="1000">Contact</h2>
-				</div>
-				<div class="contact__down">
-					<p class="contact__down__text">Wanna learn more about the project? <br> Do you want to collaborate?</p>
-					<div class="contact__down__box">
-						<a class="contact__down__box__text" href="views/contact.html">Contact me!</a>
-						<div class="contact__down__box__imgdiv">
-							<img class="contact__down__box__imgdiv__img"src="resources/img/miniball.png" alt="pokeball">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+        <!-- ABOUT -->
+        <section class="section">
+            <div class="section__firstCard aboutFrontCard">
+                <h2>About</h2>
+                <div class="section__firstCard__imgRight">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png' alt='poke_img'>
+                </div>
+            </div>
+            <div class="section__secondCard aboutSideCard">
+                <h2>Want to know more?</h2>
+                <p class="section__secondCard__text">Here you can find everything you need to know about this site</p>
+                <p><a href="views/about.html">Go to About section</a></p>
+                <div class="section__secondCard__img">
+                    <img src="resources/img/miniball.png" alt="pokeball">
+                </div>
+                <div class="section__secondCard__bg">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png' alt='poke_img'>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section">
+            <div class="section__firstCard contactFrontCard">
+                <h2>Contact</h2>
+                <div class="section__firstCard__imgLeft">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png' alt='poke_img'>
+                </div>
+            </div>
+            <div class="section__secondCard contactSecondCard">
+                <h2>How can you reach me?</h2>
+                <p class="section__secondCard__text">Fill the form and I'll contact you as soon as possible.
+                <br>Don't forget to check the box if you want to collaborate!</p>
+                <p><a href="views/contact.html">Contact me!</a></p>
+                <div class="section__secondCard__img">
+                    <img src="resources/img/miniball.png" alt="pokeball">
+                </div>
+                <div class="section__secondCard__bg">
+                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png' alt='poke_img'>
+                </div>
+            </div>
+        </section>
+</main>
 	<!-- Fin MAIN -->
 
 	<!-- FOOTER -->
@@ -323,6 +322,7 @@
 
 </div>
 <!-- FIN WRAPPER -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <!--script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
