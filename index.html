@@ -121,15 +121,25 @@
                 </div>
             </div>
             <div class="section__secondCard">
-                <h2>Hi there!</h2>
-                <p class="section__secondCard__text">This app is set for you to find all of the 151 pokemons, and more!</p>
-                <p><strong>Scroll down to see more!</strong></p>
-                <div class="section__secondCard__img">
-                    <img src="resources/img/miniball.png" alt="pokeball">
-                </div>
-                <div class="section__secondCard__bg">
-                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png' alt='poke_img'>
-                </div>
+				<div class="section__secondCard__mainBlock">
+					<h2>Hi there!</h2>
+					<p class="section__secondCard__text">This app is set for you to find all of the 151 pokemons, and more!</p>
+					<p><strong>Scroll down to see more!</strong></p>
+					<div class="section__secondCard__img">
+						<img src="resources/img/miniball.png" alt="pokeball">
+					</div>
+					<div class="section__secondCard__bg">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png' alt='poke_img'>
+					</div>
+				</div>
+				<div class="section__secondCard__subBlock">
+					<h3>What we have right now:</h3>
+					<ul>
+						<li><span>About section:</span>where you can learn more about this site.</li>
+						<li><span>Pokedex:</span>the main section of this site. Currently in development</li>
+						<li><span>Quiz:</span> Work in progress. I hope to bring it up soon!</li>
+					</ul>
+				</div>            
             </div>
         </section>
 
@@ -197,17 +207,27 @@
                     <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png' alt='poke_img'>
                 </div>
             </div>
-            <div class="section__secondCard pokedexSideCard">
-                <h2>Gotta Catch Them All!</h2>
-                <p class="section__secondCard__text">Use the Pokedex to find and learn all about the diferent Pokemons</p>
-                <p><a href="views/pokedex.html">Go to the Pokedex</a></p>
-                <div class="section__secondCard__img">
-                    <img src="resources/img/miniball.png" alt="pokeball">
-                </div>
-                <div class="section__secondCard__bg">
-                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png' alt='poke_img'>
-                </div>
-            </div>
+			<div class="section__secondCard pokedexSideCard">
+				<div class="section__secondCard__mainBlock ">
+					<h2>Gotta Catch Them All!</h2>
+					<p class="section__secondCard__text">Use the Pokedex to find and learn all about the diferent Pokemons</p>
+					<p><a href="views/pokedex.html">Go to the Pokedex</a></p>
+					<div class="section__secondCard__img">
+						<img src="resources/img/miniball.png" alt="pokeball">
+					</div>
+					<div class="section__secondCard__bg">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png' alt='poke_img'>
+					</div>
+				</div>
+				<div class="section__secondCard__subBlock homeBg pokedexThirdCard">
+					<h3>Quick search:</h3>
+					<form action="" method="POST">
+						<label>Search by Id:</label>
+						<input id="byId" name="id" type="number" min="1" max="151" required>
+						<button type="submit">Go!</button>
+					</form>
+				</div>
+			</div>
         </section>
 
         <!-- QUIZ -->
@@ -218,17 +238,23 @@
                     <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png' alt='poke_img'>
                 </div>
             </div>
-            <div class="section__secondCard quizSideCard">
-                <h2>Test Your Knowlegde</h2>
-                <p class="section__secondCard__text">How much do you know about Pokemons?<br>Put your knowlegde to test</p>
-                <p><a href="views/quiz.html">Take te Test!</a></p>
-                <div class="section__secondCard__img">
-                    <img src="resources/img/miniball.png" alt="pokeball">
-                </div>
-                <div class="section__secondCard__bg">
-                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png' alt='poke_img'>
-                </div>
-            </div>
+			<div class="section__secondCard quizSideCard">
+				<div class="section__secondCard__mainBlock ">
+					<h2>Test Your Knowlegde</h2>
+					<p class="section__secondCard__text">How much do you know about Pokemons?<br>Put your knowlegde to test</p>
+					<p><a href="views/quiz.html">Take te Test!</a></p>
+					<div class="section__secondCard__img">
+						<img src="resources/img/miniball.png" alt="pokeball">
+					</div>
+					<div class="section__secondCard__bg">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png' alt='poke_img'>
+					</div>
+				</div>			
+				<div class="section__secondCard__subBlock">
+					<h3>Contenido</h3>
+					<p>Más Contenido</p>
+				</div>
+			</div>	
         </section>
 
         <!-- asider -->
@@ -254,17 +280,22 @@
                     <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png' alt='poke_img'>
                 </div>
             </div>
-            <div class="section__secondCard aboutSideCard">
-                <h2>Want to know more?</h2>
-                <p class="section__secondCard__text">Here you can find everything you need to know about this site</p>
-                <p><a href="views/about.html">Go to About section</a></p>
-                <div class="section__secondCard__img">
-                    <img src="resources/img/miniball.png" alt="pokeball">
-                </div>
-                <div class="section__secondCard__bg">
-                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png' alt='poke_img'>
-                </div>
-            </div>
+			<div class="section__secondCard aboutSideCard">
+				<div class="section__secondCard__mainBlock ">
+					<h2>Want to know more?</h2>
+					<p class="section__secondCard__text">Here you can find everything you need to know about this site</p>
+					<p><a href="views/about.html">Go to About section</a></p>
+					<div class="section__secondCard__img">
+						<img src="resources/img/miniball.png" alt="pokeball">
+					</div>
+					<div class="section__secondCard__bg">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png' alt='poke_img'>
+					</div>
+				</div>
+				<div class="section__secondCard__subBlock">
+					
+				</div>
+			</div>
         </section>
 
         <!-- CONTACT -->
@@ -275,18 +306,23 @@
                     <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png' alt='poke_img'>
                 </div>
             </div>
-            <div class="section__secondCard contactSecondCard">
-                <h2>How can you reach me?</h2>
-                <p class="section__secondCard__text">Fill the form and I'll contact you as soon as possible.
-                <br>Don't forget to check the box if you want to collaborate!</p>
-                <p><a href="views/contact.html">Contact me!</a></p>
-                <div class="section__secondCard__img">
-                    <img src="resources/img/miniball.png" alt="pokeball">
-                </div>
-                <div class="section__secondCard__bg">
-                    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png' alt='poke_img'>
-                </div>
-            </div>
+			<div class="section__secondCard contactSecondCard">
+				<div class="section__secondCard__mainBlock">
+					<h2>How can you reach me?</h2>
+					<p class="section__secondCard__text">Fill the form and I'll contact you as soon as possible.
+					<br>Don't forget to check the box if you want to collaborate!</p>
+					<p><a href="views/contact.html">Contact me!</a></p>
+					<div class="section__secondCard__img">
+						<img src="resources/img/miniball.png" alt="pokeball">
+					</div>
+					<div class="section__secondCard__bg">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png' alt='poke_img'>
+					</div>
+				</div>			
+				<div class="section__secondCard__subBlock">
+					
+				</div>
+			</div>	
         </section>
 </main>
 	<!-- Fin MAIN -->

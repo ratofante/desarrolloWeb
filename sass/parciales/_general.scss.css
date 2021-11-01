@@ -5,7 +5,7 @@ html {
 /* Fondos para el Body completo */
 
 html {width: 100%; overflow-x: hidden;}
-.home_bg {background: url('../img/home_bg.png') no-repeat center center fixed;}
+.homeBg {background: url('../img/home_bg.png') no-repeat center center fixed;}
 .day_bg {background: url('../img/day_bg.png') no-repeat center center fixed;}
 .night_bg {background: url('../img/night_bg.png') no-repeat center center fixed;}
 

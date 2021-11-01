@@ -54,6 +54,18 @@
   100% {
     transform: rotate(4deg); } }
 
+@keyframes showUp {
+  0% {
+    color: rgba(0, 0, 0, 0); }
+  100% {
+    color: black; } }
+
+@keyframes showFromRight {
+  0% {
+    left: 120vw; }
+  100% {
+    left: 0px; } }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -67,7 +79,7 @@ html {
   width: 100%;
   overflow-x: hidden; }
 
-.home_bg {
+.homeBg {
   background: url("../img/home_bg.png") no-repeat center center fixed; }
 
 .day_bg {
@@ -473,10 +485,6 @@ html {
 #accordionFlushExample {
   box-shadow: 0px 0px 8px #091353;
   width: 100%; }
-  @media screen and (min-width: 1198px) {
-    #accordionFlushExample {
-      margin-right: 0px;
-      max-width: 400px; } }
 
 /*#accordion_1, #accordion_2, #accordion_3 {
 	font-size: 1.3rem;
@@ -524,10 +532,10 @@ html {
 
 .accordion-body {
   color: #0c0c0c;
-  background-color: #fee3bf; }
+  background-color: #fff1df; }
   @media screen and (min-width: 766px) {
     .accordion-body {
-      padding: 30px 160px;
+      padding: 30px 280px;
       font-size: 1.5rem; } }
 
 /* HEADER de QUIZ, ABOUT, POKE y CONTACT */
@@ -692,6 +700,9 @@ html {
   box-shadow: 0px 0px 8px #091353;
   border-radius: 7px;
   margin: 2rem 1rem; }
+  @media screen and (min-width: 992px) {
+    .section {
+      height: 440px; } }
   .section__firstCard {
     width: 100%;
     height: 340px;
@@ -703,6 +714,9 @@ html {
     overflow: hidden;
     border-radius: 7px;
     transition: 0.5s; }
+    @media screen and (min-width: 992px) {
+      .section__firstCard {
+        height: 440px; } }
     .section__firstCard h2 {
       position: relative;
       top: 85px;
@@ -721,6 +735,11 @@ html {
           top: 78px;
           width: 340px;
           margin: auto; } }
+      @media screen and (min-width: 992px) {
+        .section__firstCard h2 {
+          font-size: 10rem;
+          top: 110px;
+          width: 520px; } }
     .section__firstCard__imgRight, .section__firstCard__imgLeft {
       width: 400px;
       position: relative;
@@ -734,6 +753,9 @@ html {
           width: 475px;
           bottom: 210px;
           left: 328px; } }
+      @media screen and (min-width: 992px) {
+        .section__firstCard__imgRight, .section__firstCard__imgLeft {
+          left: 510px; } }
       .section__firstCard__imgRight img, .section__firstCard__imgLeft img {
         width: 100%; }
     .section__firstCard__imgLeft {
@@ -747,7 +769,7 @@ html {
     top: 0px;
     right: 120vw;
     display: none;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
     justify-content: center;
     height: 0%;
@@ -755,13 +777,18 @@ html {
     background-color: #aae1f1;
     border-radius: 7px;
     opacity: 0.1; }
+    .section__secondCard__mainBlock {
+      display: none;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; }
     .section__secondCard h2 {
       display: none;
       font-size: 3rem;
       font-family: "Lobster Two", cursive; }
       @media screen and (min-width: 766px) {
         .section__secondCard h2 {
-          font-size: 3.5rem; } }
+          font-size: 5.5rem; } }
     .section__secondCard p {
       display: none;
       font-size: 1.5rem; }
@@ -795,6 +822,25 @@ html {
       height: 0%;
       opacity: .2;
       z-index: 1; }
+    .section__secondCard__subBlock {
+      display: none; }
+      .section__secondCard__subBlock h3 {
+        font-size: "Lobster Two", cursive;
+        font-size: 4rem;
+        transition: 1.5s;
+        margin-bottom: 2rem; }
+      .section__secondCard__subBlock ul li {
+        font-family: "Fira Mono", monospace;
+        font-size: 2rem;
+        transition: 2s;
+        padding-bottom: 1.3rem;
+        list-style-position: initial;
+        text-align: left; }
+        .section__secondCard__subBlock ul li span {
+          background-color: #f5f5ff;
+          padding: .5rem;
+          border-radius: 7px;
+          margin-right: 1rem; }
   .section:hover {
     display: block; }
   .section:hover .section__firstCard {
@@ -812,6 +858,36 @@ html {
     width: 100%;
     right: 0px;
     opacity: 1; }
+    @media screen and (min-width: 992px) {
+      .section:hover .section__secondCard {
+        height: 440px; }
+        .section:hover .section__secondCard__subBlock {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          width: 39%;
+          height: 440px; }
+          .section:hover .section__secondCard__subBlock h3 {
+            animation-name: showUp;
+            animation-duration: 3s; }
+          .section:hover .section__secondCard__subBlock ul li {
+            position: relative;
+            animation-name: showFromRight; }
+          .section:hover .section__secondCard__subBlock ul li:first-child {
+            animation-duration: .5s; }
+          .section:hover .section__secondCard__subBlock ul li:nth-child(2) {
+            animation-duration: .9s; }
+          .section:hover .section__secondCard__subBlock ul li:last-child {
+            animation-duration: 1.2s; } }
+    .section:hover .section__secondCard__mainBlock {
+      display: flex;
+      height: 340px;
+      width: 100%; }
+      @media screen and (min-width: 992px) {
+        .section:hover .section__secondCard__mainBlock {
+          height: 440px;
+          width: 50%; } }
     .section:hover .section__secondCard h2 {
       display: block;
       z-index: 2; }
@@ -846,6 +922,9 @@ html {
 
 .contactSideCard {
   background-color: #e377d261; }
+
+.pokedexThirdCard {
+  background: url(); }
 
 /* Colores para otras páginas */
 .asidel {

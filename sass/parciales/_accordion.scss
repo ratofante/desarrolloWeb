@@ -6,8 +6,7 @@
 	@include tablet {
 	}
 	@include wide_pc {
-		margin-right: 0px;
-		max-width: 400px;
+		
 	}
 }
 
@@ -56,9 +55,9 @@
 
 .accordion-body {
 	color: $black-color;
-	background-color: #fee3bf;
+	background-color: #fff1df;
 	@include tablet {
-		padding: 30px 160px;
+		padding: 30px 280px;
 		font-size: 1.5rem;
 	}
 }

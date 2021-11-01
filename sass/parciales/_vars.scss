@@ -78,3 +78,13 @@ $borderRadius: 7px;
     50% {transform:rotate(-4deg);}
     100% {transform:rotate(4deg);}
 }
+
+@keyframes showUp {
+    0% {color: rgba(0, 0, 0, 0);}
+    100% {color: black;}
+}
+
+@keyframes showFromRight {
+    0% {left:120vw;}
+    100% {left:0px;}
+}

@@ -16,9 +16,11 @@ $cardSideContact: #e377d261;
 
 
 $cardHeightSmall: 340px;
+$cardHeightBig: 440px;
 $fastTransition: .2s;
 $mediumTransition: .5s;
-$slowTransition: 8s;
+$slowTransition: 1.5s;
+$verySlowTransition: 2s;
 
 $goOut: 120vw;
 
@@ -35,6 +37,9 @@ $goOut: 120vw;
 	box-shadow: 0px 0px 8px #091353;
 	border-radius: $borderRadius;
 	margin:2rem 1rem;
+	@include square_pc {
+		height: $cardHeightBig;
+	}
 	&__firstCard {
 		width: 100%;
 		height: $cardHeightSmall;
@@ -46,6 +51,9 @@ $goOut: 120vw;
 		overflow: hidden;
 		border-radius: $borderRadius;
 		transition: $mediumTransition;
+		@include square_pc {
+			height: $cardHeightBig;
+		}
 		& h2 {
 			position: relative;
 			top: 85px;
@@ -64,6 +72,11 @@ $goOut: 120vw;
 				width: 340px;
 				margin: auto;
 			}
+			@include square_pc {
+				font-size: 10rem;
+				top:110px;
+				width: 520px;
+			}
 		}
 		&__imgRight {
 			width: 400px;
@@ -77,6 +90,9 @@ $goOut: 120vw;
 				width: 475px;
 				bottom: 210px;
 				left: 328px;
+			}
+			@include square_pc {
+				left: 510px;
 			}
 			& img {width:100%;}
 
@@ -94,7 +110,7 @@ $goOut: 120vw;
 		top: 0px;
 		right:$goOut;
 		display: none;
-		flex-flow: column;
+		flex-flow: row;
 		align-items: center;
 		justify-content: center;
 		height: 0%;
@@ -102,12 +118,18 @@ $goOut: 120vw;
 		background-color: $cardSide;
 		border-radius: $borderRadius;
 		opacity: 0.1;
+		&__mainBlock {
+			display: none;
+			flex-flow: column;
+			align-items: center;
+			justify-content: center;
+		}
 		& h2 {
 			display:none;
 			font-size: 3rem;
 			font-family: $title2;
 			@include tablet {
-				font-size: 3.5rem;
+				font-size: 5.5rem;
 			}
 		}
 		& p{	
@@ -148,6 +170,29 @@ $goOut: 120vw;
 			opacity: .2;
 			z-index: 1;
 		}
+		&__subBlock {
+			display: none;
+			& h3 {
+				font-size: $title2;
+				font-size: 4rem;
+				transition: $slowTransition;
+				margin-bottom: 2rem;
+			}
+			& ul li {
+				font-family: $normal;
+				font-size: 2rem;
+				transition: $verySlowTransition;
+				padding-bottom:1.3rem;
+				list-style-position: initial;
+				text-align: left;
+				& span {
+					background-color:$lightbg;
+					padding:.5rem;
+					border-radius: $borderRadius;
+					margin-right: 1rem;
+				}
+			}
+		}
 	}
 	&:hover {
 		display: block;
@@ -171,6 +216,46 @@ $goOut: 120vw;
 		width: 100%;
 		right: 0px;
 		opacity: 1;
+		@include square_pc {
+			height:$cardHeightBig;
+			&__subBlock {
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				justify-content: center;
+				width: 39%;
+				height: $cardHeightBig;
+				& h3 {
+					animation-name: showUp;
+					animation-duration: 3s;
+				}
+				& ul li {
+					position: relative;
+					animation-name: showFromRight;
+					& span {
+
+					}
+				}
+				& ul li:first-child {
+					animation-duration: .5s;
+				}
+				& ul li:nth-child(2) {
+					animation-duration: .9s;
+				}
+				& ul li:last-child {
+					animation-duration: 1.2s;
+				}
+			}
+		}
+		&__mainBlock {
+			display:flex;
+			height: $cardHeightSmall;
+			width: 100%;
+			@include square_pc {
+				height: $cardHeightBig;
+				width: 50%;
+			}
+		}
 		& h2 {
 			display: block;
 			z-index: 2;
@@ -200,3 +285,4 @@ $goOut: 120vw;
 .contactFrontCard {background-color:$cardFrontContact;}
 .contactSideCard {background-color: $cardSideContact;}
 
+.pokedexThirdCard {background: url();}
