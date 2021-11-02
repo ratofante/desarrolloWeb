@@ -66,6 +66,38 @@
   100% {
     left: 0px; } }
 
+@keyframes showFromAbove {
+  0% {
+    bottom: 120vh; }
+  100% {
+    bottom: 0px; } }
+
+@keyframes lightChange {
+  0% {
+    text-shadow: 0px 0px 13px white; }
+  15% {
+    text-shadow: 0px 2px 14px white; }
+  32% {
+    text-shadow: 1px 0px 15px white; }
+  41% {
+    text-shadow: 0px -2px 13px white; }
+  48% {
+    text-shadow: 2px 0px 13px white; }
+  55% {
+    text-shadow: -2px 2px 14px white; }
+  62% {
+    text-shadow: 0px 1px 15px white; }
+  70% {
+    text-shadow: 1px 0px 13px white; }
+  77% {
+    text-shadow: 0px 2px 13px white; }
+  82% {
+    text-shadow: -1px 2px 14px white; }
+  90% {
+    text-shadow: -2px 0px 15px white; }
+  98% {
+    text-shadow: 1px 1px 13px white; } }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -418,7 +450,8 @@ html {
         max-width: 500px; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-r__title {
-        font-size: 6.7rem; } }
+        font-size: 11.5rem;
+        max-width: 760px; } }
   .carousel-card-r__text {
     color: black;
     font-size: 1.5rem;
@@ -434,7 +467,7 @@ html {
         font-size: 2rem; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-r__text {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         max-width: 580px; } }
 
 .carousel-card-l {
@@ -463,7 +496,8 @@ html {
         max-width: 500px; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-l__title {
-        font-size: 6.7rem; } }
+        font-size: 11.5rem;
+        max-width: 760px; } }
   .carousel-card-l__text {
     color: black;
     font-size: 1.5rem;
@@ -479,7 +513,7 @@ html {
         font-size: 2rem; } }
     @media screen and (min-width: 1198px) {
       .carousel-card-l__text {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         max-width: 580px; } }
 
 #accordionFlushExample {
@@ -737,9 +771,9 @@ html {
           margin: auto; } }
       @media screen and (min-width: 992px) {
         .section__firstCard h2 {
-          font-size: 10rem;
-          top: 110px;
-          width: 520px; } }
+          font-size: 14rem;
+          top: 86px;
+          width: 650px; } }
     .section__firstCard__imgRight, .section__firstCard__imgLeft {
       width: 400px;
       position: relative;
@@ -756,11 +790,19 @@ html {
       @media screen and (min-width: 992px) {
         .section__firstCard__imgRight, .section__firstCard__imgLeft {
           left: 510px; } }
+      @media screen and (min-width: 1198px) {
+        .section__firstCard__imgRight, .section__firstCard__imgLeft {
+          left: 695px;
+          width: 675px;
+          bottom: 341px; } }
       .section__firstCard__imgRight img, .section__firstCard__imgLeft img {
         width: 100%; }
     .section__firstCard__imgLeft {
       bottom: 199px;
       left: 14px; }
+      @media screen and (min-width: 1198px) {
+        .section__firstCard__imgLeft {
+          bottom: 350px; } }
       .section__firstCard__imgLeft img {
         width: 100%; }
   .section__secondCard {
@@ -776,7 +818,8 @@ html {
     transition: 0.2s;
     background-color: #aae1f1;
     border-radius: 7px;
-    opacity: 0.1; }
+    opacity: 0.1;
+    z-index: 2; }
     .section__secondCard__mainBlock {
       display: none;
       flex-flow: column;
@@ -822,6 +865,13 @@ html {
       height: 0%;
       opacity: .2;
       z-index: 1; }
+      @media screen and (min-width: 1198px) {
+        .section__secondCard__bg {
+          bottom: 424px;
+          right: -352px;
+          width: 595px; }
+          .section__secondCard__bg img {
+            width: 100%; } }
     .section__secondCard__subBlock {
       display: none; }
       .section__secondCard__subBlock h3 {
@@ -868,11 +918,16 @@ html {
           justify-content: center;
           width: 39%;
           height: calc(440px - 30px);
-          border: 7px solid #091353;
           border-radius: 7px;
-          box-shadow: 15px 0px 16px #091353;
+          box-shadow: 4px -2px 8px #091353;
           padding: 1rem;
-          background-color: #9D84B7; }
+          background-color: #9D84B7;
+          position: relative;
+          z-index: 3; } }
+    @media screen and (min-width: 992px) and (min-width: 1198px) {
+      .section:hover .section__secondCard__subBlock {
+        padding: 1rem 7rem; } }
+    @media screen and (min-width: 992px) {
           .section:hover .section__secondCard__subBlock h3 {
             animation-name: showUp;
             animation-duration: 3s; }
@@ -882,6 +937,7 @@ html {
             border-radius: 7px; }
           .section:hover .section__secondCard__subBlock__quickSearch {
             background-color: #f5f5ffbd;
+            border: 7px;
             display: flex;
             align-items: center;
             padding: .5rem 1rem; }
@@ -908,6 +964,45 @@ html {
                 left: 21px; }
                 .section:hover .section__secondCard__subBlock__quickSearch button div img {
                   width: 100%; }
+          .section:hover .section__secondCard__subBlock__quiz__header, .section:hover .section__secondCard__subBlock__contact h3 {
+            color: white;
+            font-family: "Lobster Two", cursive;
+            font-size: 4rem;
+            animation-name: lightChange;
+            animation-duration: 1.25s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; }
+          .section:hover .section__secondCard__subBlock__quiz__text, .section:hover .section__secondCard__subBlock__contact p {
+            color: white;
+            font-size: 2rem;
+            animation-name: showFromAbove;
+            animation-duration: 1s; }
+            .section:hover .section__secondCard__subBlock__quiz__text__enfasis, .section:hover .section__secondCard__subBlock__contact p span {
+              background-color: #f5f5ffbd;
+              border-radius: 7px;
+              padding: .5rem;
+              margin-right: 1rem;
+              color: black;
+              font-weight: 700;
+              animation-name: showFromAbove;
+              animation-duration: .7s; }
+          .section:hover .section__secondCard__subBlock__jigglyCard p {
+            background-color: #f5f5ffbd;
+            border-radius: 7px;
+            padding: 1rem;
+            position: relative;
+            width: 80%;
+            margin: auto;
+            animation-name: showup;
+            animation-duration: 1s; }
+          .section:hover .section__secondCard__subBlock__jigglyCard div {
+            width: 100px;
+            height: 0px;
+            position: relative;
+            bottom: 37px;
+            z-index: 3; }
+            .section:hover .section__secondCard__subBlock__jigglyCard div img {
+              width: 100%; }
           .section:hover .section__secondCard__subBlock ul li {
             position: relative;
             animation-name: showFromRight; }
@@ -1054,7 +1149,7 @@ html {
           font-size: 1.7rem; } }
       @media screen and (min-width: 1198px) {
         .asidel__text__p, .asider__text__p {
-          font-size: 1rem; } }
+          font-size: 2rem; } }
     .asidel__text__firma, .asider__text__firma {
       font-family: "VT323", monospace;
       text-align: right;
@@ -1069,7 +1164,7 @@ html {
           font-size: 2.3rem; } }
       @media screen and (min-width: 1198px) {
         .asidel__text__firma, .asider__text__firma {
-          font-size: 1.3rem; } }
+          font-size: 2.3rem; } }
   .asidel__pokedex, .asider__pokedex {
     display: none; }
 

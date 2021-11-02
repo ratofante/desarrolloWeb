@@ -69,7 +69,8 @@ $c-wide: 600px;
 		max-width: 500px;
 	}
 	@include wide_pc {
-		font-size:  6.7rem;
+		font-size:  11.5rem;
+		max-width: 760px;
 	}
 }
 @mixin card_text {
@@ -85,7 +86,7 @@ $c-wide: 600px;
 		font-size: 2rem;
 	}
 	@include wide_pc {
-		font-size: 1.8rem;
+		font-size: 2.8rem;
 		max-width:  580px;
 	}
 }

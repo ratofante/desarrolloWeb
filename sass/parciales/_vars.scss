@@ -89,3 +89,23 @@ $borderRadius: 7px;
     0% {left:120vw;}
     100% {left:0px;}
 }
+
+@keyframes showFromAbove {
+    0% {bottom: 120vh;}
+    100% {bottom: 0px;}
+}
+
+@keyframes lightChange {
+    0% {text-shadow: 0px 0px 13px white;}
+    15% {text-shadow: 0px 2px 14px white;}
+    32% {text-shadow: 1px 0px 15px white;}
+    41% {text-shadow: 0px -2px 13px white;}
+    48% {text-shadow: 2px 0px 13px white;}
+    55% {text-shadow: -2px 2px 14px white;}
+    62% {text-shadow: 0px 1px 15px white;}
+    70% {text-shadow: 1px 0px 13px white;}
+    77% {text-shadow: 0px 2px 13px white;}
+    82% {text-shadow: -1px 2px 14px white;}
+    90% {text-shadow: -2px 0px 15px white;}
+    98% {text-shadow: 1px 1px 13px white;}
+}
