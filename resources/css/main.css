@@ -771,7 +771,7 @@ html {
     display: none;
     flex-flow: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 0%;
     transition: 0.2s;
     background-color: #aae1f1;
@@ -826,7 +826,7 @@ html {
       display: none; }
       .section__secondCard__subBlock h3 {
         font-size: "Lobster Two", cursive;
-        font-size: 4rem;
+        font-size: 3.7rem;
         transition: 1.5s;
         margin-bottom: 2rem; }
       .section__secondCard__subBlock ul li {
@@ -867,10 +867,47 @@ html {
           align-items: center;
           justify-content: center;
           width: 39%;
-          height: 440px; }
+          height: calc(440px - 30px);
+          border: 7px solid #091353;
+          border-radius: 7px;
+          box-shadow: 15px 0px 16px #091353;
+          padding: 1rem;
+          background-color: #9D84B7; }
           .section:hover .section__secondCard__subBlock h3 {
             animation-name: showUp;
             animation-duration: 3s; }
+          .section:hover .section__secondCard__subBlock h3.contrast {
+            background-color: #f5f5ffbd;
+            padding: 1rem;
+            border-radius: 7px; }
+          .section:hover .section__secondCard__subBlock__quickSearch {
+            background-color: #f5f5ffbd;
+            display: flex;
+            align-items: center;
+            padding: .5rem 1rem; }
+            .section:hover .section__secondCard__subBlock__quickSearch label {
+              font-size: 2rem; }
+            .section:hover .section__secondCard__subBlock__quickSearch input {
+              font-size: 2rem;
+              padding: .5rem;
+              text-align: center;
+              width: 70px;
+              margin: auto 1rem; }
+            .section:hover .section__secondCard__subBlock__quickSearch button {
+              position: relative;
+              padding: .5rem;
+              font-size: 2rem;
+              border: none;
+              background: none;
+              font-weight: 700; }
+              .section:hover .section__secondCard__subBlock__quickSearch button div {
+                position: relative;
+                width: 45px;
+                height: 0;
+                bottom: 18px;
+                left: 21px; }
+                .section:hover .section__secondCard__subBlock__quickSearch button div img {
+                  width: 100%; }
           .section:hover .section__secondCard__subBlock ul li {
             position: relative;
             animation-name: showFromRight; }
@@ -924,7 +961,20 @@ html {
   background-color: #e377d261; }
 
 .pokedexThirdCard {
-  background: url(); }
+  background: url("../img/day_bg.png");
+  background-size: cover; }
+
+.quizThirdCard {
+  background: url("../img/night_bg.png");
+  background-size: cover; }
+
+.aboutThirdCard {
+  background: url("../img/home_bg.png");
+  background-size: cover; }
+
+.contactThirdCard {
+  background: url("../img/night_bg.png");
+  background-size: cover; }
 
 /* Colores para otras páginas */
 .asidel {
@@ -942,6 +992,9 @@ html {
   @media screen and (min-width: 1198px) {
     .asidel {
       height: 120px; } }
+  @media screen and (min-width: 992px) {
+    .asidel {
+      align-items: center; } }
   .asidel__logo, .asider__logo {
     width: 52%;
     max-width: 100px; }
@@ -969,6 +1022,14 @@ html {
         flex-flow: column;
         justify-content: center;
         max-width: 50%; } }
+    @media screen and (min-width: 992px) {
+      .asidel__text, .asider__text {
+        width: 100%;
+        max-width: 100%;
+        height: 60px;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-evenly; } }
     @media screen and (min-width: 1198px) {
       .asidel__text, .asider__text {
         margin: .6rem; } }
@@ -985,6 +1046,12 @@ html {
       @media screen and (min-width: 766px) {
         .asidel__text__p, .asider__text__p {
           font-size: 1.5rem; } }
+      @media screen and (min-width: 992px) {
+        .asidel__text__p, .asider__text__p {
+          width: 600px;
+          height: auto;
+          padding: 0px;
+          font-size: 1.7rem; } }
       @media screen and (min-width: 1198px) {
         .asidel__text__p, .asider__text__p {
           font-size: 1rem; } }
@@ -997,6 +1064,9 @@ html {
       @media screen and (min-width: 766px) {
         .asidel__text__firma, .asider__text__firma {
           font-size: 1.9rem; } }
+      @media screen and (min-width: 992px) {
+        .asidel__text__firma, .asider__text__firma {
+          font-size: 2.3rem; } }
       @media screen and (min-width: 1198px) {
         .asidel__text__firma, .asider__text__firma {
           font-size: 1.3rem; } }
@@ -1019,6 +1089,9 @@ html {
   @media screen and (min-width: 1198px) {
     .asider {
       height: 120px; } }
+  @media screen and (min-width: 992px) {
+    .asider {
+      align-items: center; } }
   .asider__logo__img {
     width: 100%; }
 

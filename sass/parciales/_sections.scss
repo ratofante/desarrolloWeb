@@ -112,7 +112,7 @@ $goOut: 120vw;
 		display: none;
 		flex-flow: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 		height: 0%;
 		transition: $fastTransition;
 		background-color: $cardSide;
@@ -174,7 +174,7 @@ $goOut: 120vw;
 			display: none;
 			& h3 {
 				font-size: $title2;
-				font-size: 4rem;
+				font-size: 3.7rem;
 				transition: $slowTransition;
 				margin-bottom: 2rem;
 			}
@@ -217,17 +217,59 @@ $goOut: 120vw;
 		right: 0px;
 		opacity: 1;
 		@include square_pc {
-			height:$cardHeightBig;
+			height: $cardHeightBig;
 			&__subBlock {
 				display: flex;
 				flex-flow: column;
 				align-items: center;
 				justify-content: center;
 				width: 39%;
-				height: $cardHeightBig;
+				height: calc(#{$cardHeightBig} - 30px);
+				border: 7px solid $mainbg;
+				border-radius: $borderRadius;
+				box-shadow: 15px 0px 16px $mainbg;
+				padding: 1rem;
+				background-color: $secbg;
 				& h3 {
 					animation-name: showUp;
 					animation-duration: 3s;
+				}
+				& h3.contrast {
+					background-color: $lightbgtrans;
+					padding: 1rem;
+					border-radius: $borderRadius;
+				}
+				&__quickSearch {
+					background-color: $lightbgtrans;
+					display: flex;
+					align-items: center;
+					padding: .5rem 1rem;
+					& label {
+						font-size: 2rem;
+					}
+					& input {
+						font-size: 2rem;
+						padding: .5rem;
+						text-align: center;
+						width: 70px;
+						margin: auto 1rem;
+					}
+					& button {
+						position:relative;
+						padding: .5rem;
+						font-size: 2rem;
+						border: none;
+						background: none;
+						font-weight:$bold;
+						& div {
+							position: relative;
+							width: 45px;
+							height: 0;
+							bottom: 18px;
+							left: 21px;
+							& img {width:100%;}
+						}
+					}
 				}
 				& ul li {
 					position: relative;
@@ -285,4 +327,19 @@ $goOut: 120vw;
 .contactFrontCard {background-color:$cardFrontContact;}
 .contactSideCard {background-color: $cardSideContact;}
 
-.pokedexThirdCard {background: url();}
+.pokedexThirdCard {
+	background: url('../img/day_bg.png');
+	background-size: cover; 
+}
+.quizThirdCard {
+	background: url('../img/night_bg.png');
+	background-size: cover;
+}
+.aboutThirdCard {
+	background: url('../img/home_bg.png');
+	background-size: cover;
+}
+.contactThirdCard {
+	background: url('../img/night_bg.png');
+	background-size: cover;
+}

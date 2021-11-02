@@ -23,6 +23,9 @@
 	@include about_colors_section;
 	border-start-start-radius: 86px;
     border-end-start-radius: 72px;
+	@include square_pc {
+		align-items: center;
+	}
 	&__logo {
 		width: 52%;
     	max-width: 100px;
@@ -52,6 +55,14 @@
 			justify-content: center;
 			max-width: 50%
 		}
+		@include square_pc {
+			width:100%;
+			max-width: 100%;
+			height: 60px;
+			flex-flow: row;
+			align-items: center;
+			justify-content: space-evenly;
+		}
 		@include wide_pc {
 			margin: .6rem;
 		}
@@ -70,6 +81,12 @@
 			@include tablet {
 				font-size: 1.5rem;
 			}
+			@include square_pc {
+				width: 600px;
+				height: auto;
+				padding: 0px;
+				font-size: 1.7rem;
+			}
 			@include wide_pc {
 				font-size: 1rem;
 			}
@@ -82,6 +99,9 @@
 			padding: 0px 1rem;
 			@include tablet {
 				font-size: 1.9rem;
+			}
+			@include square_pc {
+				font-size: 2.3rem;
 			}
 			@include wide_pc {
 				font-size: 1.3rem;
@@ -99,7 +119,8 @@
 	border-end-end-radius: 86px;
     border-start-end-radius: 72px;
     justify-content: end;
-    @include tablet {
+    @include square_pc {
+		align-items: center;
     }
 	&__logo {
 		@extend .asidel__logo;
