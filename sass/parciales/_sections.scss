@@ -24,19 +24,23 @@ $verySlowTransition: 2s;
 
 $goOut: 120vw;
 
-.section {
+
+@mixin generalSection {
 	overflow: hidden;
+	margin: 2rem 1rem;
+	font-family: $normal;
+	box-shadow: 0px 0px 8px #091353;
+	border-radius: $borderRadius;
+}
+.section {
+	@include generalSection;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: $cardHeightSmall;
-	margin: 1rem;
-	font-family: $normal;
 	text-align: center;
 	background-color: $lightbg;
-	box-shadow: 0px 0px 8px #091353;
-	border-radius: $borderRadius;
-	margin:2rem 1rem;
+
 	@include square_pc {
 		height: $cardHeightBig;
 	}

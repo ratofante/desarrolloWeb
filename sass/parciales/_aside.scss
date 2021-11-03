@@ -73,10 +73,10 @@
 			font-size: 1.3rem;
 			padding: 1rem;
 			padding-bottom: 0px;
-			font-weight: $light-bold;
+			font-weight: $lightBold;
 			margin: 0;
 			line-height: 20px;
-			@include medium_mobile {
+			@include mediumMobile {
 			}
 			@include tablet {
 				font-size: 1.5rem;

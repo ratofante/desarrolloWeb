@@ -5,8 +5,8 @@
 	}
 }
 
-@mixin medium_mobile {
-	@media screen and (min-width: $medium_mobile) {
+@mixin mediumMobile {
+	@media screen and (min-width: $mediumMobile) {
 		@content;
 	}
 }

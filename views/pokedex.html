@@ -10,7 +10,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Lobster&family=VT323&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../resources/css/main.css">
-	<!--link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /-->
 	<title>Pokedex Project - Search</title>
 </head>
 <body>
@@ -47,27 +46,37 @@
 		</nav>
 	</header>
 	<main>
-		<section class="section rules_section">
-			<h3 class="rules__title">Instrucciones :</h3>
-			<div class="rules">
-				<div class="rules__div">
-					<h4 class="rules__question">¿Qué hacer?</h4>
-					<ol class="rules__list">
-						<li class="rules__list__item">Busca con una Id, puede ser de 1 a 151</li>
-						<li class="rules__list__item">Click en buscar</li>
-						<li class="rules__list__item">Navega por la información</li>
-					</ol>
-				</div>
-				<div class="rules__div">
-					<h4 class="rules__question">¿Qué más puedo hacer?</h4>
-					<ul class="rules__list">
-						<li class="rules__list__item">Puedes ver las evoluciones haciendo click en cada ícono</li>
-						<li class="rules__list__item">Estudiar para tomar el Quiz</li>
-						<li class="rules__list__item">Contactarme para hacerme saber si algo está mal o contribuir</li>
-					</ul>
-				</div>
+
+		<!-- Welcome, What can I do & Search Bar-->
+		<section class="pokeguide">
+			<div class="pokeguide__help">
+				<h3 class="pokeguide__help__title">Help</h3>
+			</div>
+			<div class="pokeguide__guide">
+				<h4 class="pokeguide__guide__help">What you can do:</h4>
+				<ol class="pokeguide__guide__hints">
+					<li>You can search a pokemon by its ID (from 1 to 151) using the Id Search Bar</li>
+					<li>You can search a pokemon by its name using the Name Search Bar</li>
+					<li>Navigate through the information</li>
+				</ol>
 			</div>
 		</section>
+
+		<!-- Search Bar -->
+		<section class="searchBar">
+			<form class="searchBar__form" action="" method="POST">
+				<label class="searchBar__form__label" for="idSearch">Search Id</label>
+				<input class="searchBar__form__input" id="idSearch" name="pokemonId" placeholder="1-151" type="number" min="1" max="151">
+				<div class="searchBar__form__container">
+					<button class="searchBar__form__container__button" type="submit">Catch it!</button>
+					<img class="searchBar__form__container__img" src="../resources/img/miniball.png" alt="pokeball">
+				</div>				
+			</form>
+		</section>
+		<!-- Fin Search Bar -->
+		<!-- fin Welcome -->
+
+		<!-- Pokecard Sample -->
 		<section class="section pokecard">
 
 		<div class="card_section_main">
@@ -105,6 +114,7 @@
 			</div>
 		</div>
 
+		<!-- Pokecard EvoPath -->
 		<div class="card_section_evo">
 			<div class="pokecard__div">
 				<div class="evopath">
@@ -126,9 +136,13 @@
 				</div>
 			</div>
 		</div>
+		<!-- Fin Evopath-->
 
 		</section>
 	</main>
+	<!-- fin Main -->
+
+	<!-- Move List -->
 	<aside>
 		<section class="section moves_list">
 			<h3 class="general_info_title">List of moves:</h3>
@@ -221,6 +235,7 @@
 			</div>
 		</section>
 	</aside>
+	<!-- Fin Move List -->
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -250,12 +265,8 @@
 		</ul>
 	</div>
 </footer>
-<!-- -->
+<!-- Fin Wrapper Div -->
 </div>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<!--script>
-   AOS.init({disable: 'mobile'});
-</script-->
 </body>
 </html>
