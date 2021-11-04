@@ -1383,7 +1383,7 @@ html {
     justify-content: initial;
     padding: 0.6rem;
     background-color: #f5f5ff;
-    outline: 7px solid #7489cb;
+    outline: 7px solid #7271bab5;
     outline-offset: -4px;
     outline-style: auto;
     border: 4px solid #f5f5ff; }
@@ -1403,7 +1403,7 @@ html {
       width: 35px; }
       .searchBar__form__container__button {
         font-family: "Fira Mono", monospace;
-        background-color: #ffffffc7;
+        background-color: #f5f5ff;
         border: none;
         border-radius: 16px;
         position: absolute;
@@ -1420,6 +1420,198 @@ html {
       .searchBar__form__container__img {
         display: inline-block;
         width: 35px; }
+
+/* Pokecard */
+.pokecard {
+  overflow: hidden;
+  margin: 2rem 1rem;
+  font-family: "Fira Mono", monospace;
+  box-shadow: 0px 0px 8px #091353;
+  border-radius: 7px;
+  height: 356px;
+  overflow: hidden; }
+
+@keyframes mobileHover {
+  0% {
+    bottom: 0px; }
+  100% {
+    bottom: 356px; } }
+  .pokecard__mainCard {
+    position: relative;
+    bottom: 0px;
+    padding: 1rem;
+    background-color: #7271bab5;
+    height: 356px;
+    transition: .8s;
+    outline: 7px solid #f5f5ff;
+    outline-offset: -4px;
+    outline-style: auto; }
+    .pokecard__mainCard__title, .pokecard__info__title {
+      font-family: "Lobster Two", cursive;
+      text-align: left;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      padding: .2rem;
+      border-bottom: 2px solid;
+      border-color: #f5f5ff;
+      color: #f5f5ff; }
+    .pokecard__mainCard__img {
+      width: 100%;
+      background-color: #f5f5ff;
+      border-radius: 7px; }
+      .pokecard__mainCard__img img {
+        width: 100%; }
+  .pokecard__info {
+    position: relative;
+    bottom: 0px;
+    padding: 1rem;
+    background-color: #f5f5ff;
+    height: 356px;
+    transition: .8s;
+    outline: 7px solid #7271bab5;
+    outline-offset: -4px;
+    outline-style: auto; }
+    .pokecard__info__title {
+      color: #7271bab5;
+      border-color: #7271bab5; }
+    .pokecard__info__text {
+      width: 100%;
+      height: 260px;
+      border-radius: 7px;
+      color: #f5f5ff;
+      background-color: #7271bab5;
+      font-family: "VT323", monospace;
+      font-size: 1.4rem;
+      padding: 1.5rem 2.5rem;
+      line-height: 2rem; }
+  .pokecard:hover .pokecard__mainCard {
+    animation: mobileHover;
+    animation-duration: .8s;
+    animation-fill-mode: forwards; }
+  .pokecard:hover .pokecard__info {
+    animation: mobileHover;
+    animation-duration: .8s;
+    animation-fill-mode: forwards; }
+
+/* pokeAnexo */
+.pokeAnexo {
+  overflow: hidden;
+  margin: 2rem 1rem;
+  font-family: "Fira Mono", monospace;
+  box-shadow: 0px 0px 8px #091353;
+  border-radius: 7px;
+  height: 356px;
+  padding: 1rem;
+  background-color: #309d45c2;
+  height: 356px;
+  transition: .8s;
+  outline: 7px solid #f5f5ff;
+  outline-offset: -4px;
+  outline-style: auto; }
+  .pokeAnexo__card {
+    padding: 1rem; }
+    .pokeAnexo__card__title {
+      font-family: "Lobster Two", cursive;
+      text-align: left;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      padding: .2rem;
+      border-bottom: 2px solid;
+      color: #f5f5ff; }
+    .pokeAnexo__card__slider {
+      width: 224px;
+      overflow: hidden;
+      transition: .8s; }
+      .pokeAnexo__card__slider__slide {
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        width: calc(224px * 2); }
+
+@keyframes moveLeft {
+  0% {
+    right: 0%; }
+  100% {
+    right: 224px; } }
+        .pokeAnexo__card__slider__slide__title {
+          width: 224px;
+          text-align: center;
+          color: #309d45c2;
+          background-color: #f5f5ff;
+          padding: 1rem;
+          margin-bottom: 1rem; }
+        .pokeAnexo__card__slider__slide__text {
+          width: 224px;
+          text-align: center;
+          color: #f5f5ff;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          font-weight: 700;
+          letter-spacing: 5px; }
+        .pokeAnexo__card__slider__slide:hover {
+          animation: moveLeft;
+          animation-duration: .8s;
+          animation-fill-mode: forwards; }
+
+.evoPath {
+  overflow: hidden;
+  margin: 2rem 1rem;
+  font-family: "Fira Mono", monospace;
+  box-shadow: 0px 0px 8px #091353;
+  border-radius: 7px; }
+  .evoPath__card {
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #180e58d6;
+    height: 356px;
+    transition: .8s;
+    outline: 7px solid white;
+    outline-offset: -4px;
+    outline-style: auto; }
+    .evoPath__card__title {
+      font-family: "Lobster Two", cursive;
+      text-align: left;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      padding: .2rem;
+      border-bottom: 2px solid;
+      position: relative;
+      z-index: 2;
+      color: white; }
+    .evoPath__card__evolutions {
+      height: 256px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .evoPath__card__evolutions__evo {
+        width: 230px;
+        position: relative;
+        z-index: 2;
+        width: 230px; }
+        .evoPath__card__evolutions__evo__name {
+          width: 230px;
+          color: #180e58;
+          background-color: white;
+          padding: 1rem;
+          border-radius: 7px; }
+        .evoPath__card__evolutions__evo__img {
+          position: relative;
+          width: 110px;
+          height: 0px;
+          bottom: 82px;
+          left: 149px; }
+          .evoPath__card__evolutions__evo__img img {
+            width: 100%; }
+    .evoPath__card__bg {
+      position: relative;
+      z-index: 1;
+      width: 450px;
+      height: 0%;
+      bottom: 360px; }
+      .evoPath__card__bg img {
+        width: 100%;
+        opacity: .6; }
 
 .quiz_headers {
   font-size: 3rem;

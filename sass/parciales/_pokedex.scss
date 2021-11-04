@@ -1,6 +1,16 @@
 /* Generals Pokedex */
+$pokedexBg: #7271bab5;
+$pokedex2bg: #f5f5ff;
+$mobileHeight: 356px;
 
-
+@mixin pokedexTitles {
+	font-family: $title2;
+	text-align: left;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	padding: .2rem;
+	border-bottom:2px solid;
+}
 
 /* Welcome */
 
@@ -8,7 +18,7 @@
 	@include generalSection;
 	width: 65px;
 	height: 40px;
-	background-color: #7271bab5;
+	background-color: $pokedexBg;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -78,11 +88,11 @@
 		align-items: center;
 		justify-content: initial;
 		padding: 0.6rem;
-		background-color: #f5f5ff;
-		outline: 7px solid #7489cb;
+		background-color: $pokedex2bg;
+		outline: 7px solid $pokedexBg;
 		outline-offset: -4px;
 		outline-style: auto;
-		border: 4px solid #f5f5ff;
+		border: 4px solid $pokedex2bg;
 		&__label {
 			font-family: $normal;
 			margin: 0px .5rem;
@@ -102,7 +112,7 @@
 			width: $width;
 			&__button {
 				font-family: $normal;
-				background-color: #ffffffc7;
+				background-color: $pokedex2bg;
 				border: none;
 				border-radius: 16px;
 				position: absolute;
@@ -124,4 +134,197 @@
 		}
 	}
 
+}
+
+/* Pokecard */
+
+.pokecard {
+	@keyframes mobileHover {
+		0%{bottom:0px;}
+		100%{bottom:$mobileHeight;}
+	}
+	@mixin goUp {
+		animation: mobileHover;
+		animation-duration: .8s;
+		animation-fill-mode: forwards;
+	}
+	@include generalSection;
+	height: $mobileHeight;
+	overflow: hidden;
+	&__mainCard {
+		position: relative;
+		bottom: 0px;
+		padding: 1rem;
+		background-color: $pokedexBg;
+		height: $mobileHeight;
+		transition: .8s;
+		outline: 7px solid $pokedex2bg;
+    	outline-offset: -4px;
+    	outline-style: auto;
+		&__title {
+			@include pokedexTitles;
+			border-color: $pokedex2bg;
+			color: $pokedex2bg;
+		}
+		&__img {
+			width:100%;
+			background-color: $pokedex2bg;
+			border-radius:$borderRadius;
+			& img {width:100%;}
+		}
+	}	
+	&__info {
+		position:relative;
+		bottom: 0px;
+		padding: 1rem;
+		background-color: $pokedex2bg;
+		height: $mobileHeight;
+		transition: .8s;
+		outline: 7px solid $pokedexBg;
+    	outline-offset: -4px;
+    	outline-style: auto;
+		&__title {
+			@extend .pokecard__mainCard__title;
+			color: $pokedexBg;
+			border-color: $pokedexBg;
+		}
+		&__text {
+			width: 100%;
+			height: 260px;
+			border-radius:$borderRadius;
+			color: $pokedex2bg;
+			background-color: $pokedexBg;
+			font-family: $special;
+			font-size: 1.4rem;
+			padding: 1.5rem 2.5rem;
+			line-height: 2rem;
+		}
+	}
+	&:hover .pokecard__mainCard {
+		 @include goUp;
+	}
+	&:hover .pokecard__info {
+		@include goUp;
+	}
+}
+
+/* pokeAnexo */
+
+.pokeAnexo {
+	$mainColor: #309d45c2;
+	$secColor: #f5f5ff;
+	@include generalSection;
+	height: $mobileHeight;
+	padding: 1rem;
+	background-color: $mainColor;
+	height: $mobileHeight;
+	transition: .8s;
+	outline: 7px solid $secColor;
+    outline-offset: -4px;
+    outline-style: auto;
+	&__card {
+		padding: 1rem;
+		&__title {
+			@include pokedexTitles;
+			color: $secColor;
+		}
+		&__slider {
+			$mobileWidth: 224px;
+			width: $mobileWidth;
+			overflow: hidden;
+			transition: .8s;
+			&__slide {
+				@keyframes moveLeft {
+					0%{right:0%}
+					100%{right:$mobileWidth;}
+				}
+				position: relative;
+				display: flex;
+				flex-flow: row;
+				width: calc(#{$mobileWidth} * 2);
+				&__title {
+					width: $mobileWidth;
+					text-align: center;
+					color: $mainColor;
+					background-color: $secColor;
+					padding: 1rem;
+					margin-bottom: 1rem;
+				}
+				&__text {
+					width: $mobileWidth;
+					text-align: center;
+					color: $secColor;
+					padding: 1rem;
+					margin-bottom: 1rem;
+					font-weight: 700;
+    				letter-spacing: 5px;
+				}
+				&:hover {
+					animation: moveLeft;
+					animation-duration: .8s;
+					animation-fill-mode: forwards;
+				}
+			}
+		}
+	}
+}
+
+.evoPath {
+	$mainColor: #180e58;
+	$secColor: white;
+	@include generalSection;
+	&__card {
+		overflow: hidden;
+		padding: 1rem;
+		background-color: #180e58d6;
+		height: $mobileHeight;
+		transition: .8s;
+		outline: 7px solid $secColor;
+		outline-offset: -4px;
+		outline-style: auto;
+		&__title {
+			@include pokedexTitles;
+			position: relative;
+			z-index: 2;
+			color: $secColor;
+		}
+		&__evolutions {
+			height: 256px;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: space-evenly;
+			&__evo {
+				$width: 230px;
+				width: $width;
+				position: relative;
+				z-index: 2;
+				width: 230px;
+				&__name {
+					width: $width;
+					color: $mainColor;
+					background-color: $secColor;
+					padding: 1rem;
+					border-radius: $borderRadius;
+				}
+				&__img {
+					position: relative;
+					width: 110px;
+					height: 0px;
+					bottom: 82px;
+					left: 149px;
+					& img {width: 100%;}
+				}
+			}
+		}
+		&__bg {
+			position: relative;
+			z-index: 1;
+			width: 450px;
+			height: 0%;
+			bottom: 360px;
+			& img {width: 100%; opacity: .6}
+		}
+		
+	}
 }
