@@ -46,15 +46,52 @@
 		</nav>
 	</header>
 	<main>
-
-	<div class="wide_pc_flex">	
-		<section class="sect form_container">
+	
+	<!-- COntainer para Flex Square & Wide -->
+	<div class="wide_pc_flex">
+		
+		<!-- Form Welcome -->
+		<section class="formWelcome">
+			<div class="formWelcome__up">
+				<h3 class="formWelcome__up__title">Who are you reaching?</h3>
+				<div class="formWelcome__up__info">
+					<div class="formWelcome__up__info__div">
+						<p class="formWelcome__up__info__div__text">Rodrigo González Wilkens</p>
+						<p class="formWelcome__up__info__div__text">Villa Ballester, Buenos Aires. Argentina.</p>
+					</div>					
+					<div class="formWelcome__up__info__profile">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png' alt='poke_img'>
+					</div>
+				</div>
+			</div>
+			<div class="formWelcome__down">
+				<div class="formWelcome__down__imgRow">
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png' alt='poke_img'>
+				</div>
+				<h4 class="formWelcome__down__title">What happens after I submit the form?</h3>
+				<p class="formWelcome__down__text">I'll be in contact as soon as I can. If you want to contribute or collaborate with the project, don't hesitate to check the box.</p>
+				<button class="formWelcome__down__button">
+					<a href="#formJump" class="formWelcome__down__button__link">Fill the form</a>
+					<div class="formWelcome__down__button__img">
+						<img src="../resources/img/miniball.png" alt="pokeball">
+					</div>
+				</button>
+			</div>
+		</section>
+		
+		<!-- Form Container -->
+		<section class="form_container">
+			<div id="formJump">#</div>
 			<form class="contact_form" action="" method="POST">
 				<fieldset class="contact_form__field">
 					<legend class="contact_form__title"><h2>Contact Me</h2></legend>
 					<div class="contact_form__form_section">
 						<label for="name">Name :</label>
-						<input class="contact_form__form_section__input" id="name" type="text" name="name" maxlength="30" autofocus="on" required>
+						<input class="contact_form__form_section__input" id="name" type="text" name="name" maxlength="30" required>
 					</div>
 					<div class="contact_form__form_section">
 						<label for="apellido">Lastname :</label>
@@ -83,29 +120,7 @@
 				</div>
 			</form>
 		</section>
-		<div class="contact_extra">
-			<div class="contact_extra__top">
-				<div class="contact_extra__top__img">
-					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png' alt='poke_img'>
-				</div>
-				<div class="contact_extra__top__info">
-					<h3>¿A quién estoy contactando?</h3>
-					<p>Rodrigo González Wilkens</p>
-					<p>Villa Ballester, Buenos Aires. Argentina.</p>
-				</div>
-			</div>
-			<div class="contact_extra__bottom">
-				<div class="contact_extra__bottom__icon_list">
-					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png' alt='poke_img'>
-					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png' alt='poke_img'>
-					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png' alt='poke_img'>
-					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png' alt='poke_img'>
-					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png' alt='poke_img'>
-				</div>
-				<h3>¿Qué ocurre ahora?</h3>
-				<p>Me pondré en contacto a la brevedad. Si quieres saber más del proyecto y contribuir, no dudes en marcar la opción en el formulario</p>
-			</div>
-		</div>
+		
 	</div>
 	</main>
 	<!-- FOOTER -->

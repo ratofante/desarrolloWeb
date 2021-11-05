@@ -1258,6 +1258,89 @@ html {
 .footer_dark {
   background-color: #0b1b2a5c; }
 
+/* WELCOME */
+.formWelcome {
+  width: 300px;
+  margin: 40px 10px; }
+  .formWelcome__up {
+    padding: 1rem; }
+    .formWelcome__up__title {
+      font-family: "Lobster Two", cursive;
+      color: white;
+      font-size: 1.6rem;
+      border-bottom: 2px solid white; }
+    .formWelcome__up__info {
+      display: flex;
+      flex-flow: row; }
+      .formWelcome__up__info__profile {
+        width: 160px; }
+        .formWelcome__up__info__profile img {
+          width: 100%; }
+      .formWelcome__up__info__div {
+        flex-flow: column;
+        margin-top: 10px; }
+        .formWelcome__up__info__div__text {
+          font-family: "VT323", monospace;
+          color: white; }
+          .formWelcome__up__info__div__text:first-child {
+            width: 145px;
+            text-align: left;
+            font-size: 1.3rem;
+            margin-bottom: 9px;
+            padding-bottom: 9px;
+            border-bottom: 1px solid white; }
+          .formWelcome__up__info__div__text:last-child {
+            text-align: left;
+            margin-top: 9px; }
+  .formWelcome__down {
+    padding: 1rem; }
+    .formWelcome__down__imgRow {
+      margin: 1rem 0px 2rem 0px;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white; }
+      .formWelcome__down__imgRow img {
+        width: 18%; }
+    .formWelcome__down__title {
+      font-family: "Lobster Two", cursive;
+      color: white;
+      text-align: left;
+      margin: 10px 0px;
+      font-size: 1.4rem; }
+    .formWelcome__down__text {
+      color: white;
+      text-align: left;
+      font-family: "VT323", monospace;
+      font-size: 1.2rem;
+      width: 80%;
+      margin: auto; }
+    .formWelcome__down__button {
+      float: right;
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      background-color: #ffffff00;
+      padding: 0.3rem;
+      border-radius: 7px; }
+      .formWelcome__down__button__link {
+        display: inline;
+        text-decoration: none;
+        color: white;
+        margin-right: .3rem; }
+      .formWelcome__down__button__img {
+        display: flex;
+        align-items: center;
+        width: 20px; }
+        .formWelcome__down__button__img img {
+          width: 100%; }
+
+#formJump {
+  position: relative;
+  bottom: 115px;
+  color: #ffffff00; }
+
 /* FORM */
 .form_container {
   padding: 1rem; }
