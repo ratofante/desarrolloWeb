@@ -52,6 +52,14 @@
 		
 		<!-- Form Welcome -->
 		<section class="formWelcome">
+			<div class="buttonContainer">
+				<button class="formWelcome__down__button">
+					<a href="#formJump" class="formWelcome__down__button__link">Fill the form</a>
+					<div class="formWelcome__down__button__img">
+						<img src="../resources/img/miniball.png" alt="pokeball">
+					</div>
+				</button>
+			</div>
 			<div class="formWelcome__up">
 				<h3 class="formWelcome__up__title">Who are you reaching?</h3>
 				<div class="formWelcome__up__info">
@@ -74,49 +82,58 @@
 				</div>
 				<h4 class="formWelcome__down__title">What happens after I submit the form?</h3>
 				<p class="formWelcome__down__text">I'll be in contact as soon as I can. If you want to contribute or collaborate with the project, don't hesitate to check the box.</p>
-				<button class="formWelcome__down__button">
-					<a href="#formJump" class="formWelcome__down__button__link">Fill the form</a>
-					<div class="formWelcome__down__button__img">
-						<img src="../resources/img/miniball.png" alt="pokeball">
-					</div>
-				</button>
+				<div class="buttonContainer">
+					<button class="formWelcome__down__button">
+						<a href="#formJump" class="formWelcome__down__button__link">Fill the form</a>
+						<div class="formWelcome__down__button__img">
+							<img src="../resources/img/miniball.png" alt="pokeball">
+						</div>
+					</button>
+				</div>	
+				<div class="formWelcome__down__imgRowDown">
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png' alt='poke_img'>
+					<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png' alt='poke_img'>
+				</div>
 			</div>
 		</section>
 		
 		<!-- Form Container -->
-		<section class="form_container">
+		<section class="formContainer">
 			<div id="formJump">#</div>
-			<form class="contact_form" action="" method="POST">
-				<fieldset class="contact_form__field">
-					<legend class="contact_form__title"><h2>Contact Me</h2></legend>
-					<div class="contact_form__form_section">
+			<form class="contactForm" action="" method="POST">
+				<fieldset class="contactForm__field">
+					<legend class="contactForm__title"><h2>Contact Me</h2></legend>
+					<div class="contactForm__formSection">
 						<label for="name">Name :</label>
-						<input class="contact_form__form_section__input" id="name" type="text" name="name" maxlength="30" required>
+						<input class="contactForm__formSection__input" id="name" type="text" name="name" maxlength="30" required>
 					</div>
-					<div class="contact_form__form_section">
+					<div class="contactForm__formSection">
 						<label for="apellido">Lastname :</label>
-						<input class="contact_form__form_section__input" id="apellido" type="text" name="apellido" maxlength="30">
+						<input class="contactForm__formSection__input" id="apellido" type="text" name="apellido" maxlength="30">
 					</div>
-					<div class="contact_form__form_section">
+					<div class="contactForm__formSection">
 						<label for="email">Email :</label>
-						<input class="contact_form__form_section__input" id="email" type="email" name="email" maxlength="50" required>
+						<input class="contactForm__formSection__input" id="email" type="email" name="email" maxlength="50" required>
 					</div>
-					<div class="contact_form__form_section">
+					<div class="contactForm__formSection">
 						<label for="tres_pokemons">Choose your pokemon</label>
-						<select class="contact_form__form_section__input id="tres_pokemons" name="pokemon">
+						<select class="contactForm__formSection__input id="tres_pokemons" name="pokemon">
 							<option value="bulbasaur">Bulbasaur</option>
 							<option value="charmander">Charmander</option>
 							<option value="Squirtle">Squirtle</option>
 						</select>
 					</div>
-					<div class="contact_form__form_section">
+					<div class="contactForm__formSection">
 						<label class="large_label" for="contribute">Want to contribute?</label>
-						<input class="contact_form__form_section__input" id="contribute" type="checkbox" value="contribute">
+						<input class="contactForm__formSection__input" id="contribute" type="checkbox" value="contribute">
 					</div>
 				</fieldset>
-				<div class="form_end_contact">
-					<input class="form_end_contact__input" type="reset" name="reset" value="Reset">
-					<button class="form_end_contact__button" type="submit">Send</button>
+				<div class="formEnd_contact">
+					<input class="formEnd_contact__input" type="reset" name="reset" value="Reset">
+					<button class="formEnd_contact__button" type="submit">Send</button>
 				</div>
 			</form>
 		</section>

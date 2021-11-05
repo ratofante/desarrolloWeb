@@ -214,7 +214,6 @@ $mobileHeight: 356px;
 	$mainColor: #309d45c2;
 	$secColor: #f5f5ff;
 	@include generalSection;
-	height: $mobileHeight;
 	padding: 1rem;
 	background-color: $mainColor;
 	height: $mobileHeight;
@@ -327,4 +326,34 @@ $mobileHeight: 356px;
 		}
 		
 	}
+}
+
+.moveList {
+	$mainColor: #a566ffc2;
+	$secColor: white;
+	@include generalSection;
+	padding: 1rem;
+	background-color: $mainColor;
+	height: $mobileHeight;
+	transition: .8s;
+	outline: 7px solid $secColor;
+    outline-offset: -4px;
+    outline-style: auto;
+	&__title {
+		@include pokedexTitles;
+		color: $secColor;
+	}	
+	&__container {
+		display: flex;
+		flex-flow: wrap;
+		height: 256px;
+		overflow: scroll;
+		&__move {
+			flex: 1 1 auto;
+			background-color: #fdfdfd96;
+			padding: 0.2rem;
+			margin: 0.1rem;
+		}
+	}
+
 }

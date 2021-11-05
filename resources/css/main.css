@@ -1263,12 +1263,14 @@ html {
   width: 300px;
   margin: 40px 10px; }
   .formWelcome__up {
-    padding: 1rem; }
+    padding: 1rem;
+    margin-bottom: 3rem; }
     .formWelcome__up__title {
       font-family: "Lobster Two", cursive;
       color: white;
       font-size: 1.6rem;
-      border-bottom: 2px solid white; }
+      border-bottom: 2px solid white;
+      margin-bottom: 4rem; }
     .formWelcome__up__info {
       display: flex;
       flex-flow: row; }
@@ -1294,20 +1296,22 @@ html {
             margin-top: 9px; }
   .formWelcome__down {
     padding: 1rem; }
-    .formWelcome__down__imgRow {
-      margin: 1rem 0px 2rem 0px;
+    .formWelcome__down__imgRow, .formWelcome__down__imgRowDown {
+      margin: 1rem 0px 4rem 0px;
       display: flex;
       flex-flow: row;
       justify-content: space-between;
       border-top: 1px solid white;
       border-bottom: 1px solid white; }
-      .formWelcome__down__imgRow img {
+      .formWelcome__down__imgRow img, .formWelcome__down__imgRowDown img {
         width: 18%; }
+    .formWelcome__down__imgRowDown {
+      margin-top: 7rem; }
     .formWelcome__down__title {
       font-family: "Lobster Two", cursive;
       color: white;
       text-align: left;
-      margin: 10px 0px;
+      margin: 1rem 0px 3rem 0px;
       font-size: 1.4rem; }
     .formWelcome__down__text {
       color: white;
@@ -1315,7 +1319,12 @@ html {
       font-family: "VT323", monospace;
       font-size: 1.2rem;
       width: 80%;
-      margin: auto; }
+      margin: auto;
+      line-height: 2rem; }
+    .formWelcome__down div.buttonContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; }
     .formWelcome__down__button {
       float: right;
       display: flex;
@@ -1342,13 +1351,13 @@ html {
   color: #ffffff00; }
 
 /* FORM */
-.form_container {
+.formContainer {
   padding: 1rem; }
   @media screen and (min-width: 766px) {
-    .form_container {
+    .formContainer {
       padding: 2rem; } }
 
-.contact_form {
+.contactForm {
   display: flex;
   flex-flow: column;
   margin: auto;
@@ -1356,37 +1365,43 @@ html {
   width: 100%;
   max-width: 340px; }
   @media screen and (min-width: 766px) {
-    .contact_form {
+    .contactForm {
       max-width: 460px; } }
-  .contact_form__field {
+  .contactForm__field {
     margin: auto;
     min-width: 278px;
     padding: 0.3rem; }
     @media screen and (min-width: 766px) {
-      .contact_form__field {
+      .contactForm__field {
         width: 100%; } }
-  .contact_form__title {
-    font-family: "Lobster Two", cursive; }
-  .contact_form__form_section {
+  .contactForm__title {
+    font-family: "Lobster Two", cursive;
+    color: white;
+    animation-name: lightChange;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+  .contactForm__formSection {
     display: flex;
     flex-flow: column;
     margin-bottom: 1.3rem; }
     @media screen and (min-width: 766px) {
-      .contact_form__form_section {
+      .contactForm__formSection {
         margin: 2.5rem; } }
-    .contact_form__form_section__input {
+    .contactForm__formSection__input {
       padding: .4rem;
       margin: auto 10px; }
 
-.contact_form__form_section label, input {
+.contactForm__formSection label, input {
   font-family: "Fira Mono", monospace;
   text-align: left;
   margin-bottom: .3rem; }
 
-.contact_form__form_section label {
+.contactForm__formSection label {
+  color: white;
   padding-left: 1rem; }
 
-.contact_form__form_section:last-child label {
+.contactForm__formSection:last-child label {
   text-align: center; }
 
 #contribute {
@@ -1394,11 +1409,11 @@ html {
   width: 30px;
   margin: auto; }
 
-.form_end_contact {
+.formEnd_contact {
   margin-top: 1rem; }
-  .form_end_contact__input {
+  .formEnd_contact__input {
     padding: .3rem; }
-  .form_end_contact__button {
+  .formEnd_contact__button {
     padding: .3rem; }
 
 /* Generals Pokedex */
@@ -1583,7 +1598,6 @@ html {
   font-family: "Fira Mono", monospace;
   box-shadow: 0px 0px 8px #091353;
   border-radius: 7px;
-  height: 356px;
   padding: 1rem;
   background-color: #309d45c2;
   height: 356px;
@@ -1695,6 +1709,38 @@ html {
       .evoPath__card__bg img {
         width: 100%;
         opacity: .6; }
+
+.moveList {
+  overflow: hidden;
+  margin: 2rem 1rem;
+  font-family: "Fira Mono", monospace;
+  box-shadow: 0px 0px 8px #091353;
+  border-radius: 7px;
+  padding: 1rem;
+  background-color: #a566ffc2;
+  height: 356px;
+  transition: .8s;
+  outline: 7px solid white;
+  outline-offset: -4px;
+  outline-style: auto; }
+  .moveList__title {
+    font-family: "Lobster Two", cursive;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: .2rem;
+    border-bottom: 2px solid;
+    color: white; }
+  .moveList__container {
+    display: flex;
+    flex-flow: wrap;
+    height: 256px;
+    overflow: scroll; }
+    .moveList__container__move {
+      flex: 1 1 auto;
+      background-color: #fdfdfd96;
+      padding: 0.2rem;
+      margin: 0.1rem; }
 
 .quiz_headers {
   font-size: 3rem;
