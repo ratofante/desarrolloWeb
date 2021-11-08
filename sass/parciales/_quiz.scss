@@ -1,6 +1,7 @@
 $quizMarginBottomMobile: 80px;
 @mixin quizSections {
 	margin: 2rem 1rem;
+	padding: 1rem;
 	border-radius: $borderRadius;
 	box-shadow: 0 0 26px white;
     background-color: #ffffff00;
@@ -26,7 +27,7 @@ $quizMarginBottomMobile: 80px;
 		margin: 100px 0px 50px 0px
 	}
 }
-.challenge_form {
+.challengeForm {
 	margin-top: 1rem;
 	box-shadow: 0 0 26px white;
     background-color: #ffffff00;
@@ -36,6 +37,137 @@ $quizMarginBottomMobile: 80px;
 
 .selector {
 	@include quizSections;
+	font-size: $normal;
+	&__title {
+		font-family: $title2;
+		margin: 2rem auto 2rem auto;
+		color: white;
+		text-align: center;
+	}
+	&__choice {
+		$choiceWidth: 250px;
+		$choiceHeigth: 110px;
+		@mixin choiceCard {
+			width: 100%;
+			max-width: $choiceWidth;
+			height: $choiceHeigth;
+			border-radius: $borderRadius;
+			position: relative;
+		}
+		@include choiceCard;
+		margin: 2rem auto;
+		&__easy {
+			$mainColor: #000000a8;
+			$secColor: white;
+			@include choiceCard;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid rgb(255, 255, 255);
+			background-color: $mainColor;
+			transition: .5s;
+			
+			&__title {
+				position:relative;
+				z-index: 3;
+				font-family: $title1;
+				color: $secColor;
+				font-size: 2rem;
+				width: 100%;
+				text-align: center;
+			}
+			&__imgLeft {
+				position: relative;
+				width: 180px;
+				height:0px;
+				bottom: 93px;
+				left: -94px;
+				z-index: 1;
+				opacity: .8;
+				& img {width: 100%;}
+			}
+		}
+		&__challenge {
+			@extend .selector__choice__easy;
+			$mainColor: #000000a8;
+			$secColor: white;
+			background-color: $mainColor;
+			border: 1px solid white;
+			&__title {
+				@extend .selector__choice__easy__title;
+				color: $secColor;
+			}
+			&__imgRight {
+				@extend .selector__choice__easy__imgLeft;
+				bottom: 119px;
+				left: 135px;
+				& img {width: 100%;}
+			}
+			
+		}	
+		&__description {
+			@include choiceCard;
+			border: 1px solid white;
+			bottom: $choiceHeigth;
+			background-color: #175f97;
+			left: 100vw;
+			transition: .5s;
+			&__text {
+				font-size: .9rem;
+				font-family: $normal;
+				height: 55px;
+ 	   			padding: 1rem;
+				text-align: center;
+				color: white;
+			}
+			&__down {
+				display: flex;
+				flex-flow: row;
+				justify-content: space-evenly;
+				height: 55px;
+				&__link {
+					display:block;
+					margin:auto;
+					padding: .3rem;
+					margin-top:.5rem;
+					border-radius: $borderRadius;
+					& a {
+						text-decoration: none;
+						color: black;
+						font-family: $special;
+					}
+				}
+				&__imgRight {
+					width: 100px;
+					display:none;
+					& img {width: 100%;}
+				}
+				&__imgLeft {
+					display:none;
+					& img {width: 100%;}
+				}
+			}
+			
+			
+		}
+		&:hover .selector__choice__easy {
+			right: 100vw;
+		}
+		&:hover .selector__choice__challenge {
+			left: 100vw;
+		}
+		&:hover .selector__choice__description {
+			left: 0vw;
+			
+		}
+	}
+}
+
+.linker {
+	position:relative;
+	bottom: 10vh;
+
 }
 
 .quiz {
@@ -84,52 +216,6 @@ $quizMarginBottomMobile: 80px;
 				font-size: 1.2rem;
 				letter-spacing: 2px;
 			}				
-		}
-	}
-}
-.challenge_form {
-	@include quizSections;
-}
-.dont_worry {
-	display:flex;
-	flex-flow:column;
-	position: relative;
-	top: 35px;
-	width: 100vw;
-	@include tablet {
-		flex-flow: row;
-	}
-	&__text {
-		position: relative;
-		left: 650px;
-		height: 0px;
-		transition-duration: .3s;
-		& p {
-			
-			font-family: $normal;
-			color: white;
-			text-align: center;
-			transform: rotate(352deg);
-			position: relative;
-			right: 75px;
-			top: -270px;
-			text-shadow: 0px 0px 28px white;
-		}
-	}
-	&__psyduck {
-		width: 110px;
-		align-self: end;
-		& img {
-			width: 100%;
-		}
-		&:hover .dont_worry__text {
-			left: -20px;
-			top: 129px;
-		}
-		&:hover img {
-			-webkit-animation: wiggle 0.5s infinite;
-			-moz-animation: wiggle 0.5s infinite;
-			animation: wiggle 0.5s infinite;
 		}
 	}
 }

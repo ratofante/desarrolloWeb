@@ -1774,7 +1774,7 @@ font-size y padding del contenedor y textos */
       font-size: 4rem;
       margin: 100px 0px 50px 0px; } }
 
-.challenge_form {
+.challengeForm {
   margin-top: 1rem;
   box-shadow: 0 0 26px white;
   background-color: #ffffff00;
@@ -1785,15 +1785,123 @@ font-size y padding del contenedor y textos */
 
 .selector {
   margin: 2rem 1rem;
+  padding: 1rem;
   border-radius: 7px;
   box-shadow: 0 0 26px white;
   background-color: #ffffff00;
   flex-flow: column;
   height: fit-content;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  font-size: "Fira Mono", monospace; }
+  .selector__title {
+    font-family: "Lobster Two", cursive;
+    margin: 2rem auto 2rem auto;
+    color: white;
+    text-align: center; }
+  .selector__choice {
+    width: 100%;
+    max-width: 250px;
+    height: 110px;
+    border-radius: 7px;
+    position: relative;
+    margin: 2rem auto; }
+    .selector__choice__easy, .selector__choice__challenge {
+      width: 100%;
+      max-width: 250px;
+      height: 110px;
+      border-radius: 7px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid white;
+      background-color: #000000a8;
+      transition: .5s; }
+      .selector__choice__easy__title, .selector__choice__challenge__title {
+        position: relative;
+        z-index: 3;
+        font-family: "Lobster", cursive;
+        color: white;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center; }
+      .selector__choice__easy__imgLeft, .selector__choice__challenge__imgRight {
+        position: relative;
+        width: 180px;
+        height: 0px;
+        bottom: 93px;
+        left: -94px;
+        z-index: 1;
+        opacity: .8; }
+        .selector__choice__easy__imgLeft img, .selector__choice__challenge__imgRight img {
+          width: 100%; }
+    .selector__choice__challenge {
+      background-color: #000000a8;
+      border: 1px solid white; }
+      .selector__choice__challenge__title {
+        color: white; }
+      .selector__choice__challenge__imgRight {
+        bottom: 119px;
+        left: 135px; }
+        .selector__choice__challenge__imgRight img {
+          width: 100%; }
+    .selector__choice__description {
+      width: 100%;
+      max-width: 250px;
+      height: 110px;
+      border-radius: 7px;
+      position: relative;
+      border: 1px solid white;
+      bottom: 110px;
+      background-color: #175f97;
+      left: 100vw;
+      transition: .5s; }
+      .selector__choice__description__text {
+        font-size: .9rem;
+        font-family: "Fira Mono", monospace;
+        height: 55px;
+        padding: 1rem;
+        text-align: center;
+        color: white; }
+      .selector__choice__description__down {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        height: 55px; }
+        .selector__choice__description__down__link {
+          display: block;
+          margin: auto;
+          padding: .3rem;
+          margin-top: .5rem;
+          border-radius: 7px; }
+          .selector__choice__description__down__link a {
+            text-decoration: none;
+            color: black;
+            font-family: "VT323", monospace; }
+        .selector__choice__description__down__imgRight {
+          width: 100px;
+          display: none; }
+          .selector__choice__description__down__imgRight img {
+            width: 100%; }
+        .selector__choice__description__down__imgLeft {
+          display: none; }
+          .selector__choice__description__down__imgLeft img {
+            width: 100%; }
+    .selector__choice:hover .selector__choice__easy, .selector__choice:hover .selector__choice__challenge {
+      right: 100vw; }
+    .selector__choice:hover .selector__choice__challenge {
+      left: 100vw; }
+    .selector__choice:hover .selector__choice__description {
+      left: 0vw; }
+
+.linker {
+  position: relative;
+  bottom: 10vh; }
 
 .quiz {
   margin: 2rem 1rem;
+  padding: 1rem;
   border-radius: 7px;
   box-shadow: 0 0 26px white;
   background-color: #ffffff00;
@@ -1837,48 +1945,3 @@ font-size y padding del contenedor y textos */
         transition-duration: .3s;
         font-size: 1.2rem;
         letter-spacing: 2px; }
-
-.challenge_form {
-  margin: 2rem 1rem;
-  border-radius: 7px;
-  box-shadow: 0 0 26px white;
-  background-color: #ffffff00;
-  flex-flow: column;
-  height: fit-content;
-  margin-bottom: 80px; }
-
-.dont_worry {
-  display: flex;
-  flex-flow: column;
-  position: relative;
-  top: 35px;
-  width: 100vw; }
-  @media screen and (min-width: 766px) {
-    .dont_worry {
-      flex-flow: row; } }
-  .dont_worry__text {
-    position: relative;
-    left: 650px;
-    height: 0px;
-    transition-duration: .3s; }
-    .dont_worry__text p {
-      font-family: "Fira Mono", monospace;
-      color: white;
-      text-align: center;
-      transform: rotate(352deg);
-      position: relative;
-      right: 75px;
-      top: -270px;
-      text-shadow: 0px 0px 28px white; }
-  .dont_worry__psyduck {
-    width: 110px;
-    align-self: end; }
-    .dont_worry__psyduck img {
-      width: 100%; }
-    .dont_worry__psyduck:hover .dont_worry__text {
-      left: -20px;
-      top: 129px; }
-    .dont_worry__psyduck:hover img {
-      -webkit-animation: wiggle 0.5s infinite;
-      -moz-animation: wiggle 0.5s infinite;
-      animation: wiggle 0.5s infinite; }

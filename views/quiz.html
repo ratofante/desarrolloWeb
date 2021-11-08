@@ -52,73 +52,47 @@
 	<main>
 		<section class="selector">
 			<h2 class="selector__title">Choose a Quiz Modality</h2>
-			<div class="selector__imgLeft">
-				<img src="" alt="pokemon">
-			</div>
+			
 			<div class="selector__choice">
-				<h3 class="selector__choice__title">Easy Quiz</h3>>
-				<div class="selector__choice__description">
-					<p class="selector__choice__description__text"></p>
-					<button class="selecto__choice__desctiption__link">
-						<a href="">Take the Quiz!</a>
-					</button>
-					<div class="selector__imgLeft">
-						<img src="" alt="pokemon">
+				<div class="selector__choice__easy">
+					<h3 class="selector__choice__easy__title">Easy Quiz</h3>
+					<div class="selector__choice__easy__imgLeft">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png' alt='Zubat'>
 					</div>
 				</div>
+				<div class="selector__choice__description">
+					<p class="selector__choice__description__text">Flip the card to see the answer and practice!</p>
+					<div class="selecto__choice__description__down">
+						<div class="selector__choice__description__down__imgLeft">
+							<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png' alt='psyduck'>
+						</div>
+						<button class="selector__choice__description__down__link">
+							<a href="#easyLink">Take the Quiz!</a>
+						</button>
+					</div>	
+				</div>
 			</div>
 			<div class="selector__choice">
-				<h2 class="selector__choice__title">Challenge Quiz</h2>
-				<div class="selector__imgRight">
-					<img src="" alt="pokemon">
-				</div>
+				<div class="selector__choice__challenge">
+					<h3 class="selector__choice__challenge__title">Challenge Quiz</h3>
+					<div class="selector__choice__challenge__imgRight">
+						<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png' alt='Golbat'>
+					</div>
+				</div>	
 				<div class="selector__choice__description">
 					<p class="selector__choice__description__text">Score your best answering all the questions!</p>
-					<button class="selecto__choice__desctiption__link">
-						<a href="">Take the Quiz!</a>
-					</button>
-					<div class="selector__imgRight">
-						<img src="" alt="pokemon">
+					<div class="selector__choice__description__down">
+						<div class="selector__choice__description__down__imgRight">
+							<img src="" alt="pokemon">
+						</div>
+						<button class="selector__choice__description__down__link">
+							<a href="#challengeLink">Take the Quiz!</a>
+						</button>
 					</div>
 				</div>
 			</div>
 		</section>
 
-
-		<!--div class="selector">
-			<h2 class="selector__title">Elige una modalidad:</h2>
-			<div class="selector__choices">
-				<div class="selector__container">
-					<button class="selector__easy_quiz">
-						<h3 class="selector__easy_quiz__title">Easy Quiz</h3>
-					</button>
-					<p class="selector__easy_quiz__text">
-						Puedes ver las respuestas en el momento (no disponible para mobile)	
-					</p>
-				</div>
-				<div class="selector__container">
-					<button class="selector__challenge">
-						<h3 class="selector__challenge__title" id="challenge_quiz">Challenge</h3>
-					</button>
-					<p class="selector__easy_quiz__text">
-						Responde las preguntas, enviá tu Quiz y compara tus resultados	
-					</p>
-				</div>
-			</div>
-			<div class="selector__img">
-				<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png' alt='poke_img'>
-			</div>
-		</div>
-
-		<div class="dont_worry">
-			<div class="dont_worry__psyduck">
-				<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png' alt='poke_img'>
-				<div class="dont_worry__text">
-					<p>No te preocupes!</p>
-					<p>Todo va a estar bien!</p>
-				</div>
-			</div>
-		</div-->
 		<!-- asider -->
 		<aside class="asider">
 			<div class="asider__pokedex">
@@ -135,6 +109,7 @@
 		<!-- fin aside -->	
 
 		<!-- EASY QUIZ -->
+		<div class="linker" id="easyLink"></div>
 		<h2 class="quiz_headers">Easy Quiz</h2>
 		<section class="section quiz">
 			<div class="quiz__div">
@@ -189,8 +164,9 @@
 		<!-- fin aside -->
 
 		<!-- CHALLENGE -->
+		<div class="linker" id="challengeLink"></div>
 		<h2 class="quiz_headers">Challenge</h2>
-		<section class="sect form_container challenge_form">
+		<section class="sect formContainer">
 			<form class="contactForm" action="" method="POST">
 				<fieldset class="contactForm__field">
 					<legend class="contactForm__title"><h2>Quiz</h2></legend>
@@ -255,7 +231,5 @@
 </footer>
 <!-- -->
 </div>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
