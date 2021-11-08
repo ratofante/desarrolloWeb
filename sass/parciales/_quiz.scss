@@ -1,9 +1,26 @@
+$quizMarginBottomMobile: 80px;
+@mixin quizSections {
+	margin: 2rem 1rem;
+	border-radius: $borderRadius;
+	box-shadow: 0 0 26px white;
+    background-color: #ffffff00;
+	flex-flow: column;
+	height: fit-content;
+	margin-bottom: $quizMarginBottomMobile;
+}
+
 .quiz_headers {
 	font-size: 3rem;
 	font-family: $special;
 	color: white;
 	text-shadow: 0 0 13px #ffffff99;
 	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	animation-name: lightChange;
+	animation-duration: 1.25s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 	@include tablet {
 		font-size: 4rem;
 		margin: 100px 0px 50px 0px
@@ -13,134 +30,16 @@
 	margin-top: 1rem;
 	box-shadow: 0 0 26px white;
     background-color: #ffffff00;
+	margin-bottom: $quizMarginBottomMobile;
 }
 .challenge_label {color:white;}
-.selector {
-	overflow-x: hidden;
-	overflow-y:hidden;
-	max-width: 300px;
-    margin: 2rem auto;
-    padding: 1rem 0.2rem;
-    box-shadow: 0 0 26px white;
-    background-color: #ffffff00;
-    border-radius: 8px;
-    padding: 2rem 0px 0px 0px;
-    @include tablet {
-    	width: 530px;
-	    height: 385px;
-	    padding: 3rem;
-	    max-width: 100%;
-	    margin-bottom: 400px;
-    }
-    @include square_pc {
-    	width: 660px;
-    	height: 260px;
-    }
-    &__choices {
-    	display: flex;
-    	flex-flow: column;
-    	@include square_pc {
-    		flex-flow: row;
-    	}
-    }
-	&__title {
-		font-family: $title2;
-		color: white;
-	    text-align: center;
-	    margin-bottom: 2rem;
-	    text-shadow: 0 0 13px #ffffff99;
-	    letter-spacing: 2px;
-	}
-	&__container {
-		width: 80%;
-		max-width: 230px;
-		height: 135px;
-   		margin: auto;
-   		z-index: 2;
-   		&:hover .selector__easy_quiz__text {
-			display: block;
-			position: relative;
-			color: white;
-			bottom: -10px;
-			left: 0px;
-			margin: auto;
-			font-family: $normal;
-			font-size: .8rem;
-			text-align: center;
-		}
-	}
-	&__img {
-		width: 70%;
-		opacity: .3;
-		position: relative;
-		height: 0px;
-		top: -262px;
-		left: 164px;
-		z-index: 1;
-		@include tablet {
-			top: -333px;
-			left: 309px;
-		}
-		@include square_pc {
-			top: -291px;
-			left: 365px;
-		}
-		& img {width:100%;}
-	}
-	&__easy_quiz {
-		display: block;
-		width: 135px;
-		height: 60px;
-		padding: 0.6rem;
-	    border-radius: 8px;
-	    background-color: #f5f5ff;
-	    margin:auto;
-	    &:hover {
-	    	background-color: $mainbg;
-	    }
-		&:hover .selector__easy_quiz__title{
-			position: relative;
-			color: #ffffff;
-			letter-spacing: 0.2px;
-		} 
-		&__title {
-			font-family: $normal;
-			font-weight: 600;
-		}
-		&__text {
-			/*display:none;*/
-			position: relative;
-			left: 600px;
-			transition-duration: .3s;
-		}
-	}
-	&__challenge {
-		@extend .selector__easy_quiz;
-		background-color: black;
-		&:hover {
-			background-color: $mainbg;
-		}
-		&:hover .selector__challenge__title{
-			position: relative;
-			color: #21cea1;
-			letter-spacing: 0.2px;
-		}
-		&__title {
-			@extend .selector__easy_quiz__title;
-			color: white;
-		}
-		&__text {
-			display:none;
-			transition-duration: .3s;
-		}
-	}
 
+.selector {
+	@include quizSections;
 }
 
 .quiz {
-	margin-top: 1rem;
-	box-shadow: 0 0 26px white;
-    background-color: #ffffff00;
+	@include quizSections;
 	@include tablet {
 		flex-flow: column;
 		width: 95%;
@@ -158,6 +57,7 @@
 		height: 100px;
 		transition-duration: .3s;
 		margin-bottom: 1rem;
+		&:last-child {margin-bottom: 0px;}
 		&:hover {
 			background-color: #ed143d00;
 		}
@@ -187,7 +87,9 @@
 		}
 	}
 }
-
+.challenge_form {
+	@include quizSections;
+}
 .dont_worry {
 	display:flex;
 	flex-flow:column;

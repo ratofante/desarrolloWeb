@@ -108,6 +108,7 @@ html {
   width: 100%;
   overflow-x: hidden; }
 
+/* La pifié con el nightBg. Armé todo con fs100% por eso este fix */
 .nightBg {
   font-size: 100%; }
 
@@ -1201,6 +1202,20 @@ html {
   background: #102436;
   background: linear-gradient(90deg, #102436 0%, rgba(16, 36, 54, 0.725928) 48%, rgba(7, 103, 2, 0.202118) 100%); }
 
+/* quizFontFix es porque no cambié la font de HTML a 62.5%
+en Quiz y Contacto por lo que la configuración general de aside
+no funciona para estas páginas. El fix es simplemente para modificar
+font-size y padding del contenedor y textos */
+.quizFontFix {
+  margin: 0.4rem;
+  padding: 0.4rem; }
+  .quizFontFix__text {
+    font-size: .8rem;
+    padding: .5rem;
+    padding-bottom: 0px; }
+  .quizFontFix__firma {
+    font-size: 1rem; }
+
 .footer {
   width: 100%; }
   .footer__banner, .footerfix {
@@ -1368,7 +1383,7 @@ html {
     .contactForm {
       max-width: 460px; } }
   .contactForm__field {
-    margin: auto;
+    margin: .2rem;
     min-width: 278px;
     padding: 0.3rem; }
     @media screen and (min-width: 766px) {
@@ -1747,7 +1762,13 @@ html {
   font-family: "VT323", monospace;
   color: white;
   text-shadow: 0 0 13px #ffffff99;
-  text-align: center; }
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  animation-name: lightChange;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
   @media screen and (min-width: 766px) {
     .quiz_headers {
       font-size: 4rem;
@@ -1756,119 +1777,29 @@ html {
 .challenge_form {
   margin-top: 1rem;
   box-shadow: 0 0 26px white;
-  background-color: #ffffff00; }
+  background-color: #ffffff00;
+  margin-bottom: 80px; }
 
 .challenge_label {
   color: white; }
 
 .selector {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  max-width: 300px;
-  margin: 2rem auto;
-  padding: 1rem 0.2rem;
+  margin: 2rem 1rem;
+  border-radius: 7px;
   box-shadow: 0 0 26px white;
   background-color: #ffffff00;
-  border-radius: 8px;
-  padding: 2rem 0px 0px 0px; }
-  @media screen and (min-width: 766px) {
-    .selector {
-      width: 530px;
-      height: 385px;
-      padding: 3rem;
-      max-width: 100%;
-      margin-bottom: 400px; } }
-  @media screen and (min-width: 992px) {
-    .selector {
-      width: 660px;
-      height: 260px; } }
-  .selector__choices {
-    display: flex;
-    flex-flow: column; }
-    @media screen and (min-width: 992px) {
-      .selector__choices {
-        flex-flow: row; } }
-  .selector__title {
-    font-family: "Lobster Two", cursive;
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 13px #ffffff99;
-    letter-spacing: 2px; }
-  .selector__container {
-    width: 80%;
-    max-width: 230px;
-    height: 135px;
-    margin: auto;
-    z-index: 2; }
-    .selector__container:hover .selector__easy_quiz__text {
-      display: block;
-      position: relative;
-      color: white;
-      bottom: -10px;
-      left: 0px;
-      margin: auto;
-      font-family: "Fira Mono", monospace;
-      font-size: .8rem;
-      text-align: center; }
-  .selector__img {
-    width: 70%;
-    opacity: .3;
-    position: relative;
-    height: 0px;
-    top: -262px;
-    left: 164px;
-    z-index: 1; }
-    @media screen and (min-width: 766px) {
-      .selector__img {
-        top: -333px;
-        left: 309px; } }
-    @media screen and (min-width: 992px) {
-      .selector__img {
-        top: -291px;
-        left: 365px; } }
-    .selector__img img {
-      width: 100%; }
-  .selector__easy_quiz, .selector__challenge {
-    display: block;
-    width: 135px;
-    height: 60px;
-    padding: 0.6rem;
-    border-radius: 8px;
-    background-color: #f5f5ff;
-    margin: auto; }
-    .selector__easy_quiz:hover, .selector__challenge:hover {
-      background-color: #091353; }
-    .selector__easy_quiz:hover .selector__easy_quiz__title, .selector__challenge:hover .selector__easy_quiz__title, .selector__easy_quiz:hover .selector__challenge__title, .selector__challenge:hover .selector__challenge__title {
-      position: relative;
-      color: #ffffff;
-      letter-spacing: 0.2px; }
-    .selector__easy_quiz__title, .selector__challenge__title {
-      font-family: "Fira Mono", monospace;
-      font-weight: 600; }
-    .selector__easy_quiz__text {
-      /*display:none;*/
-      position: relative;
-      left: 600px;
-      transition-duration: .3s; }
-  .selector__challenge {
-    background-color: black; }
-    .selector__challenge:hover {
-      background-color: #091353; }
-    .selector__challenge:hover .selector__challenge__title {
-      position: relative;
-      color: #21cea1;
-      letter-spacing: 0.2px; }
-    .selector__challenge__title {
-      color: white; }
-    .selector__challenge__text {
-      display: none;
-      transition-duration: .3s; }
+  flex-flow: column;
+  height: fit-content;
+  margin-bottom: 80px; }
 
 .quiz {
-  margin-top: 1rem;
+  margin: 2rem 1rem;
+  border-radius: 7px;
   box-shadow: 0 0 26px white;
-  background-color: #ffffff00; }
+  background-color: #ffffff00;
+  flex-flow: column;
+  height: fit-content;
+  margin-bottom: 80px; }
   @media screen and (min-width: 766px) {
     .quiz {
       flex-flow: column;
@@ -1886,6 +1817,8 @@ html {
     height: 100px;
     transition-duration: .3s;
     margin-bottom: 1rem; }
+    .quiz__div:last-child {
+      margin-bottom: 0px; }
     .quiz__div:hover {
       background-color: #ed143d00; }
     .quiz__div:hover .quiz__div__question {
@@ -1904,6 +1837,15 @@ html {
         transition-duration: .3s;
         font-size: 1.2rem;
         letter-spacing: 2px; }
+
+.challenge_form {
+  margin: 2rem 1rem;
+  border-radius: 7px;
+  box-shadow: 0 0 26px white;
+  background-color: #ffffff00;
+  flex-flow: column;
+  height: fit-content;
+  margin-bottom: 80px; }
 
 .dont_worry {
   display: flex;

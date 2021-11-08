@@ -154,3 +154,22 @@
 	background: rgb(16,36,54);
 	background: linear-gradient(90deg, rgba(16,36,54,1) 0%, rgba(16,36,54,0.7259278711484594) 48%, rgba(7,103,2,0.20211834733893552) 100%);
 }
+
+
+/* quizFontFix es porque no cambié la font de HTML a 62.5%
+en Quiz y Contacto por lo que la configuración general de aside
+no funciona para estas páginas. El fix es simplemente para modificar
+font-size y padding del contenedor y textos */
+
+.quizFontFix {
+	margin: 0.4rem;
+	padding: 0.4rem;
+	&__text {
+		font-size: .8rem;
+		padding: .5rem;
+		padding-bottom: 0px;
+	}
+	&__firma {
+		font-size: 1rem;
+	}
+}

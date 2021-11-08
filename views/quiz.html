@@ -50,8 +50,42 @@
 
 	<!-- M A I N -->
 	<main>
+		<section class="selector">
+			<h2 class="selector__title">Choose a Quiz Modality</h2>
+			<div class="selector__imgLeft">
+				<img src="" alt="pokemon">
+			</div>
+			<div class="selector__choice">
+				<h3 class="selector__choice__title">Easy Quiz</h3>>
+				<div class="selector__choice__description">
+					<p class="selector__choice__description__text"></p>
+					<button class="selecto__choice__desctiption__link">
+						<a href="">Take the Quiz!</a>
+					</button>
+					<div class="selector__imgLeft">
+						<img src="" alt="pokemon">
+					</div>
+				</div>
+			</div>
+			<div class="selector__choice">
+				<h2 class="selector__choice__title">Challenge Quiz</h2>
+				<div class="selector__imgRight">
+					<img src="" alt="pokemon">
+				</div>
+				<div class="selector__choice__description">
+					<p class="selector__choice__description__text">Score your best answering all the questions!</p>
+					<button class="selecto__choice__desctiption__link">
+						<a href="">Take the Quiz!</a>
+					</button>
+					<div class="selector__imgRight">
+						<img src="" alt="pokemon">
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<div class="selector">
+
+		<!--div class="selector">
 			<h2 class="selector__title">Elige una modalidad:</h2>
 			<div class="selector__choices">
 				<div class="selector__container">
@@ -84,20 +118,20 @@
 					<p>Todo va a estar bien!</p>
 				</div>
 			</div>
-		</div>
+		</div-->
 		<!-- asider -->
-		<asidel class="asider">
+		<aside class="asider">
 			<div class="asider__pokedex">
 				<img class="asider__pokedex__img" src="../resources/img/pokedex.png" alt="pokedex">
 			</div>
-			<div class="asider__text">
-				<p class="asider__text__p">A personal project for <a href="https://www.coderhouse.com/">CoderHouse's</a> web development course</p>
-				<p class="asider__text__firma">by RGW</p>		
+			<div class="asider__text quizFontFix">
+				<p class="asider__text__p quizFontFix__text">A personal project for <a href="https://www.coderhouse.com/">CoderHouse's</a> web development course</p>
+				<p class="asider__text__firma quizFontFix__firma">by RGW</p>		
 			</div>
 			<div class="asider__logo">
 				<img class="asider__logo__img" src="../resources/img/footer_logo.png" alt="asidel logo">
 			</div>
-		</asidel>
+		</aside>
 		<!-- fin aside -->	
 
 		<!-- EASY QUIZ -->
@@ -143,9 +177,9 @@
 			<div class="asidel__logo">
 				<img class="asidel__logo__img" src="../resources/img/footer_logo.png" alt="asidel logo">
 			</div>
-			<div class="asidel__text">
-				<p class="asidel__text__p">Many thanks to <a href="https://pokeapi.co/">PokeApi</a> for their amazing work</p>
-				<p class="asidel__text__firma">by RGW</p>		
+			<div class="asidel__text quizFontFix">
+				<p class="asidel__text__p quizFontFix__text">Many thanks to <a href="https://pokeapi.co/">PokeApi</a> for their amazing work</p>
+				<p class="asidel__text__firma quizFontFix__firma">by RGW</p>		
 			</div>
 
 			<div class="asidel__pokedex">
@@ -157,33 +191,33 @@
 		<!-- CHALLENGE -->
 		<h2 class="quiz_headers">Challenge</h2>
 		<section class="sect form_container challenge_form">
-			<form class="contact_form" action="" method="POST">
-				<fieldset class="contact_form__field">
-					<legend class="contact_form__title"><h2>Quiz</h2></legend>
-					<div class="contact_form__form_section">
+			<form class="contactForm" action="" method="POST">
+				<fieldset class="contactForm__field">
+					<legend class="contactForm__title"><h2>Quiz</h2></legend>
+					<div class="contactForm__formSection">
 						<label class="challenge_label" for="name">¿Cómo se llama la evolución de Mankey?</label>
-						<input class="contact_form__form_section__input" id="name" type="text" name="name" maxlength="30" required>
+						<input class="contactForm__formSection__input" id="name" type="text" name="name" maxlength="30" required>
 					</div>
-					<div class="contact_form__form_section">
+					<div class="contactForm__formSection">
 						<label class="challenge_label"for="apellido">¿Cuántas evoluciones tiene Machamp?</label>
-						<input class="contact_form__form_section__input" id="apellido" type="text" name="apellido" maxlength="30">
+						<input class="contactForm__formSection__input" id="apellido" type="text" name="apellido" maxlength="30">
 					</div>
-					<div class="contact_form__form_section">
+					<div class="contactForm__formSection">
 						<label class="challenge_label"for="email">¿Quiénes atienden en los centros de cuidado pokemon?</label>
-						<input class="contact_form__form_section__input" id="email" type="email" name="email" maxlength="50" required>
+						<input class="contactForm__formSection__input" id="email" type="email" name="email" maxlength="50" required>
 					</div>
-					<div class="contact_form__form_section">
+					<div class="contactForm__formSection">
 						<label class="challenge_label"for="tres_pokemons">Cuál de estos pokemon es de tipo agua</label>
-						<select class="contact_form__form_section__input id="tres_pokemons" name="pokemon">
+						<select class="contactForm__formSection__input id="tres_pokemons" name="pokemon">
 							<option value="bulbasaur">Bulbasaur</option>
 							<option value="charmander">Charmander</option>
 							<option value="Squirtle">Squirtle</option>
 						</select>
 					</div>
 				</fieldset>
-				<div class="form_end_contact">
-					<input class="form_end_contact__input" type="reset" name="reset" value="Reset">
-					<button class="form_end_contact__button" type="submit">Finish</button>
+				<div class="formEnd_contact">
+					<input class="formEnd_contact__input" type="reset" name="reset" value="Reset">
+					<button class="formEnd_contact__button" type="submit">Finish</button>
 				</div>
 			</form>
 		</section>
@@ -223,9 +257,5 @@
 </div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<!--script>
-   AOS.init({disable: 'mobile'});
-</script>
-<script type="text/javascript" src="../js/quiz.js"></script-->
 </body>
 </html>
