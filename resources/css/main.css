@@ -104,35 +104,35 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
-
-/* Fondos para el Body completo */
-html {
+  font-size: 62.5%;
   width: 100%;
   overflow-x: hidden; }
 
+.nightBg {
+  font-size: 100%; }
+
+/* Fondos para el Body completo */
 .homeBg {
   background: url("../img/home_bg.png") no-repeat center center fixed; }
 
-.day_bg {
+.dayBg {
   background: url("../img/day_bg.png") no-repeat center center fixed; }
 
-.night_bg {
+.nightBg {
   background: url("../img/night_bg.png") no-repeat center center fixed; }
 
-.home_bg, .day_bg, .night_bg {
-  font-size: 100%;
+.homeBg, .dayBg, .nightBg {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 /*Color para body */
-.home_background {
+.homeBackground {
   background-color: #d7e9f9;
   /*background: linear-gradient(180deg, #c8a3d5 0%, #091353c2 94%, #091353 100%);*/ }
 
-.sunshine_bg {
+.sunshineBg {
   background: url(../img/home_bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -573,13 +573,13 @@ html {
       font-size: 1.5rem; } }
 
 /* HEADER de QUIZ, ABOUT, POKE y CONTACT */
-.day_header {
+.dayHeader {
   background: linear-gradient(0deg, #409cec 0%, #5facdef7 35%, #0b072bb8 100%);
   box-shadow: 0px 6px 24px #585c86e0;
   border-bottom-right-radius: 11px;
   border-bottom-left-radius: 11px; }
 
-.night_header {
+.nightHeader {
   background: linear-gradient(0deg, #21315259 0%, #125179 35%, #010838 100%);
   border-bottom: 1px solid black;
   box-shadow: 3px 3px 3px #00000063;
