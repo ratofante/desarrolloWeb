@@ -1276,7 +1276,7 @@ font-size y padding del contenedor y textos */
 /* WELCOME */
 .formWelcome {
   width: 300px;
-  margin: 40px 10px; }
+  margin: 40px auto; }
   .formWelcome__up {
     padding: 1rem;
     margin-bottom: 3rem; }
@@ -1485,16 +1485,20 @@ font-size y padding del contenedor y textos */
 
 /* Search Bar Id */
 .searchBar {
+  width: 290px;
   overflow: hidden;
   margin: 2rem 1rem;
   font-family: "Fira Mono", monospace;
   box-shadow: 0px 0px 8px #091353;
-  border-radius: 7px; }
+  border-radius: 7px;
+  margin-right: auto;
+  margin-left: auto; }
   .searchBar__form {
+    width: 290px;
     display: flex;
     align-items: center;
     justify-content: initial;
-    padding: 0.6rem;
+    padding: .3rem;
     background-color: #f5f5ff;
     outline: 7px solid #7271bab5;
     outline-offset: -4px;
@@ -1502,13 +1506,14 @@ font-size y padding del contenedor y textos */
     border: 4px solid #f5f5ff; }
     .searchBar__form__label {
       font-family: "Fira Mono", monospace;
-      margin: 0px .5rem;
+      margin-right: .5rem;
       color: black;
       font-weight: 500; }
     .searchBar__form__input {
-      margin: 0px 1rem 0px 0px;
+      margin: 0px .3rem 0px 0px;
       height: 35px;
-      padding: .3rem; }
+      padding: .3rem;
+      width: 80px; }
     .searchBar__form__container {
       display: flex;
       align-items: center;
@@ -1541,7 +1546,9 @@ font-size y padding del contenedor y textos */
   font-family: "Fira Mono", monospace;
   box-shadow: 0px 0px 8px #091353;
   border-radius: 7px;
+  margin: 2rem auto;
   height: 356px;
+  width: 288px;
   overflow: hidden; }
 
 @keyframes mobileHover {
@@ -1615,7 +1622,9 @@ font-size y padding del contenedor y textos */
   border-radius: 7px;
   padding: 1rem;
   background-color: #309d45c2;
+  margin: 2rem auto;
   height: 356px;
+  width: 288px;
   transition: .8s;
   outline: 7px solid #f5f5ff;
   outline-offset: -4px;
@@ -1670,7 +1679,10 @@ font-size y padding del contenedor y textos */
   margin: 2rem 1rem;
   font-family: "Fira Mono", monospace;
   box-shadow: 0px 0px 8px #091353;
-  border-radius: 7px; }
+  border-radius: 7px;
+  margin: 2rem auto;
+  height: 356px;
+  width: 288px; }
   .evoPath__card {
     overflow: hidden;
     padding: 1rem;
@@ -1733,7 +1745,9 @@ font-size y padding del contenedor y textos */
   border-radius: 7px;
   padding: 1rem;
   background-color: #a566ffc2;
+  margin: 2rem auto;
   height: 356px;
+  width: 288px;
   transition: .8s;
   outline: 7px solid white;
   outline-offset: -4px;
