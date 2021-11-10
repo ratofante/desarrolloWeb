@@ -722,7 +722,7 @@ html {
   animation: wiggle 0.5s infinite; }
 
 /* CLASE SECTION */
-.section {
+.section, .sectionX {
   overflow: hidden;
   margin: 2rem 1rem;
   font-family: "Fira Mono", monospace;
@@ -735,7 +735,7 @@ html {
   text-align: center;
   background-color: #f5f5ff; }
   @media screen and (min-width: 992px) {
-    .section {
+    .section, .sectionX {
       height: 440px; } }
   .section__firstCard {
     width: 100%;
@@ -891,27 +891,27 @@ html {
           padding: .5rem;
           border-radius: 7px;
           margin-right: 1rem; }
-  .section:hover {
+  .section:hover, .sectionX:hover {
     display: block; }
-  .section:hover .section__firstCard {
+  .section:hover .section__firstCard, .sectionX:hover .section__firstCard {
     left: 120vw;
     height: 0%; }
-    .section:hover .section__firstCard h2 {
+    .section:hover .section__firstCard h2, .sectionX:hover .section__firstCard h2 {
       right: 120vw; }
-    .section:hover .section__firstCard__imgRight, .section:hover .section__firstCard__imgLeft {
+    .section:hover .section__firstCard__imgRight, .sectionX:hover .section__firstCard__imgRight, .section:hover .section__firstCard__imgLeft, .sectionX:hover .section__firstCard__imgLeft {
       left: 120vw; }
-    .section:hover .section__firstCard_imgLeft {
+    .section:hover .section__firstCard_imgLeft, .sectionX:hover .section__firstCard_imgLeft {
       right: 120vw; }
-  .section:hover .section__secondCard {
+  .section:hover .section__secondCard, .sectionX:hover .section__secondCard {
     display: flex;
     height: 340px;
     width: 100%;
     right: 0px;
     opacity: 1; }
     @media screen and (min-width: 992px) {
-      .section:hover .section__secondCard {
+      .section:hover .section__secondCard, .sectionX:hover .section__secondCard {
         height: 440px; }
-        .section:hover .section__secondCard__subBlock {
+        .section:hover .section__secondCard__subBlock, .sectionX:hover .section__secondCard__subBlock {
           display: flex;
           flex-flow: column;
           align-items: center;
@@ -925,46 +925,46 @@ html {
           position: relative;
           z-index: 3; } }
     @media screen and (min-width: 992px) and (min-width: 1198px) {
-      .section:hover .section__secondCard__subBlock {
+      .section:hover .section__secondCard__subBlock, .sectionX:hover .section__secondCard__subBlock {
         padding: 1rem 7rem; } }
     @media screen and (min-width: 992px) {
-          .section:hover .section__secondCard__subBlock h3 {
+          .section:hover .section__secondCard__subBlock h3, .sectionX:hover .section__secondCard__subBlock h3 {
             animation-name: showUp;
             animation-duration: 3s; }
-          .section:hover .section__secondCard__subBlock h3.contrast {
+          .section:hover .section__secondCard__subBlock h3.contrast, .sectionX:hover .section__secondCard__subBlock h3.contrast {
             background-color: #f5f5ffbd;
             padding: 1rem;
             border-radius: 7px; }
-          .section:hover .section__secondCard__subBlock__quickSearch {
+          .section:hover .section__secondCard__subBlock__quickSearch, .sectionX:hover .section__secondCard__subBlock__quickSearch {
             background-color: #f5f5ffbd;
             border: 7px;
             display: flex;
             align-items: center;
             padding: .5rem 1rem; }
-            .section:hover .section__secondCard__subBlock__quickSearch label {
+            .section:hover .section__secondCard__subBlock__quickSearch label, .sectionX:hover .section__secondCard__subBlock__quickSearch label {
               font-size: 2rem; }
-            .section:hover .section__secondCard__subBlock__quickSearch input {
+            .section:hover .section__secondCard__subBlock__quickSearch input, .sectionX:hover .section__secondCard__subBlock__quickSearch input {
               font-size: 2rem;
               padding: .5rem;
               text-align: center;
               width: 70px;
               margin: auto 1rem; }
-            .section:hover .section__secondCard__subBlock__quickSearch button {
+            .section:hover .section__secondCard__subBlock__quickSearch button, .sectionX:hover .section__secondCard__subBlock__quickSearch button {
               position: relative;
               padding: .5rem;
               font-size: 2rem;
               border: none;
               background: none;
               font-weight: 700; }
-              .section:hover .section__secondCard__subBlock__quickSearch button div {
+              .section:hover .section__secondCard__subBlock__quickSearch button div, .sectionX:hover .section__secondCard__subBlock__quickSearch button div {
                 position: relative;
                 width: 45px;
                 height: 0;
                 bottom: 18px;
                 left: 21px; }
-                .section:hover .section__secondCard__subBlock__quickSearch button div img {
+                .section:hover .section__secondCard__subBlock__quickSearch button div img, .sectionX:hover .section__secondCard__subBlock__quickSearch button div img {
                   width: 100%; }
-          .section:hover .section__secondCard__subBlock__quiz__header, .section:hover .section__secondCard__subBlock__contact h3 {
+          .section:hover .section__secondCard__subBlock__quiz__header, .sectionX:hover .section__secondCard__subBlock__quiz__header, .section:hover .section__secondCard__subBlock__contact h3, .sectionX:hover .section__secondCard__subBlock__contact h3 {
             color: white;
             font-family: "Lobster Two", cursive;
             font-size: 4rem;
@@ -972,12 +972,12 @@ html {
             animation-duration: 1.25s;
             animation-iteration-count: infinite;
             animation-direction: alternate; }
-          .section:hover .section__secondCard__subBlock__quiz__text, .section:hover .section__secondCard__subBlock__contact p {
+          .section:hover .section__secondCard__subBlock__quiz__text, .sectionX:hover .section__secondCard__subBlock__quiz__text, .section:hover .section__secondCard__subBlock__contact p, .sectionX:hover .section__secondCard__subBlock__contact p {
             color: white;
             font-size: 2rem;
             animation-name: showFromAbove;
             animation-duration: 1s; }
-            .section:hover .section__secondCard__subBlock__quiz__text__enfasis, .section:hover .section__secondCard__subBlock__contact p span {
+            .section:hover .section__secondCard__subBlock__quiz__text__enfasis, .sectionX:hover .section__secondCard__subBlock__quiz__text__enfasis, .section:hover .section__secondCard__subBlock__contact p span, .sectionX:hover .section__secondCard__subBlock__contact p span {
               background-color: #f5f5ffbd;
               border-radius: 7px;
               padding: .5rem;
@@ -986,7 +986,7 @@ html {
               font-weight: 700;
               animation-name: showFromAbove;
               animation-duration: .7s; }
-          .section:hover .section__secondCard__subBlock__jigglyCard p {
+          .section:hover .section__secondCard__subBlock__jigglyCard p, .sectionX:hover .section__secondCard__subBlock__jigglyCard p {
             background-color: #f5f5ffbd;
             border-radius: 7px;
             padding: 1rem;
@@ -995,38 +995,38 @@ html {
             margin: auto;
             animation-name: showup;
             animation-duration: 1s; }
-          .section:hover .section__secondCard__subBlock__jigglyCard div {
+          .section:hover .section__secondCard__subBlock__jigglyCard div, .sectionX:hover .section__secondCard__subBlock__jigglyCard div {
             width: 100px;
             height: 0px;
             position: relative;
             bottom: 37px;
             z-index: 3; }
-            .section:hover .section__secondCard__subBlock__jigglyCard div img {
+            .section:hover .section__secondCard__subBlock__jigglyCard div img, .sectionX:hover .section__secondCard__subBlock__jigglyCard div img {
               width: 100%; }
-          .section:hover .section__secondCard__subBlock ul li {
+          .section:hover .section__secondCard__subBlock ul li, .sectionX:hover .section__secondCard__subBlock ul li {
             position: relative;
             animation-name: showFromRight; }
-          .section:hover .section__secondCard__subBlock ul li:first-child {
+          .section:hover .section__secondCard__subBlock ul li:first-child, .sectionX:hover .section__secondCard__subBlock ul li:first-child {
             animation-duration: .5s; }
-          .section:hover .section__secondCard__subBlock ul li:nth-child(2) {
+          .section:hover .section__secondCard__subBlock ul li:nth-child(2), .sectionX:hover .section__secondCard__subBlock ul li:nth-child(2) {
             animation-duration: .9s; }
-          .section:hover .section__secondCard__subBlock ul li:last-child {
+          .section:hover .section__secondCard__subBlock ul li:last-child, .sectionX:hover .section__secondCard__subBlock ul li:last-child {
             animation-duration: 1.2s; } }
-    .section:hover .section__secondCard__mainBlock {
+    .section:hover .section__secondCard__mainBlock, .sectionX:hover .section__secondCard__mainBlock {
       display: flex;
       height: 340px;
       width: 100%; }
       @media screen and (min-width: 992px) {
-        .section:hover .section__secondCard__mainBlock {
+        .section:hover .section__secondCard__mainBlock, .sectionX:hover .section__secondCard__mainBlock {
           height: 440px;
           width: 50%; } }
-    .section:hover .section__secondCard h2 {
+    .section:hover .section__secondCard h2, .sectionX:hover .section__secondCard h2 {
       display: block;
       z-index: 2; }
-    .section:hover .section__secondCard p {
+    .section:hover .section__secondCard p, .sectionX:hover .section__secondCard p {
       display: block;
       z-index: 2; }
-    .section:hover .section__secondCard__img {
+    .section:hover .section__secondCard__img, .sectionX:hover .section__secondCard__img {
       display: block; }
 
 /* BG alternativos para cada sección Variables */
@@ -1945,3 +1945,41 @@ font-size y padding del contenedor y textos */
         transition-duration: .3s;
         font-size: 1.2rem;
         letter-spacing: 2px; }
+
+.sectionX {
+  background: none; }
+
+/* corrección para las Cards en sections */
+.about__first {
+  background-color: #389ee9b8; }
+  .about__first h2 {
+    padding: 2rem;
+    font-size: 2rem; }
+  .about__first__imgLeft {
+    left: -139px; }
+
+.only__first {
+  background-color: #00600eb8; }
+  .only__first h2 {
+    padding: 2rem;
+    font-size: 2rem; }
+
+.what__first {
+  background-color: #969b20b8; }
+  .what__first h2 {
+    padding: 2rem;
+    font-size: 2rem; }
+  .what__first__imgLeft {
+    bottom: 178px;
+    left: -35px; }
+
+.grow__first {
+  background-color: #935a0bb8; }
+  .grow__first h2 {
+    padding: 2rem;
+    font-size: 2rem; }
+  .grow__first__imgLeft {
+    bottom: 165px;
+    left: -36px; }
+
+/* about Cards Colors */

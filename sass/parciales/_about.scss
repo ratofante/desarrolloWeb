@@ -1,0 +1,60 @@
+.sectionX {
+    @extend .section;
+    background: none;
+}
+
+/* corrección para las Cards en sections */
+@mixin aboutTitles {
+    padding: 2rem;
+    font-size: 2rem;
+}
+.about {
+    &__first {
+        background-color: #389ee9b8;
+        & h2 {
+           @include aboutTitles; 
+        }
+        &__imgLeft {
+            left: -139px;
+        }
+    }
+}
+.only {
+    &__first {
+        background-color: #00600eb8;
+        & h2 {
+            @include aboutTitles; 
+        }
+        &__imgRight {
+
+        }
+    }
+}
+.what {
+    &__first {
+        background-color: #969b20b8;
+        & h2 {
+            @include aboutTitles; 
+        }
+        &__imgLeft {
+            bottom: 178px;
+            left: -35px;
+        }
+    }
+}
+.grow {
+    &__first {
+        background-color: #935a0bb8;
+        & h2 {
+            @include aboutTitles; 
+        }
+        &__imgLeft {
+            bottom: 165px;
+            left: -36px;
+        }
+    }
+}
+
+
+
+/* about Cards Colors */
