@@ -12,7 +12,11 @@ $mobileWidth: 288px;
 	padding: .2rem;
 	border-bottom:2px solid;
 }
+@mixin cardOutlines {
+	outline: 7px solid $pokedex2bg;
+	outline-offset: -4px;
 
+}
 /* Welcome */
 
 .pokeguide {
@@ -95,10 +99,10 @@ $mobileWidth: 288px;
 		justify-content: initial;
 		padding: .3rem;
 		background-color: $pokedex2bg;
-		outline: 7px solid $pokedexBg;
-		outline-offset: -4px;
-		outline-style: auto;
+		@include cardOutlines;
+		outline-color: $pokedexBg;
 		border: 4px solid $pokedex2bg;
+		border-radius: $borderRadius;
 		&__label {
 			font-family: $normal;
 			margin-right: .5rem;
@@ -167,9 +171,7 @@ $mobileWidth: 288px;
 		background-color: $pokedexBg;
 		height: $mobileHeight;
 		transition: .8s;
-		outline: 7px solid $pokedex2bg;
-    	outline-offset: -4px;
-    	outline-style: auto;
+		@include cardOutlines;
 		&__title {
 			@include pokedexTitles;
 			border-color: $pokedex2bg;
@@ -189,9 +191,7 @@ $mobileWidth: 288px;
 		background-color: $pokedex2bg;
 		height: $mobileHeight;
 		transition: .8s;
-		outline: 7px solid $pokedexBg;
-    	outline-offset: -4px;
-    	outline-style: auto;
+		@include cardOutlines;
 		&__title {
 			@extend .pokecard__mainCard__title;
 			color: $pokedexBg;
@@ -229,10 +229,9 @@ $mobileWidth: 288px;
 	height: $mobileHeight;
 	width: $mobileWidth;
 	transition: .8s;
-	outline: 7px solid $secColor;
-    outline-offset: -4px;
-    outline-style: auto;
+	@include cardOutlines;
 	&__card {
+		height: 332px;
 		padding: 1rem;
 		&__title {
 			@include pokedexTitles;
@@ -242,6 +241,7 @@ $mobileWidth: 288px;
 			$mobileWidth: 224px;
 			width: $mobileWidth;
 			overflow: hidden;
+			margin-bottom: 1rem;
 			transition: .8s;
 			&__slide {
 				@keyframes moveLeft {
@@ -258,14 +258,14 @@ $mobileWidth: 288px;
 					color: $mainColor;
 					background-color: $secColor;
 					padding: 1rem;
-					margin-bottom: 1rem;
+					
 				}
 				&__text {
 					width: $mobileWidth;
 					text-align: center;
 					color: $secColor;
 					padding: 1rem;
-					margin-bottom: 1rem;
+					
 					font-weight: 700;
     				letter-spacing: 5px;
 				}
@@ -292,9 +292,7 @@ $mobileWidth: 288px;
 		background-color: #180e58d6;
 		height: $mobileHeight;
 		transition: .8s;
-		outline: 7px solid $secColor;
-		outline-offset: -4px;
-		outline-style: auto;
+		@include cardOutlines;
 		&__title {
 			@include pokedexTitles;
 			position: relative;
@@ -352,9 +350,7 @@ $mobileWidth: 288px;
 	height: $mobileHeight;
 	width: $mobileWidth;
 	transition: .8s;
-	outline: 7px solid $secColor;
-    outline-offset: -4px;
-    outline-style: auto;
+	@include cardOutlines;
 	&__title {
 		@include pokedexTitles;
 		color: $secColor;

@@ -1500,10 +1500,11 @@ font-size y padding del contenedor y textos */
     justify-content: initial;
     padding: .3rem;
     background-color: #f5f5ff;
-    outline: 7px solid #7271bab5;
+    outline: 7px solid #f5f5ff;
     outline-offset: -4px;
-    outline-style: auto;
-    border: 4px solid #f5f5ff; }
+    outline-color: #7271bab5;
+    border: 4px solid #f5f5ff;
+    border-radius: 7px; }
     .searchBar__form__label {
       font-family: "Fira Mono", monospace;
       margin-right: .5rem;
@@ -1564,8 +1565,7 @@ font-size y padding del contenedor y textos */
     height: 356px;
     transition: .8s;
     outline: 7px solid #f5f5ff;
-    outline-offset: -4px;
-    outline-style: auto; }
+    outline-offset: -4px; }
     .pokecard__mainCard__title, .pokecard__info__title {
       font-family: "Lobster Two", cursive;
       text-align: left;
@@ -1588,9 +1588,8 @@ font-size y padding del contenedor y textos */
     background-color: #f5f5ff;
     height: 356px;
     transition: .8s;
-    outline: 7px solid #7271bab5;
-    outline-offset: -4px;
-    outline-style: auto; }
+    outline: 7px solid #f5f5ff;
+    outline-offset: -4px; }
     .pokecard__info__title {
       color: #7271bab5;
       border-color: #7271bab5; }
@@ -1627,9 +1626,9 @@ font-size y padding del contenedor y textos */
   width: 288px;
   transition: .8s;
   outline: 7px solid #f5f5ff;
-  outline-offset: -4px;
-  outline-style: auto; }
+  outline-offset: -4px; }
   .pokeAnexo__card {
+    height: 332px;
     padding: 1rem; }
     .pokeAnexo__card__title {
       font-family: "Lobster Two", cursive;
@@ -1642,6 +1641,7 @@ font-size y padding del contenedor y textos */
     .pokeAnexo__card__slider {
       width: 224px;
       overflow: hidden;
+      margin-bottom: 1rem;
       transition: .8s; }
       .pokeAnexo__card__slider__slide {
         position: relative;
@@ -1659,14 +1659,12 @@ font-size y padding del contenedor y textos */
           text-align: center;
           color: #309d45c2;
           background-color: #f5f5ff;
-          padding: 1rem;
-          margin-bottom: 1rem; }
+          padding: 1rem; }
         .pokeAnexo__card__slider__slide__text {
           width: 224px;
           text-align: center;
           color: #f5f5ff;
           padding: 1rem;
-          margin-bottom: 1rem;
           font-weight: 700;
           letter-spacing: 5px; }
         .pokeAnexo__card__slider__slide:hover {
@@ -1689,9 +1687,8 @@ font-size y padding del contenedor y textos */
     background-color: #180e58d6;
     height: 356px;
     transition: .8s;
-    outline: 7px solid white;
-    outline-offset: -4px;
-    outline-style: auto; }
+    outline: 7px solid #f5f5ff;
+    outline-offset: -4px; }
     .evoPath__card__title {
       font-family: "Lobster Two", cursive;
       text-align: left;
@@ -1749,9 +1746,8 @@ font-size y padding del contenedor y textos */
   height: 356px;
   width: 288px;
   transition: .8s;
-  outline: 7px solid white;
-  outline-offset: -4px;
-  outline-style: auto; }
+  outline: 7px solid #f5f5ff;
+  outline-offset: -4px; }
   .moveList__title {
     font-family: "Lobster Two", cursive;
     text-align: left;
@@ -1971,6 +1967,17 @@ font-size y padding del contenedor y textos */
     font-size: 2rem; }
   .about__first__imgLeft {
     left: -139px; }
+
+.about__second, .only__second, .what__second, .grow__second {
+  height: 340px; }
+  .about__second__mainBlock, .only__second__mainBlock, .what__second__mainBlock, .grow__second__mainBlock {
+    padding: 1rem; }
+    .about__second__mainBlock__title, .only__second__mainBlock__title, .what__second__mainBlock__title, .grow__second__mainBlock__title {
+      font-family: "Lobster Two", cursive; }
+    .about__second__mainBlock__text, .only__second__mainBlock__text, .what__second__mainBlock__text, .grow__second__mainBlock__text {
+      font-family: "Fira Mono", monospace; }
+  .about__second__subBlock {
+    padding: 1rem; }
 
 .only__first {
   background-color: #00600eb8; }
