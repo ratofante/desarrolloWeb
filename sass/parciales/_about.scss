@@ -10,7 +10,7 @@
 }
 .about {
     &__first {
-        background-color: #389ee9b8;
+        background-color: #389ee9e6;
         & h2 {
            @include aboutTitles; 
         }
@@ -23,10 +23,30 @@
         &__mainBlock {
             padding: 1rem;
             &__title {
+                position: relative;
                 font-family: $title2;
+                font-size: 2rem;
+                margin-bottom: 1rem;
             }
+            & p {
+                font-size: 1.2rem;
+            } /*algo con la cascada me toma otro valor */
             &__text {
+                position: relative;
                 font-family: $normal;
+                background-color: white;
+                border-radius: 7px;
+                padding: 2rem 0.5rem;
+                height: 200px;
+            }
+            &__img {
+                position: relative;
+                width: 80px;
+                height: 0px;
+                align-self: baseline;
+                bottom: 40px;
+                z-index: 2;
+                img {width:100%;}
             }
         }
         &__subBlock {
@@ -36,7 +56,7 @@
 }
 .only {
     &__first {
-        background-color: #00600eb8;
+        background-color: #00600ee6;
         & h2 {
             @include aboutTitles; 
         }
@@ -46,6 +66,7 @@
     }
     &__second {
         @extend .about__second;
+        background-color: #ddfddd;
         &__mainBlock{
             @extend .about__second__mainBlock;
             &__title {
@@ -54,15 +75,20 @@
             &__text {
                 @extend .about__second__mainBlock__text;
             }
+            &__img {
+                @extend .about__second__mainBlock__img;
+                align-self: end;
+                & img {width: 100%;}
+            }
         }
         &__subBlock {
-
+            
         }
     }
 }
 .what {
     &__first {
-        background-color: #969b20b8;
+        background-color: #9f8663e6;
         & h2 {
             @include aboutTitles; 
         }
@@ -73,6 +99,7 @@
     }
     &__second {
         @extend .about__second;
+        background-color: #ccffee;
         &__mainBlock{
             @extend .about__second__mainBlock;
             &__title {
@@ -80,6 +107,11 @@
             }
             &__text {
                 @extend .about__second__mainBlock__text;
+            }
+            &__img {
+                @extend .about__second__mainBlock__img;
+                align-self: baseline;
+                & img {width: 100%;}
             }
         }
         &__subBlock {
@@ -89,7 +121,7 @@
 }
 .grow {
     &__first {
-        background-color: #935a0bb8;
+        background-color: #9b8260e6;
         & h2 {
             @include aboutTitles; 
         }
@@ -100,6 +132,7 @@
     }
     &__second {
         @extend .about__second;
+        background-color: #b9ab9b;
         &__mainBlock{
             @extend .about__second__mainBlock;
             &__title {
@@ -107,6 +140,12 @@
             }
             &__text {
                 @extend .about__second__mainBlock__text;
+            }
+            &__img {
+                @extend .about__second__mainBlock__img;
+                align-self: auto;
+                bottom: 47px;
+                & img {width: 100%;}
             }
         }
         &__subBlock {

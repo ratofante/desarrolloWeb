@@ -1024,7 +1024,8 @@ html {
       display: block;
       z-index: 2; }
     .section:hover .section__secondCard p, .sectionX:hover .section__secondCard p {
-      display: block;
+      display: flex;
+      align-items: center;
       z-index: 2; }
     .section:hover .section__secondCard__img, .sectionX:hover .section__secondCard__img {
       display: block; }
@@ -1105,7 +1106,7 @@ html {
     justify-content: space-around;
     width: auto;
     min-width: 190px;
-    max-width: 90%;
+    width: 100%;
     background-color: #9D84B7;
     background-color: #adadad;
     margin: .7rem;
@@ -1115,8 +1116,7 @@ html {
       .asidel__text, .asider__text {
         display: flex;
         flex-flow: column;
-        justify-content: center;
-        max-width: 50%; } }
+        justify-content: center; } }
     @media screen and (min-width: 992px) {
       .asidel__text, .asider__text {
         width: 100%;
@@ -1130,7 +1130,7 @@ html {
         margin: .6rem; } }
     .asidel__text__p, .asider__text__p {
       color: #091353;
-      width: 200px;
+      min-width: 200px;
       height: 63px;
       font-size: 1.3rem;
       padding: 1rem;
@@ -1149,7 +1149,8 @@ html {
           font-size: 1.7rem; } }
       @media screen and (min-width: 1198px) {
         .asidel__text__p, .asider__text__p {
-          font-size: 2rem; } }
+          font-size: 2rem;
+          width: 750px; } }
     .asidel__text__firma, .asider__text__firma {
       font-family: "VT323", monospace;
       text-align: right;
@@ -1277,8 +1278,10 @@ font-size y padding del contenedor y textos */
 .formWelcome {
   width: 300px;
   margin: 40px auto; }
+  @media screen and (min-width: 370px) {
+    .formWelcome {
+      width: 370px; } }
   .formWelcome__up {
-    padding: 1rem;
     margin-bottom: 3rem; }
     .formWelcome__up__title {
       font-family: "Lobster Two", cursive;
@@ -1286,6 +1289,9 @@ font-size y padding del contenedor y textos */
       font-size: 1.6rem;
       border-bottom: 2px solid white;
       margin-bottom: 4rem; }
+      @media screen and (min-width: 370px) {
+        .formWelcome__up__title {
+          text-align: center; } }
     .formWelcome__up__info {
       display: flex;
       flex-flow: row; }
@@ -1296,6 +1302,9 @@ font-size y padding del contenedor y textos */
       .formWelcome__up__info__div {
         flex-flow: column;
         margin-top: 10px; }
+        @media screen and (min-width: 370px) {
+          .formWelcome__up__info__div {
+            margin: 10px auto 0px 25px; } }
         .formWelcome__up__info__div__text {
           font-family: "VT323", monospace;
           color: white; }
@@ -1309,56 +1318,64 @@ font-size y padding del contenedor y textos */
           .formWelcome__up__info__div__text:last-child {
             text-align: left;
             margin-top: 9px; }
-  .formWelcome__down {
-    padding: 1rem; }
-    .formWelcome__down__imgRow, .formWelcome__down__imgRowDown {
-      margin: 1rem 0px 4rem 0px;
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      border-top: 1px solid white;
-      border-bottom: 1px solid white; }
-      .formWelcome__down__imgRow img, .formWelcome__down__imgRowDown img {
-        width: 18%; }
-    .formWelcome__down__imgRowDown {
-      margin-top: 7rem; }
-    .formWelcome__down__title {
-      font-family: "Lobster Two", cursive;
+  .formWelcome__down__imgRow, .formWelcome__down__imgRowDown {
+    width: 100%;
+    margin: 1rem 0px 4rem 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; }
+    .formWelcome__down__imgRow img, .formWelcome__down__imgRowDown img {
+      width: 18%; }
+  .formWelcome__down__imgRowDown {
+    margin-top: 7rem; }
+  .formWelcome__down__title {
+    font-family: "Lobster Two", cursive;
+    color: white;
+    text-align: left;
+    margin: 1rem 0px 3rem 0px;
+    font-size: 1.4rem; }
+    @media screen and (min-width: 370px) {
+      .formWelcome__down__title {
+        text-align: center; } }
+  .formWelcome__down__text {
+    color: white;
+    text-align: left;
+    font-family: "VT323", monospace;
+    font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
+    line-height: 2rem; }
+    @media screen and (min-width: 370px) {
+      .formWelcome__down__text {
+        text-align: center; } }
+  .formWelcome__down div.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; }
+  .formWelcome__down__button {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #ffffff00;
+    padding: 0.3rem;
+    border-radius: 7px; }
+    @media screen and (min-width: 370px) {
+      .formWelcome__down__button {
+        margin-top: 45px; } }
+    .formWelcome__down__button__link {
+      display: inline;
+      text-decoration: none;
       color: white;
-      text-align: left;
-      margin: 1rem 0px 3rem 0px;
-      font-size: 1.4rem; }
-    .formWelcome__down__text {
-      color: white;
-      text-align: left;
-      font-family: "VT323", monospace;
-      font-size: 1.2rem;
-      width: 80%;
-      margin: auto;
-      line-height: 2rem; }
-    .formWelcome__down div.buttonContainer {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem; }
-    .formWelcome__down__button {
-      float: right;
+      margin-right: .3rem; }
+    .formWelcome__down__button__img {
       display: flex;
       align-items: center;
-      margin-top: 1rem;
-      background-color: #ffffff00;
-      padding: 0.3rem;
-      border-radius: 7px; }
-      .formWelcome__down__button__link {
-        display: inline;
-        text-decoration: none;
-        color: white;
-        margin-right: .3rem; }
-      .formWelcome__down__button__img {
-        display: flex;
-        align-items: center;
-        width: 20px; }
-        .formWelcome__down__button__img img {
-          width: 100%; }
+      width: 20px; }
+      .formWelcome__down__button__img img {
+        width: 100%; }
 
 #formJump {
   position: relative;
@@ -1961,7 +1978,7 @@ font-size y padding del contenedor y textos */
 
 /* corrección para las Cards en sections */
 .about__first {
-  background-color: #389ee9b8; }
+  background-color: #389ee9e6; }
   .about__first h2 {
     padding: 2rem;
     font-size: 2rem; }
@@ -1971,22 +1988,49 @@ font-size y padding del contenedor y textos */
 .about__second, .only__second, .what__second, .grow__second {
   height: 340px; }
   .about__second__mainBlock, .only__second__mainBlock, .what__second__mainBlock, .grow__second__mainBlock {
-    padding: 1rem; }
+    padding: 1rem;
+    /*algo con la cascada me toma otro valor */ }
     .about__second__mainBlock__title, .only__second__mainBlock__title, .what__second__mainBlock__title, .grow__second__mainBlock__title {
-      font-family: "Lobster Two", cursive; }
+      position: relative;
+      font-family: "Lobster Two", cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    .about__second__mainBlock p, .only__second__mainBlock p, .what__second__mainBlock p, .grow__second__mainBlock p {
+      font-size: 1.2rem; }
     .about__second__mainBlock__text, .only__second__mainBlock__text, .what__second__mainBlock__text, .grow__second__mainBlock__text {
-      font-family: "Fira Mono", monospace; }
+      position: relative;
+      font-family: "Fira Mono", monospace;
+      background-color: white;
+      border-radius: 7px;
+      padding: 2rem 0.5rem;
+      height: 200px; }
+    .about__second__mainBlock__img, .only__second__mainBlock__img, .what__second__mainBlock__img, .grow__second__mainBlock__img {
+      position: relative;
+      width: 80px;
+      height: 0px;
+      align-self: baseline;
+      bottom: 40px;
+      z-index: 2; }
+      .about__second__mainBlock__img img, .only__second__mainBlock__img img, .what__second__mainBlock__img img, .grow__second__mainBlock__img img {
+        width: 100%; }
   .about__second__subBlock {
     padding: 1rem; }
 
 .only__first {
-  background-color: #00600eb8; }
+  background-color: #00600ee6; }
   .only__first h2 {
     padding: 2rem;
     font-size: 2rem; }
 
+.only__second {
+  background-color: #ddfddd; }
+  .only__second__mainBlock__img {
+    align-self: end; }
+    .only__second__mainBlock__img img {
+      width: 100%; }
+
 .what__first {
-  background-color: #969b20b8; }
+  background-color: #9f8663e6; }
   .what__first h2 {
     padding: 2rem;
     font-size: 2rem; }
@@ -1994,13 +2038,28 @@ font-size y padding del contenedor y textos */
     bottom: 178px;
     left: -35px; }
 
+.what__second {
+  background-color: #ccffee; }
+  .what__second__mainBlock__img {
+    align-self: baseline; }
+    .what__second__mainBlock__img img {
+      width: 100%; }
+
 .grow__first {
-  background-color: #935a0bb8; }
+  background-color: #9b8260e6; }
   .grow__first h2 {
     padding: 2rem;
     font-size: 2rem; }
   .grow__first__imgLeft {
     bottom: 165px;
     left: -36px; }
+
+.grow__second {
+  background-color: #b9ab9b; }
+  .grow__second__mainBlock__img {
+    align-self: auto;
+    bottom: 47px; }
+    .grow__second__mainBlock__img img {
+      width: 100%; }
 
 /* about Cards Colors */

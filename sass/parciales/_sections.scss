@@ -145,7 +145,7 @@ $goOut: 120vw;
 				font-size: 5.5rem;
 			}
 		}
-		& p{	
+		& p {	
 			display:none;
 			font-size: 1.5rem;
 			@include tablet {
@@ -383,7 +383,8 @@ $goOut: 120vw;
 			z-index: 2;
 		}
 		& p {
-			display: block;
+			display: flex;
+			align-items: center;
 			z-index: 2;
 		}
 		&__img {
