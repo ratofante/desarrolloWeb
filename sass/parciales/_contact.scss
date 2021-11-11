@@ -91,6 +91,7 @@
 			line-height: 2rem;
 			@include mediumMobile {
 				text-align: center;
+				margin-bottom:40px;
 			}
 		}
 		& div.buttonContainer {
@@ -102,12 +103,12 @@
 			float: right;
 			display: flex;
 			align-items: center;
-			margin-top: 10px;
 			background-color: #ffffff00;
     		padding: 0.3rem;
     		border-radius: $borderRadius;
 			@include mediumMobile {
-				margin-top: 45px;
+				position: relative;
+    			bottom: 10px;
 			}
 			&__link {
 				display: inline;

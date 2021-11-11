@@ -1234,6 +1234,8 @@ font-size y padding del contenedor y textos */
         box-shadow: 0px -9px 42px #ffffff;
         background-color: #45a7ff4a; } }
     .footer__banner__img {
+      position: relative;
+      top: 4px;
       width: 100%; }
   .footer__pie {
     position: relative;
@@ -1349,7 +1351,8 @@ font-size y padding del contenedor y textos */
     line-height: 2rem; }
     @media screen and (min-width: 370px) {
       .formWelcome__down__text {
-        text-align: center; } }
+        text-align: center;
+        margin-bottom: 40px; } }
   .formWelcome__down div.buttonContainer {
     display: flex;
     justify-content: center;
@@ -1358,13 +1361,13 @@ font-size y padding del contenedor y textos */
     float: right;
     display: flex;
     align-items: center;
-    margin-top: 10px;
     background-color: #ffffff00;
     padding: 0.3rem;
     border-radius: 7px; }
     @media screen and (min-width: 370px) {
       .formWelcome__down__button {
-        margin-top: 45px; } }
+        position: relative;
+        bottom: 10px; } }
     .formWelcome__down__button__link {
       display: inline;
       text-decoration: none;
