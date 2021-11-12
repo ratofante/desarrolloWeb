@@ -1214,8 +1214,14 @@ font-size y padding del contenedor y textos */
     font-size: .8rem;
     padding: .5rem;
     padding-bottom: 0px; }
+    @media screen and (min-width: 992px) {
+      .quizFontFix__text {
+        font-size: 1rem; } }
   .quizFontFix__firma {
     font-size: 1rem; }
+    @media screen and (min-width: 992px) {
+      .quizFontFix__firma {
+        font-size: 1.4rem; } }
 
 .footer {
   width: 100%; }
@@ -1892,8 +1898,8 @@ font-size y padding del contenedor y textos */
       .selector__choice__description__text {
         font-size: .9rem;
         font-family: "Fira Mono", monospace;
-        height: 55px;
-        padding: 1rem;
+        height: 60px;
+        padding: .5rem;
         text-align: center;
         color: white; }
       .selector__choice__description__down {
@@ -1982,13 +1988,33 @@ font-size y padding del contenedor y textos */
   background: none; }
 
 /* corrección para las Cards en sections */
+/* bg color para subblocks, problemas con la cascada */
+#aboutSubBlock {
+  background-color: #4e65c7; }
+
+#onlySubBlock {
+  background-color: #0c4e0f; }
+
+#whatSubBlock {
+  background-color: #0c3d4e; }
+
+#growSubBlock {
+  background-color: #5c698b; }
+
 .about__first {
   background-color: #389ee9e6; }
   .about__first h2 {
     padding: 2rem;
     font-size: 2rem; }
+    @media screen and (min-width: 992px) {
+      .about__first h2 {
+        font-size: 4rem; } }
   .about__first__imgLeft {
     left: -139px; }
+    @media screen and (min-width: 992px) {
+      .about__first__imgLeft {
+        left: -139px;
+        bottom: 80px; } }
 
 .about__second, .only__second, .what__second, .grow__second {
   height: 340px; }
@@ -2000,8 +2026,18 @@ font-size y padding del contenedor y textos */
       font-family: "Lobster Two", cursive;
       font-size: 2rem;
       margin-bottom: 1rem; }
+      @media screen and (min-width: 992px) {
+        .about__second__mainBlock__title, .only__second__mainBlock__title, .what__second__mainBlock__title, .grow__second__mainBlock__title {
+          font-size: 3rem; } }
     .about__second__mainBlock p, .only__second__mainBlock p, .what__second__mainBlock p, .grow__second__mainBlock p {
       font-size: 1.2rem; }
+      @media screen and (min-width: 992px) {
+        .about__second__mainBlock p, .only__second__mainBlock p, .what__second__mainBlock p, .grow__second__mainBlock p {
+          padding: 1rem; } }
+      @media screen and (min-width: 1198px) {
+        .about__second__mainBlock p, .only__second__mainBlock p, .what__second__mainBlock p, .grow__second__mainBlock p {
+          padding: 2rem 2rem;
+          width: 450px; } }
     .about__second__mainBlock__text, .only__second__mainBlock__text, .what__second__mainBlock__text, .grow__second__mainBlock__text {
       position: relative;
       font-family: "Fira Mono", monospace;
@@ -2016,13 +2052,17 @@ font-size y padding del contenedor y textos */
       align-self: baseline;
       bottom: 40px;
       z-index: 2; }
+      @media screen and (min-width: 992px) {
+        .about__second__mainBlock__img, .only__second__mainBlock__img, .what__second__mainBlock__img, .grow__second__mainBlock__img {
+          width: 120px;
+          bottom: 50px; } }
       .about__second__mainBlock__img img, .only__second__mainBlock__img img, .what__second__mainBlock__img img, .grow__second__mainBlock__img img {
         width: 100%; }
-  .about__second__subBlock {
+  .about__second__subBlock, .only__second__subBlock, .what__second__subBlock, .grow__second__subBlock {
     display: none;
     padding: 1rem;
     background-color: green; }
-    .about__second__subBlock #textUp, .about__second__subBlock .about__second__subBlock__textDown {
+    .about__second__subBlock #textUp, .only__second__subBlock #textUp, .what__second__subBlock #textUp, .grow__second__subBlock #textUp, .about__second__subBlock .about__second__subBlock__textDown, .only__second__subBlock .about__second__subBlock__textDown, .what__second__subBlock .about__second__subBlock__textDown, .grow__second__subBlock .about__second__subBlock__textDown, .about__second__subBlock .only__second__subBlock p, .only__second__subBlock .about__second__subBlock p, .only__second__subBlock p, .about__second__subBlock .only__second__subBlock__textDown, .only__second__subBlock .only__second__subBlock__textDown, .what__second__subBlock .only__second__subBlock__textDown, .grow__second__subBlock .only__second__subBlock__textDown, .about__second__subBlock .what__second__subBlock p, .what__second__subBlock .about__second__subBlock p, .what__second__subBlock p, .about__second__subBlock .what__second__subBlock__textDown, .only__second__subBlock .what__second__subBlock__textDown, .what__second__subBlock .what__second__subBlock__textDown, .grow__second__subBlock .what__second__subBlock__textDown, .about__second__subBlock .grow__second__subBlock p, .grow__second__subBlock .about__second__subBlock p, .grow__second__subBlock p, .about__second__subBlock .grow__second__subBlock__textDown, .only__second__subBlock .grow__second__subBlock__textDown, .what__second__subBlock .grow__second__subBlock__textDown, .grow__second__subBlock .grow__second__subBlock__textDown {
       display: block;
       background-color: white;
       border-radius: 7px;
@@ -2030,34 +2070,43 @@ font-size y padding del contenedor y textos */
       padding: 1rem 3rem;
       transition: 1.5s;
       text-align: initial;
-      line-height: 22px; }
-    .about__second__subBlock__img {
-      width: 70%;
-      margin: 2rem auto;
-      transition: 0.5s; }
-      .about__second__subBlock__img img {
-        width: 100%; }
-    .about__second__subBlock__textDown {
-      transition: 2s; }
-  .about__second:hover .about__subBlock, .only__second:hover .about__subBlock, .what__second:hover .about__subBlock, .grow__second:hover .about__subBlock {
-    display: flex; }
-    .about__second:hover .about__subBlock #textUp, .only__second:hover .about__subBlock #textUp, .what__second:hover .about__subBlock #textUp, .grow__second:hover .about__subBlock #textUp, .about__second:hover .about__subBlock .about__second__subBlock__textDown, .only__second:hover .about__subBlock .about__second__subBlock__textDown, .what__second:hover .about__subBlock .about__second__subBlock__textDown, .grow__second:hover .about__subBlock .about__second__subBlock__textDown {
+      line-height: 22px;
       position: relative;
       animation-name: showFromRight;
       animation-duration: .8s; }
-    .about__second:hover .about__subBlock__img, .only__second:hover .about__subBlock__img, .what__second:hover .about__subBlock__img, .grow__second:hover .about__subBlock__img {
-      animation-name: showUp;
-      animation-duration: 3s; }
-    .about__second:hover .about__subBlock__textDown, .only__second:hover .about__subBlock__textDown, .what__second:hover .about__subBlock__textDown, .grow__second:hover .about__subBlock__textDown {
+      @media screen and (min-width: 992px) {
+        .about__second__subBlock #textUp, .only__second__subBlock #textUp, .what__second__subBlock #textUp, .grow__second__subBlock #textUp, .about__second__subBlock .about__second__subBlock__textDown, .only__second__subBlock .about__second__subBlock__textDown, .what__second__subBlock .about__second__subBlock__textDown, .grow__second__subBlock .about__second__subBlock__textDown, .about__second__subBlock .only__second__subBlock p, .only__second__subBlock .about__second__subBlock p, .only__second__subBlock p, .about__second__subBlock .only__second__subBlock__textDown, .only__second__subBlock .only__second__subBlock__textDown, .what__second__subBlock .only__second__subBlock__textDown, .grow__second__subBlock .only__second__subBlock__textDown, .about__second__subBlock .what__second__subBlock p, .what__second__subBlock .about__second__subBlock p, .what__second__subBlock p, .about__second__subBlock .what__second__subBlock__textDown, .only__second__subBlock .what__second__subBlock__textDown, .what__second__subBlock .what__second__subBlock__textDown, .grow__second__subBlock .what__second__subBlock__textDown, .about__second__subBlock .grow__second__subBlock p, .grow__second__subBlock .about__second__subBlock p, .grow__second__subBlock p, .about__second__subBlock .grow__second__subBlock__textDown, .only__second__subBlock .grow__second__subBlock__textDown, .what__second__subBlock .grow__second__subBlock__textDown, .grow__second__subBlock .grow__second__subBlock__textDown {
+          padding: 1rem 2rem; } }
+    .about__second__subBlock__img, .only__second__subBlock__img, .what__second__subBlock__img, .grow__second__subBlock__img {
       position: relative;
+      width: 70%;
+      margin: 2rem auto;
+      transition: 0.5s;
       animation-name: showFromRight;
       animation-duration: 1.2s; }
+      .about__second__subBlock__img img, .only__second__subBlock__img img, .what__second__subBlock__img img, .grow__second__subBlock__img img {
+        position: relative;
+        width: 100%;
+        transition: 0.5s;
+        animation-name: showFromRight;
+        animation-duration: 1.2s; }
+      @media screen and (min-width: 992px) {
+        .about__second__subBlock__img, .only__second__subBlock__img, .what__second__subBlock__img, .grow__second__subBlock__img {
+          margin: .5rem auto; } }
+    .about__second__subBlock__textDown {
+      transition: 2s;
+      animation-duration: 1.5s; }
+  .about__second:hover .about__subBlock, .only__second:hover .about__subBlock, .what__second:hover .about__subBlock, .grow__second:hover .about__subBlock {
+    display: flex; }
 
 .only__first {
   background-color: #00600ee6; }
   .only__first h2 {
     padding: 2rem;
     font-size: 2rem; }
+    @media screen and (min-width: 992px) {
+      .only__first h2 {
+        font-size: 4rem; } }
 
 .only__second {
   background-color: #82bd82; }
@@ -2065,12 +2114,32 @@ font-size y padding del contenedor y textos */
     align-self: end; }
     .only__second__mainBlock__img img {
       width: 100%; }
+  .only__second__subBlock p {
+    animation-duration: .9s;
+    margin-bottom: 2rem; }
+  .only__second__subBlock__img img {
+    position: relative;
+    width: 100%;
+    transition: 0.5s;
+    animation-name: showFromRight;
+    animation-duration: 1.2s; }
+    @media screen and (min-width: 992px) {
+      .only__second__subBlock__img img {
+        margin: .5rem auto; } }
+  .only__second__subBlock__textDown {
+    transition: 2s;
+    animation-duration: 1.5s; }
+  .only__second__subBlock:hover .only__subBlock {
+    display: flex; }
 
 .what__first {
   background-color: #9f8663e6; }
   .what__first h2 {
     padding: 2rem;
     font-size: 2rem; }
+    @media screen and (min-width: 992px) {
+      .what__first h2 {
+        font-size: 4rem; } }
   .what__first__imgLeft {
     bottom: 178px;
     left: -35px; }
@@ -2081,22 +2150,63 @@ font-size y padding del contenedor y textos */
     align-self: baseline; }
     .what__second__mainBlock__img img {
       width: 100%; }
+  .what__second__subBlock p {
+    animation-duration: .9s; }
+  .what__second__subBlock__img img {
+    position: relative;
+    width: 100%;
+    transition: 0.5s;
+    animation-name: showFromRight;
+    animation-duration: 1.2s; }
+    @media screen and (min-width: 992px) {
+      .what__second__subBlock__img img {
+        margin: .5rem auto; } }
+  .what__second__subBlock__textDown {
+    transition: 2s;
+    animation-duration: 1.5s; }
+  .what__second__subBlock:hover .what__subBlock {
+    display: flex; }
 
 .grow__first {
-  background-color: #9b8260e6; }
+  background-color: #2e338fe6; }
   .grow__first h2 {
     padding: 2rem;
     font-size: 2rem; }
+    @media screen and (min-width: 992px) {
+      .grow__first h2 {
+        font-size: 4rem; } }
   .grow__first__imgLeft {
     bottom: 165px;
     left: -36px; }
 
 .grow__second {
-  background-color: #b9ab9b; }
+  background-color: #c5c5c5; }
   .grow__second__mainBlock__img {
     align-self: auto;
     bottom: 47px; }
     .grow__second__mainBlock__img img {
       width: 100%; }
+  .grow__second__subBlock p {
+    animation-duration: .9s; }
+  .grow__second__subBlock__img {
+    position: relative;
+    height: 100px;
+    bottom: 100px;
+    z-index: 2;
+    left: 160px; }
+    .grow__second__subBlock__img img {
+      position: relative;
+      width: 100%;
+      transition: 0.5s;
+      animation-name: showFromRight;
+      animation-duration: 1.2s; }
+      @media screen and (min-width: 992px) {
+        .grow__second__subBlock__img img {
+          margin: .5rem auto; } }
+  .grow__second__subBlock__textDown {
+    transition: 2s;
+    animation-duration: 1.5s; }
+  .grow__second__subBlock:hover .grow__subBlock {
+    display: flex; }
 
 /* about Cards Colors */

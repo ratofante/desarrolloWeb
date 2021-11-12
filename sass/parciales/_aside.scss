@@ -167,8 +167,14 @@ font-size y padding del contenedor y textos */
 		font-size: .8rem;
 		padding: .5rem;
 		padding-bottom: 0px;
+		@include square_pc {
+			font-size: 1rem;
+		}
 	}
 	&__firma {
 		font-size: 1rem;
+		@include square_pc {
+			font-size: 1.4rem;
+		}
 	}
 }
