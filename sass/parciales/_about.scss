@@ -50,7 +50,47 @@
             }
         }
         &__subBlock {
+            display: none;
             padding: 1rem;
+            background-color: green;
+            & #textUp {
+                display: block;
+                background-color: white;
+                border-radius: $borderRadius;
+                font-size: 1rem;
+                padding: 1rem 3rem;
+                transition: $slowTransition;
+                text-align: initial;
+                line-height: 22px;
+            }
+            &__img {
+                width: 70%;
+                margin: 2rem auto;
+                transition: $mediumTransition;
+                & img {width: 100%;}
+            }
+            &__textDown {
+                @extend #textUp;
+                transition: $verySlowTransition;
+                
+            }
+        }
+        &:hover .about__subBlock {
+            display: flex;
+            & #textUp {
+                position: relative;
+                animation-name: showFromRight;
+                animation-duration: .8s;
+            }
+            &__img {
+                animation-name: showUp;
+				animation-duration: 3s;
+            }
+            &__textDown {
+                position: relative;
+                animation-name: showFromRight;
+                animation-duration: 1.2s;
+            }
         }
     }
 }
@@ -66,7 +106,7 @@
     }
     &__second {
         @extend .about__second;
-        background-color: #ddfddd;
+        background-color: #82bd82;
         &__mainBlock{
             @extend .about__second__mainBlock;
             &__title {

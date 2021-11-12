@@ -100,14 +100,17 @@
 			margin-top: 1rem;
 		}
 		&__button {
+			position: relative;
 			float: right;
+			bottom: 10px;
+			left: 10px;
 			display: flex;
 			align-items: center;
 			background-color: #ffffff00;
     		padding: 0.3rem;
     		border-radius: $borderRadius;
 			@include mediumMobile {
-				position: relative;
+				
     			bottom: 10px;
 			}
 			&__link {

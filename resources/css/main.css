@@ -1358,7 +1358,10 @@ font-size y padding del contenedor y textos */
     justify-content: center;
     margin-top: 1rem; }
   .formWelcome__down__button {
+    position: relative;
     float: right;
+    bottom: 10px;
+    left: 10px;
     display: flex;
     align-items: center;
     background-color: #ffffff00;
@@ -1366,7 +1369,6 @@ font-size y padding del contenedor y textos */
     border-radius: 7px; }
     @media screen and (min-width: 370px) {
       .formWelcome__down__button {
-        position: relative;
         bottom: 10px; } }
     .formWelcome__down__button__link {
       display: inline;
@@ -2017,7 +2019,39 @@ font-size y padding del contenedor y textos */
       .about__second__mainBlock__img img, .only__second__mainBlock__img img, .what__second__mainBlock__img img, .grow__second__mainBlock__img img {
         width: 100%; }
   .about__second__subBlock {
-    padding: 1rem; }
+    display: none;
+    padding: 1rem;
+    background-color: green; }
+    .about__second__subBlock #textUp, .about__second__subBlock .about__second__subBlock__textDown {
+      display: block;
+      background-color: white;
+      border-radius: 7px;
+      font-size: 1rem;
+      padding: 1rem 3rem;
+      transition: 1.5s;
+      text-align: initial;
+      line-height: 22px; }
+    .about__second__subBlock__img {
+      width: 70%;
+      margin: 2rem auto;
+      transition: 0.5s; }
+      .about__second__subBlock__img img {
+        width: 100%; }
+    .about__second__subBlock__textDown {
+      transition: 2s; }
+  .about__second:hover .about__subBlock, .only__second:hover .about__subBlock, .what__second:hover .about__subBlock, .grow__second:hover .about__subBlock {
+    display: flex; }
+    .about__second:hover .about__subBlock #textUp, .only__second:hover .about__subBlock #textUp, .what__second:hover .about__subBlock #textUp, .grow__second:hover .about__subBlock #textUp, .about__second:hover .about__subBlock .about__second__subBlock__textDown, .only__second:hover .about__subBlock .about__second__subBlock__textDown, .what__second:hover .about__subBlock .about__second__subBlock__textDown, .grow__second:hover .about__subBlock .about__second__subBlock__textDown {
+      position: relative;
+      animation-name: showFromRight;
+      animation-duration: .8s; }
+    .about__second:hover .about__subBlock__img, .only__second:hover .about__subBlock__img, .what__second:hover .about__subBlock__img, .grow__second:hover .about__subBlock__img {
+      animation-name: showUp;
+      animation-duration: 3s; }
+    .about__second:hover .about__subBlock__textDown, .only__second:hover .about__subBlock__textDown, .what__second:hover .about__subBlock__textDown, .grow__second:hover .about__subBlock__textDown {
+      position: relative;
+      animation-name: showFromRight;
+      animation-duration: 1.2s; }
 
 .only__first {
   background-color: #00600ee6; }
@@ -2026,7 +2060,7 @@ font-size y padding del contenedor y textos */
     font-size: 2rem; }
 
 .only__second {
-  background-color: #ddfddd; }
+  background-color: #82bd82; }
   .only__second__mainBlock__img {
     align-self: end; }
     .only__second__mainBlock__img img {
