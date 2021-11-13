@@ -27,6 +27,9 @@
         background-color: #389ee9e6;
         & h2 {
            @include aboutTitles; 
+           @include tablet {
+               font-size: 3rem;
+           }
            @include square_pc {
                font-size: 4rem;
            }
@@ -54,6 +57,10 @@
             }
             & p {
                 font-size: 1.2rem;
+                @include tablet {
+                    padding: 2rem 4rem;
+                    width: 460px;
+                }
                 @include square_pc {
                     padding: 1rem;
                 }
@@ -302,10 +309,14 @@
                 z-index: 2;
                 left: 160px;
                 & img {
+                    @keyframes showOak {
+                        0% {left: 120vw;}
+                        100% {left: 160px;}
+                    }
                     position: relative;
                     width: 100%;
                     transition: $mediumTransition;
-                    animation-name: showFromRight;
+                    animation-name: showOak;
                     animation-duration: 1.2s;
                     @include square_pc {
                         margin: .5rem auto;

@@ -17,6 +17,25 @@ $mobileWidth: 288px;
 	outline-offset: -4px;
 
 }
+@mixin displayHelp {
+	@media screen and (min-width: 370px){
+		@content;
+	}
+}
+#bigWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+	
+}
+.flexWrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+}
+
 /* Welcome */
 
 .pokeguide {
@@ -29,11 +48,21 @@ $mobileWidth: 288px;
 	align-items: center;
 	justify-content: center;
 	transition: .4s;
+	@include displayHelp {
+		width: 90%;
+		height: 260px;
+		padding: 1rem;
+	}
+	@include tablet {
+		width: 400px;
+	}
 	&__help {
 		&__title {
 			font-family: $title2;
 			color: white;
 			text-align: center;
+			@include tablet {
+			}
 		}
 	}
 	&__guide	 {
@@ -41,10 +70,18 @@ $mobileWidth: 288px;
 		left: $goOut;
 		height: 0%;
 		transition: .5s;
+		@include displayHelp {
+			left: 0px;
+			height: fit-content;
+			padding: 1rem 2rem;
+		}
 		&__help {
 			$font-family: $title2;
 			text-align: center;
 			font-size: 0px;
+			@include displayHelp {
+				font-size: initial;
+			}
 		}
 		&__hints {
 			& li {
@@ -54,6 +91,10 @@ $mobileWidth: 288px;
 				padding: .5rem;
 				line-height: 0px;
 				font-size: 0px;
+				@include displayHelp {
+					font-size: initial;
+					line-height: initial;
+				}
 			}
 			& li:last-child {
 				padding: 0px;
@@ -61,27 +102,33 @@ $mobileWidth: 288px;
 		}
 	}
 	&:hover {
-		width: 90%;
-		height: 100%;	
+		@include onlyMobile {
+			width: 90%;
+			height: 100%;
+		}	
 	}
 	&:hover .pokeguide__help {
 		&__title {
-			padding-top: 1rem;
+			@include onlyMobile {
+				padding-top: 1rem;
+			}	
 		}
 	}
 	&:hover .pokeguide__guide {
-		height: auto;
-		left: 0px;
-		padding: 1rem 2rem;
-		&__help {
-			font-size: initial;
-		}
-		&__hints {
-			& li {
+		@include onlyMobile {
+			height: auto;
+			left: 0px;
+			padding: 1rem 2rem;
+			&__help {
 				font-size: initial;
-				line-height: initial;
 			}
-		}
+			&__hints {
+				& li {
+					font-size: initial;
+					line-height: initial;
+				}
+			}
+		}	
 	}
 }
 
@@ -92,6 +139,10 @@ $mobileWidth: 288px;
 	@include generalSection;
 	margin-right: auto;
 	margin-left: auto;
+	@include tablet {
+		height: 52px;
+		margin: auto 1rem;
+	}
 	&__form {
 		width: $barWidth;
 		display: flex;
@@ -160,10 +211,16 @@ $mobileWidth: 288px;
 		animation-fill-mode: forwards;
 	}
 	@include generalSection;
-	margin: 2rem auto;
 	height: $mobileHeight;
 	width: $mobileWidth;
 	overflow: hidden;
+	margin: 2rem auto;
+	@include mediumMobile {
+		margin: 3rem;
+	}
+	@include wide_pc {
+		margin: 2rem;
+	}
 	&__mainCard {
 		position: relative;
 		bottom: 0px;
@@ -225,11 +282,17 @@ $mobileWidth: 288px;
 	@include generalSection;
 	padding: 1rem;
 	background-color: $mainColor;
-	margin: 2rem auto;
 	height: $mobileHeight;
 	width: $mobileWidth;
 	transition: .8s;
 	@include cardOutlines;
+	margin: 2rem auto;
+	@include mediumMobile {
+		margin: 3rem;
+	}
+	@include wide_pc {
+		margin: 2rem;
+	}
 	&__card {
 		height: 332px;
 		padding: 1rem;
@@ -283,9 +346,15 @@ $mobileWidth: 288px;
 	$mainColor: #180e58;
 	$secColor: white;
 	@include generalSection;
-	margin: 2rem auto;
 	height: $mobileHeight;
 	width: $mobileWidth;
+	margin: 2rem auto;
+	@include mediumMobile {
+		margin: 3rem;
+	}
+	@include wide_pc {
+		margin: 2rem;
+	}
 	&__card {
 		overflow: hidden;
 		padding: 1rem;
@@ -346,11 +415,17 @@ $mobileWidth: 288px;
 	@include generalSection;
 	padding: 1rem;
 	background-color: $mainColor;
-	margin: 2rem auto;
 	height: $mobileHeight;
 	width: $mobileWidth;
 	transition: .8s;
 	@include cardOutlines;
+	margin: 2rem auto;
+	@include mediumMobile {
+		margin: 3rem;
+	}
+	@include wide_pc {
+		margin: 2rem;
+	}
 	&__title {
 		@include pokedexTitles;
 		color: $secColor;

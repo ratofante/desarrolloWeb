@@ -1,5 +1,16 @@
-/* WELCOME */
+.wideFlex {
+	@include square_pc {
+		display: flex;
+		flex-flow: row-reverse;
+		margin: auto 1rem;
+	}
+	@include wide_pc {
+		max-width: 1440px;
+		margin:1rem auto;
+	}
+}
 
+/* WELCOME */
 .formWelcome {
 	$mainColor: white;
 	$sectionWidth: 300px;
@@ -8,6 +19,15 @@
 	@include mediumMobile {
 		$sectionWidth: 370px;
 		width: $sectionWidth;
+	}
+	@include tablet {
+		width: 600px;
+	}
+	@include square_pc {
+		width: 470px;
+	}
+	@include wide_pc {
+		width: 600px;
 	}
 	&__up {
 		margin-bottom: 3rem;
@@ -20,12 +40,18 @@
 			@include mediumMobile {
 				text-align: center;
 			}
+			@include tablet {
+				font-size: 2.6rem;
+			}
 		}
 		&__info {
 			display: flex;
 			flex-flow: row;
 			&__profile {
 				width: 160px;
+				@include tablet {
+					width: 240px;
+				}
 				& img {width: 100%;}
 			}
 			&__div {
@@ -44,10 +70,18 @@
 						margin-bottom: 9px;
 						padding-bottom: 9px;
 						border-bottom: 1px solid $mainColor;
+						@include tablet {
+							font-size: 1.8rem;
+							width: 258px;
+						}
 					}
 					&:last-child {
 						text-align: left;
 						margin-top: 9px;
+						@include tablet {
+							font-size: 1.3rem;
+							width: 300px;
+						}
 					}
 				}	
 			}
@@ -80,6 +114,9 @@
 			@include mediumMobile {
 				text-align: center;
 			}
+			@include tablet {
+				font-size: 2.3rem;
+			}
 		}
 		&__text {
 			color: $mainColor;
@@ -93,11 +130,18 @@
 				text-align: center;
 				margin-bottom:40px;
 			}
+			@include tablet {
+				font-size: 1.6rem;
+				line-height: 4rem;
+			}
 		}
 		& div.buttonContainer {
 			display: flex;
 			justify-content: center;
 			margin-top: 1rem;
+			@include square_pc {
+				display: none;
+			}
 		}
 		&__button {
 			position: relative;
@@ -113,11 +157,20 @@
 				
     			bottom: 10px;
 			}
+			@include tablet {
+				padding: .5rem;
+			}
+			@include square_pc {
+				display: none;
+			}
 			&__link {
 				display: inline;
 				text-decoration: none;
 				color: $mainColor;
 				margin-right: .3rem;
+				@include tablet {
+					font-size: 1rem;
+				}
 			}
 			&__img {
 				display: flex;
@@ -143,6 +196,9 @@
 	@include tablet {
 		padding: 2rem;
 	}
+	@include wide_pc {
+		margin: 1rem auto;
+	}
 }
 .contactForm {
 	display: flex;
@@ -154,6 +210,15 @@
     @include tablet {
     	max-width: 460px;
     }
+	@include square_pc {
+		width:490px;
+		max-width: 490px;
+	}
+	@include wide_pc {
+		width: 550px;
+		max-width: 550px;
+		margin: auto;
+	}
 	&__field {
 		margin: .2rem;
 		min-width: 278px;

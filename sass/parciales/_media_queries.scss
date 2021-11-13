@@ -4,7 +4,12 @@
 		@content;
 	}
 }
-
+/*Para sacar cosas que solo sean para mobile -pokedex- */
+@mixin onlyMobile {
+	@media screen and (max-width: 435px){
+		@content;
+	}
+}
 @mixin mediumMobile {
 	@media screen and (min-width: $mediumMobile) {
 		@content;

@@ -98,6 +98,7 @@
   98% {
     text-shadow: 1px 1px 13px white; } }
 
+/*Para sacar cosas que solo sean para mobile -pokedex- */
 * {
   margin: 0px;
   padding: 0px;
@@ -685,13 +686,17 @@ html {
     height: 8vh;
     text-decoration: none;
     color: white; }
+    @media screen and (min-width: 766px) {
+      .navflex__link {
+        max-width: 73px; } }
     .navflex__link__wiggler {
       width: 47%;
       max-width: 60px;
       margin: 2px auto; }
       @media screen and (min-width: 766px) {
         .navflex__link__wiggler {
-          width: 52%; } }
+          width: 52%;
+          max-width: 72px; } }
       @media screen and (min-width: 1198px) {
         .navflex__link__wiggler {
           width: 80%; } }
@@ -1210,15 +1215,29 @@ font-size y padding del contenedor y textos */
 .quizFontFix {
   margin: 0.4rem;
   padding: 0.4rem; }
+  @media screen and (min-width: 766px) {
+    .quizFontFix {
+      margin: 1.5rem;
+      flex-flow: row;
+      align-items: center; } }
   .quizFontFix__text {
     font-size: .8rem;
     padding: .5rem;
     padding-bottom: 0px; }
+    @media screen and (min-width: 766px) {
+      .quizFontFix__text {
+        width: 560px;
+        align-self: center;
+        padding: 0px;
+        height: auto; } }
     @media screen and (min-width: 992px) {
       .quizFontFix__text {
         font-size: 1rem; } }
   .quizFontFix__firma {
     font-size: 1rem; }
+    @media screen and (min-width: 766px) {
+      .quizFontFix__firma {
+        width: 90px; } }
     @media screen and (min-width: 992px) {
       .quizFontFix__firma {
         font-size: 1.4rem; } }
@@ -1282,6 +1301,17 @@ font-size y padding del contenedor y textos */
 .footer_dark {
   background-color: #0b1b2a5c; }
 
+@media screen and (min-width: 992px) {
+  .wideFlex {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: auto 1rem; } }
+
+@media screen and (min-width: 1198px) {
+  .wideFlex {
+    max-width: 1440px;
+    margin: 1rem auto; } }
+
 /* WELCOME */
 .formWelcome {
   width: 300px;
@@ -1289,6 +1319,15 @@ font-size y padding del contenedor y textos */
   @media screen and (min-width: 370px) {
     .formWelcome {
       width: 370px; } }
+  @media screen and (min-width: 766px) {
+    .formWelcome {
+      width: 600px; } }
+  @media screen and (min-width: 992px) {
+    .formWelcome {
+      width: 470px; } }
+  @media screen and (min-width: 1198px) {
+    .formWelcome {
+      width: 600px; } }
   .formWelcome__up {
     margin-bottom: 3rem; }
     .formWelcome__up__title {
@@ -1300,11 +1339,17 @@ font-size y padding del contenedor y textos */
       @media screen and (min-width: 370px) {
         .formWelcome__up__title {
           text-align: center; } }
+      @media screen and (min-width: 766px) {
+        .formWelcome__up__title {
+          font-size: 2.6rem; } }
     .formWelcome__up__info {
       display: flex;
       flex-flow: row; }
       .formWelcome__up__info__profile {
         width: 160px; }
+        @media screen and (min-width: 766px) {
+          .formWelcome__up__info__profile {
+            width: 240px; } }
         .formWelcome__up__info__profile img {
           width: 100%; }
       .formWelcome__up__info__div {
@@ -1323,9 +1368,17 @@ font-size y padding del contenedor y textos */
             margin-bottom: 9px;
             padding-bottom: 9px;
             border-bottom: 1px solid white; }
+            @media screen and (min-width: 766px) {
+              .formWelcome__up__info__div__text:first-child {
+                font-size: 1.8rem;
+                width: 258px; } }
           .formWelcome__up__info__div__text:last-child {
             text-align: left;
             margin-top: 9px; }
+            @media screen and (min-width: 766px) {
+              .formWelcome__up__info__div__text:last-child {
+                font-size: 1.3rem;
+                width: 300px; } }
   .formWelcome__down__imgRow, .formWelcome__down__imgRowDown {
     width: 100%;
     margin: 1rem 0px 4rem 0px;
@@ -1347,6 +1400,9 @@ font-size y padding del contenedor y textos */
     @media screen and (min-width: 370px) {
       .formWelcome__down__title {
         text-align: center; } }
+    @media screen and (min-width: 766px) {
+      .formWelcome__down__title {
+        font-size: 2.3rem; } }
   .formWelcome__down__text {
     color: white;
     text-align: left;
@@ -1359,10 +1415,17 @@ font-size y padding del contenedor y textos */
       .formWelcome__down__text {
         text-align: center;
         margin-bottom: 40px; } }
+    @media screen and (min-width: 766px) {
+      .formWelcome__down__text {
+        font-size: 1.6rem;
+        line-height: 4rem; } }
   .formWelcome__down div.buttonContainer {
     display: flex;
     justify-content: center;
     margin-top: 1rem; }
+    @media screen and (min-width: 992px) {
+      .formWelcome__down div.buttonContainer {
+        display: none; } }
   .formWelcome__down__button {
     position: relative;
     float: right;
@@ -1376,11 +1439,20 @@ font-size y padding del contenedor y textos */
     @media screen and (min-width: 370px) {
       .formWelcome__down__button {
         bottom: 10px; } }
+    @media screen and (min-width: 766px) {
+      .formWelcome__down__button {
+        padding: .5rem; } }
+    @media screen and (min-width: 992px) {
+      .formWelcome__down__button {
+        display: none; } }
     .formWelcome__down__button__link {
       display: inline;
       text-decoration: none;
       color: white;
       margin-right: .3rem; }
+      @media screen and (min-width: 766px) {
+        .formWelcome__down__button__link {
+          font-size: 1rem; } }
     .formWelcome__down__button__img {
       display: flex;
       align-items: center;
@@ -1399,6 +1471,9 @@ font-size y padding del contenedor y textos */
   @media screen and (min-width: 766px) {
     .formContainer {
       padding: 2rem; } }
+  @media screen and (min-width: 1198px) {
+    .formContainer {
+      margin: 1rem auto; } }
 
 .contactForm {
   display: flex;
@@ -1410,6 +1485,15 @@ font-size y padding del contenedor y textos */
   @media screen and (min-width: 766px) {
     .contactForm {
       max-width: 460px; } }
+  @media screen and (min-width: 992px) {
+    .contactForm {
+      width: 490px;
+      max-width: 490px; } }
+  @media screen and (min-width: 1198px) {
+    .contactForm {
+      width: 550px;
+      max-width: 550px;
+      margin: auto; } }
   .contactForm__field {
     margin: .2rem;
     min-width: 278px;
@@ -1460,6 +1544,17 @@ font-size y padding del contenedor y textos */
     padding: .3rem; }
 
 /* Generals Pokedex */
+#bigWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center; }
+
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 /* Welcome */
 .pokeguide {
   overflow: hidden;
@@ -1475,6 +1570,14 @@ font-size y padding del contenedor y textos */
   align-items: center;
   justify-content: center;
   transition: .4s; }
+  @media screen and (min-width: 370px) {
+    .pokeguide {
+      width: 90%;
+      height: 260px;
+      padding: 1rem; } }
+  @media screen and (min-width: 766px) {
+    .pokeguide {
+      width: 400px; } }
   .pokeguide__help__title {
     font-family: "Lobster Two", cursive;
     color: white;
@@ -1484,9 +1587,17 @@ font-size y padding del contenedor y textos */
     left: 120vw;
     height: 0%;
     transition: .5s; }
+    @media screen and (min-width: 370px) {
+      .pokeguide__guide {
+        left: 0px;
+        height: fit-content;
+        padding: 1rem 2rem; } }
     .pokeguide__guide__help {
       text-align: center;
       font-size: 0px; }
+      @media screen and (min-width: 370px) {
+        .pokeguide__guide__help {
+          font-size: initial; } }
     .pokeguide__guide__hints li {
       transition: .8s;
       color: white;
@@ -1494,22 +1605,29 @@ font-size y padding del contenedor y textos */
       padding: .5rem;
       line-height: 0px;
       font-size: 0px; }
+      @media screen and (min-width: 370px) {
+        .pokeguide__guide__hints li {
+          font-size: initial;
+          line-height: initial; } }
     .pokeguide__guide__hints li:last-child {
       padding: 0px; }
-  .pokeguide:hover {
-    width: 90%;
-    height: 100%; }
-  .pokeguide:hover .pokeguide__help__title {
-    padding-top: 1rem; }
-  .pokeguide:hover .pokeguide__guide {
-    height: auto;
-    left: 0px;
-    padding: 1rem 2rem; }
-    .pokeguide:hover .pokeguide__guide__help {
-      font-size: initial; }
-    .pokeguide:hover .pokeguide__guide__hints li {
-      font-size: initial;
-      line-height: initial; }
+  @media screen and (max-width: 435px) {
+    .pokeguide:hover {
+      width: 90%;
+      height: 100%; } }
+  @media screen and (max-width: 435px) {
+    .pokeguide:hover .pokeguide__help__title {
+      padding-top: 1rem; } }
+  @media screen and (max-width: 435px) {
+    .pokeguide:hover .pokeguide__guide {
+      height: auto;
+      left: 0px;
+      padding: 1rem 2rem; }
+      .pokeguide:hover .pokeguide__guide__help {
+        font-size: initial; }
+      .pokeguide:hover .pokeguide__guide__hints li {
+        font-size: initial;
+        line-height: initial; } }
 
 /* Search Bar Id */
 .searchBar {
@@ -1521,6 +1639,10 @@ font-size y padding del contenedor y textos */
   border-radius: 7px;
   margin-right: auto;
   margin-left: auto; }
+  @media screen and (min-width: 766px) {
+    .searchBar {
+      height: 52px;
+      margin: auto 1rem; } }
   .searchBar__form {
     width: 290px;
     display: flex;
@@ -1575,16 +1697,22 @@ font-size y padding del contenedor y textos */
   font-family: "Fira Mono", monospace;
   box-shadow: 0px 0px 8px #091353;
   border-radius: 7px;
-  margin: 2rem auto;
   height: 356px;
   width: 288px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 2rem auto; }
 
 @keyframes mobileHover {
   0% {
     bottom: 0px; }
   100% {
     bottom: 356px; } }
+  @media screen and (min-width: 370px) {
+    .pokecard {
+      margin: 3rem; } }
+  @media screen and (min-width: 1198px) {
+    .pokecard {
+      margin: 2rem; } }
   .pokecard__mainCard {
     position: relative;
     bottom: 0px;
@@ -1649,12 +1777,18 @@ font-size y padding del contenedor y textos */
   border-radius: 7px;
   padding: 1rem;
   background-color: #309d45c2;
-  margin: 2rem auto;
   height: 356px;
   width: 288px;
   transition: .8s;
   outline: 7px solid #f5f5ff;
-  outline-offset: -4px; }
+  outline-offset: -4px;
+  margin: 2rem auto; }
+  @media screen and (min-width: 370px) {
+    .pokeAnexo {
+      margin: 3rem; } }
+  @media screen and (min-width: 1198px) {
+    .pokeAnexo {
+      margin: 2rem; } }
   .pokeAnexo__card {
     height: 332px;
     padding: 1rem; }
@@ -1706,9 +1840,15 @@ font-size y padding del contenedor y textos */
   font-family: "Fira Mono", monospace;
   box-shadow: 0px 0px 8px #091353;
   border-radius: 7px;
-  margin: 2rem auto;
   height: 356px;
-  width: 288px; }
+  width: 288px;
+  margin: 2rem auto; }
+  @media screen and (min-width: 370px) {
+    .evoPath {
+      margin: 3rem; } }
+  @media screen and (min-width: 1198px) {
+    .evoPath {
+      margin: 2rem; } }
   .evoPath__card {
     overflow: hidden;
     padding: 1rem;
@@ -1770,12 +1910,18 @@ font-size y padding del contenedor y textos */
   border-radius: 7px;
   padding: 1rem;
   background-color: #a566ffc2;
-  margin: 2rem auto;
   height: 356px;
   width: 288px;
   transition: .8s;
   outline: 7px solid #f5f5ff;
-  outline-offset: -4px; }
+  outline-offset: -4px;
+  margin: 2rem auto; }
+  @media screen and (min-width: 370px) {
+    .moveList {
+      margin: 3rem; } }
+  @media screen and (min-width: 1198px) {
+    .moveList {
+      margin: 2rem; } }
   .moveList__title {
     font-family: "Lobster Two", cursive;
     text-align: left;
@@ -1794,6 +1940,43 @@ font-size y padding del contenedor y textos */
       background-color: #fdfdfd96;
       padding: 0.2rem;
       margin: 0.1rem; }
+
+.flipImg {
+  transform: rotateY(180deg); }
+
+@media screen and (min-width: 766px) {
+  .quizFlexWrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: center; } }
+
+.quizImgLeft {
+  display: none; }
+  .quizImgLeft img {
+    width: 146%;
+    position: relative;
+    z-index: 2;
+    opacity: .8;
+    left: -45px; }
+  @media screen and (min-width: 1198px) {
+    .quizImgLeft {
+      display: block;
+      width: 336px;
+      position: relative; } }
+
+.quizImgRight {
+  display: none; }
+  .quizImgRight img {
+    width: 146%;
+    position: relative;
+    z-index: 2;
+    opacity: .8;
+    right: 100px; }
+  @media screen and (min-width: 766px) {
+    .quizImgRight {
+      display: block;
+      width: 336px;
+      position: relative; } }
 
 .quiz_headers {
   font-size: 3rem;
@@ -1831,6 +2014,11 @@ font-size y padding del contenedor y textos */
   height: fit-content;
   margin-bottom: 80px;
   font-size: "Fira Mono", monospace; }
+  @media screen and (min-width: 766px) {
+    .selector {
+      width: 400px;
+      position: relative;
+      z-index: 3; } }
   .selector__title {
     font-family: "Lobster Two", cursive;
     margin: 2rem auto 2rem auto;
@@ -1949,10 +2137,11 @@ font-size y padding del contenedor y textos */
   @media screen and (min-width: 766px) {
     .quiz {
       flex-flow: column;
-      width: 95%;
+      width: 400px;
       max-width: 680px;
-      margin: auto;
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem;
+      position: relative;
+      z-index: 3; } }
   .quiz__div {
     display: flex;
     align-items: center;
@@ -1961,6 +2150,7 @@ font-size y padding del contenedor y textos */
     border-radius: 8px;
     padding: 1rem;
     height: 100px;
+    width: 100%;
     transition-duration: .3s;
     margin-bottom: 1rem; }
     .quiz__div:last-child {
@@ -1984,6 +2174,17 @@ font-size y padding del contenedor y textos */
         font-size: 1.2rem;
         letter-spacing: 2px; }
 
+@media screen and (min-width: 766px) {
+  #challengeForm {
+    width: 480px;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 200px; } }
+
+@media screen and (min-width: 1198px) {
+  #challengeForm {
+    width: 630px; } }
+
 .sectionX {
   background: none; }
 
@@ -2006,6 +2207,9 @@ font-size y padding del contenedor y textos */
   .about__first h2 {
     padding: 2rem;
     font-size: 2rem; }
+    @media screen and (min-width: 766px) {
+      .about__first h2 {
+        font-size: 3rem; } }
     @media screen and (min-width: 992px) {
       .about__first h2 {
         font-size: 4rem; } }
@@ -2031,6 +2235,10 @@ font-size y padding del contenedor y textos */
           font-size: 3rem; } }
     .about__second__mainBlock p, .only__second__mainBlock p, .what__second__mainBlock p, .grow__second__mainBlock p {
       font-size: 1.2rem; }
+      @media screen and (min-width: 766px) {
+        .about__second__mainBlock p, .only__second__mainBlock p, .what__second__mainBlock p, .grow__second__mainBlock p {
+          padding: 2rem 4rem;
+          width: 460px; } }
       @media screen and (min-width: 992px) {
         .about__second__mainBlock p, .only__second__mainBlock p, .what__second__mainBlock p, .grow__second__mainBlock p {
           padding: 1rem; } }
@@ -2198,8 +2406,14 @@ font-size y padding del contenedor y textos */
       position: relative;
       width: 100%;
       transition: 0.5s;
-      animation-name: showFromRight;
+      animation-name: showOak;
       animation-duration: 1.2s; }
+
+@keyframes showOak {
+  0% {
+    left: 120vw; }
+  100% {
+    left: 160px; } }
       @media screen and (min-width: 992px) {
         .grow__second__subBlock__img img {
           margin: .5rem auto; } }

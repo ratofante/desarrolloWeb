@@ -163,16 +163,30 @@ font-size y padding del contenedor y textos */
 .quizFontFix {
 	margin: 0.4rem;
 	padding: 0.4rem;
+	@include tablet {
+		margin: 1.5rem;
+		flex-flow:row;
+		align-items: center;
+	}
 	&__text {
 		font-size: .8rem;
 		padding: .5rem;
 		padding-bottom: 0px;
+		@include tablet {
+			width: 560px;
+			align-self: center;
+			padding: 0px;
+			height: auto;
+		}
 		@include square_pc {
 			font-size: 1rem;
 		}
 	}
 	&__firma {
 		font-size: 1rem;
+		@include tablet {
+			width: 90px;
+		}
 		@include square_pc {
 			font-size: 1.4rem;
 		}

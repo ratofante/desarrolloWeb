@@ -126,12 +126,16 @@
 		height: 8vh;
 		text-decoration: none;
 		color: white;
+		@include tablet {
+			max-width: 73px;
+		}
 		&__wiggler {
 			width: 47%;
 			max-width: 60px;
 			margin: 2px auto;
 			@include tablet {
 				width: 52%; 
+				max-width: 72px;
 			}
 			@include wide_pc {
 				width: 80%;
