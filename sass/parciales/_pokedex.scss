@@ -142,6 +142,9 @@ $mobileWidth: 288px;
 	@include generalSection;
 	margin-right: auto;
 	margin-left: auto;
+	@include mediumMobile {
+		width: 310px;
+	}
 	@include tablet {
 		height: 52px;
 		margin: auto 1rem;
@@ -157,6 +160,9 @@ $mobileWidth: 288px;
 		outline-color: $pokedexBg;
 		border: 4px solid $pokedex2bg;
 		border-radius: $borderRadius;
+		@include mediumMobile {
+			width: 310px;
+		}
 		&__label {
 			font-family: $normal;
 			margin-right: .5rem;

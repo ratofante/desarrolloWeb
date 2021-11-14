@@ -1642,6 +1642,9 @@ font-size y padding del contenedor y textos */
   border-radius: 7px;
   margin-right: auto;
   margin-left: auto; }
+  @media screen and (min-width: 370px) {
+    .searchBar {
+      width: 310px; } }
   @media screen and (min-width: 766px) {
     .searchBar {
       height: 52px;
@@ -1658,6 +1661,9 @@ font-size y padding del contenedor y textos */
     outline-color: #7271bab5;
     border: 4px solid #f5f5ff;
     border-radius: 7px; }
+    @media screen and (min-width: 370px) {
+      .searchBar__form {
+        width: 310px; } }
     .searchBar__form__label {
       font-family: "Fira Mono", monospace;
       margin-right: .5rem;
