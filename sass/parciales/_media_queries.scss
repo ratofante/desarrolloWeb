@@ -6,7 +6,7 @@
 }
 /*Para sacar cosas que solo sean para mobile -pokedex- */
 @mixin onlyMobile {
-	@media screen and (max-width: 435px){
+	@media screen and (max-width: 400px){
 		@content;
 	}
 }

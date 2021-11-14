@@ -1573,8 +1573,8 @@ font-size y padding del contenedor y textos */
   @media screen and (min-width: 370px) {
     .pokeguide {
       width: 90%;
-      height: 260px;
-      padding: 1rem; } }
+      height: auto;
+      padding: 1rem 2rem; } }
   @media screen and (min-width: 766px) {
     .pokeguide {
       width: 400px; } }
@@ -1582,6 +1582,9 @@ font-size y padding del contenedor y textos */
     font-family: "Lobster Two", cursive;
     color: white;
     text-align: center; }
+    @media screen and (min-width: 370px) {
+      .pokeguide__help__title {
+        padding-top: 1rem; } }
   .pokeguide__guide {
     position: relative;
     left: 120vw;
@@ -1611,14 +1614,14 @@ font-size y padding del contenedor y textos */
           line-height: initial; } }
     .pokeguide__guide__hints li:last-child {
       padding: 0px; }
-  @media screen and (max-width: 435px) {
+  @media screen and (max-width: 400px) {
     .pokeguide:hover {
       width: 90%;
       height: 100%; } }
-  @media screen and (max-width: 435px) {
+  @media screen and (max-width: 400px) {
     .pokeguide:hover .pokeguide__help__title {
       padding-top: 1rem; } }
-  @media screen and (max-width: 435px) {
+  @media screen and (max-width: 400px) {
     .pokeguide:hover .pokeguide__guide {
       height: auto;
       left: 0px;
@@ -1676,10 +1679,10 @@ font-size y padding del contenedor y textos */
         border: none;
         border-radius: 16px;
         position: absolute;
-        width: 78px;
+        width: 90px;
         padding-left: 0.2rem;
         top: 50%;
-        left: 138%;
+        left: 162%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         font-size: .8rem;
